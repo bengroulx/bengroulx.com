@@ -1,0 +1,36 @@
+// Navigation
+// ===
+//
+// 1. This module is currently comprised of a <ul>, therefore we should reset
+//    the spacing values.
+
+.x-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0; // 1
+    padding: 0; // 1
+
+    font-family: $monospace-font-family;
+    list-style: none;
+}
+
+.x-navigation__list-item {
+    flex: initial;
+    width: auto;
+
+    text-align: center;
+}
+
+.x-navigation__link {
+    display: block;
+    padding: $base-unit*2 0;
+
+    color: $neutral-10;
+    text-shadow: 0 1px 1px rgba($neutral-90, 0.5);
+
+    &:hover {
+        color: $neutral-10;
+        text-shadow: none;
+    }
+}

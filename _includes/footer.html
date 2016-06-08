@@ -1,38 +1,37 @@
-<footer class="site-footer">
+<footer class="x-footer c-segment" data-ui-component="site-footer" role="contentinfo">
+    <div class="c-contain">
 
-  <div class="wrapper">
+        <h2 data-ui-component="footer-heading">{{ site.title }}</h2>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+        <div class="footer-col-c-contain">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+            <div class="c-text-content">
+                <ul data-ui-component="contact-list">
+                <li>{{ site.title }}</li>
+                <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                </ul>
+            </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+            <div class="c-text-content">
+                <ul data-ui-component="social-media-list">
+                    {% if site.github_username %}
+                        <li>
+                            {% include icon-github.html username=site.github_username %}
+                        </li>
+                    {% endif %}
+                    {% if site.twitter_username %}
+                        <li>
+                            {% include icon-twitter.html username=site.twitter_username %}
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+            <div class="c-text-content">
+                <p>{{ site.description }}</p>
+            </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+        </div>
+
     </div>
-
-  </div>
-
 </footer>

@@ -2,6 +2,13 @@
 // ===
 
 
+// Webfont Imports
+// ---
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
 // Apply Vertical Rhythm
 // ---
 //
@@ -34,6 +41,7 @@ h4,
 h5,
 h6 {
     font-weight: $base-font-weight;
+    line-height: 1.25;
 }
 
 
@@ -57,15 +65,12 @@ li {
 // ---
 
 a {
-    color: red;
+    color: $base-emphasis;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
+    &:hover,
+    &:active {
+        color: lighten($base-emphasis, 25%);
         text-decoration: underline;
     }
 }
@@ -76,11 +81,11 @@ a {
 
 blockquote {
     padding-left: $spacing-unit / 2;
-    border-left: 4px solid $grey-color-light;
+    border-left: $base-unit solid $neutral-30;
 
-    color: $grey-color;
+    color: $neutral-50;
     font-style: italic;
-    font-size: 18px;
+    font-size: $large-font-size;
     letter-spacing: -1px;
 
     > :last-child {
@@ -94,21 +99,22 @@ blockquote {
 
 pre,
 code {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $neutral-50;
 
-    border-radius: 3px;
-    background-color: #eef;
+    border-radius: $base-unit / 2;
+    background-color: $neutral-30;
 
+    font-family: monospace;
     font-size: 15px;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 1px $base-unit;
 }
 
 pre {
     overflow-x: auto;
-    padding: 8px 12px;
+    padding: $base-unit*2 $base-unit*3;
 
     > code {
         padding-right: 0;

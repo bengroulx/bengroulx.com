@@ -1,0 +1,33 @@
+// Component: Button
+// ===
+
+.c-button {
+    padding: 0 ($base-unit * 4);
+    border: 1px solid currentColor;
+
+    border-radius: 2px;
+    background: none;
+
+    color: inherit;
+    font-family: $monospace-font-family;
+    font-size: 15px;
+    line-height: 1;
+
+    transition: all 0.25s linear;
+
+    cursor: pointer;
+
+    appearance: none;
+
+    &:hover {
+        border-radius: 5em;
+    }
+
+    &:not(.c--small) {
+        min-height: $base-tap-size;
+    }
+
+    &.c--small {
+        min-height: $small-tap-size;
+    }
+}

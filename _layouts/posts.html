@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1 data-ui-component="page-heading">
+    Posts
+</h1>
+
+<ul data-ui-component="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span data-ui-component="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a data-ui-component="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+</ul>
+
+<p data-ui-component="rss-subscribe">
+    Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+</p>

@@ -1,0 +1,23 @@
+// Component: Contain
+// ===
+//
+// A `c-contain` is an element designed to contain page elements to a reasonable
+// maximum width based on the size of a user's screen. This is useful to couple
+// with other UI elements like grid or menu to restrict their width to a reason-
+// able size for display. It is based on the Semantic UI `container` component.
+
+.c-contain {
+    @extend %clearfix;
+
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+
+    @include media-query($on-laptop) {
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit;
+        padding-left: $spacing-unit;
+    }
+}

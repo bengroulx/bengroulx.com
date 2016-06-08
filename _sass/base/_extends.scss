@@ -1,0 +1,26 @@
+// Extends
+// ===
+//
+// Use this file to make placeholder extends.
+
+
+// Vertical Rhythm
+// ---
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+// Clearfix
+// ---
+
+%clearfix {
+    &:after {
+        content: '';
+
+        clear: both;
+
+        display: table;
+    }
+}

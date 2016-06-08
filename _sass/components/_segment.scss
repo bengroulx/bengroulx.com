@@ -1,0 +1,101 @@
+// Component: Segment
+// ===
+//
+// A `c-segment` is used to create a grouping of related content. It is based
+// on the Semantic UI `segment` component.
+
+
+// Component Variables
+// ---
+
+$small-segment-padding: $spacing-unit;
+$large-segment-padding: $spacing-unit * 2;
+
+
+// Set Text Colour
+// ---
+//
+// Here we've used the Sass lightness() function to determine which color is
+// more appropriate for a background. The lightness() function is a built-in
+// Sass function that returns the lightness of a color's RGB value between 0
+// and 100. Where 0 is the darkest and 100 the lightest.
+//
+// http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass
+
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return $neutral-90;
+    } @else {
+        @return $neutral-10;
+    }
+}
+
+
+// Section Root
+// ---
+
+.c-segment {
+    padding-top: $small-segment-padding;
+    padding-bottom: $small-segment-padding;
+
+    @include media-query($on-laptop) {
+        padding-top: $large-segment-padding;
+        padding-bottom: $large-segment-padding;
+    }
+
+
+    // Extra Spacing
+    // ---
+
+    &.c--extra-padding-top {
+        padding-top: $large-segment-padding * 4;
+    }
+
+    &.c--extra-padding-bottom {
+        padding-bottom: $large-segment-padding * 4;
+    }
+
+
+    // Colour Variations
+    // ---
+
+    &.c--black {
+        background-color: $neutral-90;
+        color: set-text-color($neutral-90);
+    }
+
+    &.c--white {
+        background-color: $neutral-10;
+        color: set-text-color($neutral-10);
+    }
+
+    &.c--bayoux {
+        background-color: $bayoux;
+        color: set-text-color($bayoux);
+    }
+
+    &.c--heather {
+        background-color: $heather;
+        color: set-text-color($heather);
+    }
+
+    &.c--emperor {
+        background-color: $emperor;
+        color: set-text-color($emperor);
+    }
+
+    &.c--chambray {
+        background-color: $chambray;
+        color: set-text-color($chambray);
+    }
+
+    &.c--carousel {
+        background-color: $carousel;
+        color: set-text-color($carousel);
+    }
+
+    &.c--lemongrass {
+        background-color: $lemongrass;
+        color: set-text-color($lemongrass);
+    }
+}

@@ -1,0 +1,124 @@
+// Text Utilities
+// ===
+
+
+// Text Typeface
+// ---
+
+.u-text-family-mono {
+    font-family: $monospace-font-family;
+}
+
+
+// Text Sizes
+// ---
+
+.u-text-size-very-small {
+    font-size: $very-small-font-size !important;
+}
+
+.u-text-size-small {
+    font-size: $small-font-size !important;
+}
+
+.u-text-size-default {
+    font-size: $base-font-size !important;
+}
+
+.u-text-size-large {
+    font-size: $large-font-size !important;
+}
+
+.u-text-size-very-large {
+    font-size: $very-large-font-size !important;
+}
+
+
+// Text Weights
+// ---
+
+.u-text-weight-normal {
+    font-weight: normal !important;
+}
+
+.u-text-weight-300,
+.u-text-weight-light {
+    font-weight: 300 !important;
+}
+
+.u-text-weight-500,
+.u-text-weight-bold {
+    font-weight: 500 !important;
+}
+
+
+// Text Alignment
+// ---
+
+.u-text-align-center {
+    text-align: center !important;
+}
+
+.u-text-align-start {
+    text-align: left !important;
+}
+
+.u-text-align-right {
+    text-align: right !important;
+}
+
+
+// Text Letter Transforms
+// ---
+
+.u-text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.u-text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.u-text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.u-text-transform-initial {
+    text-transform: initial !important;
+}
+
+
+// Text Line Lengths
+// ---
+//
+// Prevent text from wrapping onto multiple lines, and truncate with ellipsis.
+//
+// 1. Ensure that the node has a maximum width after which truncation can occur.
+
+.u-text-truncate {
+    overflow: hidden !important;
+    max-width: 100% !important; // 1
+
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+
+.u-text-nowrap,
+.u-text-no-wrap {
+    white-space: nowrap !important;
+}
+
+
+// Text Line Heights
+// ---
+//
+// Typically use this to remove unwanted white-space around things like images
+// or other non-text assets.
+
+.u-text-collapse {
+    line-height: 0 !important;
+}
+
+.u-text-line-reset {
+    line-height: 1 !important;
+}

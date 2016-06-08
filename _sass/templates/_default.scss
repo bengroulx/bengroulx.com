@@ -1,0 +1,51 @@
+// Default Template
+// ===
+
+.t-default {
+
+    [data-ui-component='page-intro-title'],
+    [data-ui-component='page-intro-description'] {
+        position: relative;
+        z-index: 1;
+
+        color: $neutral-10;
+        text-shadow: 0 1px 1px rgba($neutral-90, 0.5);
+    }
+
+    [data-ui-component='page-intro-title'] {
+        font-weight: bold;
+
+        @include media-query($on-laptop) {
+            font-size: 4vw;
+
+            transform: translate(-15%, 0);
+        }
+    }
+
+    [data-ui-component='page-intro-description'] {
+        padding: $spacing-unit / 2;
+
+        @include media-query($on-laptop) {
+            display: inline-block;
+            max-width: 500px;
+
+            transform: translate(50%, 0);
+        }
+    }
+
+    [data-ui-component='page-intro-image'] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 375px;
+        height: 550px;
+        margin: 0;
+
+        opacity: 0.5;
+        background: $neutral-50 url('../ben-groulx.jpg') top center;
+        background-size: cover;
+
+        transform: translate(-50%, -50%);
+    }
+}

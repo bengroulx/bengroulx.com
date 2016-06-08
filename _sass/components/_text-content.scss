@@ -1,0 +1,25 @@
+// Component: Text Content
+// ===
+//
+// A `c-segment` component styles tag elements in a way that matches their com-
+// ponent equivalent in the absence of any component classes, or styles tags to
+// have appropriate levels of margins that they would otherwise be lacking.
+// Think of the `c-text-content` component as a way of creating a designated
+// WYSIWYG zone.
+
+
+// Component Variables
+// ---
+
+$small-text-content-spacing: $spacing-unit / 2;
+$large-text-content-spacing: $spacing-unit;
+
+
+// Text Content Root
+// ---
+
+.c-text-content {
+    > :last-child {
+        margin-bottom: 0;
+    }
+}

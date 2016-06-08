@@ -2,22 +2,50 @@
 layout: default
 ---
 
-<div class="home">
+<section class="c-segment c--bayoux c--extra-padding-top">
+    <div class="c-text-content u-text-align-center">
+        <h1 class="u-margin-bottom-very-large" data-ui-component="page-intro-title">A designer who thinks in code.</h1>
+        <div class="u-text-align-start" data-ui-component="page-intro-description">
+            <p>Ben Groulx is a user interface designer and front-end developer living and working out of Vancouver, Canada.</p>
+            <p>With <a href="http://mobify.com/">Mobify</a>, he develops mobile interfaces for global ecommerce brands. With <a href="http://bitchpopproductions.com/">Bitchpop Productions</a>, he helps create, promote, and uplift female-driven film and content.</p>
+            <p>You can hire him.</p>
+        </div>
+        <figure class="" data-ui-component="page-intro-image">
+            <img src="" alt="" hiden>
+            <figcaption hidden>Ben Groulx</figcaption>
+        </figure>
+    </div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="c-segment c--black">
+    <div class="c-contain">
+        <article class="c-text-content" data-ui-component="project">
+            <h3 class="u-text-family-mono u-margin-bottom-none" data-ui-component="project-title">Mobify Pattern Library</h3>
+            <p role="presentation">—</p>
+            <p data-ui-component="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus non amet eius, expedita modi aliquid debitis. Minus quaerat aliquid quisquam culpa, excepturi eos molestias, quam magnam. Tenetur ullam delectus saepe.</p>
+            <button class="c-button" data-ui-component="project-button">Learn about this project &rarr;</button>
+        </article>
+    </div>
+</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="c-segment c--lemongrass">
+    <div class="c-contain">
+        <article class="c-text-content" data-ui-component="project">
+            <h3 class="u-text-family-mono u-margin-bottom-none" data-ui-component="project-title">Chasing Fireflies</h3>
+            <p role="presentation">—</p>
+            <p data-ui-component="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus non amet eius, expedita modi aliquid debitis. Minus quaerat aliquid quisquam culpa, excepturi eos molestias, quam magnam. Tenetur ullam delectus saepe.</p>
+            <button class="c-button" data-ui-component="project-button">Read this article &rarr;</button>
+        </article>
+    </div>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section class="c-segment c--emperor">
+    <div class="c-contain">
+        <article class="c-text-content" data-ui-component="project">
+            <h3 class="u-text-family-mono u-margin-bottom-none" data-ui-component="project-title">Chasing Fireflies</h3>
+            <p role="presentation">—</p>
+            <p data-ui-component="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus non amet eius, expedita modi aliquid debitis. Minus quaerat aliquid quisquam culpa, excepturi eos molestias, quam magnam. Tenetur ullam delectus saepe.</p>
+            <button  class="c-button" data-ui-component="project-button">Learn about this project &rarr;</button>
+        </article>
+    </div>
+</section>

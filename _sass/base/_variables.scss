@@ -8,41 +8,90 @@
 //   should not map to actual values. If really necessary, additional values can
 //   be added in between, e.g. $neutral-15 between 10 and 20.
 
-$base-font-family: 'Roboto', 'Helvetica Neue', 'Arial';
-$base-font-weight: 400;
 
+// Units
+// ---
+
+$base-unit: 4px;
+$spacing-unit: 32px;
+
+
+// Tap Sizes
+// ---
+
+$small-tap-size: 32px;
+$base-tap-size: 44px;
+$large-tap-size: 48px;
+
+
+// Font Sizes
+// ---
+
+$very-small-font-size: 10px;
+$small-font-size: 12px;
 $base-font-size: 16px;
-$small-font-size: $base-font-size * 0.875;
+$large-font-size: 24px;
+$very-large-font-size: 32px;
+
+
+// Font Attributes
+// ---
+
+$base-font-family: 'PT Serif';
+$monospace-font-family: 'Roboto Mono', monospace;
+$base-font-weight: 400;
 $base-line-height: 1.5;
 
-$spacing-unit: 30px;
 
-$text-color: #111;
-$background-color: #fdfdfd;
-$brand-color: green;
+// Neutral Colours
+// ---
 
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+$neutral-10: #fdfdfd;
+$neutral-30: #cdd2d5;
+$neutral-50: #7e8688;
+$neutral-70: #384248;
+$neutral-90: #17242f;
+
+
+// Brand Colours
+// ---
+
+$bayoux: #30465c;
+$heather: #aabec9;
+$emperor: #475050;
+$chambray: #2a3591;
+$carousel: #f1ced4;
+$lemongrass: #9c9f91;
+
+
+// Element Colours
+// ---
+
+$base-text: $neutral-90;
+$base-background: $neutral-10;
+$base-emphasis: $chambray;
+
+
+// Content Widths
+// ---
 
 $content-width: 800px;
 
 $on-palm: 600px;
-$on-laptop: 800px;
+$on-laptop: 1200px;
 
 
 // Media Queries
 // ---
 //
 // @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
+//     .class-name {
+//         ...
 //     }
 // }
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }

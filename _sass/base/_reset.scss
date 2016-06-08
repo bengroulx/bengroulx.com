@@ -50,6 +50,23 @@ template,
     display: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure {
+    margin-top: 0;
+    // adjust margin-bottom in typography.scss
+}
+
 a {
     background-color: transparent;
 
@@ -76,16 +93,10 @@ dfn {
     font-style: italic;
 }
 
-h1 {
-    margin: 0.67em 0;
-
-    font-size: 2em;
-}
-
 mark {
-    background-color: #ff0;
+    background-color: $carousel;
 
-    color: #000;
+    color: $base-text;
 }
 
 small {
@@ -185,7 +196,7 @@ button:-moz-focusring,
 fieldset {
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
-    border: 1px solid #c0c0c0;
+    border: 1px solid $neutral-50;
 }
 
 legend {
