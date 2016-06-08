@@ -1,0 +1,20 @@
+// Component: Icon
+// ===
+
+.c-icon {
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+svg {
+    max-width: 16px;
+}

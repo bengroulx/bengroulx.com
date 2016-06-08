@@ -1,0 +1,27 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site Settings
+title: Ben Groulx
+email: bengroulx.com
+twitter_username: bengroulx
+github_username:  bengroulx
+description: > # this means to ignore newlines until "url:"
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
+
+# URL - The base hostname & protocol for your site
+url: "http://bengroulx.github.io"
+
+# Base URL - The subpath of your site, e.g. /blog
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+gems:
+  - octopress-autoprefixer

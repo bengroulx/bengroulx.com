@@ -1,0 +1,78 @@
+// General
+// ===
+
+
+// Basic styling
+// ---
+
+body {
+    background-color: $background-color;
+
+    color: $text-color;
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    font-size: #{$base-font-size}/#{$base-line-height};
+    text-size-adjust: 100%;
+
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+
+// Vertical Rhythm
+// ---
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+// Clearfix
+// ---
+
+%clearfix {
+    &:after {
+        content: '';
+
+        clear: both;
+
+        display: table;
+    }
+}
+
+
+// Content Wrapper
+// ---
+
+.wrapper {
+    @extend %clearfix;
+    @include media-query($on-laptop) {
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+}
+
+
+// Images
+// ---
+
+img {
+    max-width: 100%;
+
+    vertical-align: middle;
+}
+
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}

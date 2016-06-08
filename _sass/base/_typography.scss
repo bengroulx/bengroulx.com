@@ -1,0 +1,118 @@
+// Typography
+// ===
+
+
+// Apply Vertical Rhythm
+// ---
+//
+// 1. Set `margin-bottom` to maintain vertical rhythm
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure {
+    @extend %vertical-rhythm; // 1
+}
+
+
+// Headings
+// ---
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $base-font-weight;
+}
+
+
+// Lists
+// ---
+
+ul,
+ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+        margin-bottom: 0;
+    }
+}
+
+
+// Links
+// ---
+
+a {
+    color: red;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+
+// Blockquotes
+// ---
+
+blockquote {
+    padding-left: $spacing-unit / 2;
+    border-left: 4px solid $grey-color-light;
+
+    color: $grey-color;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: -1px;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+// Code Formatting
+// ---
+
+pre,
+code {
+    border: 1px solid $grey-color-light;
+
+    border-radius: 3px;
+    background-color: #eef;
+
+    font-size: 15px;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 8px 12px;
+
+    > code {
+        padding-right: 0;
+        padding-left: 0;
+        border: 0;
+    }
+}

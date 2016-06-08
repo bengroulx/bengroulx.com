@@ -1,0 +1,29 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Project-Wide Base Styles
+// ===
+//
+// Note: Import partials from `sass_dir` (defaults to `_sass`)
+
+@charset 'utf-8';
+
+
+// General
+// ---
+//
+// These cover generic styles that affect your entire site, e.g. html, body,
+// [attribute-selectors], styles for your text, headers, links, etc.
+
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/general';
+@import 'base/typography';
+
+
+// Components
+// ---
+//
+// Styles for reusable components. eg. @import 'components/button/button';
+
+@import 'components/icon';

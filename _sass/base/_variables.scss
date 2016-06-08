@@ -1,0 +1,48 @@
+// Project-Wide Variables
+// ===
+//
+// - Names should be lowercase and dash-separated;
+// - Qualifiers should be added to the beginning of related variables: use
+//   `$small-font-size`, not `$font-size-small`;
+// - Numeric scales should use increments of 10; these numbers are arbitrary and
+//   should not map to actual values. If really necessary, additional values can
+//   be added in between, e.g. $neutral-15 between 10 and 20.
+
+$base-font-family: 'Roboto', 'Helvetica Neue', 'Arial';
+$base-font-weight: 400;
+
+$base-font-size: 16px;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit: 30px;
+
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: green;
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$content-width: 800px;
+
+$on-palm: 600px;
+$on-laptop: 800px;
+
+
+// Media Queries
+// ---
+//
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
