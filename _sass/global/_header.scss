@@ -14,7 +14,7 @@ $header-height: $base-unit * 20;
 .x-header {
     @extend %clearfix;
 
-    position: fixed;
+    position: fixed !important;
     top: 0;
     right: 0;
     left: 0;
@@ -34,4 +34,22 @@ $header-height: $base-unit * 20;
     &.x--up {
         top: -$header-height;
     }
+}
+
+
+// Header Home Button
+// ---
+
+.x-header__home {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    border: 0 !important;
+
+    transform: translate(0, -50%);
+}
+
+.x-header__home-button {
+    border: 0 !important;
 }

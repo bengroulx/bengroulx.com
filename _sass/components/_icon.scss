@@ -2,19 +2,37 @@
 // ===
 
 .c-icon {
+    display: inline-flex;
+
+    color: inherit;
+
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
 
+        color: inherit;
         vertical-align: middle;
 
-        path {
-            fill: currentColor;
+        fill: currentColor;
+    }
+
+    &.c--small {
+        > svg {
+            width: $base-unit * 4;
+            height: $base-unit * 4;
         }
     }
-}
 
-svg {
-    max-width: 16px;
+    &.c--medium {
+        > svg {
+            width: $base-unit * 6;
+            height: $base-unit * 6;
+        }
+    }
+
+    &.c--large {
+        > svg {
+            width: $base-unit * 8;
+            height: $base-unit * 8;
+        }
+    }
 }

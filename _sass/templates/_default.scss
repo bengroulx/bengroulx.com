@@ -3,6 +3,10 @@
 
 .t-default {
 
+    .x-header__home {
+        display: none;
+    }
+
     [data-ui-component='page-intro-title'] {
 
         &::after {

@@ -41,13 +41,16 @@ $large-segment-padding: $spacing-unit * 2;
     position: relative; // 1
 
     overflow: hidden;
+    padding-right: $small-segment-padding;
+    padding-left: $small-segment-padding;
 
 
     // Padding Modifications
     // ---
 
     &:not(.c--no-padding) {
-        padding: $base-segment-padding $small-segment-padding;
+        padding-top: $base-segment-padding;
+        padding-bottom: $base-segment-padding;
 
         @include media-query($on-laptop) {
             padding-top: $large-segment-padding;
