@@ -1,6 +1,3 @@
-// Copyright © Mobify
-
-
 /*
     Copyright © 2012 Digital Fusion
     —
@@ -8,7 +5,7 @@
     http://teamdf.com/jquery-plugins/license/
     —
     Original author: Sam Sehnert
-    Modified by: Ben Groulx, Mobify
+    Modified by: Ben Groulx
 */
 
 (function($) {
@@ -29,12 +26,12 @@
 
 })(jQuery);
 
-var products = $('.c-segment');
+var products = $('.js-fade-in > *');
 
 products.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-        el.addClass('x-already-visible');
+        el.addClass('a-already-visible');
     }
 });
 
@@ -42,7 +39,7 @@ $(window).scroll(function(event) {
     products.each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
-            el.addClass('x-slide-in');
+            el.addClass('a-fade-in');
         }
     });
 });

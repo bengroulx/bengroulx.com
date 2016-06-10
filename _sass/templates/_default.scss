@@ -1,63 +1,17 @@
 // Default Template
 // ===
 
-
-$spacing: 20px;
-$product: 300px;
-
-
-// Animations
-// ---
-
-.x-slide-in {
-    opacity: 0;
-    transform: translateY($product / 2);
-
-    animation-name: slide-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-
-    // animation: slide-in 1s ease-out forwards;
-}
-
-.x-already-visible {
-    opacity: 1;
-    transform: translateY(0);
-    animation: none;
-}
-
-@keyframes slide-in {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes flashing {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
 .t-default {
 
-    [data-ui-component='page-intro-title'],
-    [data-ui-component='page-intro-description'] {
-        position: relative;
-        z-index: 1;
+    .x-main {
+        padding-top: 0;
     }
 
     [data-ui-component='page-intro-title'] {
-        padding-right: $base-unit * 3;
 
         &::after {
+            @extend %a-flash;
+
             content: '';
 
             display: inline-block;
@@ -67,8 +21,6 @@ $product: 300px;
             background: currentColor;
 
             transform: translate(-500%, 10%);
-
-            animation: flashing 1s step-end infinite;
         }
 
         @include media-query($on-laptop) {
@@ -79,29 +31,9 @@ $product: 300px;
     }
 
     [data-ui-component='page-intro-description'] {
-        padding: $spacing-unit / 2;
-
         @include media-query($on-laptop) {
-            display: inline-block;
-            max-width: 500px;
 
             transform: translate(50%, 0);
         }
-    }
-
-    [data-ui-component='page-intro-image'] {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        width: 375px;
-        height: 550px;
-        margin: 0;
-
-        opacity: 0.5;
-        background: $neutral-50 url('../ben-groulx.jpg') top center;
-        background-size: cover;
-
-        transform: translate(-50%, -50%);
     }
 }

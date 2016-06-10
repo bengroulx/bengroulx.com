@@ -8,7 +8,8 @@
 // Component Variables
 // ---
 
-$small-segment-padding: $spacing-unit;
+$small-segment-padding: $spacing-unit / 2;
+$base-segment-padding: $spacing-unit;
 $large-segment-padding: $spacing-unit * 2;
 
 
@@ -37,27 +38,37 @@ $large-segment-padding: $spacing-unit * 2;
 // 1. For absolute positioned elements contained within.
 
 .c-segment {
-    @include media-query($on-laptop) {
-        padding-top: $large-segment-padding;
-        padding-bottom: $large-segment-padding;
-    }
-
-    position: relative;
+    position: relative; // 1
 
     overflow: hidden;
-    padding-top: $small-segment-padding;
-    padding-bottom: $small-segment-padding;
 
 
-    // Extra Spacing
+    // Padding Modifications
     // ---
 
+    &:not(.c--no-padding) {
+        padding: $base-segment-padding $small-segment-padding;
+
+        @include media-query($on-laptop) {
+            padding-top: $large-segment-padding;
+            padding-bottom: $large-segment-padding;
+        }
+    }
+
     &.c--extra-padding-top {
-        padding-top: $large-segment-padding * 4;
+        padding-top: $large-segment-padding * 3;
+
+        @include media-query($on-laptop) {
+            padding-top: $large-segment-padding * 4;
+        }
     }
 
     &.c--extra-padding-bottom {
-        padding-bottom: $large-segment-padding * 4;
+        padding-bottom: $large-segment-padding * 3;
+
+        @include media-query($on-laptop) {
+            padding-bottom: $large-segment-padding * 4;
+        }
     }
 
 
@@ -141,7 +152,7 @@ $large-segment-padding: $spacing-unit * 2;
 
     opacity: 0.1;
 
-    transform: translate(0, -50%);
+    transform: translate(0, -50%) scale(1.2);
 
     transition: all 0.35s ease-out;
 
@@ -151,6 +162,8 @@ $large-segment-padding: $spacing-unit * 2;
 
     .c-segment:hover & {
         opacity: 0.2;
+
+        transform: translate(0, -50%) scale(1);
 
         -webkit-filter: grayscale(0%);
     }

@@ -1,0 +1,8 @@
+// Main
+// ===
+//
+// 1. Same height as x-header. Have content begin beneath header.
+
+.x-main {
+    padding-top: $base-unit * 20; // 1
+}
