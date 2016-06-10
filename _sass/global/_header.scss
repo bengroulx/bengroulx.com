@@ -5,7 +5,8 @@
 // Variables
 // ---
 
-$header-height: $base-unit * 20;
+$small-header-height: $base-unit * 15;
+$large-header-height: $base-unit * 20;
 
 
 // Header Root
@@ -22,7 +23,7 @@ $header-height: $base-unit * 20;
 
     display: flex;
     align-items: center;
-    height: $header-height;
+    height: $small-header-height;
 
     background: $neutral-10;
     box-shadow: 0 0.05em 0.25em rgba($neutral-90, 0.15);
@@ -31,25 +32,60 @@ $header-height: $base-unit * 20;
 
     transition: top 0.35s ease-in-out;
 
+    @include media-query($charmeleon) {
+        height: $large-header-height;
+    }
+
     &.x--up {
-        top: -$header-height;
+        top: -$small-header-height;
+
+        @include media-query($charmeleon) {
+            top: -$large-header-height;
+        }
     }
 }
 
 
 // Header Home Button
 // ---
+//
+// 1. Hide the expanding border.
 
-.x-header__home {
+.x-header__icon {
     position: absolute;
     top: 50%;
-    left: 0;
 
     border: 0 !important;
 
-    transform: translate(0, -50%);
+    &::before,
+    &::after {
+        display: none; // 1
+    }
+
+    &.x--right {
+        right: 0;
+        transform: translate(0, -50%);
+    }
+
+    &.x--middle {
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include media-query($charmander) {
+            opacity: 0.15;
+
+            pointer-events: none;
+            transform: translate(-65%, -50%);
+        }
+
+    }
+
+    &.x--left {
+        left: 0;
+        transform: translate(0, -50%);
+    }
 }
 
-.x-header__home-button {
+.x-header__icon-button {
     border: 0 !important;
 }

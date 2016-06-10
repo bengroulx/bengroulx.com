@@ -80,18 +80,13 @@ $active-emphasis: blue;
 
 $content-width: 800px;
 
-$on-palm: 600px;
-$on-laptop: 1200px;
+$charmander: 500px;
+$charmeleon: 1200px;
+$charizard:  1400px;
 
 
 // Media Queries
 // ---
-//
-// @include media-query($on-palm) {
-//     .class-name {
-//         ...
-//     }
-// }
 
 @mixin media-query($device) {
     @media screen and (min-width: $device) {

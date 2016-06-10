@@ -3,10 +3,6 @@
 
 .t-default {
 
-    .x-header__home {
-        display: none;
-    }
-
     [data-ui-component='page-intro-title'] {
 
         &::after {
@@ -23,7 +19,7 @@
             transform: translate(-500%, 10%);
         }
 
-        @include media-query($on-laptop) {
+        @include media-query($charmeleon) {
             font-size: 3vw;
 
             transform: translate(-10%, 0);
@@ -31,7 +27,7 @@
     }
 
     [data-ui-component='page-intro-description'] {
-        @include media-query($on-laptop) {
+        @include media-query($charmeleon) {
 
             transform: translate(50%, 0);
         }

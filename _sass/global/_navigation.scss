@@ -4,6 +4,19 @@
 // 1. This module is currently comprised of a <ul>, therefore we should reset
 //    the spacing values.
 
+.x-navigation {
+    display: none;
+    padding: 0 12%;
+
+    @include media-query($charmander) {
+        display: block;
+    }
+
+    @include media-query($charmeleon) {
+        padding: 0;
+    }
+}
+
 .x-navigation__list {
     counter-reset: number-counter;
 
@@ -26,7 +39,7 @@
     font-size: $base-font-size;
     text-align: center;
 
-    @include media-query($on-laptop) {
+    @include media-query($charmeleon) {
         &::before {
             content: counter(number-counter);
             counter-increment: number-counter;

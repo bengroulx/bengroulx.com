@@ -1,10 +1,24 @@
 <header class="x-header c-segment c--no-padding" data-ui-component="site-header" role="banner">
     <div class="c-contain">
 
-        <a class="x-header__home" href="/">
-            <button type="button" class="c-button x-header__home-button">
+        <a class="x-header__icon x--left" href="/">
+            <button type="button" class="c-button x-header__icon-button">
                 <span data-ui-component="icon" class="c-icon c--medium">{% include icon-home.svg %}</span>
-                <span data-ui-component="label" class="u-visually-hidden">Return Home</span>
+                <span data-ui-component="label" class="u-visually-hidden">Return to the home page</span>
+            </button>
+        </a>
+
+        <a class="x-header__icon x--middle js-toggle-nav">
+            <button type="button" class="c-button x-header__icon-button">
+                <span data-ui-component="icon" class="c-icon c--medium">{% include icon-menu.svg %}</span>
+                <span data-ui-component="label" class="u-visually-hidden">Open or close the main menu</span>
+            </button>
+        </a>
+
+        <a class="x-header__icon x--right js-toggle-share">
+            <button type="button" class="c-button x-header__icon-button">
+                <span data-ui-component="icon" class="c-icon c--medium">{% include icon-share.svg %}</span>
+                <span data-ui-component="label" class="u-visually-hidden">Share this page</span>
             </button>
         </a>
 
