@@ -5,6 +5,8 @@
 //    the spacing values.
 
 .x-navigation__list {
+    counter-reset: my-badass-counter;
+
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -23,14 +25,44 @@
 }
 
 .x-navigation__link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: $base-unit*2 0;
+
+    box-shadow: none;
 
     color: $neutral-10;
     text-shadow: 0 1px 1px rgba($neutral-90, 0.5);
 
+    &::before {
+        content: counter(my-badass-counter);
+        counter-increment: my-badass-counter;
+
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        width: $base-unit*5;
+        height: $base-unit*5;
+        margin-right: $base-unit*2;
+        border: 1px solid currentColor;
+
+        opacity: 0.5;
+        border-radius: 100%;
+
+        font-size: $very-small-font-size;
+        line-height: 1;
+    }
+
     &:hover {
+        box-shadow: none;
+
         color: $neutral-10;
-        text-shadow: none;
+        text-decoration: none;
+
+        &::before {
+            opacity: 1;
+            background: rgba($neutral-90, 0.5);
+        }
     }
 }

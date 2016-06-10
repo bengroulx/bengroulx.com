@@ -1,24 +1,80 @@
 // Default Template
 // ===
 
+
+$spacing: 20px;
+$product: 300px;
+
+
+// Animations
+// ---
+
+.x-slide-in {
+    opacity: 0;
+    transform: translateY($product / 2);
+
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    // animation: slide-in 1s ease-out forwards;
+}
+
+.x-already-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flashing {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 .t-default {
 
     [data-ui-component='page-intro-title'],
     [data-ui-component='page-intro-description'] {
         position: relative;
         z-index: 1;
-
-        color: $neutral-10;
-        text-shadow: 0 1px 1px rgba($neutral-90, 0.5);
     }
 
     [data-ui-component='page-intro-title'] {
-        font-weight: bold;
+        padding-right: $base-unit * 3;
+
+        &::after {
+            content: '';
+
+            display: inline-block;
+            width: 0.075em;
+            height: 1em;
+
+            background: currentColor;
+
+            transform: translate(-500%, 10%);
+
+            animation: flashing 1s step-end infinite;
+        }
 
         @include media-query($on-laptop) {
-            font-size: 4vw;
+            font-size: 3vw;
 
-            transform: translate(-15%, 0);
+            transform: translate(-10%, 0);
         }
     }
 

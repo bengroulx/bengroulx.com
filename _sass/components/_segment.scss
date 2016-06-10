@@ -23,7 +23,7 @@ $large-segment-padding: $spacing-unit * 2;
 // http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass
 
 @function set-text-color($color) {
-    @if (lightness($color) > 50) {
+    @if (lightness($color) > 60) {
         @return $neutral-90;
     } @else {
         @return $neutral-10;
@@ -31,17 +31,22 @@ $large-segment-padding: $spacing-unit * 2;
 }
 
 
-// Section Root
+// Segment Root
 // ---
+//
+// 1. For absolute positioned elements contained within.
 
 .c-segment {
-    padding-top: $small-segment-padding;
-    padding-bottom: $small-segment-padding;
-
     @include media-query($on-laptop) {
         padding-top: $large-segment-padding;
         padding-bottom: $large-segment-padding;
     }
+
+    position: relative;
+
+    overflow: hidden;
+    padding-top: $small-segment-padding;
+    padding-bottom: $small-segment-padding;
 
 
     // Extra Spacing
@@ -61,41 +66,92 @@ $large-segment-padding: $spacing-unit * 2;
 
     &.c--black {
         background-color: $neutral-90;
+
         color: set-text-color($neutral-90);
     }
 
     &.c--white {
         background-color: $neutral-10;
+
         color: set-text-color($neutral-10);
     }
 
     &.c--bayoux {
         background-color: $bayoux;
+
         color: set-text-color($bayoux);
     }
 
     &.c--heather {
         background-color: $heather;
+
         color: set-text-color($heather);
     }
 
     &.c--emperor {
         background-color: $emperor;
+
         color: set-text-color($emperor);
     }
 
     &.c--chambray {
         background-color: $chambray;
+
         color: set-text-color($chambray);
     }
 
     &.c--carousel {
         background-color: $carousel;
+
         color: set-text-color($carousel);
     }
 
     &.c--lemongrass {
         background-color: $lemongrass;
+
         color: set-text-color($lemongrass);
+    }
+}
+
+
+// Segment Overlay / Underlay
+// ---
+//
+// This image covers the entire c-segment; it is initially not viewable, but
+// when hovered over it animates into position.
+
+.c-segment__overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.c-segment__underlay {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0.1;
+
+    transform: translate(0, -50%);
+
+    transition: all 0.35s ease-out;
+
+    pointer-events: none;
+
+    -webkit-filter: grayscale(100%);
+
+    .c-segment:hover & {
+        opacity: 0.2;
+
+        -webkit-filter: grayscale(0%);
     }
 }

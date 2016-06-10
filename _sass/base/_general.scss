@@ -6,6 +6,7 @@
 // ---
 
 body {
+    // margin: 1em;
     background-color: $base-background;
 
     color: $base-text;
@@ -19,7 +20,7 @@ body {
     font-kerning: normal;
 
     @include media-query($on-laptop) {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 }
 
