@@ -61,7 +61,7 @@ $black: $neutral-90;
 $carousel: #f1ced4;
 $chambray: #2a3591;
 $emperor: #475050;
-$heather: #c3d8e4;
+$heather: #d2e4ef;
 $lemongrass: #9c9f91;
 $white: $neutral-10;
 
@@ -71,7 +71,8 @@ $white: $neutral-10;
 
 $base-text: $neutral-90;
 $base-background: $neutral-10;
-$base-emphasis: $chambray;
+$base-emphasis: mix($chambray, mix($chambray, blue));
+$active-emphasis: blue;
 
 
 // Content Widths

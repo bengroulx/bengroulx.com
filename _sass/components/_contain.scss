@@ -9,6 +9,7 @@
 .c-contain {
     @extend %clearfix;
 
+    width: 100%;
     max-width: $content-width;
     margin-right: auto;
     margin-left: auto;

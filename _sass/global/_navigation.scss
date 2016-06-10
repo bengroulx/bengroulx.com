@@ -5,7 +5,7 @@
 //    the spacing values.
 
 .x-navigation__list {
-    counter-reset: my-badass-counter;
+    counter-reset: number-counter;
 
     display: flex;
     justify-content: space-between;
@@ -22,13 +22,12 @@
     align-items: center;
     flex: initial;
     width: auto;
-    margin: 0 $spacing-unit;
 
     text-align: center;
 
     &::before {
-        content: counter(my-badass-counter);
-        counter-increment: my-badass-counter;
+        content: counter(number-counter);
+        counter-increment: number-counter;
 
         display: flex;
         overflow: hidden;
@@ -39,9 +38,9 @@
         margin-right: $base-unit * 2;
         border: 1px solid currentColor;
 
-        opacity: 0.5;
         border-radius: 100%;
 
+        color: $base-emphasis;
         font-size: $very-small-font-size;
         line-height: 1;
     }
@@ -50,8 +49,7 @@
 .x-navigation__link {
     padding: ($base-unit * 2) 0;
 
-    color: $neutral-10;
-    text-shadow: 0 1px 1px rgba($neutral-90, 0.5);
+    color: inherit;
 
     &::before,
     &::after {
@@ -59,6 +57,6 @@
     }
 
     &:hover {
-        color: $neutral-10;
+        color: inherit;
     }
 }

@@ -56,18 +56,18 @@ $large-segment-padding: $spacing-unit * 2;
     }
 
     &.c--extra-padding-top {
-        padding-top: $large-segment-padding * 3;
+        padding-top: $large-segment-padding * 2;
 
         @include media-query($on-laptop) {
-            padding-top: $large-segment-padding * 4;
+            padding-top: $large-segment-padding * 3;
         }
     }
 
     &.c--extra-padding-bottom {
-        padding-bottom: $large-segment-padding * 3;
+        padding-bottom: $large-segment-padding * 2;
 
         @include media-query($on-laptop) {
-            padding-bottom: $large-segment-padding * 4;
+            padding-bottom: $large-segment-padding * 3;
         }
     }
 

@@ -24,11 +24,12 @@ $header-height: $base-unit * 20;
     align-items: center;
     height: $header-height;
 
-    background: linear-gradient(to bottom, rgba($neutral-90, 0.75), rgba($neutral-90, 0));
+    background: $neutral-10;
+    box-shadow: 0 0.05em 0.25em rgba($neutral-90, 0.15);
 
-    color: $neutral-10;
+    color: $neutral-90;
 
-    transition: top 0.5s ease-in-out;
+    transition: top 0.35s ease-in-out;
 
     &.x--up {
         top: -$header-height;

@@ -65,7 +65,7 @@ a {
 
     display: inline-block;
 
-    color: mix($base-emphasis, mix($base-emphasis, blue));
+    color: $base-emphasis;
     text-decoration: none;
 
     transition: all 0.1s linear;
@@ -101,7 +101,7 @@ a {
 
     &:hover,
     &:active {
-        color: blue;
+        color: $active-emphasis;
 
         &::before,
         &::after {
