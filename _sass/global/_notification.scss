@@ -1,0 +1,18 @@
+// Notification
+// ===
+
+.x-notification {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    padding: $spacing-unit / 4;
+
+    background: rgba(lighten(yellow, 35%), 0.9);
+
+    font-family: $monospace-font-family;
+    font-size: $small-font-size;
+    text-align: center;
+}
