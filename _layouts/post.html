@@ -2,24 +2,35 @@
 layout: default
 ---
 
-<article data-ui-component="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="" data-ui-component="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header data-ui-component="post-header">
-        <h1 data-ui-component="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p data-ui-component="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {{ page.date | date: "%b %-d, %Y" }}
-            </time>
-            {% if page.author %} •
-                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                    <span itemprop="name">{{ page.author }}</span>
-                </span>
-            {% endif %}
-        </p>
-    </header>
+    <section class="c-arrange">
 
-    <div data-ui-component="post-content" itemprop="articleBody">
-        {{ content }}
-    </div>
+        <div class="c-arrange__item c-segment c--carousel u-hide-medium" role="presentation">
+        </div>
 
+        <div class="c-arrange__item c-segment c--bayoux c--extra-padding-top">
+            <header class="c-text-content" data-ui-component="post-header">
+                <h1 data-ui-component="post-title" itemprop="name headline">{{ page.title }}</h1>
+                <p data-ui-component="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {{ page.date | date: "%b %-d, %Y" }}
+                    </time>
+                    {% if page.author %} •
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">{{ page.author }}</span>
+                        </span>
+                    {% endif %}
+                </p>
+            </header>
+        </div>
+
+    </section>
+
+    <section class="c-segment">
+        <div class="c-contain c-text-content" data-ui-component="post-content" itemprop="articleBody">
+            {{ content }}
+        </div>
+    </section
+    >
 </article>

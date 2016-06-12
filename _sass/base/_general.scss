@@ -6,11 +6,6 @@
 // ---
 
 body {
-    @include media-query($charmeleon) {
-        font-size: 1.15rem;
-    }
-    // margin: 1em;
-
     background-color: $base-background;
 
     color: $base-text;
@@ -22,6 +17,15 @@ body {
 
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
+
+    @include media-query($charmeleon) {
+        font-size: 1.15rem;
+    }
+
+    @include media-query($charmeleon) {
+        font-size: 1.15rem;
+    }
+
 }
 
 

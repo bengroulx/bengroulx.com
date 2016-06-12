@@ -37,7 +37,7 @@ $very-large-font-size: 32px;
 // Font Attributes
 // ---
 
-$base-font-family: 'PT Serif', 'Georgia', serif;
+$base-font-family: 'Freight Text Pro', 'PT Serif', 'Georgia', serif;
 $monospace-font-family: 'Roboto Mono', monospace;
 $base-font-weight: 400;
 $base-line-height: 2;
@@ -78,11 +78,11 @@ $active-emphasis: blue;
 // Content Widths
 // ---
 
-$content-width: 800px;
-
 $charmander: 400px;
 $charmeleon: 600px;
 $charizard:  1000px;
+
+$content-width: 700px;
 
 
 // Media Queries

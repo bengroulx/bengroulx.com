@@ -19,8 +19,29 @@ $large-text-content-spacing: $spacing-unit;
 // ---
 
 .c-text-content {
-    > :last-child {
-        margin-bottom: 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    ul,
+    ol,
+    dl,
+    figure {
+        @extend %vertical-rhythm; // 1
+    }
+
+    * + h2,
+    * + h3,
+    * + h4,
+    * + h5,
+    * + h6 {
+        margin-top: 2em;
     }
 
     ul,
@@ -33,5 +54,19 @@ $large-text-content-spacing: $spacing-unit;
         > ol {
             margin-bottom: 0;
         }
+    }
+
+    a {
+        display: inline;
+    }
+
+    blockquote,
+    hr {
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
     }
 }

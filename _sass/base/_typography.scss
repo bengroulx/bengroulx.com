@@ -118,13 +118,31 @@ a {
 // ---
 
 blockquote {
+    position: relative;
+
+    margin-right: 0;
+    margin-left: 0;
     padding-left: $spacing-unit / 2;
     border-left: $base-unit solid $neutral-30;
 
     color: $neutral-50;
-    font-style: italic;
+    font-family: $monospace-font-family;
+    font-style: normal;
     font-size: $large-font-size;
     letter-spacing: -1px;
+
+    &:before {
+        content: '“';
+
+        position: absolute;
+        top: -0.5em;
+        left: 0;
+
+        opacity: 0.1;
+
+        font-family: $base-font-family;
+        font-size: 10em;
+    }
 
     > :last-child {
         margin-bottom: 0;

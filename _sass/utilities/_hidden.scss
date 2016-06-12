@@ -1,14 +1,47 @@
 // Hidden Utilities
 // ===
 
+
+// Visually Hidden
+// ---
+//
+// Using absolute positioning, we take the element out of flow so as not to
+// affect the layout of anything around it. With a height of 1px, the element
+// should still be visible for Voice Over to read the content. The clipping
+// removes any visible trace of the element from the page.
+//
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
 .u-visually-hidden {
     position: absolute;
 
     overflow: hidden;
-    clip: rect(0 0 0 0);
+    clip: rect(1px, 1px, 1px, 1px);
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
+}
+
+
+// Hide at specific dimensions
+// ---
+
+.u-hide-small {
+    @media screen and (max-width: $charmander) {
+        display: none;
+    }
+}
+
+.u-hide-medium {
+    @media screen and (max-width: $charmeleon) {
+        display: none;
+    }
+}
+
+.u-hide-large {
+    @media screen and (max-width: $content-width) {
+        display: none;
+    }
 }
