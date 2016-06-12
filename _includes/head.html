@@ -22,8 +22,8 @@
     <!--[if lt IE 9]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script> <![endif]-->
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" href="{{ '/css/screen.css' | prepend: site.baseurl }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- LIBRARIES -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -32,24 +32,27 @@
     <!-- ICONS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title"   content="Ben Groulx" />
-    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo url('assets/icons/apple-icon-57.png') ?>" />
-    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo url('assets/icons/apple-icon-60.png') ?>" />
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo url('assets/icons/apple-icon-72.png') ?>" />
-    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo url('assets/icons/apple-icon-76.png') ?>" />
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/icons/apple-icon-114.png') ?>" />
-    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo url('assets/icons/apple-icon-120.png') ?>" />
-    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo url('assets/icons/apple-icon-144.png') ?>" />
-    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo url('assets/icons/apple-icon-152.png') ?>" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo url('assets/icons/apple-icon-180.png') ?>" />
-    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo url('assets/icons/android-icon-192.png') ?>" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo url('assets/icons/favicon-32.png') ?>" />
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo url('assets/icons/favicon-96.png') ?>" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo url('assets/icons/favicon-16.png') ?>" />
-    <meta name="msapplication-TileImage" content="<?php echo url('assets/icons/ms-icon-144.png') ?>" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/icons/apple-icon-57.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/icons/apple-icon-60.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/icons/apple-icon-72.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/icons/apple-icon-76.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/assets/icons/apple-icon-114.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/icons/apple-icon-120.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ '/assets/icons/apple-icon-144.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/icons/apple-icon-152.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-icon-180.png' | prepend: site.baseurl }}" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/icons/android-icon-192.png' | prepend: site.baseurl }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32.png' | prepend: site.baseurl }}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/icons/favicon-96.png' | prepend: site.baseurl }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16.png' | prepend: site.baseurl }}" />
+    <meta name="msapplication-TileImage" content="{{ '/assets/icons/ms-icon-144.png' | prepend: site.baseurl }}" />
     <meta name="msapplication-TileColor" content="#121b92" />
 
     <!-- SCRIPTS -->
     <script async src="{{ "/js/fade-in.js" | prepend: site.baseurl }}"></script>
     <script async src="{{ "/js/header-pull.js" | prepend: site.baseurl }}"></script>
+
+    <!-- HIDE FOR NOW -->
+    <meta name="robots" content="noindex, nofollow">
 
 </head>

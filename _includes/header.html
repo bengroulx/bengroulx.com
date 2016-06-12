@@ -31,7 +31,9 @@
                 {% for my_page in site.pages %}
                     {% if my_page.title %}
                         <li class="x-navigation__list-item">
-                            <a class="x-navigation__link" data-ui-component="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                            <a class="x-navigation__link" data-ui-component="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
+                                {{ my_page.title }}
+                            </a>
                         </li>
                     {% endif %}
                 {% endfor %}

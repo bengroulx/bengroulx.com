@@ -5,41 +5,63 @@
 //    the spacing values.
 
 .x-navigation {
-    display: none;
-    padding: 0 12%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: $emperor;
 
     @include media-query($charmander) {
+        position: relative;
+
         display: block;
+        padding: 0 12%;
+
+        background-color: transparent;
     }
 
-    @include media-query($charmeleon) {
+    @include media-query($charizard) {
         padding: 0;
     }
 }
 
 .x-navigation__list {
-    counter-reset: number-counter;
-
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
     margin: 0; // 1
     padding: 0; // 1
 
     font-family: $monospace-font-family;
     list-style: none;
+
+    @include media-query($charmander) {
+        counter-reset: number-counter;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .x-navigation__list-item {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex: initial;
-    width: auto;
+    flex: 1;
 
     font-size: $base-font-size;
     text-align: center;
 
+    @include media-query($charmander) {
+        flex: initial;
+        width: auto;
+    }
+
     @include media-query($charmeleon) {
+
         &::before {
             content: counter(number-counter);
             counter-increment: number-counter;
@@ -63,7 +85,16 @@
 }
 
 .x-navigation__link {
+    display: inline-flex;
+    align-items: center;
+    height: $base-tap-size;
+
     color: inherit;
+
+    @include media-query($charmander) {
+        display: block;
+        height: auto;
+    }
 
     &:hover {
         color: inherit;

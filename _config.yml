@@ -11,12 +11,12 @@ email: ben@bengroulx.com
 twitter_username: bengroulx
 github_username:  bengroulx
 description: > # this means to ignore newlines until "url:"
-    Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    Ben Groulx is a user interface designer and front-end developer living and
+    working out of Vancouver, Canada.
 
 # URL - The base hostname & protocol for your site
 url: "http://bengroulx.github.io"
+username: bengroulx
 
 # Base URL - The subpath of your site, e.g. /blog
 baseurl: ""

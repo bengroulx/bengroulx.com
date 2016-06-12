@@ -64,7 +64,7 @@ ol,
 dl,
 figure {
     margin-top: 0;
-    // adjust margin-bottom in typography.scss
+    // adjust margin-bottom in _typography.scss
 }
 
 a {
@@ -101,6 +101,7 @@ mark {
 
 small {
     font-size: 80%;
+    letter-spacing: 0.05em;
 }
 
 sub,
@@ -145,7 +146,6 @@ hr {
     box-sizing: content-box;
     height: 0;
 }
-
 
 button,
 input,
@@ -236,7 +236,7 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-    opacity: 0.54;
+    opacity: 0.55;
 
     color: inherit;
 }

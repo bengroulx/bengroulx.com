@@ -40,7 +40,6 @@ $large-segment-padding: $spacing-unit * 2;
 .c-segment {
     position: relative; // 1
 
-    overflow: hidden;
     padding-right: $small-segment-padding;
     padding-left: $small-segment-padding;
 

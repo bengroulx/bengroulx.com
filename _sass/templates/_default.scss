@@ -19,7 +19,7 @@
             transform: translate(-500%, 10%);
         }
 
-        @include media-query($charmeleon) {
+        @include media-query($content-width) {
             font-size: 3vw;
 
             transform: translate(-10%, 0);
@@ -27,7 +27,7 @@
     }
 
     [data-ui-component='page-intro-description'] {
-        @include media-query($charmeleon) {
+        @include media-query($content-width) {
 
             transform: translate(50%, 0);
         }

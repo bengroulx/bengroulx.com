@@ -13,8 +13,6 @@ $large-header-height: $base-unit * 20;
 // ---
 
 .x-header {
-    @extend %clearfix;
-
     position: fixed !important;
     top: 0;
     right: 0;
@@ -64,18 +62,21 @@ $large-header-height: $base-unit * 20;
 
     &.x--right {
         right: 0;
+
         transform: translate(0, -50%);
     }
 
     &.x--middle {
         left: 50%;
+
         transform: translate(-50%, -50%);
 
         @include media-query($charmander) {
             opacity: 0.15;
 
-            pointer-events: none;
             transform: translate(-65%, -50%);
+
+            pointer-events: none;
         }
 
     }

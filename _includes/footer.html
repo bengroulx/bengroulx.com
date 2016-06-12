@@ -1,41 +1,35 @@
-<footer class="x-footer c-segment" data-ui-component="site-footer" role="contentinfo">
-    <div class="c-contain">
+<footer class="x-footer c-segment u-text-align-center" data-ui-component="site-footer" role="contentinfo">
+    <div class="c-contain c--small">
 
-        <h2 data-ui-component="footer-heading">{{ site.title }}</h2>
+        <div class="c-text-content" data-ui-component="site-footer-content">
+            <p data-ui-component="site-footer-description">
+                {{ site.description }}
+                Copyright 2016.
+            </p>
 
-        <div class="footer-col-c-contain">
+            <a class="u-margin-left-sm u-margin-right-sm" href="https://twitter.com/{{ site.username }}">
+                <span data-ui-component="icon" class="c-icon c--twitter">{% include icon-twitter.svg %}</span>
+                <span data-ui-component="label">{{ include.username }}</span>
+            </a>
 
-            <div class="c-text-content">
-                <ul data-ui-component="contact-list">
-                <li>{{ site.title }}</li>
-                <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                </ul>
-            </div>
+            <a class="u-margin-left-sm u-margin-right-sm" href="https://github.com/{{ site.username }}">
+                <span data-ui-component="icon" class="c-icon c--github">{% include icon-github.svg %}</span>
+                <span data-ui-component="label">{{ include.username }}</span>
+            </a>
 
-            <div class="c-text-content">
-                <ul data-ui-component="social-media-list">
-                    {% if site.github_username %}
-                        <li>
-                            {% include icon-github.html username=site.github_username %}
-                        </li>
-                    {% endif %}
-                    {% if site.twitter_username %}
-                        <li>
-                            {% include icon-twitter.html username=site.twitter_username %}
-                        </li>
-                    {% endif %}
-                </ul>
-            </div>
+            <a class="u-margin-left-sm u-margin-right-sm" href="https://instagram.com/{{ site.username }}">
+                <span data-ui-component="icon" class="c-icon c--instagram">{% include icon-instagram.svg %}</span>
+                <span data-ui-component="label">{{ include.username }}</span>
+            </a>
 
-            <div class="c-text-content">
-                <p>{{ site.description }}</p>
-            </div>
-
+            <a class="u-margin-left-sm u-margin-right-sm" href="https://linkedin.com/in/{{ site.username }}">
+                <span data-ui-component="icon" class="c-icon c--linkedin">{% include icon-linkedin.svg %}</span>
+                <span data-ui-component="label">{{ include.username }}</span>
+            </a>
         </div>
 
     </div>
 </footer>
-
 
 <aside class="x-notification" data-ui-component="site-notification" role="banner">
     This site is currently in active development. Many things will be broken!

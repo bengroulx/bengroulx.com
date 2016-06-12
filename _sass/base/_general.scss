@@ -6,7 +6,11 @@
 // ---
 
 body {
+    @include media-query($charmeleon) {
+        font-size: 1.15rem;
+    }
     // margin: 1em;
+
     background-color: $base-background;
 
     color: $base-text;
@@ -18,10 +22,6 @@ body {
 
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
-
-    @include media-query($charmeleon) {
-        font-size: 1.15rem;
-    }
 }
 
 
@@ -40,4 +40,15 @@ img {
 
 figcaption {
     font-size: $small-font-size;
+}
+
+
+// Horizontal Rules
+// ---
+
+hr {
+    height: 1px;
+    border: 0;
+
+    background: $neutral-30;
 }
