@@ -56,7 +56,7 @@ $large-text-content-spacing: $spacing-unit;
         }
     }
 
-    a {
+    a:not(.c-button) {
         display: inline;
         border-bottom: 1px solid transparent;
 

@@ -8,18 +8,20 @@
 # Site Settings
 title: Ben Groulx
 email: ben@bengroulx.com
-twitter_username: bengroulx
-github_username:  bengroulx
 description: > # this means to ignore newlines until "url:"
     Ben Groulx is a user interface designer and front-end developer living and
     working out of Vancouver, Canada.
+twitter:
+  username: benbalter
 
 # URL - The base hostname & protocol for your site
-url: "http://bengroulx.github.io"
+url: ""
 username: bengroulx
 
 # Base URL - The subpath of your site, e.g. /blog
 baseurl: ""
+include: ['_pages']
+permalink: /:title/
 
 # Build Settings
 markdown: kramdown

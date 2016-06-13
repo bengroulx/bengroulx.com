@@ -14,7 +14,7 @@ layout: default
             <li class="c-grid__span">
                 <article class="c-card c-faux-link">
                     <figure class="c-segment c--{{ post.colour }} c--no-padding c-card__image c-ratio c--16-by-9">
-                        <div class="c-cover-image c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ post.photo_url }}')"></div>
+                        <div class="c-cover-image c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ post.image }}')"></div>
                         <p class="u-visually-hidden" data-ui-component="post-summary">{{ post.description }}</p>
                     </figure>
 
@@ -44,12 +44,17 @@ layout: default
     <div class="c-arrange c--justify-center">
         <div class="c-arrange__item c--shrink u-margin-all-small">
             <a class="c-button" href="{{ "/feed.xml" | prepend: site.baseurl }}" data-ui-component="rss-subscribe-button" aria-role="button">
-                Subscribe via RSS
+                <span data-ui-component="icon" class="c-icon c--small c--rss u-margin-end-small">
+                    {% include icon-rss.svg %}
+                </span>
+                <span data-ui-component="label" class="">Subscribe via RSS</span>
             </a>
         </div>
         <div class="c-arrange__item c--shrink u-margin-all-small">
             <a class="c-button" href="https://twitter.com/{{ site.username }}" data-ui-component="twitter-button" aria-role="button">
-                <span data-ui-component="icon" class="c-icon c--twitter u-margin-end-small">{% include icon-twitter.svg %}</span>
+                <span data-ui-component="icon" class="c-icon c--small c--twitter u-margin-end-small">
+                    {% include icon-twitter.svg %}
+                </span>
                 <span data-ui-component="label" class="">Follow on Twitter</span>
             </a>
         </div>

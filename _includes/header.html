@@ -28,8 +28,11 @@
 
         <nav class="x-navigation" data-ui-component="site-nav" role="navigation">
             <ul class="x-navigation__list" data-ui-component="site-nav-links">
-                {% for my_page in site.pages %}
-                    {% if my_page.title %}
+
+                {% assign pages = site.pages | sort:"weight"  %}
+
+                {% for my_page in pages %}
+                    {% if my_page.weight %}
                         <li class="x-navigation__list-item">
                             <a class="x-navigation__link" data-ui-component="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
                                 {{ my_page.title }}
@@ -37,6 +40,7 @@
                         </li>
                     {% endif %}
                 {% endfor %}
+
             </ul>
         </nav>
 

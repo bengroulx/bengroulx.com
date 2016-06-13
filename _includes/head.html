@@ -12,17 +12,17 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="google-site-verification" content="tjwlg8Q7I3CmF58-9XruF1_DkX8qTxEUmc0uq-Da4Aw" />
     <meta name="google-site-verification" content="rCvHQ0fTKBNbi7CBf3tZMp8uB4IjaU7S3NmUmgvfErY" />
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}" />
     <meta name="keywords" content="UI, UX, Design, Designer, Front-End, HTML, CSS" />
     <meta name="author" content="Ben Groulx" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- BROWSER SPECIFICS -->
-    <!--[if IEMobile]> <meta http-equiv="cleartype" content="on" /> <![endif]-->
-    <!--[if lt IE 9]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script> <![endif]-->
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="{{ '/css/screen.css' | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- LIBRARIES -->
@@ -49,10 +49,10 @@
     <meta name="msapplication-TileColor" content="#121b92" />
 
     <!-- SCRIPTS -->
-    <script async src="{{ "/js/fade-in.js" | prepend: site.baseurl }}"></script>
-    <script async src="{{ "/js/header-pull.js" | prepend: site.baseurl }}"></script>
+    <script async src="{{ '/assets/js/fade-in.js' | prepend: site.baseurl }}"></script>
+    <script async src="{{ '/assets/js/header-pull.js' | prepend: site.baseurl }}"></script>
 
     <!-- HIDE FOR NOW -->
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow" />
 
 </head>

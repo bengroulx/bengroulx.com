@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<header class="c-segment c--{{ page.colour }} c--extra-padding-top c--extra-padding-bottom u-text-align-center" data-ui-component="page-header">
+    <div class="c-cover-image c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ page.header_image }}')"></div>
+    <h1 class="u-index-1 u-index-relative" data-ui-component="page-title">{{ page.title }}</h1>
+</header>
+
+<section class="c-segment" data-ui-component="page-content">
+    <div class="c-contain">
+        <div class="c-text-content" data-ui-component="page-content">
+            {{ content }}
+        </div>
+    </div>
+</section>
+
+
+<section class="c-arrange" data-ui-component="project-more-info">
+    <div class="c-arrange__item c-segment c--heather">
+        <div class="c-text-content" data-ui-component="page-content">
+            <h3>What my role entailed</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae corporis reiciendis illo qui veritatis sit quibusdam, magnam maxime quaerat doloremque consectetur repudiandae obcaecati beatae dolores deleniti explicabo eaque nostrum minus.</p>
+        </div>
+    </div>
+    <div class="c-arrange__item c-segment c--carousel">
+        <div class="c-text-content" data-ui-component="page-content">
+            <h3>Want to know more?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem totam, vel ad illum, mollitia est possimus at aut magnam magni architecto ratione quos, corporis incidunt cumque deserunt et ex nulla.</p>
+            <a class="c-button" href="{{ '/contact' | prepend: site.baseurl }}" data-ui-component="more-projects-button" aria-role="button">Get in touch &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<section class="c-segment u-text-align-center">
+    <h2>Check out more projects</h2>
+    <a class="c-button" href="{{ '/projects' | prepend: site.baseurl }}" data-ui-component="more-projects-button" aria-role="button">View more projects &rarr;</a>
+</section>

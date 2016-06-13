@@ -29,7 +29,7 @@
     [data-ui-component='page-intro-description'] {
         @include media-query($content-width) {
 
-            transform: translate(50%, 0);
+            transform: translate(3vw, 0);
         }
     }
 }

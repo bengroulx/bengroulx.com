@@ -18,14 +18,14 @@ body {
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
 
-    @include media-query($charmeleon) {
-        font-size: 1.15rem;
+    @include media-query($charmander) {
+        line-height: $base-line-height * 1.09375;
     }
 
     @include media-query($charmeleon) {
         font-size: 1.15rem;
+        line-height: $base-line-height * 1.25;
     }
-
 }
 
 
