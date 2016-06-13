@@ -42,8 +42,13 @@
 
 @import 'components/arrange';
 @import 'components/button';
+@import 'components/card';
 @import 'components/contain';
+@import 'components/cover-image';
+@import 'components/faux-link';
+@import 'components/grid';
 @import 'components/icon';
+@import 'components/ratio';
 @import 'components/segment';
 @import 'components/text-content';
 
@@ -54,6 +59,8 @@
 // Styles for individual templates.
 
 @import 'templates/default';
+@import 'templates/post';
+@import 'templates/posts';
 
 
 // Utility Styles

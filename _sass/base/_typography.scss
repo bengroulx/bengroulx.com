@@ -45,6 +45,18 @@ h6 {
     line-height: 1.25;
 }
 
+h1,
+h2 {
+    font-size: $large-font-size;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: $base-font-size;
+}
+
 
 // Lists
 // ---
@@ -63,55 +75,56 @@ li {
 a {
     position: relative;
 
-    display: inline-block;
-
     color: $base-emphasis;
     text-decoration: none;
 
-    transition: all 0.1s linear;
+    &:not(.c-button) {
+        display: inline-block;
 
-    &::before,
-    &::after {
-        content: '';
-
-        position: absolute;
-        bottom: 0;
-
-        display: block;
-        width: 50%;
-        height: 2px;
-
-        background-color: $lemongrass;
-
-        transform: scale(0, 1);
-
-        transition-duration: 0.5s;
-        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    }
-
-    &::before {
-        left: 0;
-        transform-origin: 100% 50%;
-    }
-
-    &::after {
-        right: 0;
-        transform-origin: 0 50%;
-    }
-
-    &:hover,
-    &:active {
-        color: $active-emphasis;
+        transition: all 0.1s linear;
 
         &::before,
         &::after {
-            transform: scale(1, 1);
+            content: '';
+
+            position: absolute;
+            bottom: 0;
+
+            display: block;
+            width: 50%;
+            height: 2px;
+
+            background-color: rgba($lemongrass, 0);
+
+            transform: scale(0, 1);
+
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        &::before {
+            left: 0;
+            transform-origin: 100% 50%;
+        }
+
+        &::after {
+            right: 0;
+            transform-origin: 0 50%;
+        }
+
+        &:hover,
+        &:active {
+            color: $active-emphasis;
+
+            &::before,
+            &::after {
+                background-color: $lemongrass;
+
+                transform: scale(1, 1);
+            }
         }
     }
 }
-
-
-
 
 
 // Blockquotes
@@ -128,8 +141,7 @@ blockquote {
     color: $neutral-50;
     font-family: $monospace-font-family;
     font-style: normal;
-    font-size: $large-font-size;
-    letter-spacing: -1px;
+    font-size: $base-font-size;
 
     &:before {
         content: '“';

@@ -1,0 +1,38 @@
+// Component: Card
+// ===
+
+
+// Component Variables
+// ---
+
+$small-card-padding: $spacing-unit / 2;
+$base-card-padding: $spacing-unit;
+$large-card-padding: $spacing-unit * 2;
+
+
+// Card Root
+// ---
+
+.c-card {
+    overflow: hidden;
+
+    border-radius: 2px;
+    background: $neutral-10;
+    box-shadow: 0 0.05em 0.25em rgba($neutral-90, 0.15);
+}
+
+
+// Card Image
+// ---
+
+.c-card__image {
+    margin: 0;
+}
+
+
+// Card Content
+// ---
+
+.c-card__content {
+    padding: $small-card-padding;
+}

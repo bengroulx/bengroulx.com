@@ -2,6 +2,8 @@
 // ===
 
 .c-button {
+    display: inline-flex;
+    align-items: center;
     padding: 0 ($base-unit * 4);
     border: 1px solid currentColor;
 

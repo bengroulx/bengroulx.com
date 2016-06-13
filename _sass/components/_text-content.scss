@@ -58,6 +58,16 @@ $large-text-content-spacing: $spacing-unit;
 
     a {
         display: inline;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-bottom: 1px solid $lemongrass;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
     }
 
     blockquote,

@@ -28,19 +28,19 @@
 // Hide at specific dimensions
 // ---
 
-.u-hide-small {
+.u-hidden-till-small {
     @media screen and (max-width: $charmander) {
         display: none;
     }
 }
 
-.u-hide-medium {
+.u-hidden-till-medium {
     @media screen and (max-width: $charmeleon) {
         display: none;
     }
 }
 
-.u-hide-large {
+.u-hidden-till-large {
     @media screen and (max-width: $content-width) {
         display: none;
     }

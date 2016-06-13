@@ -2,6 +2,34 @@
 // ===
 
 
+// Margin: All
+// ---
+
+.u-margin-all-none {
+    margin: 0 !important;
+}
+
+.u-margin-all-tiny {
+    margin: $base-unit !important;
+}
+
+.u-margin-all-small {
+    margin: $base-unit*2 !important;
+}
+
+.u-margin-all {
+    margin: $base-unit*4 !important;
+}
+
+.u-margin-all-large {
+    margin: $base-unit*8 !important;
+}
+
+.u-margin-all-very-large {
+    margin: $base-unit*16 !important;
+}
+
+
 // Margin: Top
 // ---
 
@@ -111,12 +139,4 @@
 
 .u-margin-end-very-large {
     margin-right: $base-unit*16 !important;
-}
-
-
-// Margin: None
-// ---
-
-.u-margin-none {
-    margin: 0 !important;
 }

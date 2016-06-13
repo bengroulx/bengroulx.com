@@ -1,12 +1,12 @@
 ---
 layout: post
-
 title: "Design Will Be Shaped By Content"
 description: "Content will always help shape the design; the two are tied very closely. Because of this, designers should be designing “content out,” meaning starting with the content before moving to design."
-
-date:   2015-07-22
-categories: jekyll update
+photo_url: "//farm8.staticflickr.com/7451/9254559408_c34e7b9304_c.jpg"
+date: 2015-07-22
+categories: design content
 permalink: /design-will-be-shaped-by-content/
+colour: carousel
 ---
 
 “Oh, we’ll figure it out later, just do the design now.” This is an all too familiar phrase when dealing with people who don’t have any content.
