@@ -74,11 +74,17 @@ I received feedback from Kerry as soon as possible, and as often as possible. Ge
 
 The site is built on the Umbraco content management system. By using Umbraco we were able to rapidly buildout the designs without worrying too much about how we would be able to accommodate the many requirements of the website, such as an integrated blog and events section, updated hours, image galleries, and more.
 
-![]({{ site.url }}/assets/images/projects/fsjpl/fsjpl-redesign-mobile.png)
+<figure class="c-image c--full-width">
+    <img src="{{ site.url }}/assets/images/projects/fsjpl/fsjpl-redesign-mobile.png" />
+</figure>
 
-![]({{ site.url }}/assets/images/projects/fsjpl/fsjpl-redesign-desktop.s1.png)
+<figure class="c-image c--full-width">
+    <img src="{{ site.url }}/assets/images/projects/fsjpl/fsjpl-redesign-desktop.s1.png" />
+</figure>
 
-![]({{ site.url }}/assets/images/projects/fsjpl/fsjpl-redesign-desktop.s2.png)
+<figure class="c-image c--full-width">
+    <img src="{{ site.url }}/assets/images/projects/fsjpl/fsjpl-redesign-desktop.s2.png" />
+</figure>
 
 
 ## The Final Results

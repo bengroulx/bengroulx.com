@@ -7,7 +7,7 @@ layout: default
     <section class="c-arrange c--break-at-medium">
 
         <div class="c-arrange__item c-segment c--{{ page.colour }} c--no-padding c-ratio u-hidden-till-large" role="presentation">
-            <div class="c-cover-image c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ page.image }}')"></div>
+            <div class="c-image c--cover c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ page.image }}')"></div>
             <p class="u-visually-hidden" data-ui-component="post-summary">{{ page.description }}</p>
         </div>
 
@@ -30,7 +30,7 @@ layout: default
     </section>
 
     <section class="c-segment">
-        <div class="c-contain c-text-content" data-ui-component="post-content" itemprop="articleBody">
+        <div class="c-container c-text-content" data-ui-component="post-content" itemprop="articleBody">
             {{ content }}
         </div>
     </section

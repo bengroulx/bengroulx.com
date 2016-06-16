@@ -3,12 +3,12 @@ layout: default
 ---
 
 <header class="c-segment c--{{ page.colour }} c--extra-padding-top c--extra-padding-bottom u-text-align-center" data-ui-component="page-header">
-    <div class="c-cover-image c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ page.header_image }}')"></div>
+    <div class="c-image c--cover c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ page.header_image }}')"></div>
     <h1 class="u-index-1 u-index-relative" data-ui-component="page-title">{{ page.title }}</h1>
 </header>
 
 <section class="c-segment" data-ui-component="page-content">
-    <div class="c-contain">
+    <div class="c-container">
         <div class="c-text-content" data-ui-component="page-content">
             {{ content }}
         </div>
