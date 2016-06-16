@@ -29,15 +29,15 @@
     // 2. Offset the outter container's position due to extra gutter spaces
 
     &.c--gutters {
-        margin-right: -$base-unit*1.5; // 2
-        margin-left: -$base-unit*1.5; // 2
+        margin-right: -$base-unit*2; // 2
+        margin-left: -$base-unit*2; // 2
 
         &::before {
             margin-top: -$base-unit*2; // 1
         }
 
         > .c-grid__span {
-            padding: $base-unit*2 ($base-unit*1.5) 0;
+            padding: $base-unit*4 ($base-unit*2) 0;
         }
     }
 }
@@ -54,12 +54,14 @@
     width: 100%;
 }
 
-@for $n from 2 through 6 {
-    .c-grid.c--#{$n}up .c-grid__span {
-        width: (100%/$n);
+@include media-query($charizard) {
+    @for $n from 2 through 6 {
+        .c-grid.c--#{$n}up .c-grid__span {
+            width: (100%/($n));
 
-        &:nth-of-type(#{$n}n+1) {
-            clear: both;
+            &:nth-of-type(#{$n}n+1) {
+                clear: both;
+            }
         }
     }
 }

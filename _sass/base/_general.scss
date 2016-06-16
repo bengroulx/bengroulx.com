@@ -34,15 +34,21 @@ body {
 
 img {
     max-width: 100%;
+    margin: auto;
 
     vertical-align: middle;
 
     figure > & {
         display: block;
+
+        + figcaption {
+            margin-top: $base-unit;
+        }
     }
 }
 
 figcaption {
+    font-family: $monospace-font-family;
     font-size: $small-font-size;
 }
 
