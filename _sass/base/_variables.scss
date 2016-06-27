@@ -12,33 +12,33 @@
 // Units
 // ---
 
-$base-unit: 4px;
-$spacing-unit: 32px;
+$base-unit: 0.25rem;
+$spacing-unit: 2rem;
 
 
 // Tap Sizes
 // ---
 
-$small-tap-size: 32px;
-$base-tap-size: 44px;
-$large-tap-size: 48px;
+$small-tap-size: 2rem;
+$base-tap-size: 2.75rem;
+$large-tap-size: 3rem;
 
 
 // Font Sizes
 // ---
 
-$very-small-font-size: 10px;
-$small-font-size: 12px;
-$base-font-size: 16px;
-$large-font-size: 24px;
-$very-large-font-size: 32px;
+$very-small-font-size: 0.625em;
+$small-font-size: 0.75em;
+$base-font-size: 1em;
+$large-font-size: 1.25em;
+$very-large-font-size: 1.75em;
 
 
 // Font Attributes
 // ---
 
-$base-font-family: 'Freight Text Pro', 'PT Serif', 'Georgia', serif;
-$monospace-font-family: 'Roboto Mono', monospace;
+$base-font-family: 'rooney-sans', sans-serif;
+$monospace-font-family: 'roboto-mono', monospace;
 $base-font-weight: 400;
 $base-line-height: 1.6;
 
@@ -78,11 +78,11 @@ $active-emphasis: blue;
 // Content Widths
 // ---
 
-$charmander: 400px;
-$charmeleon: 600px;
-$charizard:  1000px;
+$charmander: 24rem;
+$charmeleon: 40rem;
+$charizard:  64rem;
 
-$content-width: 700px;
+$content-width: $charmeleon;
 
 
 // Media Queries

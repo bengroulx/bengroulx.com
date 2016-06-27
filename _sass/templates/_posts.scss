@@ -3,7 +3,7 @@
 
 .t-posts {
     [data-ui-component='post-meta'] {
-        font-family: 'avenir', sans-serif;
+        font-family: $monospace-font-family;
         font-size: $small-font-size;
         letter-spacing: 0.25em;
         text-transform: uppercase;

@@ -52,7 +52,7 @@
     align-items: center;
     flex: 1;
 
-    font-size: $base-font-size;
+    font-size: $small-font-size;
     text-align: center;
 
     @include media-query($charmander) {

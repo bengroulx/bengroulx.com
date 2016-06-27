@@ -13,4 +13,8 @@
     left: 0;
 
     text-indent: -200%;
+
+    &:hover {
+        background: rgba($active-emphasis, 0.025);
+    }
 }

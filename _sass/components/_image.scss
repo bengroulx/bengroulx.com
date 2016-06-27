@@ -8,7 +8,7 @@
 
 
 // Image: Cover
-// ===
+// ---
 
 .c-image.c--cover {
     background-position: center center;
@@ -16,8 +16,28 @@
 }
 
 
-// Image: Cover
-// ===
+// Image: Faded
+// ---
+
+.c-image.c--faded {
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        background-image: linear-gradient(rgba($black, 0.5), rgba($black, 0.8));
+    }
+}
+
+
+// Image: Full Width
+// ---
 
 $image-full-width: 100vw;
 $image-half-width: ($image-full-width / 2);

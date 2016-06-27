@@ -1,0 +1,20 @@
+// Projects
+// ===
+
+.t-projects__project {
+    @include media-query($content-width) {
+        &:nth-child(odd) {
+            .c-card {
+                position: relative;
+                right: calc(40vw - 42%);
+            }
+        }
+
+        &:nth-child(even) {
+            .c-card {
+                position: relative;
+                left: calc(40vw - 42%);
+            }
+        }
+    }
+}

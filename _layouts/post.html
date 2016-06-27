@@ -33,6 +33,13 @@ layout: default
         <div class="c-container c-text-content" data-ui-component="post-content" itemprop="articleBody">
             {{ content }}
         </div>
-    </section
-    >
+    </section>
+
 </article>
+
+<hr />
+
+<section class="c-segment u-text-align-center">
+    <h2>Check out more articles</h2>
+    <a class="c-button" href="{{ '/articles' | prepend: site.baseurl }}" data-ui-component="more-articles-button" aria-role="button">View more articles &rarr;</a>
+</section>

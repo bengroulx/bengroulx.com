@@ -6,6 +6,8 @@
 // ---
 
 body {
+    margin: 0 auto;
+
     background-color: $base-background;
 
     color: $base-text;
@@ -14,17 +16,20 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     text-size-adjust: 100%;
-
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
 
     @include media-query($charmander) {
-        line-height: $base-line-height * 1.09375;
+        font-size: 4vw;
+    }
+
+    @include media-query(35em) {
+        font-size: 1.15rem;
     }
 
     @include media-query($charmeleon) {
-        font-size: 1.15rem;
-        line-height: $base-line-height * 1.25;
+        border: solid white;
+        border-width: 0 1em 1em;
     }
 }
 
@@ -40,6 +45,7 @@ img {
 
     figure > & {
         display: block;
+        margin: 0 auto !important;
 
         + figcaption {
             margin-top: $base-unit;

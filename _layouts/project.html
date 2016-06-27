@@ -2,32 +2,51 @@
 layout: default
 ---
 
-<header class="c-segment c--{{ page.colour }} c--extra-padding-top c--extra-padding-bottom u-text-align-center" data-ui-component="page-header">
-    <div class="c-image c--cover c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ page.header_image }}')"></div>
-    <h1 class="u-index-1 u-index-relative" data-ui-component="page-title">{{ page.title }}</h1>
+<header class="c-segment c--{{ page.colour }} u-text-align-center" data-ui-component="project-header">
+    <div class="c-image c--cover c--faded c-ratio__item" data-ui-component="project-image" style="background-image:url('{{ page.header_image }}')"></div>
+    <h1 class="u-index-1 u-index-relative u-text-shadow" data-ui-component="project-title">{{ page.title }}</h1>
 </header>
 
-<section class="c-segment" data-ui-component="page-content">
+<section class="c-segment" data-ui-component="project-content">
     <div class="c-container">
-        <div class="c-text-content" data-ui-component="page-content">
+
+        <table class="c-fact-list" data-ui-component="project-facts">
+            <tr class="c-fact-list__item">
+                <th class="c-fact-list__term" scope="row" rowspan="1">Type</th>
+                <td class="c-fact-list__definition">{{ page.type }}</td>
+            </tr>
+            <tr class="c-fact-list__item">
+                <th class="c-fact-list__term" scope="row" rowspan="1">Duration</th>
+                <td class="c-fact-list__definition">{{ page.duration }}</td>
+            </tr>
+            <tr class="c-fact-list__item">
+                <th class="c-fact-list__term" scope="row" rowspan="1">Team</th>
+                <td class="c-fact-list__definition">{{ page.team }}</td>
+            </tr>
+            <tr class="c-fact-list__item">
+                <th class="c-fact-list__term" scope="row" rowspan="1">Website</th>
+                <td class="c-fact-list__definition"><a href="http://{{ page.website }}">{{ page.website }}</a></td>
+            </tr>
+        </table>
+
+        <div class="c-text-content" data-ui-component="project-content">
             {{ content }}
         </div>
     </div>
 </section>
 
-
 <section class="c-arrange" data-ui-component="project-more-info">
     <div class="c-arrange__item c-segment c--heather">
-        <div class="c-text-content" data-ui-component="page-content">
+        <div class="c-text-content" data-ui-component="project-services">
             <h3>What my role entailed</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae corporis reiciendis illo qui veritatis sit quibusdam, magnam maxime quaerat doloremque consectetur repudiandae obcaecati beatae dolores deleniti explicabo eaque nostrum minus.</p>
         </div>
     </div>
     <div class="c-arrange__item c-segment c--carousel">
-        <div class="c-text-content" data-ui-component="page-content">
+        <div class="c-text-content" data-ui-component="project-contact">
             <h3>Want to know more?</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem totam, vel ad illum, mollitia est possimus at aut magnam magni architecto ratione quos, corporis incidunt cumque deserunt et ex nulla.</p>
-            <a class="c-button" href="{{ '/contact' | prepend: site.baseurl }}" data-ui-component="more-projects-button" aria-role="button">Get in touch &rarr;</a>
+            <a class="c-button" href="{{ '/contact' | prepend: site.baseurl }}" data-ui-component="contact-button" aria-role="button">Get in touch &rarr;</a>
         </div>
     </div>
 </section>

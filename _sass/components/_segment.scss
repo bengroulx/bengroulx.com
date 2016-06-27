@@ -43,6 +43,10 @@ $large-segment-padding: $spacing-unit * 2;
     padding-right: $small-segment-padding;
     padding-left: $small-segment-padding;
 
+    @include media-query($charmeleon) {
+        padding-right: $base-segment-padding;
+        padding-left: $base-segment-padding;
+    }
 
     // Padding Modifications
     // ---
@@ -133,40 +137,24 @@ $large-segment-padding: $spacing-unit * 2;
 // This image covers the entire c-segment; it is initially not viewable, but
 // when hovered over it animates into position.
 
-.c-segment__overlay {
-    position: relative;
-    z-index: 1;
-}
+.c-segment.c--link {
+    padding: $small-segment-padding;
 
-.c-segment__underlay {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+    border-radius: 2px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    &::before {
+        content: 'More on this:';
+    }
 
-    opacity: 0.1;
+    &::after {
+        content: '\21d2';
+    }
 
-    transform: translate(0, -50%) scale(1.2);
-
-    transition: all 0.35s ease-out;
-
-    pointer-events: none;
-
-    -webkit-filter: grayscale(100%);
-
-    .c-segment:hover & {
-        opacity: 0.2;
-
-        transform: translate(0, -50%) scale(1);
-
-        -webkit-filter: grayscale(0%);
+    &::before,
+    &::after {
+        font-weight: bold;
+        font-size: 80%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
     }
 }

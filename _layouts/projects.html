@@ -2,19 +2,64 @@
 layout: default
 ---
 
-<header class="c-segment" data-ui-component="page-header">
+<header class="c-segment" data-ui-component="page-header" hidden>
     <div class="c-container">
         <h1 data-ui-component="page-title">{{ page.title }}</h1>
     </div>
 </header>
 
-
-<section>
-
+<section class="c-segment c--lemongrass t-projects__project" data-ui-component="project">
+    <div class="c-container">
+        <div class="c-image c--cover c--faded c-ratio__item u-hidden-till-medium" data-ui-component="mobify-image" style="background-image:url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dbea27138e4493b0472801ba3fa261ed')"></div>
+        <div class="c-card c--large-padding c--white u-index-1 u-index-relative">
+            <div class="c-segment c--no-padding c--white c-card__content c-text-content">
+                <h2>A UI kit for building out core ecommerce experiences</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita amet excepturi porro tempora ex quas explicabo repudiandae, adipisci velit cumque! Numquam veniam, aliquam quisquam excepturi error culpa sit voluptatem, soluta?
+                </p>
+                <a class="c-button" data-ui-component="project-button" aria-role="button" href="{{site.url}}/projects/mobify-pattern-library">
+                    Learn about the Pattern Library &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
+<section class="c-segment c--emperor t-projects__project" data-ui-component="project">
+    <div class="c-container">
+        <div class="c-image c--cover c--faded c-ratio__item u-hidden-till-medium" data-ui-component="mobify-image" style="background-image:url('https://images.unsplash.com/photo-1464967569081-adaf461b4ea5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a5e62f77f00c77946cfabb93e673106f')"></div>
+        <div class="c-card c--large-padding c--white u-index-1 u-index-relative">
+            <div class="c-segment c--no-padding c--white c-card__content c-text-content">
+                <h2>A children’s clothing brand looking to create a better a mobile experience for their shoppers</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita amet excepturi porro tempora ex quas explicabo repudiandae, adipisci velit cumque! Numquam veniam, aliquam quisquam excepturi error culpa sit voluptatem, soluta?
+                </p>
+                <a class="c-button" data-ui-component="project-button" aria-role="button" href="{{site.url}}/projects/chasing-fireflies">
+                    Learn about Chasing Fireflies &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="c-segment" data-ui-component="page-content">
+<section class="c-segment c--bayoux t-projects__project" data-ui-component="project">
+    <div class="c-container">
+        <div class="c-image c--cover c--faded c-ratio__item u-hidden-till-medium" data-ui-component="mobify-image" style="background-image:url('/assets/images/projects/fsjpl/redesign-fort-st-john-public-library.jpg')"></div>
+        <div class="c-card c--large-padding c--white u-index-1 u-index-relative">
+            <div class="c-segment c--no-padding c--white c-card__content c-text-content">
+                <h2>A local library wanting to build brand consistency and attract more external audiences</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita amet excepturi porro tempora ex quas explicabo repudiandae, adipisci velit cumque! Numquam veniam, aliquam quisquam excepturi error culpa sit voluptatem, soluta?
+                </p>
+                <a class="c-button" data-ui-component="project-button" aria-role="button" href="{{site.url}}/projects/fort-st-john-public-library">
+                    Learn about FSJPL &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="c-segment" data-ui-component="page-content" hidden>
     <div class="c-container">
         <div class="c-text-content" data-ui-component="page-content">
             {{ content }}

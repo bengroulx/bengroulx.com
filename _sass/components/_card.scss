@@ -35,4 +35,11 @@ $large-card-padding: $spacing-unit * 2;
 
 .c-card__content {
     padding: $small-card-padding;
+
+    .c--large-padding & {
+
+        @include media-query($charmeleon) {
+            padding: $large-card-padding;
+        }
+    }
 }

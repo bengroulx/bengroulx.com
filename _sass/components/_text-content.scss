@@ -31,8 +31,7 @@ $large-text-content-spacing: $spacing-unit;
     pre,
     ul,
     ol,
-    dl,
-    figure {
+    dl {
         @extend %vertical-rhythm; // 1
     }
 
@@ -41,7 +40,12 @@ $large-text-content-spacing: $spacing-unit;
     * + h4,
     * + h5,
     * + h6 {
-        margin-top: 2em;
+        margin-top: $spacing-unit / 2;
+    }
+
+    figure,
+    img {
+        margin: $spacing-unit 0;
     }
 
     ul,
