@@ -4,8 +4,6 @@
 .x-footer {
     @extend %clearfix;
 
-    background: $neutral-30;
-
-    font-family: $monospace-font-family;
+    font-family: $headline-font-family;
     font-size: $small-font-size;
 }

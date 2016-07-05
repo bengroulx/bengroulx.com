@@ -15,6 +15,7 @@ body {
     font-weight: $base-font-weight;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    letter-spacing: 0.0125em;
     text-size-adjust: 100%;
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
@@ -28,8 +29,10 @@ body {
     }
 
     @include media-query($charmeleon) {
-        border: solid white;
-        border-width: 0 1em 1em;
+        border: solid $neutral-10;
+        border-width: 4em 1em 1em;
+
+        box-shadow: inset 0 0 0 1em $neutral-10, inset 0 0 0 3em rgba($neutral-30, 0.5);
     }
 }
 
@@ -54,7 +57,7 @@ img {
 }
 
 figcaption {
-    font-family: $monospace-font-family;
+    font-family: $headline-font-family;
     font-size: $small-font-size;
 }
 

@@ -19,6 +19,10 @@
     }
 
     &.c--small {
-        max-width: 500px;
+        max-width: $charmander;
+    }
+
+    &.c--large {
+        max-width: $charizard;
     }
 }

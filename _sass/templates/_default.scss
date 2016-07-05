@@ -3,33 +3,12 @@
 
 .t-default {
 
-    [data-ui-component='page-intro-title'] {
-
-        &::after {
-            @extend %a-flash;
-
-            content: '';
-
-            display: inline-block;
-            width: 0.075em;
-            height: 1em;
-
-            background: currentColor;
-
-            transform: translate(-500%, 10%);
-        }
+    [data-ui-component='homepage-title'] {
+        font-size: calc(6vw + 4em);
+        transform: translate(1rem, 0);
 
         @include media-query($content-width) {
-            font-size: 3vw;
-
-            transform: translate(-10%, 0);
-        }
-    }
-
-    [data-ui-component='page-intro-description'] {
-        @include media-query($content-width) {
-
-            transform: translate(3vw, 0);
+            transform: translate(0, 0);
         }
     }
 }

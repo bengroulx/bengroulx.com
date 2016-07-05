@@ -8,33 +8,33 @@ layout: default
     </div>
 </header>
 
-<section class="c-segment c--carousel" data-ui-component="page-content">
-    <ul class="c-grid c--3up c--gutters" data-ui-component="post-list">
-        {% for post in site.posts %}
-            <li class="c-grid__span">
-                <article class="c-card c-faux-link">
-                    <figure class="c-segment c--{{ post.colour }} c--no-padding c-card__image c-ratio c--16-by-9">
-                        <div class="c-image c--cover c-ratio__item" data-ui-component="post-image" style="background-image:url('{{ post.image }}')"></div>
-                        <p class="u-visually-hidden" data-ui-component="post-summary">{{ post.description }}</p>
-                    </figure>
+<section class="c-segment" data-ui-component="page-content">
+    <div class="c-container c--large">
 
-                    <div class="c-card__content c-text-content">
-                        <h2 data-ui-component="post-title">{{ post.title }}</h2>
-                        <p data-ui-component="post-meta">
-                            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                                {{ post.date | date: "%-d %B %Y" }}
-                            </time>
-                        </p>
-                        <p data-ui-component="post-summary">{{ post.description }}</p>
-                    </div>
+        <ul class="c-grid c--2up c--gutters" data-ui-component="post-list">
+            {% for post in site.posts %}
+                <li class="c-grid__span">
+                    <article class="c-card c-faux-link">
+                        <div class="c-card__content c-text-content">
+                            <h2 data-ui-component="post-title">{{ post.title }}</h2>
+                            <p data-ui-component="post-meta">
+                                <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                                    {{ post.date | date: "%-d %B %Y" }}
+                                </time>
+                            </p>
+                            <p data-ui-component="post-summary">{{ post.description }}</p>
+                        </div>
+                        <div class="c-card__peek" data-ui-component="post-image" style="background-image:url('{{ post.image }}')">
+                        </div>
+                        <div class="c-card__auxilliary">
+                            <a class="c-faux-link__overlay" data-ui-component="post-link" href="{{ post.url | prepend: site.baseurl }}">Read this article</a>
+                        </div>
+                    </article>
+                </li>
+            {% endfor %}
+        </ul>
 
-                    <div class="c-card__auxilliary">
-                        <a class="c-faux-link__overlay" data-ui-component="post-link" href="{{ post.url | prepend: site.baseurl }}">Read this article</a>
-                    </div>
-                </article>
-            </li>
-        {% endfor %}
-    </ul>
+    </div>
 </section>
 
 <section class="c-segment u-text-align-center">

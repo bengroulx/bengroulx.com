@@ -23,9 +23,6 @@ $large-header-height: $base-unit * 20;
     align-items: center;
     height: $small-header-height;
 
-    background: $neutral-10;
-    box-shadow: 0 0.05em 0.25em rgba($neutral-90, 0.15);
-
     color: $neutral-90;
 
     transition: top 0.35s ease-in-out;
