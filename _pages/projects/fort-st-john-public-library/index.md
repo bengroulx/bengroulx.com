@@ -1,13 +1,13 @@
 ---
-layout: project
 title: Fort St. John Public Library
-description: "Ben Groulx led the design process of the  Fort St. John Public Library website. Read more about the redesign in this case study."
-permalink: /projects/fort-st-john-public-library
-image: ""
-header_image: /assets/images/projects/fsjpl/redesign-fort-st-john-public-library.jpg
+permalink: "/projects/fort-st-john-public-library"
+layout: project
+description: Ben Groulx led the design process of the  Fort St. John Public Library
+  website. Read more about the redesign in this case study.
+image: ''
+header_image: "/assets/images/projects/fsjpl/redesign-fort-st-john-public-library.jpg"
 colour: chambray
 categories: design content
-
 type: Web
 duration: 12 months
 team: Custom Fit Online

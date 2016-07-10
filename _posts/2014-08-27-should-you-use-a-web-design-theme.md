@@ -1,12 +1,14 @@
 ---
+title: Should You Use a Web Design Theme?
+date: 2014-08-27 00:00:00 Z
+permalink: "/articles/should-you-use-a-web-design-theme/"
+categories:
+- design
 layout: post
-title: "Should You Use a Web Design Theme?"
-date: 2014-08-27
-description: "Web themes are a shortsighted solution to the complex problem that is your online presence. Learn to invest in proper design, not an out-of-the box fix."
-permalink: /articles/should-you-use-a-web-design-theme/
+description: Web themes are a shortsighted solution to the complex problem that is
+  your online presence. Learn to invest in proper design, not an out-of-the box fix.
 image: "/assets/images/articles/should-you-use-a-web-design-theme/should-you-use-a-web-design-theme.png"
 colour: bayoux
-categories: design
 ---
 
 Themes. Templates. These out-of-the-box layouts have become an entire industry on their own, and are extremely popular. And for someone looking to get a new site up and going, they can seem like an excellent idea at the time. But the reality is themes are a shortsighted solution to a problem that requires thought, consideration, and care.

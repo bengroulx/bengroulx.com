@@ -1,10 +1,9 @@
 ---
-layout: about
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: about
 weight: 1
 ---
-
 
 ## About Ben
 

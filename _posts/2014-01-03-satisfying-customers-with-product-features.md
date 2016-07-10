@@ -1,12 +1,15 @@
 ---
+title: Satisfying Customers With Product Features
+date: 2014-01-03 00:00:00 Z
+permalink: "/articles/satisfying-customers-with-product-features/"
+categories:
+- design
 layout: post
-title: "Satisfying Customers With Product Features"
-date: 2014-01-03
-description: "Using webfonts or images can hurt page weight and page speed, so use Unicode characters in your CSS. You can even use the browser console to easily find a specific character encoding."
-permalink: /articles/satisfying-customers-with-product-features/
+description: Using webfonts or images can hurt page weight and page speed, so use
+  Unicode characters in your CSS. You can even use the browser console to easily find
+  a specific character encoding.
 image: "/assets/images/articles/satisfying-customers-with-product-features/satisfying-customers-with-product-features.png"
 colour: bayoux
-categories: design
 ---
 
 Last week, [Editorially](http://editorially.com/ "Editorially"), a browser-based collaborative writing tool, announced they were closing their doors. I love(d) using the text editor — it was a tool I used on a nearly daily basis. Their announcement stated “Editorially has failed to attract enough users to be sustainable” which is an unfortunate, yet understandable, situation.

@@ -1,12 +1,14 @@
 ---
+title: Massimo Vignelli and the Responsibility of Design
+date: 2014-05-30 00:00:00 Z
+permalink: "/articles/massimo-vignelli-and-the-responsibility-of-design/"
+categories:
+- design
 layout: post
-title: "Massimo Vignelli and the Responsibility of Design"
-date: 2014-05-30
-description: "Massimo Vignelli passed away On May 27<sup>th</sup>. The great designer leaves behind a legacy of simplicity, beauty, and the responsibility to fight ugliness."
-permalink: /articles/massimo-vignelli-and-the-responsibility-of-design/
+description: Massimo Vignelli passed away On May 27<sup>th</sup>. The great designer
+  leaves behind a legacy of simplicity, beauty, and the responsibility to fight ugliness.
 image: "/assets/images/articles/massimo-vignelli-and-the-responsibility-of-design/massimo-vignelli.jpg"
 colour: lemongrass
-categories: design
 ---
 
 Massimo Vignelli passed away at the age of 83 on May 27<sup>th</sup>, 2014.

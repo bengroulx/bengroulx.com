@@ -1,29 +1,24 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site Settings
+---
 title: Ben Groulx
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: ben@bengroulx.com
-description: > # this means to ignore newlines until "url:"
-    Ben Groulx is a user interface designer and front-end developer living and
-    working out of Vancouver, Canada.
+description: |
+  Ben Groulx is a user interface designer and front-end developer living and working out of Vancouver, Canada.
 twitter:
   username: benbalter
-
-# URL - The base hostname & protocol for your site
-url: ""
+url: ''
 username: bengroulx
-
-# Base URL - The subpath of your site, e.g. /blog
-baseurl: ""
-include: ['_pages']
-permalink: /:title/
-
-# Build Settings
+baseurl: ''
+include:
+- _pages
+permalink: "/:title/"
 markdown: kramdown
 gems:
-  - octopress-autoprefixer
+- octopress-autoprefixer

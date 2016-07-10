@@ -1,12 +1,14 @@
 ---
+title: UX Design Is a Process Worth Investing In
+date: 2014-05-02 00:00:00 Z
+permalink: "/articles/invest-in-ux-design/"
+categories:
+- design
 layout: post
-title: "UX Design Is a Process Worth Investing In"
-date: 2014-05-02
-description: "Facebook & Foursquare are heavily investing in user experience research and design and you should be too! UX design is extremely useful…"
-permalink: /articles/invest-in-ux-design/
+description: Facebook & Foursquare are heavily investing in user experience research
+  and design and you should be too! UX design is extremely useful…
 image: "/assets/images/articles/invest-in-ux-design/invest-in-ux-design.png"
 colour: chambray
-categories: design
 ---
 
 For as long as I have had an account with Facebook, they have had some sort of messaging functionality. Sending IMs and the like to other Facebook friends is a core feature of the service. Facebook has always concluded that chat would play a major role in web products, and would continue to rise in popularity — they were spot on. Last month’s WhatsApp purchase is testament that this belief is still true to this day. Facebook believes in chat so much that they split their messaging service from their main app, separating the two into unique experiences.

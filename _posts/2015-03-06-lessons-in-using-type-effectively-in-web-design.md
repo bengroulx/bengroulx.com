@@ -1,12 +1,16 @@
 ---
+title: Three Lessons In Using Type Effectively In Web Design
+date: 2015-03-06 00:00:00 Z
+permalink: "/articles/lessons-in-using-type-effectively-in-web-design/"
+categories:
+- design
+- content
 layout: post
-title: "Three Lessons In Using Type Effectively In Web Design"
-date: 2015-03-06
-description: "Typography on the web can be challenging to get right. These three lessons and bits of advice will show you the “hows” of effective type design, and how they will make your designs better — and you a better designer."
-permalink: /articles/lessons-in-using-type-effectively-in-web-design/
+description: Typography on the web can be challenging to get right. These three lessons
+  and bits of advice will show you the “hows” of effective type design, and how they
+  will make your designs better — and you a better designer.
 image: "/assets/images/articles/lessons-in-using-type-effectively-in-web-design/typography-print-vs-web.jpg"
 colour: carousel
-categories: design content
 ---
 
 A few months ago, I wrote an article about the [value and importance of typography on the web](/news/2014/11/26/value-and-importance-of-typography-on-the-web/ "Value and Importance of Typography On the Web"), in which I noted, “…if your knowledge and understanding of typography isn't up to par, you risk damaging the user experience of your work. Typography is the foundation of design; it alone can make or break a website.” I encourage you to give that piece a read before continuing on here, as it will provide some insight into the _whys_ about typography… it's time to look at the _hows_ now.

@@ -1,12 +1,15 @@
 ---
-layout: post
 title: "“I Don’t Know Anything About Design”"
-date: 2015-06-24
-description: "Anyone is capable of designing because everyone has the ability to make decisions. Learn how you can make better decisions that affect intent."
-permalink: /articles/i-dont-know-anything-about-design/
+date: 2015-06-24 00:00:00 Z
+permalink: "/articles/i-dont-know-anything-about-design/"
+categories:
+- design
+- content
+layout: post
+description: Anyone is capable of designing because everyone has the ability to make
+  decisions. Learn how you can make better decisions that affect intent.
 image: "/assets/images/articles/i-dont-know-anything-about-design/i-dont-know-anything-about-design.png"
 colour: heather
-categories: design content
 ---
 
 Yes, you do.
