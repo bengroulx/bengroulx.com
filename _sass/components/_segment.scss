@@ -40,18 +40,21 @@ $large-segment-padding: $spacing-unit;
 .c-segment {
     position: relative; // 1
 
-    padding-right: $small-segment-padding;
-    padding-left: $small-segment-padding;
-
-    @include media-query($charmeleon) {
-        padding-right: $base-segment-padding;
-        padding-left: $base-segment-padding;
-    }
 
     // Padding Modifications
     // ---
 
-    &:not(.c--no-padding) {
+    &:not(.c--no-horizontal-padding) {
+        padding-right: $small-segment-padding;
+        padding-left: $small-segment-padding;
+
+        @include media-query($charmeleon) {
+            padding-right: $base-segment-padding;
+            padding-left: $base-segment-padding;
+        }
+    }
+
+    &:not(.c--no-vertical-padding) {
         padding-top: $base-segment-padding;
         padding-bottom: $base-segment-padding;
 
@@ -152,7 +155,7 @@ $large-segment-padding: $spacing-unit;
 
     &::before,
     &::after {
-        font-weight: bold;
+        font-weight: $bold-font-weight;
         font-size: 80%;
         letter-spacing: 0.15em;
         text-transform: uppercase;

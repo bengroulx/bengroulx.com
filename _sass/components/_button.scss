@@ -7,13 +7,13 @@
     padding: 0 ($base-unit * 4);
     border: 1px solid currentColor;
 
-    border-radius: 3px;
+    border-radius: 0.125em;
     background: none;
     outline: none;
 
     color: inherit;
     font-family: $base-font-family;
-    font-weight: 700;
+    font-weight: $bold-font-weight;
     font-size: 0.9em;
     line-height: 1;
 

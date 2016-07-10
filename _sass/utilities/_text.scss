@@ -5,6 +5,10 @@
 // Text Typeface
 // ---
 
+.u-text-family-default {
+    font-family: $base-font-family;
+}
+
 .u-text-family-mono {
     font-family: $headline-font-family;
 }
@@ -37,18 +41,26 @@
 // Text Weights
 // ---
 
-.u-text-weight-normal {
-    font-weight: normal !important;
+.u-text-weight-100,
+.u-text-weight-200,
+.u-text-weight-light {
+    font-weight: $light-font-weight !important;
 }
 
 .u-text-weight-300,
-.u-text-weight-light {
-    font-weight: 300 !important;
+.u-text-weight-400,
+.u-text-weight-500,
+.u-text-weight-600,
+.u-text-weight-normal,
+.u-text-weight-default {
+    font-weight: $base-font-weight !important;
 }
 
-.u-text-weight-500,
+.u-text-weight-700,
+.u-text-weight-800,
+.u-text-weight-900,
 .u-text-weight-bold {
-    font-weight: 500 !important;
+    font-weight: $bold-font-weight !important;
 }
 
 
