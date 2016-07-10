@@ -17,7 +17,6 @@ body {
     font-weight: $base-font-weight;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    letter-spacing: 0.0125em;
     text-size-adjust: 100%;
 
     font-feature-settings: 'kern' 1;
@@ -62,7 +61,6 @@ figcaption {
     font-family: $headline-font-family;
     font-style: italic;
     font-size: $small-font-size;
-    letter-spacing: -0.025em;
 }
 
 

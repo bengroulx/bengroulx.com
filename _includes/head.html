@@ -10,27 +10,42 @@
 
     <!-- SITE/PAGE INFO -->
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="google-site-verification" content="tjwlg8Q7I3CmF58-9XruF1_DkX8qTxEUmc0uq-Da4Aw" />
-    <meta name="google-site-verification" content="rCvHQ0fTKBNbi7CBf3tZMp8uB4IjaU7S3NmUmgvfErY" />
+    <meta name="google-site-verification" content="xxxxxxxxxx" />
     <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}" />
     <meta name="keywords" content="vancouver, canada, ui, ux, design, front-end, html, css, javascript, interface, product, visual" />
     <meta name="author" content="Ben Groulx" />
+
+    <!-- BLOG INFO -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- LOAD CRITICAL STYLES -->
+    <style>{% capture styles %}{% include critical.scss %}{% endcapture %}{{ styles | scssify }}</style>
+
+    <!-- LOAD STYLES ASYNCHRONIOUSLY -->
+    <link rel="preload" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}" /></noscript>
+    <script>function loadCSS(e,t,n){"use strict";function s(){for(var t,o=0;o<i.length;o++)i[o].href&&i[o].href.indexOf(e)>-1&&(t=!0);t?r.media=n||"all":setTimeout(s)}var r=window.document.createElement("link"),o=t||window.document.getElementsByTagName("script")[0],i=window.document.styleSheets;return r.rel="stylesheet",r.href=e,r.media="only x",o.parentNode.insertBefore(r,o),s(),r}loadCSS("/assets/css/screen.css");
+    </script>
+
+    <!-- NON-BLOCKING LOAD -->
+    <!-- Here to ensure a load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
+    <script></script>
 
     <!-- BROWSER SPECIFICS -->
     <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
     <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
-
-    <!-- STYLES -->
-    <link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- LIBRARIES -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://use.typekit.net/oei6nmh.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
+
+    <!-- SCRIPTS -->
+    <script async src="{{ '/assets/js/fade-in.js' | prepend: site.baseurl }}"></script>
+    <script async src="{{ '/assets/js/header-pull.js' | prepend: site.baseurl }}"></script>
+
     <!-- ICONS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title"   content="Ben Groulx" />
@@ -49,10 +64,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16.png' | prepend: site.baseurl }}" />
     <meta name="msapplication-TileImage" content="{{ '/assets/icons/ms-icon-144.png' | prepend: site.baseurl }}" />
     <meta name="msapplication-TileColor" content="#121b92" />
-
-    <!-- SCRIPTS -->
-    <script async src="{{ '/assets/js/fade-in.js' | prepend: site.baseurl }}"></script>
-    <script async src="{{ '/assets/js/header-pull.js' | prepend: site.baseurl }}"></script>
 
     <!-- HIDE FOR NOW -->
     <meta name="robots" content="noindex, nofollow" />

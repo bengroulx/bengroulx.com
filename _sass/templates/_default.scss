@@ -14,4 +14,8 @@
             transform: translate(0, 0);
         }
     }
+
+    [data-ui-component='homepage-image'] {
+        height: 100vh;
+    }
 }

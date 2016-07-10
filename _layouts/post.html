@@ -9,7 +9,7 @@ layout: default
         <div class="c-arrange__item c-segment c--extra-padding-top c--extra-padding-bottom">
             <header class="c-text-content u-text-align-center" data-ui-component="post-header">
                 <h1 data-ui-component="post-title" itemprop="name headline">{{ page.title }}</h1>
-                <p data-ui-component="post-meta">
+                <p class="u-text-small u-text-uppercase u-text-tracked-out-loose" data-ui-component="post-meta">
                     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                         {{ page.date | date: "%-d %B %Y" }}
                     </time>

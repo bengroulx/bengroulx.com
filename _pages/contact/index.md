@@ -6,4 +6,11 @@ layout: page
 weight: 4
 ---
 
-Content goes here
+## Contact
+- Facebook Messenger
+- Snapchat
+- Email
+- Twitter
+- GitHub
+- Instagram
+- LinkedIn

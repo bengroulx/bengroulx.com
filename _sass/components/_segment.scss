@@ -155,9 +155,7 @@ $large-segment-padding: $spacing-unit;
 
     &::before,
     &::after {
+        @extend %small;
         font-weight: $bold-font-weight;
-        font-size: 80%;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
     }
 }

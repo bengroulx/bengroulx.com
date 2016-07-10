@@ -1,4 +1,5 @@
 ---
+
 # Site Info
 title: Ben Groulx
 email: ben@bengroulx.com
@@ -21,7 +22,18 @@ markdown: kramdown
 gems:
     - jekyll-assets
     - jekyll-seo-tag
+    - octopress-minify-html
     - octopress-autoprefixer
 include:
     - _pages
 permalink: "/:title/"
+
+
+# Assets
+assets:
+    compress:
+        css: true
+        js: true
+
+sass:
+    style: compressed

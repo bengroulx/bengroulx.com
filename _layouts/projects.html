@@ -13,9 +13,15 @@ layout: default
         {% for post in site.categories['projects'] %}
             <article class="c-card c-faux-link u-margin-bottom-very-large">
                 <div class="c-card__content c-text-content">
-                    <h2 data-ui-component="post-title">{{ post.title }}</h2>
-                    <p data-ui-component="post-meta">{{ post.type }}</p>
-                    <p data-ui-component="post-summary">{{ post.description }}</p>
+                    <h2 class="" data-ui-component="project-title">
+                        {{ post.title }}
+                    </h2>
+                    <p class="u-text-small u-text-uppercase u-text-tracked-out-loose" data-ui-component="project-meta">
+                        {{ post.type }}
+                    </p>
+                    <p class="" data-ui-component="project-summary">
+                        {{ post.description }}
+                    </p>
                 </div>
                 <div class="c-card__peek" data-ui-component="post-image" style="background-image:url('{{ post.header_image }}')">
                 </div>

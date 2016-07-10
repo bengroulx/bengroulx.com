@@ -17,23 +17,23 @@
 // Text Sizes
 // ---
 
-.u-text-size-very-small {
+.u-text-very-small {
     font-size: $very-small-font-size !important;
 }
 
-.u-text-size-small {
+.u-text-small {
     font-size: $small-font-size !important;
 }
 
-.u-text-size-default {
+.u-text-default {
     font-size: $base-font-size !important;
 }
 
-.u-text-size-large {
+.u-text-large {
     font-size: $large-font-size !important;
 }
 
-.u-text-size-very-large {
+.u-text-very-large {
     font-size: $very-large-font-size !important;
 }
 
@@ -97,6 +97,22 @@
 
 .u-text-transform-initial {
     text-transform: initial !important;
+}
+
+
+// Text Tracking
+// ---
+
+.u-text-tracked-out {
+    letter-spacing: 0.125em !important;
+}
+
+.u-text-tracked-out-loose {
+    letter-spacing: 0.25em !important;
+}
+
+.u-text-tracked-in {
+    letter-spacing: -0.125em !important;
 }
 
 

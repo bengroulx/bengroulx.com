@@ -103,9 +103,10 @@ mark {
     color: $base-text;
 }
 
-small {
-    font-size: 80%;
-    letter-spacing: 0.05em;
+small,
+%small {
+    font-size: 85%;
+    letter-spacing: 0.125em;
     text-transform: uppercase;
 }
 
@@ -161,6 +162,8 @@ optgroup,
 select,
 textarea {
     margin: 0;
+
+    background: none;
 
     font: inherit;
 }
