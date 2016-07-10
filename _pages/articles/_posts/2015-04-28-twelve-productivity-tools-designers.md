@@ -1,12 +1,15 @@
 ---
+title: 12 Productivity Tools & Services for Web Designers
+date: 2015-04-28 00:00:00 Z
+permalink: "/articles/twelve-productivity-tools-designers/"
+categories:
+- design
+- content
 layout: post
-title: "12 Productivity Tools & Services for Web Designers"
-date: 2015-04-28
-description: "These twelve apps and services will make you a more productive and efficient web designer — and maybe even a better person too."
-permalink: /articles/twelve-productivity-tools-designers/
+description: These twelve apps and services will make you a more productive and efficient
+  web designer — and maybe even a better person too.
 image: "/assets/images/articles/twelve-productivity-tools-designers/twelve-productivity-tools-designers.png"
 colour: emperor
-categories: design content
 ---
 
 Being a web designer can be a daunting career when you’re facing clients and navigating deadlines; getting stuff _done_ is crucial, therefore it’s important to be as productive and efficient as possible. These twelve apps and services are tools I use every day to stay focused and productive.

@@ -1,12 +1,15 @@
 ---
+title: On the Topic of Privacy and Objectification
+date: 2014-09-01 00:00:00 Z
+permalink: "/articles/privacy-and-objectification/"
+categories:
+- feminism
 layout: post
-title: "On the Topic of Privacy and Objectification"
-date: 2014-09-01
-description: "I don’t really have any conclusions  about the largest celebrity scandal of recent memory,  but I do have some thoughts specifically about privacy, objectification, and misogyny."
-permalink: /articles/privacy-and-objectification/
+description: I don’t really have any conclusions  about the largest celebrity scandal
+  of recent memory,  but I do have some thoughts specifically about privacy, objectification,
+  and misogyny.
 image: "/assets/images/articles/privacy-and-objectification/privacy-and-objectification.png"
 colour: emperor
-categories: feminism
 ---
 
 In the wake of the largest celebrity scandal of recent memory, I’d like to voice a few comments about how this all unfolded. I don’t really have any conclusions — it’s not my place *to* have any — but I do have some thoughts on how this has developed and about some individual aspects of the situation, specifically about privacy, objectification, and misogyny.

@@ -1,12 +1,16 @@
 ---
+title: Using Film for Inspiration When Creating Colour Palettes
+date: 2015-06-29 00:00:00 Z
+permalink: "/articles/film-as-inspiration-for-colour-palettes/"
+categories:
+- design
+- content
 layout: post
-title: "Using Film for Inspiration When Creating Colour Palettes"
-date: 2015-06-29
-description: "Film is a great place to find inspiring colour palettes. Looking to movies with famous cinematographers opens up a whole world of beautiful colour combinations with strong emotional impacts."
-permalink: /articles/film-as-inspiration-for-colour-palettes/
+description: Film is a great place to find inspiring colour palettes. Looking to movies
+  with famous cinematographers opens up a whole world of beautiful colour combinations
+  with strong emotional impacts.
 image: "/assets/images/articles/film-as-inspiration-for-colour-palettes/film-as-inspiration-for-colour-palettes.png"
 colour: bayoux
-categories: design content
 ---
 
 When coming up with colour palettes and themes for projects, oftentimes designers can be limited due to brand guidelines. But when we get the freedom to come up with original colours palettes, looking elsewhere for inspiration can be fun and interesting.

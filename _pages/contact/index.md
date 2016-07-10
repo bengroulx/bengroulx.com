@@ -1,7 +1,8 @@
 ---
-layout: page
 title: Contact
-permalink: /contact/
+permalink: "/contact/"
+position: 0
+layout: page
 weight: 4
 ---
 

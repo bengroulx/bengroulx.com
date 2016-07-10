@@ -1,12 +1,15 @@
 ---
+title: Giving and Receiving Better Feedback In the Design Process
+date: 2014-10-17 00:00:00 Z
+permalink: "/articles/giving-and-receiving-better-feedback-in-the-design-process/"
+categories:
+- process
 layout: post
-title: "Giving and Receiving Better Feedback In the Design Process"
-date: 2014-10-17
-description: "Providing feedback on a design project might seem easy, but in reality it can be quite a complex task. Why is feedback so important to the success of design? How can you frame it to better solve the objectives?"
-permalink: /articles/giving-and-receiving-better-feedback-in-the-design-process/
+description: Providing feedback on a design project might seem easy, but in reality
+  it can be quite a complex task. Why is feedback so important to the success of design?
+  How can you frame it to better solve the objectives?
 image: "/assets/images/articles/giving-and-receiving-better-feedback-in-the-design-process/giving-and-receiving-better-feedback-in-the-design-process.png"
 colour: white
-categories: process
 ---
 
 I’ve often had heard that design can seem like dark magic: the designer will collect various bits of information, then say goodbye for three weeks before reappearing with magically-made design. Almost like an art commission. From the client’s perspective, design deliverables are this mysterious entity.

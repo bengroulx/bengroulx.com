@@ -1,12 +1,15 @@
 ---
+title: 'Death By Committee: Why Design By Committee Fails'
+date: 2013-08-30 00:00:00 Z
+permalink: "/articles/death-by-committee/"
+categories:
+- design
 layout: post
-title: "Death By Committee: Why Design By Committee Fails"
-date: 2013-08-30
-description: "Design by committee is a process detrimental to the final outcome of a product. Occassionally it works. Mostly, it is difficult to properly reflect a brand’s values when a group must decide in accordance."
-permalink: /articles/death-by-committee/
+description: Design by committee is a process detrimental to the final outcome of
+  a product. Occassionally it works. Mostly, it is difficult to properly reflect a
+  brand’s values when a group must decide in accordance.
 image: "/assets/images/articles/death-by-committee/death-by-committee.png"
 colour: black
-categories: design
 ---
 
 Design by committee, or in other words the reviewing of design by a group, is a process detrimental to the final outcome of a product. This is true for all client products, not just web and digital ones. Yet design by committee continues to be a process many organizations choose to participate in, instead of going about a more refined and effective manner. Occasionally it works. Mostly, it hinders the design process. Allow me to elaborate.

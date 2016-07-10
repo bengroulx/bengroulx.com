@@ -1,12 +1,15 @@
 ---
+title: 'Desire Lines: Using Data for Informed UX Design'
+date: 2015-04-10 00:00:00 Z
+permalink: "/articles/desire-lines-for-data-ux-design/"
+categories:
+- design
+- content
 layout: post
-title: "Desire Lines: Using Data for Informed UX Design"
-date: 2015-04-10
-description: "Have people found a way to circumvent your design pathway? Use research and analysis to make informed design decisions."
-permalink: /articles/desire-lines-for-data-ux-design/
+description: Have people found a way to circumvent your design pathway? Use research
+  and analysis to make informed design decisions.
 image: "/assets/images/articles/desire-lines-for-data-ux-design/desire-lines-for-data-ux-design.png"
 colour: lemongrass
-categories: design content
 ---
 
 I live close to Vancouver’s beautiful Stanley Park, and enjoy spending my days off wandering the many kilometres of terrain. If you, too, walk through Stanley Park, you’ll undoubtedly notice various worn-down paths departing off of actual paths, winding and meandering in all sorts of serpentine manners. In fact, you’ll probably notice these sorts of paths _everywhere_ around the word. They are universal. And they speak ample about the way we want to use a system.

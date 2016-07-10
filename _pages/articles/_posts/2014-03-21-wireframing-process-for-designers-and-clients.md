@@ -1,12 +1,15 @@
 ---
+title: 'Wireframing: A Process for Designers & Clients'
+date: 2014-03-21 00:00:00 Z
+permalink: "/articles/wireframing-process-for-designers-and-clients/"
+categories:
+- design
 layout: post
-title: "Wireframing: A Process for Designers & Clients"
-date: 2014-03-21
-description: "Just as houses need blueprints, websites need wireframes: they are an invaluable part of the web design process, but can be a tricky thing to discuss. How can designers and clients get the most out of their wireframes?"
-permalink: /articles/wireframing-process-for-designers-and-clients/
+description: 'Just as houses need blueprints, websites need wireframes: they are an
+  invaluable part of the web design process, but can be a tricky thing to discuss.
+  How can designers and clients get the most out of their wireframes?'
 image: "/assets/images/articles/wireframing-process-for-designers-and-clients/wireframing-process-for-designers-and-clients.png"
 colour: carousel
-categories: design
 ---
 
 Oftentimes, wireframes are an overlooked aspect of the web design spectrum, both by designers and clients alike. Many do not see value in them — an unnecessary step that stands in the way of the final outcome — but any organization worth their weight knows that wireframes are a critical step in the web design process. Unless there is some rare outstanding reason to skip them (e.g. budget, time constraints, etc.), wireframes are invaluable.

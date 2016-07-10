@@ -1,10 +1,13 @@
 ---
-layout: projects
 title: Projects
-description: "Ben Groulx has worked on many different project types with various clients. View projects in web design, web development, design strategy, user interface design, user experience design, and more."
-permalink: /projects/
+permalink: "/projects/"
+position: 3
+layout: projects
+description: Ben Groulx has worked on many different project types with various clients.
+  View projects in web design, web development, design strategy, user interface design,
+  user experience design, and more.
 weight: 2
-image: ""
+image: ''
 ---
 
 Many of the projects below were completed as part of a team working with (link: http://customfitonline.com text: Custom Fit Online), and the roles of others are included. My contributions and those of others are included within project descriptions.

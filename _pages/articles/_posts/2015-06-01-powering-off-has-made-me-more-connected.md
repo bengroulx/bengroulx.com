@@ -1,12 +1,15 @@
 ---
+title: Not Using My Phone Has Made Me More Connected
+date: 2015-06-01 00:00:00 Z
+permalink: "/articles/powering-off-has-made-me-more-connected/"
+categories:
+- design
+- content
 layout: post
-title: "Not Using My Phone Has Made Me More Connected"
-date: 2015-06-01
-description: "Turning off your smartphone and stepping away for a while can be hugely beneficial for you health. It certainly helped me."
-permalink: /articles/powering-off-has-made-me-more-connected/
-image: ""
+description: Turning off your smartphone and stepping away for a while can be hugely
+  beneficial for you health. It certainly helped me.
+image: ''
 colour: chambray
-categories: design content
 ---
 
 About two weeks ago, my iPhone was stolen. For the first day or so, I was bummed, and people could tell. It was stressful. I was agitated. I felt something was _missing_. I’m used to constantly be checking my phone every 15-20 minutes, either scrolling up on my Twitter feed (which I prefer to use on my phone than on my desktop), looking at a notifications (texts, snaps, Facebook messages…), or getting distracted with the myriad of games and "content discovery" apps like Reddit and Buffer. I thought having my phone _right there_ all the time was making me a more productive person by being able to respond right away, but it turns out that was false.

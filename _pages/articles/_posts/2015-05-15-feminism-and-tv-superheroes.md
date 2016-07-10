@@ -1,12 +1,15 @@
 ---
+title: 'Why Television Needs Feminism: Superhero Edition'
+date: 2015-05-15 00:00:00 Z
+permalink: "/articles/feminism-and-tv-superheroes/"
+categories:
+- design
+- content
 layout: post
-title: "Why Television Needs Feminism: Superhero Edition"
-date: 2015-05-15
-description: "CBS’ new show Supergirl is an offensive and damaging new TV show; we should make uplifting shows with better female characters."
-permalink: /articles/feminism-and-tv-superheroes/
+description: CBS’ new show Supergirl is an offensive and damaging new TV show; we
+  should make uplifting shows with better female characters.
 image: "/assets/images/articles/feminism-and-tv-superheroes/feminism-and-tv-superheroes.png"
 colour: lemongrass
-categories: design content
 ---
 
 So last week, Saturday Night Live (with host Scarlett Johansson) asked, “Why hasn’t Marvel made a female-driven superhero movie, yet?” and gave us this piece:

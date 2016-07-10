@@ -1,12 +1,15 @@
 ---
+title: How to Work Better Remotely
+date: 2014-11-12 00:00:00 Z
+permalink: "/articles/how-to-work-better-remotely/"
+categories:
+- process
 layout: post
-title: "How to Work Better Remotely"
-date: 2014-11-12
-description: "Remote working means working from a location other than your office. Many people nowadays are taking to it because it makes their work lives more productive, efficient, manageable, and ultimately more enjoyable."
-permalink: /articles/how-to-work-better-remotely/
+description: Remote working means working from a location other than your office.
+  Many people nowadays are taking to it because it makes their work lives more productive,
+  efficient, manageable, and ultimately more enjoyable.
 image: "/assets/images/articles/how-to-work-better-remotely/how-to-work-better-remotely.png"
 colour: emperor
-categories: process
 ---
 
 Last week, my delightful coworker [Blair Kaplan](https://twitter.com/blairkaplanpr) published her article on virtual companies, [Being Virtual: Creating Efficient Remote Companies](http://customfitonline.com/news/2014/11/6/being-virtual-creating-efficient-companies/). It’s a great read that nails down the benefits of having a remote company, and how working in one can be a major win.
