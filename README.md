@@ -1,5 +1,6 @@
 # bengroulx.github.io
 
+Personal portfolio and blog.
 
 ##Colophon
 
@@ -14,4 +15,4 @@ Hosting is supplied by the impeccable service of [Lithium Hosting](http://lithiu
 
 ##Questions?
 
-Read about the [details](http://brennaobrien.com/blog/2013/05/on-building-a-site-with-jekyll.html) on my blog or [get in touch](mailto:hi@brennaobrien.com).
+Holla at [ben@bengroulx.com](ben@bengroulx.com) or [@bengroulx](https://twitter.com/bengroulx).
