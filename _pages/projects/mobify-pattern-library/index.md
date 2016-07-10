@@ -1,6 +1,7 @@
 ---
 title: Mobify Pattern Library
 permalink: "/projects/mobify-pattern-library"
+position: 2
 layout: project
 description: Ben Groulx led the design process of the Fort St. John Public Library
   website. Read more about the redesign in this case study.

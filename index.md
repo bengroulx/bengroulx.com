@@ -1,6 +1,7 @@
 ---
 title: Fort St. John Public Library
 permalink: "/projects/fort-st-john-public-library"
+position: 4
 layout: project
 description: Ben Groulx led the design process of the  Fort St. John Public Library
   website. Read more about the redesign in this case study.

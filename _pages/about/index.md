@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: "/about/"
+position: 5
 layout: about
 weight: 1
 ---

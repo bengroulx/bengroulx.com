@@ -1,6 +1,7 @@
 ---
 title: Projects
 permalink: "/projects/"
+position: 3
 layout: projects
 description: Ben Groulx has worked on many different project types with various clients.
   View projects in web design, web development, design strategy, user interface design,
