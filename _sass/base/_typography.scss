@@ -2,32 +2,6 @@
 // ===
 
 
-// Webfont Imports
-// ---
-
-
-// Apply Vertical Rhythm
-// ---
-//
-// 1. Set `margin-bottom` to maintain vertical rhythm
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-ul,
-ol,
-dl,
-figure {
-    @extend %vertical-rhythm; // 1
-}
-
-
 // Headings
 // ---
 
@@ -37,6 +11,8 @@ h3,
 h4,
 h5,
 h6 {
+    margin: 0;
+
     font-family: $headline-font-family;
     line-height: 1.25;
     text-rendering: optimizeLegibility;
@@ -83,54 +59,14 @@ li {
 a {
     position: relative;
 
-    color: $base-emphasis;
+    color: inherit;
     text-decoration: none;
 
-    &:not(.c-button) {
-        display: inline-block;
+    transition: all ease-out 0.1s;
 
-        transition: all 0.1s linear;
-
-        &::before,
-        &::after {
-            content: '';
-
-            position: absolute;
-            bottom: 0;
-
-            display: block;
-            width: 50%;
-            height: 2px;
-
-            background-color: rgba($lemongrass, 0);
-
-            transform: scale(0, 1);
-
-            transition-duration: 0.5s;
-            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-        }
-
-        &::before {
-            left: 0;
-            transform-origin: 100% 50%;
-        }
-
-        &::after {
-            right: 0;
-            transform-origin: 0 50%;
-        }
-
-        &:hover,
-        &:active {
-            color: $active-emphasis;
-
-            &::before,
-            &::after {
-                background-color: $lemongrass;
-
-                transform: scale(1, 1);
-            }
-        }
+    &:hover,
+    &:active {
+        color: $active-emphasis !important;
     }
 }
 

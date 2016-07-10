@@ -38,7 +38,7 @@ $very-large-font-size: 1.75em;
 // ---
 
 $base-font-family: 'franklin-gothic-urw', sans-serif;
-$headline-font-family: 'freight-text-pro', serif;
+$headline-font-family: 'leitura-news', 'freight-text-pro', serif;
 $base-font-weight: 400;
 $base-line-height: 1.6;
 
@@ -47,23 +47,21 @@ $base-line-height: 1.6;
 // ---
 
 $neutral-10: #fdfdfd;
-$neutral-30: #cdd2d5;
+$neutral-30: #d9d9df;
 $neutral-50: #7e8688;
 $neutral-70: #384248;
-$neutral-90: #000;
+$neutral-90: #06092a;
 
 
 // Brand Colours
 // ---
 
 $bayoux: #30465c;
-$black: $neutral-90;
 $carousel: #f1ced4;
 $chambray: #2a3591;
 $emperor: #475050;
 $heather: #d2e4ef;
 $lemongrass: #9c9f91;
-$white: $neutral-10;
 
 
 // Element Colours

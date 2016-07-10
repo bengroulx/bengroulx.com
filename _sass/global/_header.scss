@@ -22,6 +22,7 @@ $large-header-height: $base-unit * 20;
     display: flex;
     align-items: center;
     height: $small-header-height;
+    min-height: 0;
 
     color: $neutral-90;
 

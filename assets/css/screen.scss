@@ -23,18 +23,6 @@
 @import 'base/animations';
 
 
-// Global Styles
-// ---
-//
-// Styles for non-reusable, global styles like main header and footer, etc.
-
-@import 'global/header';
-@import 'global/footer';
-@import 'global/main';
-@import 'global/navigation';
-@import 'global/notification';
-
-
 // Component Styles
 // ---
 //
@@ -63,6 +51,18 @@
 @import 'templates/post';
 @import 'templates/posts';
 @import 'templates/projects';
+
+
+// Global Styles
+// ---
+//
+// Styles for non-reusable, global styles like main header and footer, etc.
+
+@import 'global/header';
+@import 'global/footer';
+@import 'global/main';
+@import 'global/navigation';
+@import 'global/notification';
 
 
 // Utility Styles

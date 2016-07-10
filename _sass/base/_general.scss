@@ -7,6 +7,8 @@
 
 body {
     margin: 0 auto;
+    border: solid $neutral-10;
+    border-width: 4em 0 0;
 
     background-color: $base-background;
 
@@ -17,6 +19,7 @@ body {
     line-height: $base-line-height;
     letter-spacing: 0.0125em;
     text-size-adjust: 100%;
+
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
 
@@ -29,7 +32,6 @@ body {
     }
 
     @include media-query($charmeleon) {
-        border: solid $neutral-10;
         border-width: 4em 1em 1em;
 
         box-shadow: inset 0 0 0 1em $neutral-10, inset 0 0 0 3em rgba($neutral-30, 0.5);
@@ -58,7 +60,9 @@ img {
 
 figcaption {
     font-family: $headline-font-family;
+    font-style: italic;
     font-size: $small-font-size;
+    letter-spacing: -0.025em;
 }
 
 
@@ -70,4 +74,22 @@ hr {
     border: 0;
 
     background: $neutral-30;
+}
+
+
+// Cursor Selection
+// ---
+
+::-moz-selection {
+    background: $neutral-90;
+
+    color: $neutral-10;
+    text-shadow: none;
+}
+
+::selection {
+    background: $neutral-90;
+
+    color: $neutral-10;
+    text-shadow: none;
 }

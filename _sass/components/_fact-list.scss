@@ -6,9 +6,8 @@
     width: 100%;
     margin-bottom: $spacing-unit;
     padding: ($spacing-unit / 4) ($spacing-unit / 2);
-    border: 2px solid $black;
+    border: 2px solid $neutral-90;
 
-    font-family: $headline-font-family;
     font-size: 0.75em;
 
     @include media-query($charizard) {
@@ -43,6 +42,7 @@
 .c-fact-list__term {
     overflow: hidden;
 
+    font-family: $headline-font-family;
     font-weight: bold;
     font-size: 0.9em;
     letter-spacing: 0.15em;

@@ -20,6 +20,11 @@ $large-text-content-spacing: $spacing-unit;
 
 .c-text-content {
 
+    // Apply Vertical Rhythm
+    // ---
+    //
+    // 1. Set `margin-bottom` to maintain vertical rhythm
+
     h1,
     h2,
     h3,
@@ -31,7 +36,8 @@ $large-text-content-spacing: $spacing-unit;
     pre,
     ul,
     ol,
-    dl {
+    dl,
+    figure {
         @extend %vertical-rhythm; // 1
     }
 
@@ -61,16 +67,17 @@ $large-text-content-spacing: $spacing-unit;
     }
 
     a:not(.c-button) {
-        display: inline;
-        border-bottom: 1px solid transparent;
+        background: linear-gradient($base-background, $base-background), linear-gradient($base-background, $base-background), linear-gradient($neutral-30, $neutral-30);
+        background-repeat: no-repeat, no-repeat, repeat-x;
+        background-position: 0 90%, 100% 90%, 0 90%;
+        background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
 
-        &:hover {
-            border-bottom: 1px solid $lemongrass;
+        color: $base-emphasis;
+        text-shadow: 0.01em 0 $base-background, -0.01em 0 $base-background, 0 0.01em 0 $base-background;
 
-            &::before,
-            &::after {
-                display: none;
-            }
+        &:hover,
+        &:active {
+            background-position: 0 100%, 100% 90%, 0 100%;
         }
     }
 

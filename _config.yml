@@ -26,4 +26,5 @@ permalink: /:title/
 # Build Settings
 markdown: kramdown
 gems:
-  - octopress-autoprefixer
+    - jekyll-assets
+    - octopress-autoprefixer

@@ -20,12 +20,6 @@
     padding: 0; // 1
 
     list-style: none; // 1
-
-    &.c--break-at-medium {
-        @include media-query($charmeleon) {
-            flex-wrap: nowrap;
-        }
-    }
 }
 
 
@@ -92,7 +86,14 @@
     display: block; // 1
     flex: 1;
     width: 100%; // 2
+}
 
+.c--break-at-medium .c-arrange__item {
+
+    @media screen and (max-width: $charmeleon) {
+        flex: 1 0 25%;
+        min-width: 100%;
+    }
 }
 
 

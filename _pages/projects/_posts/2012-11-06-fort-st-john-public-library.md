@@ -9,7 +9,7 @@ colour: chambray
 categories: design content
 
 type: Web
-duration: 12 months
+duration: 6 months
 team: Custom Fit Online
 website: www.fsjpl.ca
 ---
