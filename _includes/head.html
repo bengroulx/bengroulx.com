@@ -20,17 +20,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- LOAD CRITICAL STYLES -->
-    <style>{% capture styles %}{% include critical.scss %}{% endcapture %}{{ styles | scssify }}</style>
-
-    <!-- LOAD STYLES ASYNCHRONIOUSLY -->
-    <link rel="preload" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ '/assets/css/screen.css' | prepend: site.baseurl }}" /></noscript>
-    <script>function loadCSS(e,t,n){"use strict";function s(){for(var t,o=0;o<i.length;o++)i[o].href&&i[o].href.indexOf(e)>-1&&(t=!0);t?r.media=n||"all":setTimeout(s)}var r=window.document.createElement("link"),o=t||window.document.getElementsByTagName("script")[0],i=window.document.styleSheets;return r.rel="stylesheet",r.href=e,r.media="only x",o.parentNode.insertBefore(r,o),s(),r}loadCSS("/assets/css/screen.css");
-    </script>
-
-    <!-- NON-BLOCKING LOAD -->
-    <!-- Here to ensure a load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
-    <script></script>
+    <style>{% capture critical_styles %}{% include critical.scss %}{% endcapture %}{{ critical_styles | scssify }}</style>
 
     <!-- BROWSER SPECIFICS -->
     <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
@@ -39,7 +29,7 @@
     <!-- LIBRARIES -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://use.typekit.net/oei6nmh.js"></script>
+    <script src="//use.typekit.net/oei6nmh.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <!-- SCRIPTS -->
@@ -48,7 +38,7 @@
 
     <!-- ICONS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title"   content="Ben Groulx" />
+    <meta name="apple-mobile-web-app-title"   content="bengroulx.com" />
     <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/icons/apple-icon-57.png' | prepend: site.baseurl }}" />
     <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/icons/apple-icon-60.png' | prepend: site.baseurl }}" />
     <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/icons/apple-icon-72.png' | prepend: site.baseurl }}" />

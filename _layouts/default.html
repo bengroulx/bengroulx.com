@@ -15,6 +15,10 @@
 
         {% include footer.html %}
 
+        <style>
+            {% capture non_critical_styles %}{% include screen.scss %}{% endcapture %}{{ non_critical_styles | scssify }}
+        </style>
+
     </body>
 
 </html>
