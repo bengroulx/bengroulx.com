@@ -2,11 +2,10 @@
 title: Contact
 permalink: "/contact/"
 position: 0
-layout: page
+layout: contact
 weight: 4
 ---
 
-## Contact
 - Facebook Messenger
 - Snapchat
 - Email

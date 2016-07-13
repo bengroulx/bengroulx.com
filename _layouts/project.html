@@ -2,11 +2,6 @@
 layout: default
 ---
 
-<header hidden class="c-segment c--{{ page.colour }} u-text-align-center" data-ui-component="project-header">
-    <div class="c-image c--cover c--faded c-ratio__item" data-ui-component="project-image" style="background-image:url('{{ page.header_image }}')"></div>
-    <h1 class="u-index-1 u-index-relative u-text-shadow" data-ui-component="project-title">{{ page.title }}</h1>
-</header>
-
 <header class="c-segment" data-ui-component="page-header">
     <div class="c-container">
         <h1 data-ui-component="project-title">{{ page.title }}</h1>
@@ -50,14 +45,16 @@ layout: default
     </div>
     <div class="c-arrange__item c-segment c--carousel">
         <div class="c-text-content" data-ui-component="project-contact">
-            <h3>Want to know more?</h3>
+            <h3>Get more details</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem totam, vel ad illum, mollitia est possimus at aut magnam magni architecto ratione quos, corporis incidunt cumque deserunt et ex nulla.</p>
             <a class="c-button" href="{{ '/contact' | prepend: site.baseurl }}" data-ui-component="contact-button" aria-role="button">Get in touch &rarr;</a>
         </div>
     </div>
 </section>
 
-<section class="c-segment u-text-align-center">
-    <h2>Check out more projects</h2>
-    <a class="c-button" href="{{ '/projects' | prepend: site.baseurl }}" data-ui-component="more-projects-button" aria-role="button">View more projects &rarr;</a>
+<section class="c-segment c--extra-padding-top c--extra-padding-bottom">
+    <div class="c-container c-text-content u-text-align-center">
+        <h2><em>Wanting to see more?</em></h2>
+        <a class="c-button" href="{{ '/projects' | prepend: site.baseurl }}" data-ui-component="more-projects-button" aria-role="button">View more projects &rarr;</a>
+    </div>
 </section>

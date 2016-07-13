@@ -5,14 +5,6 @@
 //    the spacing values.
 
 .x-navigation {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background-color: $emperor;
-
     @include media-query($charmander) {
         position: relative;
 
@@ -72,7 +64,7 @@
             width: $base-unit * 4;
             height: $base-unit * 4;
             margin-right: $base-unit * 2;
-            border: 1px solid currentColor;
+            border: $matching-border;
 
             border-radius: 100%;
 

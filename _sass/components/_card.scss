@@ -36,8 +36,8 @@ $large-card-spacing: $spacing-unit * 2;
 .c-card__content {
     padding: $small-card-spacing;
 
-    background: $neutral-10;
-    box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.15);
+    background-color: $neutral-10;
+    box-shadow: $large-shadow;
 
     color: $neutral-90;
 

@@ -2,18 +2,6 @@
 // ===
 
 
-// Text Typeface
-// ---
-
-.u-text-family-default {
-    font-family: $base-font-family;
-}
-
-.u-text-family-mono {
-    font-family: $headline-font-family;
-}
-
-
 // Text Sizes
 // ---
 
@@ -116,14 +104,6 @@
 }
 
 
-// Text Shadow
-// ---
-
-.u-text-shadow {
-    text-shadow: 0 0.05em 0.1em rgba($neutral-90, 0.5);
-}
-
-
 // Text Line Lengths
 // ---
 //
@@ -157,4 +137,8 @@
 
 .u-text-line-reset {
     line-height: 1 !important;
+}
+
+.u-text-line-base {
+    line-height: $base-line-height !important;
 }

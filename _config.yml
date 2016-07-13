@@ -9,6 +9,7 @@ twitter:
 
 # Site Configuration
 timezone: America/Los_Angeles
+permalink: "/:title/"
 url:
 baseurl:
 collections:
@@ -26,7 +27,8 @@ gems:
     - octopress-autoprefixer
 include:
     - _pages
-permalink: "/:title/"
+exclude:
+    - node_modules
 
 
 # Assets

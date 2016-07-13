@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-    {% include head.html %}
+{% include head.html %}
 
-    {% capture layout %}{% if page.layout %}t-{{ page.layout }}{% endif %}{% endcapture %}
+{% capture layout %}
+    {% if page.layout %}
+        t-{{ page.layout }}
+    {% endif %}
+{% endcapture %}
 
-    <body class="{{ layout }}">
+<body class="{{layout}}">
 
-        {% include header.html %}
+    {% include header.html %}
 
-        <main class="x-main js-fade-in" data-ui-component="page-content" role="main">
-            {{ content }}
-        </main>
+    <main class="x-main js-fade-in" data-ui-component="page-content" role="main">
+        {{ content }}
+    </main>
 
-        {% include footer.html %}
+    {% include footer.html %}
 
-        <style>
-            {% capture non_critical_styles %}{% include screen.scss %}{% endcapture %}{{ non_critical_styles | scssify }}
-        </style>
+    <!-- NON-CRITICAL STYLES -->
+    <style>{% capture non_critical_styles %}{% include screen.scss %}{% endcapture %}{{ non_critical_styles | scssify }}</style>
 
-    </body>
+    <!-- SCRIPTS -->
+    <script src="{{ '/assets/js/header-pull.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/fade-in.js' | prepend: site.baseurl }}"></script>
 
+</body>
 </html>

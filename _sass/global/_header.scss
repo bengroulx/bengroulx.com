@@ -13,10 +13,8 @@ $large-header-height: $base-unit * 20;
 // ---
 
 .x-header {
-    position: fixed !important;
+    @extend %fixed-full-width;
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
 
     display: flex;

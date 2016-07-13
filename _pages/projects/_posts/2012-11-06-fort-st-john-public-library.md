@@ -4,7 +4,7 @@ title: Fort St. John Public Library
 description: "Ben Groulx led the design process of the  Fort St. John Public Library website. Read more about the redesign in this case study."
 permalink: /projects/fort-st-john-public-library
 image: ""
-header_image: /assets/images/projects/fsjpl/redesign-fort-st-john-public-library.jpg
+header_image: /assets/images/projects/fsjpl/fort-st-john-public-library-website.jpg
 colour: chambray
 categories: design content
 

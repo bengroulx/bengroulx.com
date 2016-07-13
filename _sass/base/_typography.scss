@@ -109,13 +109,10 @@ blockquote {
 
 pre,
 code {
-    border: 1px solid $neutral-50;
+    border: $base-border;
 
     border-radius: $base-unit / 2;
     background-color: $neutral-30;
-
-    font-family: monospace;
-    font-size: 15px;
 }
 
 code {

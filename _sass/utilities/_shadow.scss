@@ -1,0 +1,18 @@
+// Shadow Utilities
+// ===
+
+
+// Box Shadow
+// ---
+
+.u-shadow-box-large {
+    box-shadow: $large-shadow !important;
+}
+
+
+// Text Shadow
+// ---
+
+.u-shadow-text-base {
+    text-shadow: $small-shadow !important;
+}

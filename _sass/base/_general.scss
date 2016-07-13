@@ -71,7 +71,7 @@ hr {
     height: 1px;
     border: 0;
 
-    background: $neutral-30;
+    background-color: $neutral-30;
 }
 
 
@@ -79,14 +79,14 @@ hr {
 // ---
 
 ::-moz-selection {
-    background: $neutral-90;
+    background-color: $neutral-90;
 
     color: $neutral-10;
     text-shadow: none;
 }
 
 ::selection {
-    background: $neutral-90;
+    background-color: $neutral-90;
 
     color: $neutral-10;
     text-shadow: none;

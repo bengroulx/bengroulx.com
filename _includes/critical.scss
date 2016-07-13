@@ -5,12 +5,18 @@
 
 @import 'base/variables';
 @import 'base/extends';
+
+@import 'utilities/background';
+@import 'utilities/hidden';
+@import 'utilities/margin';
+@import 'utilities/padding';
+@import 'utilities/shadow';
+@import 'utilities/text';
+@import 'utilities/zindex';
+
 @import 'base/reset';
 @import 'base/general';
 @import 'base/typography';
-
-@import 'utilities/hidden';
-@import 'utilities/text';
 
 @import 'components/arrange';
 @import 'components/container';

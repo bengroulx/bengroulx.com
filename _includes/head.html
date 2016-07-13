@@ -2,17 +2,15 @@
 
     <!-- GENERAL STUFF -->
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
 
     <!-- SITE/PAGE INFO -->
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="google-site-verification" content="xxxxxxxxxx" />
+    <meta name="google-site-verification" content="tjwlg8Q7I3CmF58-9XruF1_DkX8qTxEUmc0uq-Da4Aw" />
     <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}" />
-    <meta name="keywords" content="vancouver, canada, ui, ux, design, front-end, html, css, javascript, interface, product, visual" />
+    <meta name="keywords" content="vancouver, canada, ui, ux, design, front-end, html, css, interface, product, visual" />
     <meta name="author" content="Ben Groulx" />
 
     <!-- BLOG INFO -->
@@ -22,23 +20,18 @@
     <!-- LOAD CRITICAL STYLES -->
     <style>{% capture critical_styles %}{% include critical.scss %}{% endcapture %}{{ critical_styles | scssify }}</style>
 
-    <!-- BROWSER SPECIFICS -->
-    <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
-    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
-
     <!-- LIBRARIES -->
+    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <script async src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <!-- SCRIPTS -->
-    <script async src="{{ '/assets/js/fade-in.js' | prepend: site.baseurl }}"></script>
-    <script async src="{{ '/assets/js/header-pull.js' | prepend: site.baseurl }}"></script>
-    <script async src="//use.typekit.net/oei6nmh.js"></script>
+    <!-- TYPEKIT -->
+    <script src="https://use.typekit.net/oei6nmh.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <!-- ICONS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title"   content="bengroulx.com" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.title | escape }}" />
     <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/icons/apple-icon-57.png' | prepend: site.baseurl }}" />
     <link rel="apple-touch-icon" sizes="60x60" href="{{ '/assets/icons/apple-icon-60.png' | prepend: site.baseurl }}" />
     <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/icons/apple-icon-72.png' | prepend: site.baseurl }}" />
@@ -57,5 +50,12 @@
 
     <!-- HIDE FOR NOW -->
     <meta name="robots" content="noindex, nofollow" />
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@bengroulx">
+    <meta name="twitter:creator" content="@bengroulx">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
 
 </head>

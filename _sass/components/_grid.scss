@@ -18,27 +18,27 @@
     &::after {
         clear: both;
     }
+}
 
 
-    // Combined modifier: Horizontal and vertical gutters
-    // ---
-    //
-    // 1. Prevent horizontal gutters from creating extra space above the top row
-    //    by pulling the grid up. Applying the negative margin using generated
-    //    content frees us to apply spacing utils to the grid without breaking.
-    // 2. Offset the outter container's position due to extra gutter spaces
+// Combined modifier: Horizontal and vertical gutters
+// ---
+//
+// 1. Prevent horizontal gutters from creating extra space above the top row by
+//    pulling the grid up. Applying the negative margin using generated content
+//    frees us to apply spacing utils to the grid without breaking.
+// 2. Offset the outter container's position due to extra gutter spaces.
 
-    &.c--gutters {
-        margin-right: -$base-unit*2; // 2
-        margin-left: -$base-unit*2; // 2
+.c-grid.c--gutters {
+    margin-right: -$base-unit*2; // 2
+    margin-left: -$base-unit*2; // 2
 
-        &::before {
-            margin-top: -$base-unit*2; // 1
-        }
+    &::before {
+        margin-top: -$base-unit*2; // 1
+    }
 
-        > .c-grid__span {
-            padding: $base-unit*4 ($base-unit*2) 0;
-        }
+    > .c-grid__span {
+        padding: $base-unit*8 ($base-unit*2) 0;
     }
 }
 

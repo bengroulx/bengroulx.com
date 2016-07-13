@@ -35,4 +35,12 @@
             height: $base-unit * 8;
         }
     }
+
+    &.c--very-large {
+        > svg {
+            width: $base-unit * 16;
+            height: $base-unit * 16;
+        }
+    }
+
 }

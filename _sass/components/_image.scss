@@ -52,5 +52,7 @@ $image-half-width: ($image-full-width / 2);
         width: 100%;
         max-width: $base-unit * 350;
         margin: 0 auto;
+
+        box-shadow: $large-shadow;
     }
 }

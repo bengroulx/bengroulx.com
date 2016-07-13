@@ -75,12 +75,27 @@ $base-emphasis: mix($chambray, mix($chambray, blue));
 $active-emphasis: blue;
 
 
+// Borders
+// ---
+
+$base-border: 1px solid $neutral-50;
+$dark-border: 1px solid $neutral-90;
+$matching-border: 1px solid currentColor;
+
+
+// Shadows
+// ---
+
+$large-shadow: 0 0.5em 2em rgba($neutral-90, 0.15);
+$small-shadow: 0 0.05em 0.1em rgba($neutral-90, 0.5);
+
+
 // Content Widths
 // ---
 
 $charmander: 24rem;
 $charmeleon: 40rem;
-$charizard:  64rem;
+$charizard: 64rem;
 
 $content-width: $charmeleon;
 
