@@ -57,7 +57,7 @@ $large-header-height: $base-unit * 20;
     }
 
     &.x--right {
-        right: 0;
+        right: 1em;
 
         transform: translate(0, -50%);
     }
@@ -78,7 +78,7 @@ $large-header-height: $base-unit * 20;
     }
 
     &.x--left {
-        left: 0;
+        left: 1em;
         transform: translate(0, -50%);
     }
 }
