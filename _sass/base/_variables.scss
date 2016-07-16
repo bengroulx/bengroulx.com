@@ -86,8 +86,9 @@ $matching-border: 1px solid currentColor;
 // Shadows
 // ---
 
-$large-shadow: 0 0.5em 2em rgba($neutral-90, 0.2);
 $small-shadow: 0 0.05em 0.1em rgba($neutral-90, 0.5);
+$base-shadow: 0 0.25em 1em rgba($neutral-90, 0.35);
+$large-shadow: 0 0.5em 2em rgba($neutral-90, 0.2);
 
 
 // Content Widths

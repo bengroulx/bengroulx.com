@@ -5,14 +5,38 @@
 // Box Shadow
 // ---
 
-.u-shadow-box-large {
+.u-small-box-shadow {
+    box-shadow: $small-shadow !important;
+}
+
+.u-base-box-shadow {
+    box-shadow: $base-shadow !important;
+}
+
+.u-large-box-shadow {
     box-shadow: $large-shadow !important;
+}
+
+.u-no-box-shadow {
+    box-shadow: none !important;
 }
 
 
 // Text Shadow
 // ---
 
-.u-shadow-text-base {
+.u-small-text-shadow {
     text-shadow: $small-shadow !important;
+}
+
+.u-base-text-shadow {
+    text-shadow: $base-shadow !important;
+}
+
+.u-large-text-shadow {
+    text-shadow: $large-shadow !important;
+}
+
+.u-no-text-shadow {
+    text-shadow: none !important;
 }

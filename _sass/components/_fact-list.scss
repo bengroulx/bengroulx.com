@@ -8,6 +8,8 @@
     padding: ($spacing-unit / 4) ($spacing-unit / 2);
     border: 2px solid $neutral-90;
 
+    font-size: $small-font-size;
+
     @include media-query($charizard) {
         padding: ($spacing-unit / 2) ($spacing-unit);
     }
