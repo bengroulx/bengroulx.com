@@ -1,8 +1,10 @@
 ---
 title: Not Using My Phone Has Made Me More Connected
-date: 2015-06-01 00:00:00 Z
+date: 2015-05-31 17:00:00 -07:00
 permalink: "/articles/powering-off-has-made-me-more-connected/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post

@@ -1,8 +1,10 @@
 ---
 title: Giving and Receiving Better Feedback In the Design Process
-date: 2014-10-17 00:00:00 Z
+date: 2014-10-16 17:00:00 -07:00
 permalink: "/articles/giving-and-receiving-better-feedback-in-the-design-process/"
 categories:
+- _pages
+- articles
 - process
 layout: post
 description: Providing feedback on a design project might seem easy, but in reality

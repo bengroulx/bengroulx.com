@@ -1,8 +1,10 @@
 ---
 title: UX Design Is a Process Worth Investing In
-date: 2014-05-02 00:00:00 Z
+date: 2014-05-01 17:00:00 -07:00
 permalink: "/articles/invest-in-ux-design/"
 categories:
+- _pages
+- articles
 - design
 layout: post
 description: Facebook & Foursquare are heavily investing in user experience research

@@ -1,8 +1,10 @@
 ---
 title: 'Death By Committee: Why Design By Committee Fails'
-date: 2013-08-30 00:00:00 Z
+date: 2013-08-29 17:00:00 -07:00
 permalink: "/articles/death-by-committee/"
 categories:
+- _pages
+- articles
 - design
 layout: post
 description: Design by committee is a process detrimental to the final outcome of

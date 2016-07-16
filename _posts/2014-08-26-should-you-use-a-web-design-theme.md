@@ -1,8 +1,10 @@
 ---
 title: Should You Use a Web Design Theme?
-date: 2014-08-27 00:00:00 Z
+date: 2014-08-26 17:00:00 -07:00
 permalink: "/articles/should-you-use-a-web-design-theme/"
 categories:
+- _pages
+- articles
 - design
 layout: post
 description: Web themes are a shortsighted solution to the complex problem that is

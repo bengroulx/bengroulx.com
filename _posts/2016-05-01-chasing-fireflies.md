@@ -1,12 +1,16 @@
 ---
-layout: project
 title: Chasing Fireflies
-description: ""
-permalink: /projects/chasing-fireflies
-image: ""
-header_image: /assets/images/projects/chasing-fireflies/chasing-fireflies-mobile-web.jpg
-categories: design content
-
+date: 2016-05-01 00:00:00 -07:00
+permalink: "/projects/chasing-fireflies"
+categories:
+- _pages
+- projects
+- design
+- content
+layout: project
+description: ''
+image: ''
+header_image: "/assets/images/projects/chasing-fireflies/chasing-fireflies-mobile-web.jpg"
 type: Mobile Web
 duration: 4 months
 team: Mobify

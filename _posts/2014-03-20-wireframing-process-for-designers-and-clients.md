@@ -1,8 +1,10 @@
 ---
 title: 'Wireframing: A Process for Designers & Clients'
-date: 2014-03-21 00:00:00 Z
+date: 2014-03-20 17:00:00 -07:00
 permalink: "/articles/wireframing-process-for-designers-and-clients/"
 categories:
+- _pages
+- articles
 - design
 layout: post
 description: 'Just as houses need blueprints, websites need wireframes: they are an

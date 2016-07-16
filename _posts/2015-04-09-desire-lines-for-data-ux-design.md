@@ -1,8 +1,10 @@
 ---
 title: 'Desire Lines: Using Data for Informed UX Design'
-date: 2015-04-10 00:00:00 Z
+date: 2015-04-09 17:00:00 -07:00
 permalink: "/articles/desire-lines-for-data-ux-design/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post

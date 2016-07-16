@@ -1,8 +1,10 @@
 ---
 title: 'Why Television Needs Feminism: Superhero Edition'
-date: 2015-05-15 00:00:00 Z
+date: 2015-05-14 17:00:00 -07:00
 permalink: "/articles/feminism-and-tv-superheroes/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post

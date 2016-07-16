@@ -1,41 +1,34 @@
 ---
-
-# Site Info
 title: Ben Groulx
-email: ben@bengroulx.com
-description: Ben Groulx is a user interface designer and front-end developer living and working out of Vancouver, Canada.
-twitter:
-    username: bengroulx
-
-# Site Configuration
 timezone: America/Los_Angeles
-permalink: "/:title/"
-url:
-baseurl:
 collections:
-    posts:
-        title: Posts
-        output: true
-    uploads:
-        title: Uploads
-        output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: ben@bengroulx.com
+description: Ben Groulx is a user interface designer and front-end developer living
+  and working out of Vancouver, Canada.
+twitter:
+  username: bengroulx
+permalink: "/:title/"
+url: 
+baseurl: 
 markdown: kramdown
 gems:
-    - jekyll-assets
-    - jekyll-seo-tag
-    - octopress-minify-html
-    - octopress-autoprefixer
+- jekyll-assets
+- jekyll-seo-tag
+- octopress-minify-html
+- octopress-autoprefixer
 include:
-    - _pages
+- _pages
 exclude:
-    - node_modules
-
-
-# Assets
+- node_modules
 assets:
-    compress:
-        css: true
-        js: true
-
+  compress:
+    css: true
+    js: true
 sass:
-    style: compressed
+  style: compressed

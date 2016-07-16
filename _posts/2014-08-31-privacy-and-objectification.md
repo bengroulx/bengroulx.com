@@ -1,8 +1,10 @@
 ---
 title: On the Topic of Privacy and Objectification
-date: 2014-09-01 00:00:00 Z
+date: 2014-08-31 17:00:00 -07:00
 permalink: "/articles/privacy-and-objectification/"
 categories:
+- _pages
+- articles
 - feminism
 layout: post
 description: I don’t really have any conclusions  about the largest celebrity scandal

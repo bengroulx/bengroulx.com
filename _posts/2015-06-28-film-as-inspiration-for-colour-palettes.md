@@ -1,8 +1,10 @@
 ---
 title: Using Film for Inspiration When Creating Colour Palettes
-date: 2015-06-29 00:00:00 Z
+date: 2015-06-28 17:00:00 -07:00
 permalink: "/articles/film-as-inspiration-for-colour-palettes/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post

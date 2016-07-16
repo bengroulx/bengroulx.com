@@ -1,8 +1,10 @@
 ---
 title: Design Will Be Shaped By Content
-date: 2015-07-22 00:00:00 Z
+date: 2015-07-21 17:00:00 -07:00
 permalink: "/articles/design-will-be-shaped-by-content/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post
