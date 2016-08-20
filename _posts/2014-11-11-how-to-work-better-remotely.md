@@ -1,8 +1,10 @@
 ---
 title: How to Work Better Remotely
-date: 2014-11-12 00:00:00 Z
+date: 2014-11-11 16:00:00 -08:00
 permalink: "/articles/how-to-work-better-remotely/"
 categories:
+- _pages
+- articles
 - process
 layout: post
 description: Remote working means working from a location other than your office.

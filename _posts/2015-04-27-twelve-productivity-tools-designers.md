@@ -1,8 +1,10 @@
 ---
 title: 12 Productivity Tools & Services for Web Designers
-date: 2015-04-28 00:00:00 Z
+date: 2015-04-27 17:00:00 -07:00
 permalink: "/articles/twelve-productivity-tools-designers/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post

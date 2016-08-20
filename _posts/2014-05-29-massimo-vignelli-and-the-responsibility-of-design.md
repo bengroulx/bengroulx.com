@@ -1,8 +1,10 @@
 ---
 title: Massimo Vignelli and the Responsibility of Design
-date: 2014-05-30 00:00:00 Z
+date: 2014-05-29 17:00:00 -07:00
 permalink: "/articles/massimo-vignelli-and-the-responsibility-of-design/"
 categories:
+- _pages
+- articles
 - design
 layout: post
 description: Massimo Vignelli passed away On May 27<sup>th</sup>. The great designer

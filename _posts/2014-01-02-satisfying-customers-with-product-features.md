@@ -1,8 +1,10 @@
 ---
 title: Satisfying Customers With Product Features
-date: 2014-01-03 00:00:00 Z
+date: 2014-01-02 16:00:00 -08:00
 permalink: "/articles/satisfying-customers-with-product-features/"
 categories:
+- _pages
+- articles
 - design
 layout: post
 description: Using webfonts or images can hurt page weight and page speed, so use

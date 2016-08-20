@@ -1,12 +1,17 @@
 ---
-layout: project
 title: Mobify UI Kit
-description: "Ben Groulx led the design process of the Fort St. John Public Library website. Read more about the redesign in this case study."
-permalink: /projects/mobify-ui-kit
-image: ""
-header_image: /assets/images/projects/mobify-ui-kit/mobify-ui-kit.png
-categories: design content
-
+date: 2016-06-01 00:00:00 -07:00
+permalink: "/projects/mobify-ui-kit"
+categories:
+- _pages
+- projects
+- design
+- content
+layout: project
+description: Ben Groulx led the design process of the Fort St. John Public Library
+  website. Read more about the redesign in this case study.
+image: ''
+header_image: "/assets/images/projects/mobify-ui-kit/mobify-ui-kit.png"
 type: Design System
 duration: Ongoing
 team: Mobify

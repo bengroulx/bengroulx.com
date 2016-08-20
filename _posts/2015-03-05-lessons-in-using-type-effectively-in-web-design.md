@@ -1,8 +1,10 @@
 ---
 title: Three Lessons In Using Type Effectively In Web Design
-date: 2015-03-06 00:00:00 Z
+date: 2015-03-05 16:00:00 -08:00
 permalink: "/articles/lessons-in-using-type-effectively-in-web-design/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post

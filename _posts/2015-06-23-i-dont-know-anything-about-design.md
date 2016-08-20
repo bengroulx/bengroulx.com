@@ -1,8 +1,10 @@
 ---
 title: "“I Don’t Know Anything About Design”"
-date: 2015-06-24 00:00:00 Z
+date: 2015-06-23 17:00:00 -07:00
 permalink: "/articles/i-dont-know-anything-about-design/"
 categories:
+- _pages
+- articles
 - design
 - content
 layout: post
