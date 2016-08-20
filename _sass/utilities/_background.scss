@@ -1,18 +1,31 @@
 // Background Utilities
 // ===
 
+
+// Background Colours
+// ---
+
 .u-background-white {
-    background-color: $neutral-10 !important;
+    background-color: $neutral-10;
 }
 
 .u-background-grey {
-    background-color: $neutral-30 !important;
+    background-color: $neutral-30;
 }
 
 .u-background-black {
-    background-color: $neutral-90 !important;
+    background-color: $neutral-90;
 }
 
 .u-background-transparent {
-    background-color: transparent !important;
+    background-color: transparent;
+}
+
+
+// Background States
+// ---
+
+.u-background-cover {
+    background-position: center center;
+    background-size: cover;
 }

@@ -20,6 +20,12 @@
     padding: 0; // 1
 
     list-style: none; // 1
+
+    @media screen and (max-width: $charmeleon) {
+        &.c--break-at-medium {
+            display: block;
+        }
+    }
 }
 
 
@@ -89,11 +95,6 @@
 }
 
 .c--break-at-medium .c-arrange__item {
-
-    @media screen and (max-width: $charmeleon) {
-        flex: 1 0 25%;
-        min-width: 100%;
-    }
 }
 
 

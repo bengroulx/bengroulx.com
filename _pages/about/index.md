@@ -6,34 +6,11 @@ layout: about
 weight: 1
 ---
 
-## About Ben
 
-I live downtown in Vancouver with my girlfriend and two cats, sport two large ampersand tattoos on my forearms, and I make my own cappuccinos at home. I am an avid fan of the Montréal Alouettes, fluently bilingual in English and French, and have a notable fascination for astronomy, typography, palæontology, film, and music.  My work days are generally spent in a small yet comfortable office surrounded by devices and monitors, books and periodicals, artwork and toys, while the majority of my time is allotted to writing emails, making to-do lists, sketching, and listening to a very eclectic library of music. If you are into gaming, feel free to add me on [Hearthstone](http://us.battle.net/hearthstone/en/) and/or [Steam](http://steamcommunity.com/id/bengroulx), both at ben(a)bengroulx(dot)com.
 
-<div class="c-arrange">
-<div class="c-arrange__item">
-<h4>Let’s Watch These Movies</h4>
-<ul>
-<li>Zodiac (2007)</li>
-<li>Munich (2005)</li>
-<li>Tangled (2010)</li>
-<li>The Grand Budapest Hotel (2014)</li>
-<li>Jurassic Park (1993)</li>
-</ul>
-</div>
-<div class="c-arrange__item">
-<h4>Let’s Listen to These Albums</h4>
-<ul>
-<li>What’s Going On — Marvin Gaye</li>
-<li>You’re Dead! — Flying Lotus</li>
-<li>Pull My Hair Back —Jessy Lanza</li>
-<li>Yeezus — Kanye West</li>
-<li>Anything by Burial</li>
-</ul>
-</div>
-</div>
 
-***
+I love writing and teaching—breaking down complex topics into simple, digestible concepts; so I’ve combined both passions into writing articles & tutorials on front-end development on my blog and for several high-profile online magazines including Codrops, where I wrote a CSS Reference, Adobe Dreamweaver Team Blog, where I’m a regular contributor with beginner–intermediate level CSS articles, Smashing Magazine, where I’m also an occasional tech reviewer, and CSS-Tricks. I've also written for A List Apart and Opera Developers' Blog (dev.opera).
+
 
 ## How I Work
 
@@ -81,6 +58,8 @@ Well that would depend on who you ask. I want to work with people and companies 
 ##### “When can we start?”
 It will depend on how busy I am at the moment and when you are available for project commitment. [Let’s connect](#connect) and go from there.
 
+
+
 ***
 
 ## Ethical Statement
@@ -99,6 +78,37 @@ I believe that designers are responsible for the work they put out into the worl
 
 ***
 
+## About Ben
+
+I live downtown in Vancouver with my girlfriend and two cats, sport two large ampersand tattoos on my forearms, and I make my own cappuccinos at home. I am an avid fan of the Montréal Alouettes, fluently bilingual in English and French, and have a notable fascination for astronomy, typography, palæontology, film, and music.  My work days are generally spent in a small yet comfortable office surrounded by devices and monitors, books and periodicals, artwork and toys, while the majority of my time is allotted to writing emails, making to-do lists, sketching, and listening to a very eclectic library of music. If you are into gaming, feel free to add me on [Hearthstone](http://us.battle.net/hearthstone/en/) and/or [Steam](http://steamcommunity.com/id/bengroulx), both at ben(a)bengroulx(dot)com.
+
+<div class="c-arrange">
+    <div class="c-arrange__item">
+        <h4>Let’s Watch These Movies</h4>
+        <ul>
+            <li>Zodiac (2007)</li>
+            <li>Munich (2005)</li>
+            <li>Tangled (2010)</li>
+            <li>The Grand Budapest Hotel (2014)</li>
+            <li>Jurassic Park (1993)</li>
+        </ul>
+    </div>
+    <div class="c-arrange__item">
+        <h4>Let’s Listen to These Albums</h4>
+        <ul>
+            <li>What’s Going On — Marvin Gaye</li>
+            <li>You’re Dead! — Flying Lotus</li>
+            <li>Pull My Hair Back —Jessy Lanza</li>
+            <li>Yeezus — Kanye West</li>
+            <li>Anything by Burial</li>
+        </ul>
+    </div>
+</div>
+
+***
+
+
+
 ## Colophon
 
 This site is built on [Jekyll](https://github.com/mojombo/jekyll) and served up with [GitHub Pages](https://pages.github.com/). It is maintained using [Siteleaf](http://www.siteleaf.com/), a wonderfully simple, hassle-free content management “designed for a better web.” My biggest dislike of many CMSs is the way they lock you in to their system and methodologies. Siteleaf, coupled with Jekyll and GitHub Pages, however, allows me to focus on building components and templates in a totally intuitive and non-intrusive way. I can’t thank [Oak](http://oak.is/) enough for the terrific product they have made, as it’s made my life *better.* Check it out.
@@ -108,19 +118,6 @@ This valid, semantic <small>HTML5</small> and <small>CSS3</small> code has been 
 All typefaces used on this site are served via [Typekit](https://typekit.com/). Body copy is set in [Tablet Gothic](https://typekit.com/fonts/tablet-gothic), with headers and pull-text in [Ronnia](https://typekit.com/fonts/coranto-2); both typefaces are created by the terrific [TypeTogether](https://typekit.com/foundries/typetogether) foundry.
 
 Hosting is supplied by the impeccable service of [Lithium Hosting](http://lithiumhosting.com/billing/aff.php?aff=335). Databases and hosting drives me bananas, and their services cover everything I need.
-
-***
-
-## Manifesto
-
-##### Hear Me
-I offer reactions, not answers. An answer implies there is but one constant result, which simply cannot provide a successful design outcome. There is no “perfect,” just “better.” I offer reactions; reactions with insight into how <span class="strike">users</span> your specific audience can make better use of your digital products and services.
-
-##### Trust Me
-Success requires faith. You have hired — or are looking to hire — an individual or organization to help create or improve your product. You are spending money, sometimes a lot, on evaluation, strategy, time, and resources that you cannot provide yourself. Trust the given expertise, and thoroughly take the recommendations into consideration. The initial desire does not often match the necessary conclusion, the one that helps.
-
-##### Pay Me
-Good design is not guessing, nor can it be done in twenty-two minutes. It involves considered approach and examined refinement to achieve success. Your product’s future requires investment; the design I do, and the work involved in it, provides tremendous insight. Your product will be *better*, and that in itself is a matter containing immense value and worth.
 
 ***
 

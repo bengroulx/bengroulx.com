@@ -6,6 +6,13 @@
 @import 'base/variables';
 @import 'base/extends';
 
+@import 'base/reset';
+@import 'base/general';
+@import 'base/typography';
+
+@import 'components/arrange';
+@import 'components/container';
+
 @import 'utilities/background';
 @import 'utilities/hidden';
 @import 'utilities/margin';
@@ -13,13 +20,6 @@
 @import 'utilities/shadow';
 @import 'utilities/text';
 @import 'utilities/zindex';
-
-@import 'base/reset';
-@import 'base/general';
-@import 'base/typography';
-
-@import 'components/arrange';
-@import 'components/container';
 
 @import 'templates/default';
 

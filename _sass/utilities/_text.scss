@@ -6,23 +6,23 @@
 // ---
 
 .u-text-very-small {
-    font-size: $very-small-font-size !important;
+    font-size: $very-small-font-size;
 }
 
 .u-text-small {
-    font-size: $small-font-size !important;
+    font-size: $small-font-size;
 }
 
 .u-text-default {
-    font-size: $base-font-size !important;
+    font-size: $base-font-size;
 }
 
 .u-text-large {
-    font-size: $large-font-size !important;
+    font-size: $large-font-size;
 }
 
 .u-text-very-large {
-    font-size: $very-large-font-size !important;
+    font-size: $very-large-font-size;
 }
 
 
@@ -32,7 +32,7 @@
 .u-text-weight-100,
 .u-text-weight-200,
 .u-text-weight-light {
-    font-weight: $light-font-weight !important;
+    font-weight: $light-font-weight;
 }
 
 .u-text-weight-300,
@@ -41,14 +41,14 @@
 .u-text-weight-600,
 .u-text-weight-normal,
 .u-text-weight-default {
-    font-weight: $base-font-weight !important;
+    font-weight: $base-font-weight;
 }
 
 .u-text-weight-700,
 .u-text-weight-800,
 .u-text-weight-900,
 .u-text-weight-bold {
-    font-weight: $bold-font-weight !important;
+    font-weight: $bold-font-weight;
 }
 
 
@@ -56,15 +56,15 @@
 // ---
 
 .u-text-align-center {
-    text-align: center !important;
+    text-align: center;
 }
 
 .u-text-align-start {
-    text-align: left !important;
+    text-align: left;
 }
 
 .u-text-align-right {
-    text-align: right !important;
+    text-align: right;
 }
 
 
@@ -72,19 +72,19 @@
 // ---
 
 .u-text-capitalize {
-    text-transform: capitalize !important;
+    text-transform: capitalize;
 }
 
 .u-text-uppercase {
-    text-transform: uppercase !important;
+    text-transform: uppercase;
 }
 
 .u-text-lowercase {
-    text-transform: lowercase !important;
+    text-transform: lowercase;
 }
 
 .u-text-transform-initial {
-    text-transform: initial !important;
+    text-transform: initial;
 }
 
 
@@ -92,15 +92,15 @@
 // ---
 
 .u-text-tracked-out {
-    letter-spacing: 0.125em !important;
+    letter-spacing: 0.125em;
 }
 
 .u-text-tracked-out-loose {
-    letter-spacing: 0.25em !important;
+    letter-spacing: 0.25em;
 }
 
 .u-text-tracked-in {
-    letter-spacing: -0.125em !important;
+    letter-spacing: -0.125em;
 }
 
 
@@ -112,16 +112,16 @@
 // 1. Ensure that the node has a maximum width after which truncation can occur.
 
 .u-text-truncate {
-    overflow: hidden !important;
-    max-width: 100% !important; // 1
+    overflow: hidden;
+    max-width: 100%; // 1
 
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .u-text-nowrap,
 .u-text-no-wrap {
-    white-space: nowrap !important;
+    white-space: nowrap;
 }
 
 
@@ -132,13 +132,13 @@
 // or other non-text assets.
 
 .u-text-collapse {
-    line-height: 0 !important;
+    line-height: 0;
 }
 
 .u-text-line-reset {
-    line-height: 1 !important;
+    line-height: 1;
 }
 
 .u-text-line-base {
-    line-height: $base-line-height !important;
+    line-height: $base-line-height;
 }

@@ -7,27 +7,14 @@
 }
 
 
-// Image: Cover
-// ---
-
-.c-image.c--cover {
-    background-position: center center;
-    background-size: cover;
-}
-
-
 // Image: Faded
 // ---
 
 .c-image.c--faded {
     &::before {
-        content: '';
+        @extend %position-cover;
 
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        content: '';
 
         display: block;
 

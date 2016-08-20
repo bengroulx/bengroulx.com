@@ -9,25 +9,18 @@ layout: default
 </header>
 
 <section class="c-segment" data-ui-component="page-content">
-    <div class="c-container c--large">
+    <div class="">
         {% for post in site.categories['projects'] %}
-            <article class="c-card c-faux-link u-margin-bottom-very-large">
-                <div class="c-card__content c-text-content">
+            <article class="c-segment c--extra-padding-top c--extra-padding-bottom c-faux-link u-margin-bottom-large u-background-grey u-background-cover" style="background-image:url('{{ post.header_image }}')">
+                <div class="c-text-content u-text-align-center">
                     <h2 class="" data-ui-component="project-title">
-                        {{ post.title }}
+                        <span class="u-background-white">{{ post.title }}</span>
                     </h2>
                     <p class="u-text-small u-text-uppercase u-text-tracked-out-loose" data-ui-component="project-meta">
-                        {{ post.type }}
-                    </p>
-                    <p class="" data-ui-component="project-summary">
-                        {{ post.description }}
+                        <span class="u-background-white">{{ post.type }}</span>
                     </p>
                 </div>
-                <div class="c-card__peek u-background-transparent" data-ui-component="post-image" style="background-image:url('{{ post.header_image }}')">
-                </div>
-                <div class="c-card__auxilliary">
-                    <a class="c-faux-link__overlay" data-ui-component="post-link" href="{{ post.url | prepend: site.baseurl }}">Read this article</a>
-                </div>
+                <a class="c-faux-link__overlay" data-ui-component="post-link" href="{{ post.url | prepend: site.baseurl }}">Read this article</a>
             </article>
         {% endfor %}
     </div>
