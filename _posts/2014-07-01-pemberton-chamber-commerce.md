@@ -1,12 +1,17 @@
 ---
-layout: project
 title: Pemberton Chamber of Commerce
-description: "Ben Groulx led the design process of the Pemberton Chamber of Commerce website. Read more about the redesign in this case study."
-permalink: /projects/pemberton-chamber-commerce
-image: ""
-header_image: /assets/images/projects/pemberton-chamber/redesign-pemberton-chamber.jpg
-categories: design content
-
+date: 2014-07-01 00:00:00 -07:00
+permalink: "/projects/pemberton-chamber-commerce"
+categories:
+- _pages
+- projects
+- design
+- content
+layout: project
+description: Ben Groulx led the design process of the Pemberton Chamber of Commerce
+  website. Read more about the redesign in this case study.
+image: ''
+header_image: "/assets/images/projects/pemberton-chamber/redesign-pemberton-chamber.jpg"
 type: Responsive Web
 duration: 4 months
 team: Custom Fit Online

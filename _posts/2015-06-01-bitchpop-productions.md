@@ -1,11 +1,25 @@
 ---
-layout: project
 title: Bitchpop Prouctions
-description: "Ben Groulx led the design process of the Bitchpop Production website and brand. Read more about the redesign in this case study."
-permalink: /projects/bitchpo-pproductions
-header_image: /assets/images/projects/bitchpop-productions/bitchpop-screen-desktop.png
-categories: Graphic design, Art direction, Front-end development, Web hosting, Social media, Copywriting
-
+date: 2015-06-01 00:00:00 -07:00
+permalink: "/projects/bitchpo-pproductions"
+categories:
+- _pages
+- projects
+- Graphic
+- design,
+- Art
+- direction,
+- Front-end
+- development,
+- Web
+- hosting,
+- Social
+- media,
+- Copywriting
+layout: project
+description: Ben Groulx led the design process of the Bitchpop Production website
+  and brand. Read more about the redesign in this case study.
+header_image: "/assets/images/projects/bitchpop-productions/bitchpop-screen-desktop.png"
 type: Identity Design
 duration: Ongoing
 team: Mobify

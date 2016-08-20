@@ -1,12 +1,22 @@
 ---
-layout: project
 title: Tourism Pemberton
-description: "Ben Groulx led the design process of the Tourism Pemberton website. Read more about the redesign in this case study."
-permalink: /projects/tourism-pemberton
-image: ""
-header_image: /assets/images/projects/tourism-pemberton/tourism-pemberton-redesign-screens.jpg
-categories: User experience (UX) design, Front-end development, Copywriting
-
+date: 2015-04-01 00:00:00 -07:00
+permalink: "/projects/tourism-pemberton"
+categories:
+- _pages
+- projects
+- User
+- experience
+- "(UX)"
+- design,
+- Front-end
+- development,
+- Copywriting
+layout: project
+description: Ben Groulx led the design process of the Tourism Pemberton website. Read
+  more about the redesign in this case study.
+image: ''
+header_image: "/assets/images/projects/tourism-pemberton/tourism-pemberton-redesign-screens.jpg"
 type: Responsive Web
 duration: 8 months
 team: Custom Fit Online

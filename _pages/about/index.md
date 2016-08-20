@@ -6,9 +6,6 @@ layout: about
 weight: 1
 ---
 
-
-
-
 I love writing and teaching—breaking down complex topics into simple, digestible concepts; so I’ve combined both passions into writing articles & tutorials on front-end development on my blog and for several high-profile online magazines including Codrops, where I wrote a CSS Reference, Adobe Dreamweaver Team Blog, where I’m a regular contributor with beginner–intermediate level CSS articles, Smashing Magazine, where I’m also an occasional tech reviewer, and CSS-Tricks. I've also written for A List Apart and Opera Developers' Blog (dev.opera).
 
 
