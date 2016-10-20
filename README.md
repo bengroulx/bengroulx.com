@@ -1,7 +1,5 @@
 # house-house.design
 
-House House is a multidisciplinary design practice in Vancouver, Canada — a joint production between Ben Groulx and Sean Durfee. You can hire us to help you connect with your audience in ways that will enrich their lives.
-
 ##Colophon ✌🏼
 
 This site is built on [Jekyll](https://github.com/mojombo/jekyll) and served up with [GitHub Pages](https://pages.github.com/). It is maintained using [Siteleaf](http://www.siteleaf.com/), a wonderfully simple, hassle-free content management “designed for a better web.” 
@@ -10,5 +8,5 @@ This valid, semantic <small>HTML5</small>, <small>CSS3</small>, and <small>JS</s
 
 ##Questions? 👋🏼
 
-Holla at [https://twitter.com/bengroulx](@bengroulx) or [https://twitter.com/Durfeee](@durfeee).
+Holla at [https://twitter.com/bengroulx](@bengroulx) or [mailto:ben@bengroulx.com](ben@bengroulx.com).
 
