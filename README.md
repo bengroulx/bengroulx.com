@@ -8,5 +8,5 @@ This valid, semantic <small>HTML5</small>, <small>CSS3</small>, and <small>JS</s
 
 ##Questions? 👋🏼
 
-Holla at [https://twitter.com/bengroulx](@bengroulx) or [mailto:ben@bengroulx.com](ben@bengroulx.com).
+Holla at [@bengroulx](https://twitter.com/bengroulx) or [ben@bengroulx.com](mailto:ben@bengroulx.com).
 
