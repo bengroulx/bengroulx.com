@@ -13,23 +13,12 @@
 
     {% include header.html %}
 
-    <main class="x-main js-fade-in" data-ui-component="page-content" role="main">
-        {{ content }}
-    </main>
+    {{ content }}
 
     {% include footer.html %}
 
     <!-- NON-CRITICAL STYLES -->
     <style>{% capture non_critical_styles %}{% include screen.scss %}{% endcapture %}{{ non_critical_styles | scssify }}</style>
-
-    <!-- TYPEKIT -->
-    <script src="https://use.typekit.net/oei6nmh.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-    <!-- SCRIPTS -->
-    <script src="{{ '/assets/js/header-pull.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/assets/js/fade-in.js' | prepend: site.baseurl }}"></script>
-
 
 </body>
 </html>

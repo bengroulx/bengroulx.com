@@ -1,0 +1,98 @@
+// Utilities: Layout
+// ============================================================================
+
+.u-context {
+    position: relative;
+}
+
+.u-position {
+    position: absolute;
+}
+
+.u-fixed {
+    position: fixed;
+}
+
+
+// Center In Parent
+// ---
+
+.u-center {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+// Cover Parent
+// ---
+
+.u-cover {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+// X & Y Index Positioning
+// ---
+
+.u-top-0 {
+    top: map-get($dimensions-map, 0);
+}
+
+.u-top-halfway {
+    top: map-get($dimensions-map, half);
+}
+
+.u-left-0 {
+    left: map-get($dimensions-map, 0);
+}
+
+.u-left-halfway {
+    left: map-get($dimensions-map, half);
+}
+
+.u-bottom-0 {
+    bottom: map-get($dimensions-map, 0);
+}
+
+.u-bottom-halfway {
+    bottom: map-get($dimensions-map, half);
+}
+
+.u-right-0 {
+    right: map-get($dimensions-map, 0);
+}
+
+.u-right-halfway {
+    right: map-get($dimensions-map, half);
+}
+
+
+// Z Index Positioning
+// ---
+
+@each $layer-name, $layer-value in $z-map {
+    .u-z-#{$layer-name} {
+        z-index: $layer-value;
+    }
+}
+
+
+// Floating
+// ---
+
+.u-float-left {
+    float: left;
+}
+
+.u-float-right {
+    float: right;
+}
+
+.u-float-none {
+    float: none;
+}

@@ -1,8 +1,8 @@
-// Utilities: Background
+// Utilities: Text Color
 // ============================================================================
 
 @each $color-name, $color-value in $color-map {
-    .u-bg-#{$color-name} {
-        background-color: $color-value;
+    .u-color-#{$color-name} {
+        color: $color-value;
     }
 }

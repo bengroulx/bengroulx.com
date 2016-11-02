@@ -1,9 +1,27 @@
-// Typography
-// ===
+// Global Typographic Styles
+// ============================================================================
 
+body {
+    @extend %type-copy;
+}
 
-// Headings
-// ---
+h1 {
+    @extend %type-headline;
+}
+
+h2 {
+    @extend %type-subheadline;
+}
+
+h3 {
+    @extend %type-title;
+}
+
+h4,
+h5,
+h6 {
+    @extend %type-subtitle;
+}
 
 h1,
 h2,
@@ -11,121 +29,50 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-
-    font-family: $headline-font-family;
-    font-weight: $bold-font-weight;
-    line-height: 1.25;
-    text-rendering: optimizeLegibility;
+    font-family: map-get($typeface-map, secondary);
+    font-weight: map-get($type-weight-map, base);
+    line-height: map-get($leading-map, tight);
 }
 
-h1 {
-    font-size: $very-large-font-size;
-    letter-spacing: -0.0125em;
-}
-
-h2 {
-    font-size: $large-font-size;
-}
-
-h3 {
-    font-style: italic;
-    font-size: $base-font-size * 1.15;
-}
-
-h4,
-h5,
-h6 {
-    font-size: $base-font-size;
-}
-
-
-// Lists
-// ---
-
-ul,
 ol,
-li {
-    margin: 0;
-    padding: 0;
+ul {
+    list-style: none;
 }
 
+q,
+blockquote {
+    quotes: none;
 
-// Links
-// ---
+    &::before,
+    &::after {
+        content: '';
+    }
+}
+
+small {
+    @extend %type-small;
+}
+
+code,
+pre {
+    font-family: map-get($typeface-map, mono);
+}
 
 a {
-    position: relative;
+    outline: none;
 
-    color: inherit;
-    text-decoration: none;
-
-    transition: all ease-out 0.1s;
+    color: map-get($color-map, link);
+    text-decoration: underline;
 
     &:hover,
-    &:active {
-        color: $active-emphasis !important;
-    }
-}
-
-
-// Blockquotes
-// ---
-
-blockquote {
-    position: relative;
-
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: $spacing-unit / 2;
-    border-left: $base-unit solid $neutral-30;
-
-    color: $neutral-50;
-    font-family: $headline-font-family;
-    font-style: normal;
-    font-size: $base-font-size;
-
-    &:before {
-        content: '“';
-
-        position: absolute;
-        top: -0.575em;
-        left: 0;
-
-        opacity: 0.1;
-
-        font-family: $base-font-family;
-        font-size: 10em;
+    &:focus {
+        outline: none;
     }
 
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
+    &:hover {
+        background-color: map-get($color-map, link);
 
-
-// Code Formatting
-// ---
-
-pre,
-code {
-    border: $base-border;
-
-    border-radius: $base-unit / 2;
-    background-color: $neutral-30;
-}
-
-code {
-    padding: 1px $base-unit;
-}
-
-pre {
-    overflow-x: auto;
-    padding: $base-unit*2 $base-unit*3;
-
-    > code {
-        padding-right: 0;
-        padding-left: 0;
-        border: 0;
+        color: map-get($color-map, white);
+        text-decoration: none;
     }
 }

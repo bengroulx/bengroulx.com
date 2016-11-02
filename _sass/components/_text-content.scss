@@ -1,98 +1,23 @@
 // Component: Text Content
-// ===
+// ============================================================================
 //
-// A `c-segment` component styles tag elements in a way that matches their com-
-// ponent equivalent in the absence of any component classes, or styles tags to
-// have appropriate levels of margins that they would otherwise be lacking.
-// Think of the `c-text-content` component as a way of creating a designated
+// Text content styles tag elements in a way that matches their component
+// equivalent in absence of any component classes, or styles tags to have
+// appropriate levels of margins that they would otherwise be lacking. You can
+// think of the c-text-content component as a way of creating a designated
 // WYSIWYG zone.
-
-
-// Component Variables
-// ---
-
-$small-text-content-spacing: $spacing-unit / 2;
-$large-text-content-spacing: $spacing-unit;
-
-
-// Text Content Root
-// ---
 
 .c-text-content {
 
-    // Apply Vertical Rhythm
-    // ---
-    //
-    // 1. Set `margin-bottom` to maintain vertical rhythm
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    ul,
-    ol,
-    dl,
-    figure {
-        @extend %vertical-rhythm; // 1
+    > *:not(:last-child) {
+        margin-bottom: map-get($size-map, md);
     }
 
-    * + h2,
-    * + h3,
-    * + h4,
-    * + h5,
-    * + h6 {
-        margin-top: 1em;
-    }
-
-    figure,
-    img {
-        margin: $spacing-unit auto;
-    }
-
-    ul,
     ol {
-        margin-left: $spacing-unit / 2;
+        list-style: lower-latin;
     }
 
-    li {
-        > ul,
-        > ol {
-            margin-bottom: 0;
-        }
-    }
-
-    a:not(.c-button) {
-        background-color: rgba(yellow, 0);
-        background-image: linear-gradient($base-background, $base-background), linear-gradient($base-background, $base-background), linear-gradient($neutral-30, $neutral-30);
-        background-repeat: no-repeat, no-repeat, repeat-x;
-        background-position: 0 90%, 100% 90%, 0 90%;
-        background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-
-        color: $base-emphasis;
-        text-shadow: 0.01em 0 $base-background, -0.01em 0 $base-background, 0 0.01em 0 $base-background;
-
-        &:hover,
-        &:active {
-            background-color: rgba(yellow, 0.15);
-            background-image: linear-gradient($base-background, $base-background), linear-gradient($base-background, $base-background), linear-gradient($neutral-70, $neutral-70);
-            background-repeat: no-repeat, no-repeat, repeat-x;
-            background-position: 0 100%, 100% 90%, 0 100%;
-            background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-        }
-    }
-
-    blockquote,
-    hr {
-        margin-top: $spacing-unit;
-        margin-bottom: $spacing-unit;
-    }
-
-    > :last-child {
-        margin-bottom: 0;
+    ul {
+        list-style: circle;
     }
 }

@@ -1,48 +1,25 @@
-// Component: Button
-// ===
+// Component: Text Content
+// ============================================================================
+//
+// The button component class is to be used for primary and secondary actions.
+// It should only ever be applied to a <button> or <a> element.
+//
+// 1. Recommended iOS tap size.
+// 2. Remove iOS and Android “buttonization” and use our own styles
 
 .c-button {
     display: inline-flex;
     align-items: center;
-    padding: ($base-unit * 4);
-    border: $matching-border;
+    min-width: 44px; // 1
+    min-height: 44px; // 1
 
-    border-radius: 0.125em;
-    outline: none;
+    border-radius: map-get($appearances-map, border-radius);
+    background: map-get($color-map, white);
 
-    font-family: $base-font-family;
-    font-weight: $bold-font-weight;
-    font-size: 0.9em;
-    line-height: 1;
-
-    transition-duration: 0.35s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    color: map-get($color-map, black);
+    text-decoration: none;
 
     cursor: pointer;
 
-    appearance: none;
-
-    &:hover {
-        border-radius: 2em;
-    }
-
-    &:active {
-        opacity: 0.5;
-    }
-
-    &:not(.c--small) {
-        min-height: $base-tap-size;
-    }
-
-    &.c--small {
-        min-height: $small-tap-size;
-    }
-
-    &:not(.c--light) {
-        color: $base-emphasis;
-    }
-
-    &.c--light {
-        color: $neutral-10;
-    }
+    appearance: none; // 2
 }
