@@ -6,12 +6,13 @@ $configure--base-unit: 1rem;
 $configure--base-ratio: 1.125;
 
 // All text is based off this font size
-$configure--text-size: 0.8rem;
+$configure--text-size: 0.9rem;
 
 // Choose your base typographic styles
+$configure--primary-font: 'Proxima Nova', 'Avenir',  -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--secondary-font: $configure--primary-font;
 $configure--code-font: 'Menlo', monospace;
-$configure--primary-font: $configure--code-font;
-$configure--secondary-font: $configure--code-font;
+$configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Choose your desired type weights
 $configure--text-weight: 300;
@@ -20,13 +21,15 @@ $configure--text-bold: 700;
 // Choose the colours of your entire project
 $configure--primary-color: #000;
 $configure--secondary-color: #fff;
-$configure--accent-color: #000;
+$configure--accent-color: blue;
 
 
 
 
-// Project-Wide Options
 // ============================================================================
+
+
+
 
 // Size options
 $size-map: (
@@ -41,6 +44,7 @@ $size-map: (
 $typeface-map: (
     primary: $configure--primary-font,
     secondary: $configure--secondary-font,
+    emoji: $configure--emoji-font,
     code: $configure--code-font,
 );
 
@@ -87,14 +91,6 @@ $content-area-map: (
     narrow: $configure--base-unit*30,
     medium: $configure--base-unit*45,
     wide:   $configure--base-unit*60,
-);
-
-// Viewport breakpoints options
-$breakpoints: (
-    xs: null,
-    sm: $configure--base-unit*30,
-    md: $configure--base-unit*45,
-    lg: $configure--base-unit*60,
 );
 
 // Dimensions options
