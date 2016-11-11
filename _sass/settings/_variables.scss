@@ -6,22 +6,22 @@ $configure--base-unit: 1rem;
 $configure--base-ratio: 1.125;
 
 // All text is based off this font size
-$configure--text-size: 0.9rem;
+$configure--text-size: 15px;
 
 // Choose your base typographic styles
-$configure--primary-font: 'Proxima Nova', 'Avenir',  -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--primary-font: 'AtlasGrotesk', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
 $configure--secondary-font: $configure--primary-font;
 $configure--code-font: 'Menlo', monospace;
 $configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Choose your desired type weights
-$configure--text-weight: 300;
+$configure--text-weight: 100;
 $configure--text-bold: 700;
 
 // Choose the colours of your entire project
-$configure--primary-color: #000;
-$configure--secondary-color: #fff;
-$configure--accent-color: blue;
+$configure--primary-color: darken(#130e75, 5%);
+$configure--secondary-color: #eee;
+$configure--accent-color: $configure--primary-color;
 
 
 

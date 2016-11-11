@@ -1,6 +1,14 @@
 // Global Typographic Styles
 // ============================================================================
 
+@font-face {
+    font-family: 'AtlasGrotesk';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/assets/fonts/AtlasGrotesk-Thin-Web.woff2') format('woff2'),
+         url('/assets/fonts/AtlasGrotesk-Thin-Web.ttf') format('truetype');
+}
+
 body {
     @extend %type-copy;
 }
@@ -70,9 +78,9 @@ a {
     }
 
     &:hover {
-        background-color: map-get($color-map, link);
+        background-color: rgba(#e5ef3e, 0.125);
 
-        color: map-get($color-map, white);
+        color: map-get($color-map, link);
         text-decoration: none;
     }
 }
