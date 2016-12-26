@@ -4,43 +4,32 @@ html(lang='en-ca')
 
 head
 
-    // GENERAL STUFF
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width,initial-scale=1.0')
-
-    // SITE/PAGE INFO
     title= title
     meta(name='google-site-verification', content='tjwlg8Q7I3CmF58-9XruF1_DkX8qTxEUmc0uq-Da4Aw')
     meta(name='description' content='#{ description }')
-    meta(name='keywords', content='vancouver, canada, ui, ux, design, front-end, html, css, interface, product, visual')
+    meta(name='keywords', content='vancouver, canada, ui, ux, mobile, design, front-end, html, css, interface')
     meta(name='author', content='Ben Groulx')
+    
+    style.
+        body{padding:5%!important;font-family:monospace;font-size:1.5em;}
 
-    // LOAD CRITICAL STYLES
     noscript#deferred-styles
-        link(rel='stylesheet' href='assets/styles/main.css')
+        link(rel='stylesheet' href='/assets/styles/screen.css')
 
     script.
-        var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-        };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-        if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-        else window.addEventListener('load', loadDeferredStyles);
+        var loadDeferredStyles=function(){var a=document.getElementById('deferred-styles'),b=document.createElement('div');b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener('load',loadDeferredStyles);
 
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@bengroulx')
+    meta(name='twitter:title', content='#{ title }')
+    meta(name='twitter:image', content='/assets/images/ben-groulx.jpg')
+    meta(name='twitter:creator', content='@bengroulx')
+    meta(name='twitter:image:alt', content='A headshot of Ben Groulx; He is standing on a beach, wearing a baseball cap.')
+    meta(name='twitter:description', content='#{ description }')
 
-    // LIBRARIES
-    //if lt IE 9
-        script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js')
-    // script(async='', src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
-    // script(async='', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
-
-    // ICONS
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-title', content='site.title | escape }}')
     link(rel='apple-touch-icon', sizes='57x57', href='/assets/icons/apple-icon-57.png')
@@ -58,13 +47,6 @@ head
     link(rel='icon', type='image/png', sizes='16x16', href='/assets/icons/favicon-16.png')
     meta(name='msapplication-TileImage', content='/assets/icons/ms-icon-144.png')
     meta(name='msapplication-TileColor', content='#121b92')
-
-    // TWITTER CARDS
-    meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content='#{ title }')
-    meta(name='twitter:description', content='#{ description }')
-    meta(name='twitter:creator', content='@bengroulx')
-    meta(name='twitter:site', content='@bengroulx')
 
 body
     != yield
