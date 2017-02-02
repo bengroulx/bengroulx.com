@@ -3,7 +3,9 @@
 Hey there 👋. I’m a Vancouver-based user interface designer 💯 focused on the intersection of interaction and graphic design, with experience in design systems 🔗, front-end architecture 🖥, and feedback processes 💬. I’d love to work with you 💖.
 
 ***
-For a fuller overview of my work/project experience, please see my LinkedIn profile at linkedin.com/in/bengroulx 
+
+For a fuller overview of my work/project experience, please see my LinkedIn profile at [linkedin.com/in/bengroulx](linkedin.com/in/bengroulx)
+
 ***
 
 ### Interaction Designer, Mobify
@@ -19,6 +21,7 @@ Projects: Lancôme USA, Chasing Fireflies, others
 * Wrote and published design documentation for Mobify partners to refer to when designing their own progressive web apps and mobile experiences.
 * Contributed and presented topics and talks to weekly design sync-ups and company-wide meetings.
 
+***
 
 ### Designer & Front-End Developer, House House
 ```
@@ -31,6 +34,7 @@ Projects: housecss, Bitchpop Productions, Ask Will, others
 * Participated in critiques and reviews with project stakeholders, designers, and developers.
 * Managed projects timelines to ensure deliverables were handed over effectively and of high quality. 
 
+***
 
 ### User Interface Developer, Mobify
 ```
@@ -41,6 +45,7 @@ Projects: Lancôme, Garnet Hill, Deluxe, others
 * Participated in routine design and development sync-ups, one-on-one and in groups, to provide code reviews and user experience feedback.
 * Made recommendations on appropriate uses of design patterns and components to improve and standardize design and development processes.
 
+***
 
 ### Lead Designer, Custom Fit Online
 ```
@@ -55,6 +60,7 @@ Projects: Whistler/Blackcomb, Fort St. John Public Library, Tourism Pemberton, o
 * Crafted appropriate visual identities for web and print marketing campaigns and promotions.
 * Contributed biweekly opinion/educational articles on various topics and happenings.
 
+***
 
 ### Designer & Front-End Developer, Ben Groulx Design
 ```
@@ -69,6 +75,7 @@ Projects: Pemberton Canoe Assn., Lawn Party Films, others
 * Developed wireframes, prototypes, and interfaces with user-centered interaction in mind.
 * Upheld user and customer interests while aligning with defined brand values and objectives.
 
+***
 
 ### Coach, Pemberton Canoe Association
 ```
@@ -76,6 +83,7 @@ April 2012 — July 2016 /  www.pembertoncanoe.com
 ```
 Pemberton Canoe’s Laoyam Eagles are an internationally-renowned competitive junior dragon boat team from Pemberton, Canada. They have competed and won in numerous World Championships across the globe, but more importantly, their paddling program has been a ground for fostering athleticism, teamwork, leadership, and respect amongst teens.
 
+***
 
 ```
 web: www.bengroulx.com
