@@ -4,13 +4,13 @@ Hey there 👋. I’m a Vancouver-based user interface designer 💯 focused on 
 
 ***
 
-For a fuller overview of my work/project experience, please see my LinkedIn profile at [linkedin.com/in/bengroulx](linkedin.com/in/bengroulx)
+For a fuller overview of my work/project experience, please see my LinkedIn profile at [linkedin.com/in/bengroulx](https://linkedin.com/in/bengroulx)
 
 ***
 
 ### Interaction Designer, Mobify
 ```
-February 2016 — Present /  www.mobify.com
+February 2016 — Present /  [www.mobify.com](https://mobify.com)
 Projects: Lancôme USA, Chasing Fireflies, others
 ```
 * Collaborated with developers, engineers, and project managers to prototype, design, and implement mobile-first experiences, namely progressive web apps.
@@ -25,7 +25,7 @@ Projects: Lancôme USA, Chasing Fireflies, others
 
 ### Designer & Front-End Developer, House House
 ```
-October 2016 — Present /  www.house-house.design
+October 2016 — Present /  [www.house-house.design](https://house-house.design)
 Projects: housecss, Bitchpop Productions, Ask Will, others
 ```
 * Worked with clients to uncover art direction and UX requirements through design sprints and user tests.
@@ -38,7 +38,7 @@ Projects: housecss, Bitchpop Productions, Ask Will, others
 
 ### User Interface Developer, Mobify
 ```
-September 2015 — February 2016 /  www.mobify.com
+September 2015 — February 2016 /  [www.mobify.com](https://mobify.com)
 Projects: Lancôme, Garnet Hill, Deluxe, others
 ```
 * Worked with designers to produce styleguides and build out mobile experiences using CSS and HTML.
@@ -49,7 +49,7 @@ Projects: Lancôme, Garnet Hill, Deluxe, others
 
 ### Lead Designer, Custom Fit Online
 ```
-October 2011 — August 2015 /  www.customfitonline.com
+October 2011 — August 2015 /  [www.customfitonline.com](https://customfitonline.com)
 Projects: Whistler/Blackcomb, Fort St. John Public Library, Tourism Pemberton, others
 ```
 * Oversaw and refined design processes to achieve honest, communicative web and print design.
@@ -64,7 +64,7 @@ Projects: Whistler/Blackcomb, Fort St. John Public Library, Tourism Pemberton, o
 
 ### Designer & Front-End Developer, Ben Groulx Design
 ```
-June 2008 — October 2016 /  www.bengroulx.com
+June 2008 — October 2016 /  [www.bengroulx.com](https://bengroulx.com)
 Projects: Pemberton Canoe Assn., Lawn Party Films, others
 ```
 * Designed consumer and commercial interfaces with emphasis on colour, composition, and typography.
@@ -79,7 +79,7 @@ Projects: Pemberton Canoe Assn., Lawn Party Films, others
 
 ### Coach, Pemberton Canoe Association
 ```
-April 2012 — July 2016 /  www.pembertoncanoe.com
+April 2012 — July 2016 /  [www.pembertoncanoe.com](http://pembertoncanoe.com)
 ```
 Pemberton Canoe’s Laoyam Eagles are an internationally-renowned competitive junior dragon boat team from Pemberton, Canada. They have competed and won in numerous World Championships across the globe, but more importantly, their paddling program has been a ground for fostering athleticism, teamwork, leadership, and respect amongst teens.
 
