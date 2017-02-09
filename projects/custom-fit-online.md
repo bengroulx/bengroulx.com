@@ -1,7 +1,6 @@
 # Custom Fit Online web design, graphic design & marketing
 
-|           |   |Markdown | Less | Pretty
---- | -df-- | ---
+|                  |      |
 | ---------------- | ---- |
 | Type             | Web Design / Graphic Design / Marketing |
 | Role             | Lead Designer |
@@ -12,10 +11,11 @@
 
 (link: http://customfitonline.com/ text: See the Custom Fit Online site live → class: button)
 
-> (link: https://www.linkedin.com/in/bengroulx/#recommendations text: Ben is a very special guy. He is a very talented designer, writes well,“gets” marketing and design, has a great passion for his work… and most importantly he is a really good person. We are thrilled with Ben’s design work. And he consistently contributes great ideas and concepts for our clients and the company. I highly endorse Ben.)
-
+> [Ben is a very special guy. He is a very talented designer, writes well,“gets” marketing and design, has a great passion for his work… and most importantly he is a really good person. We are thrilled with Ben’s design work. And he consistently contributes great ideas and concepts for our clients and the company. I highly endorse Ben.](https://linkedin.com/in/bengroulx/#recommendations)
 **Roy McClean**
 *Co-Worker / Owner & Managing Partner*
+
+
 
 (image: custom-fit-online-icons.png class: image-contain)
 
