@@ -1,6 +1,8 @@
 # Custom Fit Online web design, graphic design & marketing
 
-
+|           |   |Markdown | Less | Pretty
+--- | -df-- | ---
+| ---------------- | ---- |
 | Type             | Web Design / Graphic Design / Marketing |
 | Role             | Lead Designer |
 | Responsibilities | User interface (UI) design, User experience (UX) design, Graphic design, Art direction, Front-end development, Social media, Copywriting |
