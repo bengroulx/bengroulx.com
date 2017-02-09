@@ -22,7 +22,7 @@ The end result is a lively, festive visual design that intermingles well with th
 
 ![Leap 4 Your Life](../assets/leap-4-your-life-animation.gif)
 
-Taylor also needed some help creating an electronic press kit (EPK) that could be sent out to producers and studios, so I created a 14-page brochure-style booklet that could be representative of the film. Click the link below to download it.
+Taylor also needed some help creating an electronic press kit (EPK) that could be sent out to producers and studios, so I created a 14-page brochure-style booklet that could be representative of the film. [Download the Leap 4 Your Life EPK](../assets/Leap4YourLife-EPK.pdf).
 
 ![Leap 4 Your Life](../assets/leap-4-your-life-epk.jpg)
 
@@ -35,7 +35,6 @@ Taylor also needed some help creating an electronic press kit (EPK) that could b
 The *Leap 4 Your Life* work was extremely well received. In the end, Taylor and I managed to pull together a website that was fun and vibrant, but more importantly conveyed the tone of the film and allowed it to start building an online presence based around this “hub.” In 2014, *Leap 4 Your Life* was acquired by Pacific Northwest Pictures, thereby adding the film to its rotation on *Super Channel*. I continue to make updates to the site when required.
 
 > Ben took everything in my head and made it better. His creative vision and organizational skills created a site and EPK package that was both vibrant, easy to use, and innovative. Aside from his obvious talent, his professionalism and easy going personality honestly makes him a dream to work with. If you are looking for a web designer who has a sleek and modern design aesthetic, as well as quick to update any changes — then Ben is your guy. 
-
 **Taylor Hill**
 *Leap 4 Your Life*
 
