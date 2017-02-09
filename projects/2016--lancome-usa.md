@@ -6,5 +6,5 @@ Visit the [Lancôme USA website](http://lancome-usa.com/on/demandware.store/Site
 ![Lancôme Progress Web App](../assets/lancome-progressive.s2.jpg)
 ![Lancôme Progress Web App](../assets/lancome-progressive.s3.jpg)
 <div style="text-align:center;">
-![Lancôme Progress Web App](../assets/lancome-search-animation.gif)
+    <img src="../assets/lancome-search-animation.gif" />
 </div>
