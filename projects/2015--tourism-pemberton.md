@@ -4,9 +4,8 @@
 | :--------------- | :--- |
 | Type             | Web Design / Graphic Design / Marketing |
 | Role             | Lead Designer |
-| Responsibilities | User interface (UI) design, User experience (UX) design, Graphic design, Art direction, Front-end development, Social media, Copywriting |
+| Responsibilities | User interface (UI) design, Front-end development, Copywriting |
 | Year             | 2015 |
-
 
 
 ![Tourism Pemberton redesign](../assets/(image: tourism-pemberton-redesign-screens.jpg)
