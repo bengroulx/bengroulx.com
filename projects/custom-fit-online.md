@@ -16,6 +16,7 @@ Custom Fit Online is a web design, development, and content marketing shop in Wh
 *Co-Worker / Owner & Managing Partner*
 
 ![Custom Fit Online iconography](../assets/custom-fit-online-icons.png)
+
 ![Custom Fit Online “minibooks” covers](../assets/custom-fit-online-books.png)
 
 >[The things Ben excels at include the most important things: His integrity, sense of empathy and connection to clients/co-workers and leadership ability flow through his relationships. Those are key. His talent, which becomes all the more apparent when he reaches out to share his knowledge and discuss design, is top notch. I have recommended Ben several times and will continue to do so.](https://linkedin.com/in/bengroulx/#recommendations)
