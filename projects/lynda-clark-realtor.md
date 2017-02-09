@@ -2,7 +2,7 @@
 
 | Client           | Lynda Clark, Realtor |
 | :--------------- | :--- |
-| Type             | Web Design / Graphic Design / Marketing |
+| Type             | Web Design |
 | Role             | Lead Designer |
 | Responsibilities | User interface (UI) design, User experience (UX) design, Front-end development |
 | Year             | 2015 |
