@@ -1,7 +1,5 @@
 # Ski Resort Website Design & Marketing
 
-Custom Fit Online is a web design, development, and content marketing shop in Whistler, BC.
-
 | Client           | Snow Valley (Barrie) |
 | :--------------- | :--- |
 | Type             | Web Design / Ecommerce |
