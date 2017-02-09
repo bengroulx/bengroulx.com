@@ -7,7 +7,7 @@ In late 2014, Custom Fit Online was tasked with bringing a fresh new design pers
 | Type             | Web Design |
 | Role             | Lead Designer |
 | Responsibilities | User interface (UI) design, Front-end development |
-| Year             | 2013 |
+| Year             | 2014 |
 
 ![Pemberton Chamber of Commerce redesign](../assets/redesign-pemberton-chamber.jpg)
 
