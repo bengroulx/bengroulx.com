@@ -62,7 +62,11 @@ Once we had a handle on the visual design language and had our content priority 
 
 I received feedback from Kerry as soon as possible, and as often as possible. Getting a continuous stream of feedback and discussion, we were able to iterate often and produce designs that satisfied the library’s goals.
 
+***
+
 [**Read more:** Getting feedback is crucial to the development and wellbeing of all design projects.](https://customfitonline.com/news/2014/10/17/giving-receiving-better-design-feedback/)
+
+***
 
 The site is built on the Umbraco content management system. By using Umbraco we were able to rapidly buildout the designs without worrying too much about how we would be able to accommodate the many requirements of the website, such as an integrated blog and events section, updated hours, image galleries, and more.
 
