@@ -7,11 +7,6 @@
 | Responsibilities | User interface (UI) design, Front-end development |
 | Year             | 2014 |
 
-(image: snow-valley-screen.jpg)
-(image: snow-valley-colour.jpg caption: )
-(image: snow-valley-redesign-mobile.png)
-(image: snow-valley-redesign-desktop.png)
-
 ![Ski Snow Valley, Barrie: redesign desktop](../assets/snow-valley-screen.jpg)
 ![Ski Snow Valley, Barrie: Various colour schemes/palettes applied to the homepage](../assets/snow-valley-colour.jpg)
 ![Ski Snow Valley, Barrie: redesign desktop](../assets/snow-valley-redesign-mobile.png)
