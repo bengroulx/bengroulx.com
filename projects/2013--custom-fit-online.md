@@ -1,6 +1,4 @@
-# Custom Fit Online
-
-Custom Fit Online is a web design, development, and content marketing shop in Whistler, BC.
+# Agency Web Design, Development, & Graphic Design
 
 | Client           | Custom Fit Online |
 | :--------------- | :--- |
