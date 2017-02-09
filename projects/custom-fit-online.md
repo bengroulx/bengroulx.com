@@ -1,6 +1,6 @@
 # Custom Fit Online web design, graphic design & marketing
 
-|                  |      |
+| Project Overview        |
 | ---------------- | ---- |
 | Type             | Web Design / Graphic Design / Marketing |
 | Role             | Lead Designer |
