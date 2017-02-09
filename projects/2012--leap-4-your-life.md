@@ -14,7 +14,7 @@ In the tradition of “Waiting for Guffman” and “Best in Show,” Leap 4 You
 I was approached in 2012 by [Taylor Hill](https://twitter.com/iamtaylorhill), writer and creator of Leap 4 Your Life. She was looking for help with the design and development for a new site so that she could start establishing a web presence for the film. We talked through the objectives of the website, the mandatory aspects (and the non-mandatory ones, too), and the overall tone of the site. We got to sketching together, tossing around ideas about what we thought would be appropriate — and how it could be achieved.
 
 ![Leap 4 Your Life](../assets/leap-4-your-life-design-sketch.jpg)
-![Leap 4 Your Life](../assets/leap-4-your-life-redesign-mobile.jpg)
+![Leap 4 Your Life](../assets/leap-4-your-life-redesign-mobile.png)
 ![Leap 4 Your Life](../assets/leap-4-your-life-redesign-desktop.s1.png)
 ![Leap 4 Your Life](../assets/leap-4-your-life-redesign-desktop.s2.png)
 
@@ -22,11 +22,9 @@ The end result is a lively, festive visual design that intermingles well with th
 
 ![Leap 4 Your Life](../assets/leap-4-your-life-animation.gif)
 
-Taylor also needed some help creating an electronic press kit (EPK) that could be sent out to producers and studios, so I created a 14-page brochure-style booklet that could be representative of the film. [Download the Leap 4 Your Life EPK](../assets/Leap4YourLife-EPK.pdf).
+Taylor also needed some help creating an electronic press kit (EPK) that could be sent out to producers and studios, so I created a 14-page brochure-style booklet that could be representative of the film. [Download the Leap 4 Your Life EPK](../assets/Leap4YourLife-EPK.pdf) [4.8mb].
 
 ![Leap 4 Your Life](../assets/leap-4-your-life-epk.jpg)
-
-(file: Leap4YourLife-EPK.pdf class: button text: Download the Leap 4 Your Life EPK [4.8mb] →)
 
 ***
 
