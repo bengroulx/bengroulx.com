@@ -22,7 +22,3 @@ But that doesn’t mean there isn’t room to make it beautiful! I spent several
 ![Pemberton Chamber of Commerce redesign desktop](../assets/pemberton-chamber-redesign-desktop.s1.png)
 ![Pemberton Chamber of Commerce redesign desktop](../assets/pemberton-chamber-redesign-desktop.s2.png)
 ![Pemberton Chamber of Commerce redesign mobile](../assets/pemberton-chamber-redesign-mobile.png)
-
->[I worked with Ben at Custom Fit Online and even though we worked together virtually, we had great chemistry. He was always able to execute my ideas into beautiful graphics, teach me how to do technical things that I didn't know how to do and was always really positive. He's a talented man and if you get a chance to work with him you will see first hand.](https://linkedin.com/in/bengroulx/#recommendations)
-**Blair Kaplan**
-*Co-Worker / Communications Specialist*
