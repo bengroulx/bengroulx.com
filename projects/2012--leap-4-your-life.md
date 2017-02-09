@@ -3,7 +3,7 @@
 | Client           | Leap 4 Your Life |
 | :--------------- | :--- |
 | Type             | Web Design / Graphic Design |
-| Role             | Lead Designer |
+| Role             | Designer |
 | Responsibilities | User interface (UI) design, Graphic design, Art direction, Front-end development |
 | Year             | 2012 |
 
