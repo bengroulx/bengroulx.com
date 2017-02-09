@@ -1,4 +1,4 @@
-# Fort St. John Public Library
+# Public Library Responsive Website Design & Development
 
 Custom Fit Online is a web design, development, and content marketing shop in Whistler, BC.
 
