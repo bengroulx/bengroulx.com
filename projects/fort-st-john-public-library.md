@@ -9,6 +9,8 @@ Custom Fit Online is a web design, development, and content marketing shop in Wh
 | Responsibilities | User interface (UI) design, User experience (UX) design, Front-end development |
 | Year             | 2014 |
 
+![Redesign desktop](../assets/redesign-fort-st-john-public-library.jpg)
+
 “The Fort St. John and Area Public Library is a community cornerstone, providing a variety of information and support for lifelong learning in a welcoming, entertaining and safe environment. The library hosts creative, community-oriented programs and delivers top-notch customer service.”
 
 That’s what is written on the Fort St. John Public Library website. But what FSJPL really is, is a bold, interesting library doing some pretty cool things. When they contacted us at the end of the summer in 2014 about redesigning their online presence, we were ecstatic to jump on the opportunity to work alongside them.
@@ -48,7 +50,7 @@ The second major exercise we went through was the Content Priority Test, designe
 
 ## Bringing Together Layout and Visual Design
 
-![One of the element collages for FSJPL](../assets/fsjpl-element-collage.png)
+![One of the element collages for FSJPL](../assets/fsjpl-element-collage.jpg)
 
 Once we had content mapped out, we could begin playing with various iterations of visual design. By using the existing colours of the FSJPL brand and the notes and feedback provided by Kerry, I was able to hone in on a visual language that appropriately identified FSJPL. With a distinctive collection of playful icons, festive colours, and large swashes of imagery and backgrounds, a visual palette was created that could be applied overtop of the content priority design and wireframes.
 
@@ -64,9 +66,9 @@ I received feedback from Kerry as soon as possible, and as often as possible. Ge
 
 The site is built on the Umbraco content management system. By using Umbraco we were able to rapidly buildout the designs without worrying too much about how we would be able to accommodate the many requirements of the website, such as an integrated blog and events section, updated hours, image galleries, and more.
 
-![Redesign mobile](../assets/fsjpl-typography-redesign-mobile.png)
-![Redesign desktop](../assets/fsjpl-typography-redesign-desktop.s1.png)
-![Redesign desktop](../assets/fsjpl-typography-redesign-desktop.s2.png)
+![Redesign mobile](../assets/fsjpl-redesign-mobile.png)
+![Redesign desktop](../assets/fsjpl-redesign-desktop.s1.png)
+![Redesign desktop](../assets/fsjpl-redesign-desktop.s2.png)
 
 
 ## The Final Results
