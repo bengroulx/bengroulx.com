@@ -16,11 +16,7 @@ head
     style.
         body{padding:5%!important;font-family:monospace;font-size:1.5em;}
 
-    noscript#deferred-styles
-        link(rel='stylesheet' href='/assets/styles/screen.css')
-
-    script.
-        var loadDeferredStyles=function(){var a=document.getElementById('deferred-styles'),b=document.createElement('div');b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener('load',loadDeferredStyles);
+    link(rel='stylesheet' href='/assets/styles/screen.css')
 
     meta(name='twitter:card', content='summary')
     meta(name='twitter:site', content='@bengroulx')
