@@ -8,9 +8,12 @@ meta(name='keywords', content='design, ui, ux, mobile, front-end, html, css, int
 meta(name='viewport', content='width=device-width,initial-scale=1.0')
 meta(name='author', content='Ben Groulx')
 
-//- Styles
+//- Critical Styles
 style.
     body{padding:5%!important;font-family:monospace;font-size:1.5em;}
+    img{max-width:100%;height:auto;}
+
+//- Deferred Styles
 noscript#deferred-styles
     link(rel='stylesheet', href='/assets/styles/screen.v2.css')
 
