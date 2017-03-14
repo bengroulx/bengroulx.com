@@ -6,5 +6,12 @@
     max-width: none;
 }
 
-.t-home--article {
+.t-home--section {
+    margin-bottom: 20%;
+
+    @media all and (min-width: 40rem) {
+        & {
+            margin-bottom: 10%;
+        }
+    }
 }

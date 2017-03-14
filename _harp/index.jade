@@ -1,8 +1,11 @@
 include includes/_c-button
 include includes/_c-link-block
 
-section(style='margin-bottom:10%;')
-    img.u-margin-bottom-lg.u-block.t-home--hero-img(src='assets/images/illustration.gif' alt='Skull and snake collage')
+section.t-home--section
+    picture.u-margin-bottom-lg.u-block
+        source(srcset='assets/images/illustration--small.jpg', media='(max-width:800px)')
+        source(srcset='assets/images/illustration--large.png')
+        img.t-home--hero-img(src='assets/images/illustration--small.jpg', alt='Skull and snake collage')
     h1.u-margin-bottom-lg Ben Groulx is a #[span(style='text-decoration:line-through;') user interface] designer.
     div.c-text-content.u-measure-wide
         p
@@ -21,7 +24,7 @@ section(style='margin-bottom:10%;')
             |  💸 to help you with art direction, UI design, and web development 😎.
 
 
-section(style='margin-bottom:10%;')
+section.t-home--section
     h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg
         | ## Client Work
     ul.u-border-top-grey(style='list-style:none;')
@@ -43,7 +46,7 @@ section(style='margin-bottom:10%;')
             +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2014--snow-valley.md', 'Snow Valley (Barrie)', '2014')
 
 
-section(style='margin-bottom:10%;')
+section.t-home--section
     h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg 
         | ## Let’s Sync
     +button('mailto:ben@bengroulx.com', '💌 Email')
