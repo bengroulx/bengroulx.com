@@ -25,7 +25,8 @@ self.addEventListener('install', function(event) {
                 './',
                 'assets/scripts/logging.js',
                 'assets/styles/screen.css',
-                'assets/images/illustration.gif'
+                'assets/images/illustration--small.jpg',
+                'assets/images/illustration--large.png'
             ]);
         })
     );
