@@ -7,9 +7,9 @@ section.t-home--section
         source(srcset='assets/images/illustration--large.png')
         img.t-home--hero-img(src='assets/images/illustration--small.jpg', alt='Skull and snake collage')
     h1.u-margin-bottom-lg Ben Groulx is a #[span(style='text-decoration:line-through;') user interface] designer.
-    div.c-text-content.u-measure-wide
+    div.c-text-content.u-measure-medium.u-text-medium
         p
-            | Hey there 👋. I’m Ben, a Vancouver-based UI designer 💯 focused on the intersection of interaction and graphic design, with experience in design systems 🔗, front-end architecture 🖥, and feedback processes 💬.
+            | Hey there 👋. I’m Ben, a Vancouver-based  designer 💯 focused on the intersection of interaction and graphic design, with experience in design systems 🔗, front-end architecture 🖥, and feedback processes 💬.
         p
             | With 
             a(href='http://mobify.com/') Mobify
@@ -26,34 +26,35 @@ section.t-home--section
 
 section.t-home--section
     h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg
-        | ## Client Work
+        | ## Work
     ul.u-border-top-grey(style='list-style:none;')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--lancome-usa.md', 'Lancôme USA', 2016)
+            +linkBlock('Lancôme USA', '2016', 'Mobify', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--lancome-usa.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--housecss.md', 'housecss', '2016 – ongoing')
+            +linkBlock('housecss', 'ongoing', 'House House', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--housecss.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--chasing-fireflies.md', 'Chasing Fireflies', '2016')
+            +linkBlock('Chasing Fireflies', '2016', 'Mobify', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--chasing-fireflies.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2015--bitchpop-productions.md', 'Bitchpop Productions', '2016 – ongoing')
+            +linkBlock('Bitchpop Productions', 'ongoing', 'House House', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2015--bitchpop-productions.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--ask-will.md', 'Ask Will', '2016')
+            +linkBlock('Ask Will', '2016', 'House House', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2016--ask-will.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2015--tourism-pemberton.md', 'Tourism Pemberton', '2015')
+            +linkBlock('Tourism Pemberton', '2015', 'Custom Fit Online', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2015--tourism-pemberton.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2014--fort-st-john-public-library.md', 'Fort St. John Public Library', '2014')
+            +linkBlock('Fort St. John Public Library', '2014', 'Custom Fit Online', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2014--fort-st-john-public-library.md')
         li
-            +linkBlock('https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2014--snow-valley.md', 'Snow Valley (Barrie)', '2014')
+            +linkBlock('Snow Valley (Barrie)', '2014', 'Custom Fit Online', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2014--snow-valley.md')
 
 
 section.t-home--section
     h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg 
         | ## Let’s Sync
-    +button('mailto:ben@bengroulx.com', '💌 Email')
-    +button('https://m.me/bengroulx', '💬 Messenger')
-    +button('https://linkedin.com/in/bengroulx', '🗣 LinkedIn')
-    +button('https://twitter.com/bengroulx', '🐦 Twitter')
-    +button('https://github.com/bengroulx', '🖥 GitHub')
-    +button('https://instagram.com/bengroulx', '🌄 Instagram')
-    +button('https://vsco.co/bengroulx', '🏞 VSCO')
-    +button('https://open.spotify.com/user/bengroulx', '🎶 Spotify')
+    div.c-text-content.u-measure-wide
+        +button('mailto:ben@bengroulx.com', '💌 Email')
+        +button('https://m.me/bengroulx', '💬 Messenger')
+        +button('https://linkedin.com/in/bengroulx', '🗣 LinkedIn')
+        +button('https://twitter.com/bengroulx', '🐦 Twitter')
+        +button('https://github.com/bengroulx', '🖥 GitHub')
+        +button('https://instagram.com/bengroulx', '🌄 Instagram')
+        +button('https://vsco.co/bengroulx', '🏞 VSCO')
+        +button('https://open.spotify.com/user/bengroulx', '🎶 Spotify')

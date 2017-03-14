@@ -1,5 +1,7 @@
-mixin linkBlock(url, title, year)
+mixin linkBlock(title, year, company, url)
 
-    a.u-block.u-full-width.u-flexbox.u-justify-between.u-align-middle.u-border-bottom-grey.u-padding-top-lg.u-padding-bottom-lg.u-leading-tight(href='#{url}', style='text-decoration:none;') 
+    a.u-block.u-full-width.u-flexbox.u-justify-between.u-align-middle.u-border-bottom-grey.u-padding-top-lg.u-padding-bottom-lg.u-text-tight(href='#{url}') 
         div.u-text-size-large.u-margin-right-lg #{title}
-        div.u-half-transparent.u-align-right.u-text-nowrap #{year}
+        div.u-align-right.u-half-transparent
+            span.u-block.u-text-nowrap.u-text-secondary.u-text-size-small.u-margin-bottom-sm #{year}
+            span.u-block.u-text-nowrap.u-text-medium(style='font-size:0.85rem;') #{company}

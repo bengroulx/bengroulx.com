@@ -6,16 +6,17 @@ $configure--base-unit: 1rem;
 $configure--base-ratio: 1.25;
 
 // All text is based off this font size
-$configure--text-size: 0.875rem;
+$configure--text-size: 1rem;
 
 // Choose your base typographic styles
-$configure--primary-font: 'sf_mono', monospace;
-$configure--secondary-font: $configure--primary-font;
-$configure--code-font: $configure--primary-font;
+$configure--primary-font: 'fakt_pro', -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', sans-serif;
+$configure--secondary-font: 'sf_mono', monospace;
+$configure--code-font: $configure--secondary-font;
 $configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Choose your desired type weights
-$configure--text-weight: 300;
+$configure--text-regular: 300;
+$configure--text-medium: 400;
 $configure--text-bold: 700;
 
 // Choose the colours of your entire project
@@ -50,7 +51,8 @@ $typeface-map: (
 
 // Weight options
 $type-weight-map: (
-    base: $configure--text-weight,
+    regular: $configure--text-regular,
+    medium: $configure--text-medium,
     bold: $configure--text-bold,
 );
 
@@ -110,8 +112,8 @@ $appearances-map: (
     very-rounded-corners: $configure--base-unit * $configure--base-ratio,
     circle: 100%,
     fully-transparent: 0,
-    semi-transparent: 0.25,
-    half-transparent: 0.5,
+    semi-transparent: 0.3,
+    half-transparent: 0.6,
 );
 
 // Direction options

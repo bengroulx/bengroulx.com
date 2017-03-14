@@ -1,18 +1,37 @@
 // Global Typographic Styles
 // ============================================================================
+//
+// 1. Latin glyphs
 
 @font-face {
     font-family: 'sf_mono';
     font-style: normal;
-    font-weight: $configure--text-weight;
+    font-weight: $configure--text-regular;
 
     src: url('../fonts/sf-mono-light.woff2') format('woff2');
+    unicode-range: U+000-5FF; // 1
+}
+
+@font-face {
+    font-family: 'fakt_pro';
+    font-style: normal;
+    font-weight: $configure--text-regular;
+
+    src: url('../fonts/fakt-pro-300.woff2') format('woff2');
+    unicode-range: U+000-5FF; // 1
+}
+
+@font-face {
+    font-family: 'fakt_pro';
+    font-style: normal;
+    font-weight: $configure--text-medium;
+
+    src: url('../fonts/fakt-pro-400.woff2') format('woff2');
+    unicode-range: U+000-5FF; // 1
 }
 
 body {
     @extend %type-copy;
-
-    letter-spacing: -0.0125em;
 }
 
 h1 {
@@ -39,8 +58,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: map-get($type-weight-map, base);
+    font-family: map-get($typeface-map, secondary);
+    font-weight: map-get($type-weight-map, regular);
     line-height: map-get($leading-map, tight);
+    letter-spacing: -0.0125em;
 }
 
 ol,

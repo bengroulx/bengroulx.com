@@ -20,7 +20,7 @@
         list-style: circle;
     }
 
-    a {
+    a:not(.c-button) {
         position: relative;
 
         &::after {
