@@ -70,15 +70,16 @@ pre {
 a {
     text-decoration: none;
 
+    transition: all 0.1s linear;
+
     &:not(:hover) {
         color: map-get($color-map, link);
-        text-decoration: underline;
     }
 
     &:hover,
     &:focus {
         background-color: rgba(#e5ef3e, 0.25);
 
-        color: map-get($color-map, link);
+        color: mix(map-get($color-map, link), blue);
     }
 }
