@@ -39,7 +39,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: map-get($typeface-map, secondary);
     font-weight: map-get($type-weight-map, base);
     line-height: map-get($leading-map, tight);
 }

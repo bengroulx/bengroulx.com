@@ -56,7 +56,7 @@ $type-weight-map: (
 
 // Leading options
 $leading-map: (
-    base: ($configure--base-ratio * 1.6),
+    base: ($configure--base-ratio * 1.4),
     tight: $configure--base-ratio,
 );
 
@@ -66,7 +66,7 @@ $color-map: (
     secondary: $configure--secondary-color,
     link:      $configure--accent-color,
     black:     mix(#000, mix(#000, mix(#000, $configure--primary-color))),
-    white:     mix(#fff, mix(#fff, mix(#fff, $configure--primary-color))),
+    grey:      mix(#fff, mix(#fff, mix(#fff, $configure--primary-color))),
     // tu: #36465d,
     // fb: #3b5998,
     // li: #0077b5,
@@ -109,8 +109,9 @@ $appearances-map: (
     rounded-corners: $configure--base-unit / ($configure--base-ratio * 3),
     very-rounded-corners: $configure--base-unit * $configure--base-ratio,
     circle: 100%,
-    half-transparent: 0.5,
     fully-transparent: 0,
+    semi-transparent: 0.25,
+    half-transparent: 0.5,
 );
 
 // Direction options

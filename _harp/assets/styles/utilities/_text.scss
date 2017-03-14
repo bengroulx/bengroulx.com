@@ -14,7 +14,7 @@
 }
 
 .u-text-size-large {
-    @extend %type-subheadline;
+    @extend %type-title;
 }
 
 .u-text-size-small {
@@ -28,7 +28,7 @@
 // 1. The same style could be applied by using an element. Think about what may
 //    be more semantically correct for your specific situation.
 
-.u-text-weight-normal {
+.u-regular {
     font-weight: map-get($type-weight-map, base);
 }
 
@@ -38,6 +38,15 @@
 
 .u-italic {
     font-style: italic; // 1
+}
+
+
+
+// Text Leading
+// ---
+
+.u-leading-tight {
+    line-height: map-get($leading-map, tight);
 }
 
 
@@ -82,4 +91,8 @@
     color: transparent;
     white-space: nowrap;
     text-indent: 100%;
+}
+
+.u-text-nowrap {
+    white-space: nowrap;
 }

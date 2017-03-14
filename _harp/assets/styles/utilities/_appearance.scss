@@ -13,6 +13,10 @@
     border-radius: map-get($appearances-map, circle);
 }
 
+.u-semi-transparent {
+    opacity: map-get($appearances-map, semi-transparent);
+}
+
 .u-half-transparent {
     opacity: map-get($appearances-map, half-transparent);
 }
