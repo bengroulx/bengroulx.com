@@ -68,7 +68,7 @@ $color-map: (
     secondary: $configure--secondary-color,
     link:      $configure--accent-color,
     black:     mix(#000, mix(#000, mix(#000, $configure--primary-color))),
-    grey:      mix(#fff, mix(#fff, mix(#fff, $configure--primary-color))),
+    grey:      rgba(mix(#000, $configure--primary-color), 0.25),
     // tu: #36465d,
     // fb: #3b5998,
     // li: #0077b5,

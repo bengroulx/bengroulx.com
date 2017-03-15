@@ -40,7 +40,7 @@
 // @import 'utilities/color';
 @import 'utilities/display';
 @import 'utilities/flex';
-// @import 'utilities/layout';
+@import 'utilities/layout';
 @import 'utilities/measure';
 @import 'utilities/spacing';
 @import 'utilities/text';
@@ -55,6 +55,7 @@
 // class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
 @import 'components/button';
+@import 'components/link-block';
 @import 'components/text-content';
 
 

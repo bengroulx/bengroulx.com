@@ -1,0 +1,23 @@
+// Component: Link Block
+// ============================================================================
+
+.c-link-block {
+    &,
+    &__overlay {
+        transition: all 0.25s ease-out;
+    }
+
+    &:hover {
+        ~ .c-link-block__overlay {
+            opacity: 0.2;
+
+            transform: translate(0, 0);
+        }
+    }
+
+    &__overlay {
+        opacity: 0;
+
+        transform: translate(0, 100%);
+    }
+}

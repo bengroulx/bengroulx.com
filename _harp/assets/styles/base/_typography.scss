@@ -61,7 +61,7 @@ h6 {
     font-family: map-get($typeface-map, secondary);
     font-weight: map-get($type-weight-map, regular);
     line-height: map-get($leading-map, tight);
-    letter-spacing: -0.0125em;
+    letter-spacing: -0.05em;
 }
 
 ol,
