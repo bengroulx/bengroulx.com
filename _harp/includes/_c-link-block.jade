@@ -6,5 +6,4 @@ mixin linkBlock(title, year, company, url, image)
             span.u-block.u-text-nowrap.u-text-secondary.u-margin-bottom-sm #{year}
             span.u-block.u-text-nowrap(style='font-size:0.75em;') #{company}
 
-    aside.c-link-block__overlay.u-fixed.u-top-0.u-bottom-0.u-right-0.u-left-0(style='z-index:-1;')
-        div.u-position.u-top-0.u-bottom-0.u-right-0.u-left-0(style='background-image: url("#{image}"); background-position:center; background-size:cover; transform:scale(1.1);')
+    aside.c-link-block__overlay.u-fixed.u-top-0.u-bottom-0.u-right-0.u-left-0(style='z-index:-1; background-image: url("#{image}"); background-position:center; background-size:cover; opacity:0;', role='presentation')

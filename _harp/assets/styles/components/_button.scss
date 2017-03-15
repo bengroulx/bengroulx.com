@@ -13,20 +13,15 @@
     align-items: center;
     min-width: 44px; // 1
     min-height: 44px; // 1
-
     border-bottom-width: 0.15em;
 
     border-radius: map-get($appearances-map, border-radius);
-    background: transparent;
-    line-height: 1;
+    background: $configure--secondary-color;
 
+    line-height: 1;
     text-decoration: none !important;
 
     cursor: pointer;
 
     appearance: none; // 2
-
-    &:not(:hover) {
-
-    }
 }

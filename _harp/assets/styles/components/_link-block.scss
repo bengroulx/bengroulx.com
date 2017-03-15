@@ -4,20 +4,26 @@
 .c-link-block {
     &,
     &__overlay {
-        transition: all 0.25s ease-out;
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+
+        transition: all 0.1s ease-out;
     }
 
-    &:hover {
-        ~ .c-link-block__overlay {
-            opacity: 0.2;
+    @media (min-width: 60rem) {
+        &:hover {
+            padding-right: 3%;
+            padding-left: 3%;
+            border: 1px solid map-get($color-map, primary);
 
-            transform: translate(0, 0);
+            background: map-get($color-map, secondary);
+
+            transform: translate(0, -2px);
+
+            ~ .c-link-block__overlay {
+                opacity: 0.3 !important;
+            }
         }
-    }
-
-    &__overlay {
-        opacity: 0;
-
-        transform: translate(0, 100%);
     }
 }
