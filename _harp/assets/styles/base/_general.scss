@@ -5,6 +5,8 @@
 *::after,
 *::before {
     box-sizing: border-box;
+
+    transition: all 0.1s ease-out;
 }
 
 body {
@@ -13,7 +15,7 @@ body {
 
     background: map-get($color-map, secondary);
 
-    color: map-get($color-map, primary);
+    // color: map-get($color-map, primary);
     font-family: map-get($typeface-map, primary), map-get($typeface-map, emoji);
     font-weight: map-get($type-weight-map, regular);
     line-height: map-get($leading-map, base);

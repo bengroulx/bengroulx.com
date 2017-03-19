@@ -91,16 +91,14 @@ pre {
 a {
     text-decoration: none;
 
-    transition: all 0.1s linear;
-
     &:not(:hover) {
-        color: map-get($color-map, link);
+        color: inherit;
     }
 
     &:hover,
     &:focus {
         background-color: rgba(#e5ef3e, 0.25);
 
-        color: mix(map-get($color-map, link), blue);
+        color: map-get($color-map, link);
     }
 }

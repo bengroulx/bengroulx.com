@@ -33,19 +33,18 @@
             z-index: -1;
 
             width: 100%;
-            height: 40%;
+            height: 10%;
 
-            background-color: rgba(map-get($color-map, link), 0.15);
-
-            transition: all 0.125s linear;
+            background-color: map-get($color-map, link);
         }
 
         &:hover,
         &:focus {
             &::after {
-                height: 10%;
+                bottom: -30%;
+                height: 30%;
 
-                background-color: rgba(map-get($color-map, link), 1);
+                background-color: map-get($color-map, link);
             }
         }
     }

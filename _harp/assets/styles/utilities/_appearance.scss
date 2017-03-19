@@ -24,3 +24,7 @@
 .u-fully-transparent {
     opacity: map-get($appearances-map, fully-transparent);
 }
+
+.u-not-transparent {
+    opacity: map-get($appearances-map, not-transparent);
+}

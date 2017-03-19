@@ -20,7 +20,7 @@ $configure--text-medium: 400;
 $configure--text-bold: 700;
 
 // Choose the colours of your entire project
-$configure--primary-color: darken(#130e75, 10%);
+$configure--primary-color: blue;
 $configure--secondary-color: #fff;
 $configure--accent-color: $configure--primary-color;
 
@@ -114,6 +114,7 @@ $appearances-map: (
     fully-transparent: 0,
     semi-transparent: 0.3,
     half-transparent: 0.6,
+    not-transparent: 1,
 );
 
 // Direction options

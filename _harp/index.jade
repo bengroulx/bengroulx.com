@@ -2,12 +2,13 @@ include includes/_c-button
 include includes/_c-link-block
 
 section.t-home--section
-    picture.u-margin-bottom-lg.u-block
-        source(srcset='assets/images/illustration--small.jpg', media='(max-width:800px)')
-        source(srcset='assets/images/illustration--large.png')
-        img.t-home--hero-img(src='assets/images/illustration--small.jpg', alt='Skull and snake collage')
+    //-
+        picture.u-margin-bottom-lg.u-block(style='padding-bottom(calcbackground:url("assets/images/illustration--small.jpg") center center;')
+            source(srcset='assets/images/illustration--small.jpg', media='(max-width:800px)')
+            source(srcset='assets/images/illustration--large.png')
+            img.u-block.t-home--hero-img(src='assets/images/illustration--small.jpg', alt='Skull and snake collage')
     h1.u-margin-bottom-lg Ben Groulx is a #[span(style='text-decoration:line-through;') user interface] designer.
-    div.c-text-content.u-measure-medium.u-text-medium
+    div.c-text-content.u-measure-medium.u-text-medium(style='max-width:40rem;')
         p
             | Hey there 👋. I’m Ben, a Vancouver-based  designer 💯 focused on the intersection of interaction and graphic design, with experience in design systems 🔗, front-end architecture 🖥, and feedback processes 💬.
         p
@@ -22,7 +23,6 @@ section.t-home--section
             | I’d love to to chat and/or work with you 💖. You can 
             a(href='mailto:ben@bengroulx.com?subject=I%20would%20like%20to%20hire%20you!') hire me
             |  💸 to help you with art direction, UI design, and web development 😎.
-
 
 section.t-home--section
     h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg
@@ -53,18 +53,16 @@ section.t-home--section
             +linkBlock('Snow Valley (Barrie)', '2014', 'Custom Fit Online', 'https://github.com/bengroulx/bengroulx.com/blob/portfolio/projects/2014--snow-valley.md',
             'assets/images/snow-valley.jpg')
 
-
-script.
-
 section.t-home--section
     h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg 
         | ## Let’s Sync
     div.c-text-content.u-measure-wide
-        +button('mailto:ben@bengroulx.com', '💌 Email')
-        +button('https://m.me/bengroulx', '💬 Messenger')
-        +button('https://linkedin.com/in/bengroulx', '🗣 LinkedIn')
-        +button('https://twitter.com/bengroulx', '🐦 Twitter')
-        +button('https://github.com/bengroulx', '🖥 GitHub')
-        +button('https://instagram.com/bengroulx', '🌄 Instagram')
-        +button('https://vsco.co/bengroulx', '🏞 VSCO')
-        +button('https://open.spotify.com/user/bengroulx', '🎶 Spotify')
+        +button('mailto:ben@bengroulx.com', 'Email')
+        +button('https://m.me/bengroulx', 'Messenger')
+        +button('https://linkedin.com/in/bengroulx', 'LinkedIn')
+        +button('https://twitter.com/bengroulx', 'Twitter')
+        +button('https://github.com/bengroulx', 'GitHub')
+        +button('https://instagram.com/bengroulx', 'Instagram')
+        +button('https://vsco.co/bengroulx', 'VSCO')
+        +button('https://medium.com/@bengroulx', 'Medium')
+        +button('https://open.spotify.com/user/bengroulx', 'Spotify')
