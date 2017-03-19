@@ -36,6 +36,8 @@
             height: 10%;
 
             background-color: map-get($color-map, link);
+
+            transition: all 0.125s linear;
         }
 
         &:hover,

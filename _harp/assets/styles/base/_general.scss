@@ -5,23 +5,6 @@
 *::after,
 *::before {
     box-sizing: border-box;
-
-    transition: all 0.1s ease-out;
-}
-
-body {
-    overflow: hidden;
-    overflow-y: scroll;
-
-    background: map-get($color-map, secondary);
-
-    // color: map-get($color-map, primary);
-    font-family: map-get($typeface-map, primary), map-get($typeface-map, emoji);
-    font-weight: map-get($type-weight-map, regular);
-    line-height: map-get($leading-map, base);
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -124,6 +107,21 @@ nav,
 section,
 main {
     display: block;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+
+    background: map-get($color-map, secondary);
+
+    // color: map-get($color-map, primary);
+    font-family: map-get($typeface-map, primary), map-get($typeface-map, emoji);
+    font-weight: map-get($type-weight-map, regular);
+    line-height: map-get($leading-map, base);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 svg {

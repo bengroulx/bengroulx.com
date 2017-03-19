@@ -9,6 +9,14 @@
         border-left: 1px solid transparent;
     }
 
+    & {
+        transition: all 0.15s linear;
+    }
+
+    &__overlay {
+        transition: all 0.75s ease-out;
+    }
+
     @media (min-width: 60rem) {
         &:hover {
             padding-right: 3%;
