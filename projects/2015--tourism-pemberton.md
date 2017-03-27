@@ -8,7 +8,7 @@
 | Year             | 2015 |
 
 
-![Tourism Pemberton redesign](../assets/tourism-pemberton-redesign-screens 2.jpg)
+![Tourism Pemberton redesign](../assets/tourism-pemberton-redesign-screens-2.jpg)
 
 *Adventure Begins In Pemberton, BC!* That’s Tourism Pemberton’s slogan — and for once it’s a tagline that isn’t hyperbolized. The small town of Pemberton, with a population of about 3,000, is home to some incredible activities and adventures.
 
