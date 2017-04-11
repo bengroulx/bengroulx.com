@@ -1,0 +1,210 @@
+//- Initialize Site Data
+title #{ title }
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='google-site-verification', content='tjwlg8Q7I3CmF58-9XruF1_DkX8qTxEUmc0uq-Da4Aw')
+meta(name='description' content='#{ description }')
+meta(name='keywords', content='design, ui, ux, mobile, front-end, html, css, interface vancouver, canada')
+meta(name='viewport', content='width=device-width,initial-scale=1.0')
+meta(name='author', content='Ben Groulx')
+meta(name='robots', content='noindex, nofollow')
+
+
+//- Critical Styles
+style.
+    body { padding:5% !important; font-family:sans-serif; font-size:1rem; line-height:1.5; opacity:0; animation: fade-in 1s forwards; }
+    h1, h2, h3, h4, h5, h5 { font-weight:300; font-family:monospace; line-height:1; }
+    h1 { font-size:3em; }
+    a { color:inherit; }
+    img { max-width:100%; height:auto; }
+    img:not([src]) { width:100%; min-height:25rem; border:0; outline:0; background-color:#d9d9Df; }
+    @keyframes fade-in { 0% { opacity: 0; } 75% { opacity: 0; } 100% { opacity: 1; } }
+
+//- Deferred Styles
+noscript#deferred-styles
+    link(rel='stylesheet', href='/assets/styles/screen.v2.css')
+
+//- Load Deferred Styles
+script(async='', defer='').
+    var loadDeferredStyles=function(){var a=document.getElementById("deferred-styles"),b=document.createElement("div");b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener("load",loadDeferredStyles);
+
+//- Service Worker
+script(async='', defer='').
+    if ('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/serviceworker.js').then(function(registration){console.log('ServiceWorker registration successful with scope: ',registration.scope);}).catch(function(err){console.log('ServiceWorker registration failed: ', err);});});}
+
+//- Twitter Cards Data
+meta(name='twitter:card', content='summary')
+meta(name='twitter:title', content='#{ title }')
+meta(name='twitter:site', content='@bengroulx')
+meta(name='twitter:image', content='/assets/images/ben-groulx.jpg')
+meta(name='twitter:image:alt', content='A headshot of Ben Groulx; He is standing on a beach, wearing a baseball cap.')
+meta(name='twitter:creator', content='@bengroulx')
+meta(name='twitter:description', content='#{ description }')
+
+//- Facebook Open Graph Data
+meta(name='og:url', content='https://bengroulx.com')
+meta(name='og:type', content='website')
+meta(name='og:title', content='#{title}')
+meta(name='og:image', content='#{site_image}')
+meta(name='og:site_name', content='#{site_name}')
+meta(name='og:description', content='#{site_description}')
+
+//- Standalone Web App Data
+meta(name='apple-mobile-web-app-capable', content='yes')
+meta(name='apple-mobile-web-app-title', content='#{site_name}')
+meta(name='msapplication-TileImage', content='assets/startup/apple-icon-144.png')
+meta(name='theme-color', content='#0c0947')
+link(rel='manifest', href='manifest.json')
+link(rel='apple-touch-icon', sizes='114x114', href='assets/startup/apple-icon-114.png')
+link(rel='apple-touch-icon', sizes='144x144', href='assets/startup/apple-icon-144.png')
+link(rel='apple-touch-icon', sizes='152x152', href='assets/startup/apple-icon-152.png')
+link(rel='apple-touch-icon', sizes='180x180', href='assets/startup/apple-icon-180.png')
+link(rel='icon', type='image/png', sizes='512x512', href='assets/startup/android-icon-512.png')
+link(rel='icon', type='image/png', sizes='384x384', href='assets/startup/android-icon-384.png')
+link(rel='icon', type='image/png', sizes='256x256', href='assets/startup/android-icon-256.png')
+link(rel='icon', type='image/png', sizes='192x192', href='assets/startup/android-icon-192.png')
+link(rel='icon', type='image/png', sizes='96x96', href='assets/startup/favicon-96.png')
+link(rel='icon', type='image/png', sizes='32x32', href='assets/startup/favicon-32.png')
+link(rel='icon', type='image/png', sizes='16x16', href='assets/startup/favicon-16.png')
+
+include includes/_c-button
+
+script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+section.t-home--section
+        h1.u-margin-bottom-lg Hi Briteweb folks! 👋
+        div.c-text-content.u-measure-medium.u-text-medium(style='max-width:40rem;')
+            p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]. Below you’ll find some selected work of mine from the past few years. This is a visual portfolio; it does not detail process, nor do I mention why my solutions worked out. If there is a particular project you would like to know more about, or if I can provide you any additional context or information, please don’t hesitate to #[a.u-text-nowrap(href='#contact') reach out to me].
+            p.u-text-size-small.u-color-grey.u-text-secondary – Ben Groulx
+
+section.t-home--section.u-align-center(style='max-width:80rem;')
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/kost--desktop.s1.jpg')
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/kost--desktop.s2.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Kost
+        li Product Design
+        li 2017
+    
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/mobify--landing-page.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Mobify
+        li Landing Page Design
+        li 2017
+
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/lancome--mobile.v1.jpg')
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/lancome--mobile.v2.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Lancôme USA
+        li Progressive Web App Design
+        li 2016-2017
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/logos.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Various Logos
+        li Graphic Design
+        li Ongoing
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/lawn-party-films--desktop.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Lawn Party Films
+        li Responsive Web Design
+        li 2016–2017
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/chasing-fireflies--mobile.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Chasing Fireflies
+        li Mobile Web Design
+        li 2016
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/forty-five--book.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Forty-Five Degrees
+        li Graphic Design
+        li 2012
+
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/fsjpl--desktop.jpg')
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/fsjpl--mobile.jpg')
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/fsjpl--wireframes.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Fort St. John Public Library
+        li Graphic Design
+        li 2014
+
+    img(class='u-inline-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/leap-4-your-life--epk.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Leap 4 Your Life
+        li Graphic Design
+        li 2013
+
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/tourism-pemberton--desktop.v1.jpg')
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/tourism-pemberton--desktop.v2.jpg')
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/tourism-pemberton--mobile.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Tourism Pemberton
+        li Responsive Web Design
+        li 2015
+
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/snow-valley--desktop.jpg')
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/snow-valley--mobile.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Snow Valley
+        li Responsive Web Design
+        li 2014
+
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/pemberton-chamber--desktop.v1.jpg')
+    img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/pemberton-chamber--desktop.v2.jpg')
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/pemberton-chamber--mobile.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Pemberton Chamber of Commerce
+        li Responsive Web Design
+        li 2014
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/volum--app.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Pemberton Chamber of Commerce
+        li Web Design
+        li 2014
+
+    img(class='u-inline-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/custom-fit-online--books.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Custom Fit Online
+        li Graphic Design
+        li 2013–2015
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/bcsea--desktop.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold British Columbia 
+        li Web Design
+        li 2014
+
+    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/lynda-clark--mobile.jpg')
+    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
+        li.u-text-bold Lynda Clark, Realtor
+        li Responsive Web Design
+        li 2013
+
+section.t-home--section#contact
+    h2.u-semi-transparent.u-text-size-large.u-margin-bottom-lg 
+        | ## Let’s Sync
+    div.c-text-content.u-measure-wide
+        +button('mailto:ben@bengroulx.com', 'Email')
+        +button('https://m.me/bengroulx', 'Messenger')
+        +button('https://linkedin.com/in/bengroulx', 'LinkedIn')
+        +button('https://twitter.com/bengroulx', 'Twitter')
+        +button('https://github.com/bengroulx', 'GitHub')
+        +button('https://instagram.com/bengroulx', 'Instagram')
+        +button('https://vsco.co/bengroulx', 'VSCO')
+        +button('https://medium.com/@bengroulx', 'Medium')
+        +button('https://open.spotify.com/user/bengroulx', 'Spotify')
+
+footer.u-text-medium.u-text-size-small
+    p #[span.u-semi-transparent Copyright © 2010-2017 Ben Groulx.] ✌️
+
+script.
+    !function(a){"use strict";var b,c,d=0,e=function(){};a.lazy={init:function(c){c=c||{},b=c.delay||0,e=c.callback||e,document.addEventListener?(a.addEventListener("scroll",lazy.engine,!1),a.addEventListener("load",lazy.engine,!1)):(a.attachEvent("onscroll",lazy.engine),a.attachEvent("onload",lazy.engine))},engine:function(){c=setTimeout(function(){lazy.loadImage()},b)},loadImage:function(){for(var a=document.querySelectorAll("img[data-lazy]"),b=0;b<a.length;b++)lazy.isVisible(a[b])&&(null!==a[b].getAttribute("data-lazy")&&a[b].getAttribute("data-lazy")!==a[b].getAttribute("src")&&(a[b].src=a[b].getAttribute("data-lazy"),d++),e(a[b]));a.length&&d!=a.length||lazy.releaseEvents()},isVisible:function(a){var b=a.getBoundingClientRect();return b.top>=0&&b.left>=0&&b.right<window.innerWidth&&b.bottom<window.innerHeight},releaseEvents:function(){document.removeEventListener?a.removeEventListener("scroll",lazy.engine):a.detachEvent("onscroll",lazy.engine),clearTimeout(c)}}}(this);
+
+script.
+    lazy.init({ delay:500, callback: function(elem) {} });
+
+script.
+    !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-41575530-1","auto"),ga("send","pageview");
