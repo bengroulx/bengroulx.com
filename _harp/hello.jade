@@ -195,9 +195,6 @@ section.t-home--section#contact
         +button('https://medium.com/@bengroulx', 'Medium')
         +button('https://open.spotify.com/user/bengroulx', 'Spotify')
 
-footer.u-text-medium.u-text-size-small
-    p #[span.u-semi-transparent Copyright © 2010-2017 Ben Groulx.] ✌️
-
 script.
     !function(a){"use strict";var b,c,d=0,e=function(){};a.lazy={init:function(c){c=c||{},b=c.delay||0,e=c.callback||e,document.addEventListener?(a.addEventListener("scroll",lazy.engine,!1),a.addEventListener("load",lazy.engine,!1)):(a.attachEvent("onscroll",lazy.engine),a.attachEvent("onload",lazy.engine))},engine:function(){c=setTimeout(function(){lazy.loadImage()},b)},loadImage:function(){for(var a=document.querySelectorAll("img[data-lazy]"),b=0;b<a.length;b++)lazy.isVisible(a[b])&&(null!==a[b].getAttribute("data-lazy")&&a[b].getAttribute("data-lazy")!==a[b].getAttribute("src")&&(a[b].src=a[b].getAttribute("data-lazy"),d++),e(a[b]));a.length&&d!=a.length||lazy.releaseEvents()},isVisible:function(a){var b=a.getBoundingClientRect();return b.top>=0&&b.left>=0&&b.right<window.innerWidth&&b.bottom<window.innerHeight},releaseEvents:function(){document.removeEventListener?a.removeEventListener("scroll",lazy.engine):a.detachEvent("onscroll",lazy.engine),clearTimeout(c)}}}(this);
 
