@@ -71,52 +71,56 @@ include includes/_c-button
 
 script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
+header.c-text-content.u-margin-bottom-lg
+    a(href='/')
+        small(style='font-size:0.75rem;') Home
+
 section.t-home--section
-        h1.u-margin-bottom-lg Hi Briteweb folks! 👋
+        h1.u-margin-bottom-lg Hello! 👋
         div.c-text-content.u-measure-medium.u-text-medium(style='max-width:40rem;')
-            p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]. Below you’ll find some selected work of mine from the past few years. This is a visual portfolio; it does not detail process, nor do I mention why my solutions worked out. If there is a particular project you would like to know more about, or if I can provide you any additional context or information, please don’t hesitate to #[a.u-text-nowrap(href='#contact') reach out to me].
+            p Hi there, hope you’re having a great #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]. Below you’ll find some selected work of mine from the past few years. This is a visual portfolio; it does not detail process, nor do I mention why my solutions worked out. If there is a particular project you would like to know more about, or if I can provide you any additional context or information, you can reach me #[a.u-text-nowrap(href='#contact') at the bottom]. 
             p.u-text-size-small.u-color-grey.u-text-secondary – Ben Groulx
 
 section.t-home--section.u-align-center(style='max-width:80rem;')
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/kost--desktop.s1.jpg')
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/kost--desktop.s2.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/kost--desktop.s2.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Kost
         li Product Design
         li 2017
     
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/mobify--landing-page.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/mobify--landing-page.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Mobify
         li Landing Page Design
         li 2017
 
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/lancome--mobile.v1.jpg')
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/lancome--mobile.v2.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/lancome--mobile.v2.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Lancôme USA
         li Progressive Web App Design
         li 2016-2017
 
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/logos.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/logos.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Various Logos
         li Graphic Design
         li Ongoing
 
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/lawn-party-films--desktop.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/lawn-party-films--desktop.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Lawn Party Films
         li Responsive Web Design
         li 2016–2017
 
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/chasing-fireflies--mobile.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/chasing-fireflies--mobile.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Chasing Fireflies
         li Mobile Web Design
         li 2016
 
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/forty-five--book.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/forty-five--book.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Forty-Five Degrees
         li Graphic Design
@@ -124,13 +128,13 @@ section.t-home--section.u-align-center(style='max-width:80rem;')
 
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/fsjpl--desktop.jpg')
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/fsjpl--mobile.jpg')
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/fsjpl--wireframes.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/fsjpl--wireframes.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Fort St. John Public Library
         li Graphic Design
         li 2014
 
-    img(class='u-inline-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/leap-4-your-life--epk.jpg')
+    img(class='u-inline-block u-margin-bottom-md', data-lazy='assets/images/portfolio/leap-4-your-life--epk.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Leap 4 Your Life
         li Graphic Design
@@ -138,14 +142,14 @@ section.t-home--section.u-align-center(style='max-width:80rem;')
 
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/tourism-pemberton--desktop.v1.jpg')
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/tourism-pemberton--desktop.v2.jpg')
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/tourism-pemberton--mobile.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/tourism-pemberton--mobile.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Tourism Pemberton
         li Responsive Web Design
         li 2015
 
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/snow-valley--desktop.jpg')
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/snow-valley--mobile.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/snow-valley--mobile.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Snow Valley
         li Responsive Web Design
@@ -153,34 +157,28 @@ section.t-home--section.u-align-center(style='max-width:80rem;')
 
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/pemberton-chamber--desktop.v1.jpg')
     img(class='u-block u-border-bottom-grey', data-lazy='assets/images/portfolio/pemberton-chamber--desktop.v2.jpg')
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/pemberton-chamber--mobile.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/pemberton-chamber--mobile.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Pemberton Chamber of Commerce
         li Responsive Web Design
         li 2014
 
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/volum--app.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/volum--app.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Pemberton Chamber of Commerce
         li Web Design
         li 2014
 
-    img(class='u-inline-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/custom-fit-online--books.jpg')
+    img(class='u-inline-block u-margin-bottom-md', data-lazy='assets/images/portfolio/custom-fit-online--books.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
         li.u-text-bold Custom Fit Online
         li Graphic Design
         li 2013–2015
 
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/bcsea--desktop.jpg')
+    img(class='u-block u-margin-bottom-md', data-lazy='assets/images/portfolio/bcsea--desktop.jpg')
     ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
-        li.u-text-bold British Columbia 
+        li.u-text-bold British Columbia Sustainable Energy Association
         li Web Design
-        li 2014
-
-    img(class='u-block u-margin-bottom-lg', data-lazy='assets/images/portfolio/lynda-clark--mobile.jpg')
-    ul.u-align-left.u-text-size-small.u-text-tight.u-margin-bottom-lg 
-        li.u-text-bold Lynda Clark, Realtor
-        li Responsive Web Design
         li 2013
 
 section.t-home--section#contact
@@ -204,7 +202,7 @@ script.
     !function(a){"use strict";var b,c,d=0,e=function(){};a.lazy={init:function(c){c=c||{},b=c.delay||0,e=c.callback||e,document.addEventListener?(a.addEventListener("scroll",lazy.engine,!1),a.addEventListener("load",lazy.engine,!1)):(a.attachEvent("onscroll",lazy.engine),a.attachEvent("onload",lazy.engine))},engine:function(){c=setTimeout(function(){lazy.loadImage()},b)},loadImage:function(){for(var a=document.querySelectorAll("img[data-lazy]"),b=0;b<a.length;b++)lazy.isVisible(a[b])&&(null!==a[b].getAttribute("data-lazy")&&a[b].getAttribute("data-lazy")!==a[b].getAttribute("src")&&(a[b].src=a[b].getAttribute("data-lazy"),d++),e(a[b]));a.length&&d!=a.length||lazy.releaseEvents()},isVisible:function(a){var b=a.getBoundingClientRect();return b.top>=0&&b.left>=0&&b.right<window.innerWidth&&b.bottom<window.innerHeight},releaseEvents:function(){document.removeEventListener?a.removeEventListener("scroll",lazy.engine):a.detachEvent("onscroll",lazy.engine),clearTimeout(c)}}}(this);
 
 script.
-    lazy.init({ delay:500, callback: function(elem) {} });
+    lazy.init({ delay:0, callback: function(elem) {} });
 
 script.
     !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-41575530-1","auto"),ga("send","pageview");
