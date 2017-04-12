@@ -1,0 +1,17 @@
+// Component: Project
+// ============================================================================
+
+.c-project {
+    background-color: #d9d9df;
+    background-image: url('../images/load.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: map-get($size-map, xl);
+
+    transition: background-color 0.5s linear, background-size 0.15s linear;
+
+    &.js-loaded {
+        background-color: transparent;
+        background-size: cover;
+    }
+}

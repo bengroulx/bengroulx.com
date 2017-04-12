@@ -55,7 +55,8 @@
 // class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
 @import 'components/button';
-@import 'components/link-block';
+// @import 'components/link-block';
+@import 'components/project';
 @import 'components/text-content';
 
 
@@ -66,7 +67,7 @@
 // template overrides, or classes that are linked directly to the page on which
 // they appear. These styles should be used as a last resort only!
 
-@import 'templates/home';
+// @import 'templates/home';
 
 
 // Third-Party Plugins

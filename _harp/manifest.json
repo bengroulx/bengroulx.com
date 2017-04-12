@@ -1,9 +1,9 @@
 {
     "lang": "en-CA",
     "dir": "ltr",
-    "name": "Ben Groulx, Designger",
+    "name": "Ben Groulx",
     "short_name": "Ben G",
-    "description": "Ben Groulx is a user interface designer and front-end developer, working with Mobify and House House Design.",
+    "description": "Ben Groulx is a user interface designer and front-end developer.",
     "start_url": "/",
     "display": "standalone",
     "orientation": "natural",

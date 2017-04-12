@@ -1,10 +1,11 @@
 {
     "index": {
         "title": "Ben Groulx, Designer",
-        "description": "Ben Groulx is a user interface designer and front-end developer, working with Mobify and House House Design."
+        "description": "Ben Groulx is a designer and front-end developer in Vancouver, Canada."
     },
-    "hello-briteweb": {
-        "layout": false,
-        "title": "Hello Briteweb! — Ben Groulx, Designer"
+    "hello": {
+        "title": "Hello! • Ben Groulx, Designer",
+        "description": "A portfolio of selected works around UI design, graphic design, and more from Ben Groulx."
+
     }
 }

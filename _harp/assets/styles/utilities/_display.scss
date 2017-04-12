@@ -21,29 +21,29 @@
 // Fluid Sizes
 // ---
 
-@each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-width-#{$dimensions-name} {
-        width: $dimensions-value;
-    }
-}
+// @each $dimensions-name, $dimensions-value in $dimensions-map {
+//     .u-width-#{$dimensions-name} {
+//        width: $dimensions-value;
+//    }
+// }
 
-@each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-height-#{$dimensions-name} {
-        height: $dimensions-value;
-    }
-}
+// @each $dimensions-name, $dimensions-value in $dimensions-map {
+//     .u-height-#{$dimensions-name} {
+//         height: $dimensions-value;
+//     }
+// }
 
 
 // Viewport Sizes
 // ---
 
-.u-full-vw {
-    width: 100vw;
-}
+// .u-full-vw {
+//     width: 100vw;
+// }
 
-.u-full-vh {
-    height: 100vh;
-}
+// .u-full-vh {
+//     height: 100vh;
+// }
 
 
 // Visibility
@@ -64,8 +64,8 @@
 // Bleed
 // --
 
-@each $direction in $directions-map {
-    .u-bleed-#{$direction} {
-        margin-#{$direction}: -(map-get($size-map, md));
-    }
-}
+// @each $direction in $directions-map {
+//     .u-bleed-#{$direction} {
+//         margin-#{$direction}: -(map-get($size-map, md));
+//     }
+// }

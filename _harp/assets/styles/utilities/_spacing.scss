@@ -37,3 +37,16 @@ $attribute-map: (
 }
 
 @include generate-spacing-classes;
+
+
+
+
+.u-margin-bottom-massive {
+    margin-bottom: 20%;
+
+    @media (min-width: 40rem) {
+        & {
+            margin-bottom: 10%;
+        }
+    }
+}
