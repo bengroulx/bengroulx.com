@@ -17,20 +17,28 @@
 // Flex Layout
 // ---
 
+.u-align-start {
+    align-items: flex-start;
+}
+
 .u-align-middle {
     align-items: center;
+}
+
+.u-align-end {
+    align-items: flex-end;
 }
 
 .u-justify-start {
     justify-content: flex-start;
 }
 
-.u-justify-end {
-    justify-content: flex-end;
-}
-
 .u-justify-middle {
     justify-content: center;
+}
+
+.u-justify-end {
+    justify-content: flex-end;
 }
 
 .u-justify-between {

@@ -9,19 +9,19 @@ $configure--base-ratio: 1.25;
 $configure--text-size: 1rem;
 
 // Choose your base typographic styles
-$configure--primary-font: 'fakt_pro', -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', sans-serif;
-$configure--secondary-font: 'sf_mono', monospace;
-$configure--code-font: $configure--secondary-font;
+$configure--primary-font: 'Chronicle Text G1', 'Georgia', serif;
+$configure--secondary-font: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--code-font: monospace;
 $configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Choose your desired type weights
-$configure--text-regular: 300;
+$configure--text-regular: 400;
 $configure--text-medium: 400;
 $configure--text-bold: 700;
 
 // Choose the colours of your entire project
 $configure--primary-color: blue;
-$configure--secondary-color: #fff;
+$configure--secondary-color: #dff1ee;
 $configure--accent-color: $configure--primary-color;
 
 
@@ -34,11 +34,11 @@ $configure--accent-color: $configure--primary-color;
 
 // Size options
 $size-map: (
-    xs: $configure--base-unit/4,
-    sm: $configure--base-unit/2,
+    xs: $configure--base-unit / 4,
+    sm: $configure--base-unit / 2,
     md: $configure--base-unit,
-    lg: $configure--base-unit*2,
-    xl: $configure--base-unit*4,
+    lg: $configure--base-unit * 2,
+    xl: $configure--base-unit * 4,
 );
 
 // Typeface options
@@ -58,8 +58,8 @@ $type-weight-map: (
 
 // Leading options
 $leading-map: (
-    base: ($configure--base-ratio * 1.4),
-    tight: $configure--base-ratio,
+    base: ($configure--base-ratio * 1.3),
+    tight: 1,
 );
 
 // Colour options
@@ -67,16 +67,9 @@ $color-map: (
     primary:   $configure--primary-color,
     secondary: $configure--secondary-color,
     link:      $configure--accent-color,
-    black:     mix(#000, mix(#000, mix(#000, $configure--primary-color))),
-    grey:      rgba(mix(#000, $configure--primary-color), 0.25),
-    // tu: #36465d,
-    // fb: #3b5998,
-    // li: #0077b5,
-    // in: #517fa4,
-    // tw: #55acee,
-    // go: #dd4b39,
-    // yt: #cd201f,
-    // pi: #bd081c,
+    grey:      rgba(mix(#0d0e10, $configure--primary-color), 0.25),
+    pureWhite:     #fff,
+    pureBlack:     #0d0e10,
 );
 
 // Z-axis options
@@ -90,9 +83,9 @@ $z-map: (
 
 // Content area options
 $content-area-map: (
-    narrow: $configure--base-unit*30,
-    medium: $configure--base-unit*45,
-    wide:   $configure--base-unit*60,
+    narrow: $configure--base-unit * 30,
+    medium: $configure--base-unit * 45,
+    wide:   $configure--base-unit * 60,
 );
 
 // Dimensions options

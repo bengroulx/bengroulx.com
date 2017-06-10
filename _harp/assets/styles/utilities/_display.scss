@@ -21,11 +21,11 @@
 // Fluid Sizes
 // ---
 
-// @each $dimensions-name, $dimensions-value in $dimensions-map {
-//     .u-width-#{$dimensions-name} {
-//        width: $dimensions-value;
-//    }
-// }
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-width-#{$dimensions-name} {
+        width: $dimensions-value;
+    }
+}
 
 // @each $dimensions-name, $dimensions-value in $dimensions-map {
 //     .u-height-#{$dimensions-name} {

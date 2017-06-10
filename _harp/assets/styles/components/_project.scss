@@ -1,6 +1,7 @@
 // Component: Project
 // ============================================================================
 
+/*
 .c-project {
     background-color: #d9d9df;
     background-image: url('../images/load.gif');
@@ -13,5 +14,23 @@
     &.js-loaded {
         background-color: transparent;
         background-size: cover;
+    }
+}
+*/
+
+.c-project {
+
+    &__image {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        opacity: 0;
+
+        transition: opacity cubic-bezier(0.79, 0.67, 0.02, 1) 3s;
+    }
+
+    &:hover .c-project__image {
+        opacity: 0.35;
     }
 }

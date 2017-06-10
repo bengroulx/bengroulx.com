@@ -50,3 +50,13 @@ $attribute-map: (
         }
     }
 }
+
+.u-margin-top-massive {
+    margin-top: 20%;
+
+    @media (min-width: 40rem) {
+        & {
+            margin-top: 10%;
+        }
+    }
+}

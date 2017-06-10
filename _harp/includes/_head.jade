@@ -10,23 +10,18 @@ meta(name='author', content='Ben Groulx')
 
 //- Critical Styles
 style.
-    body { padding:5% !important; font-family:sans-serif; font-size:1rem; line-height:1.5; opacity:0; animation: fade-in 1s forwards; }
-    h1, h2, h3, h4, h5, h5 { font-weight:300; font-family:monospace; line-height:1; }
+    body { font-family:sans-serif; font-size:1rem; line-height:1.5; opacity:0; animation: fade-in 1s forwards; }
     h1 { font-size:3em; }
     a { color:inherit; }
     @keyframes fade-in { 0% { opacity: 0; } 75% { opacity: 0; } 100% { opacity: 1; } }
 
 //- Deferred Styles
 noscript#deferred-styles
-    link(rel='stylesheet', href='/assets/styles/screen.v2.css')
+    link(rel='stylesheet', href='/assets/styles/screen.css')
 
 //- Load Deferred Styles
 script(async='', defer='').
     var loadDeferredStyles=function(){var a=document.getElementById("deferred-styles"),b=document.createElement("div");b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener("load",loadDeferredStyles);
-
-//- Service Worker
-script(async='', defer='').
-    if ('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/serviceworker.js').then(function(registration){console.log('ServiceWorker registration successful with scope: ',registration.scope);}).catch(function(err){console.log('ServiceWorker registration failed: ', err);});});}
 
 //- Twitter Cards Data
 meta(name='twitter:card', content='summary')
