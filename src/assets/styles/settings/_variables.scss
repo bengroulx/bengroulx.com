@@ -1,0 +1,118 @@
+// Project-Wide Configurable Variables
+// ============================================================================
+
+// Everything is based off this define unit and ratio
+$configure--base-unit: 1rem;
+$configure--base-ratio: 1.25;
+
+// All text is based off this font size
+$configure--text-size: 1rem;
+
+// Choose your base typographic styles
+$configure--fallback-font: 'San Francisco', 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--primary-font: 'Karla', $configure--fallback-font;
+$configure--secondary-font: 'Roboto Slab', $configure--fallback-font;
+$configure--code-font: monospace;
+$configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+// Choose your desired type weights
+$configure--text-light: 300;
+$configure--text-regular: 400;
+$configure--text-bold: 700;
+
+// Choose the colours of your entire project
+$configure--primary-color: #b6e4e2;
+$configure--secondary-color: #e0e3e8;
+$configure--accent-color: currentColor;
+
+
+// ============================================================================
+
+
+// Size options
+$size-map: (
+    xs: $configure--base-unit / 4,
+    sm: $configure--base-unit / 2,
+    md: $configure--base-unit,
+    lg: $configure--base-unit * 2,
+    xl: $configure--base-unit * 4,
+);
+
+// Typeface options
+$typeface-map: (
+    primary: $configure--primary-font,
+    secondary: $configure--secondary-font,
+    emoji: $configure--emoji-font,
+    code: $configure--code-font,
+);
+
+// Weight options
+$type-weight-map: (
+    light: $configure--text-light,
+    regular: $configure--text-regular,
+    bold: $configure--text-bold,
+);
+
+// Leading options
+$leading-map: (
+    base: ($configure--base-ratio * 1.2),
+    tight: $configure--base-ratio,
+    single: 1,
+);
+
+// Colour options
+$color-map: (
+    primary:   $configure--primary-color,
+    secondary: $configure--secondary-color,
+    link:      $configure--accent-color,
+    grey:      rgba(mix(#0d0e10, $configure--primary-color), 0.25),
+    pureWhite:     #fff,
+    pureBlack:     #0d0e10,
+);
+
+// Z-axis options
+$z-map: (
+    under: -1,
+    basic: 1,
+    stack: 10,
+    shade: 100,
+    modal: 1000,
+);
+
+// Content area options
+$content-area-map: (
+    narrow: $configure--base-unit * 30,
+    medium: $configure--base-unit * 45,
+    wide:   $configure--base-unit * 60,
+);
+
+// Dimensions options
+$dimensions-map: (
+    0: 0,
+    1of4: (100%/4),
+    1of3: (100%/3),
+    half: (100%/2),
+    2of3: (100%/1.5151),
+    3of4: (100%/1.3333),
+    full: (100%/1),
+);
+
+// Style options
+$appearances-map: (
+    rounded-corners: $configure--base-unit / ($configure--base-ratio * 3),
+    very-rounded-corners: $configure--base-unit * $configure--base-ratio,
+    circle: 100%,
+    fully-transparent: 0,
+    semi-transparent: 0.3,
+    half-transparent: 0.6,
+    slightly-transparent: 0.8,
+    not-transparent: 1,
+);
+
+// Direction options
+$directions-map: (
+    top,
+    left,
+    right,
+    bottom,
+);

@@ -1,0 +1,22 @@
+mixin project(title, type, image, logo, color, url, styles)
+
+    article.c-project.c-button--trigger.u-context.u-clip.u-color-pureWhite(style='background-color:#{color}; #{styles}')
+
+        div.u-context.u-flexbox
+        
+            div.c-text-content.u-width-half.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-xl.u-padding-right-xl
+                h2 #{title}
+                div.u-flexbox.u-align-middle
+                    h3.u-text-primary.u-text-size-small.u-text-tracked-out.u-text-bold.u-uppercase #{type}
+                    span.u-margin-left-sm.u-semi-transparent.u-text-bold /
+                    img.u-margin-left-sm(src='assets/images/#{logo}', style='height:1rem; width:auto;')
+                if block
+                    block
+                else
+                    p No content provided
+
+            div.u-width-half.u-padding-left-xl.u-padding-right-xl.u-padding-top-xl.u-padding-bottom-xl.u-flexbox.u-align-end.u-justify-end.u-context.u-bg-pureBlack.u-clip.u-slightly-transparent
+                +button('More', '#')
+                div.c-project__bg.u-position.u-z-basic.u-cover.u-bg-cover.js-lazy-load(data-style='background-image:url("assets/images/#{image}");')
+        
+        +fauxLink('#{title}', '#')

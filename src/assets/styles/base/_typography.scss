@@ -1,0 +1,88 @@
+// Global Typographic Styles
+// ============================================================================
+
+h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    opacity: 0.9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: map-get($typeface-map, secondary);
+    font-weight: map-get($type-weight-map, light);
+    letter-spacing: -0.0125em;
+}
+
+body {
+    @extend %type-copy;
+}
+
+h1 {
+    @extend %type-headline;
+}
+
+h2 {
+    @extend %type-subheadline;
+}
+
+h3 {
+    @extend %type-title;
+}
+
+h1,
+h2,
+h3 {
+    line-height: map-get($leading-map, single);
+}
+
+h4,
+h5,
+h6 {
+    @extend %type-subtitle;
+
+    line-height: map-get($leading-map, tight);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+q,
+blockquote {
+    quotes: none;
+
+    &::before,
+    &::after {
+        content: '';
+    }
+}
+
+small {
+    @extend %type-small;
+}
+
+code,
+pre {
+    font-family: map-get($typeface-map, mono);
+}
+
+a {
+    text-decoration: none;
+
+    &:not(:hover) {
+        color: inherit;
+    }
+}

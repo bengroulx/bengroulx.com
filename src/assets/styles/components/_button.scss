@@ -1,0 +1,68 @@
+// Component: Button
+// ============================================================================
+//
+// The button component class is to be used for primary and secondary actions.
+// It should only ever be applied to a <button> or <a> element.
+//
+// 1. Recommended iOS tap size.
+// 2. Remove iOS and Android “buttonization” and use our own styles
+
+.c-button {
+    position: relative;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
+    padding: 1em 2em;
+
+    font-family: map-get($typeface-map, primary);
+    font-weight: map-get($type-weight-map, bold);
+    font-size: 0.75em;
+    line-height: map-get($leading-map, tight);
+    letter-spacing: 0.25em;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: all 0.5s linear;
+
+    cursor: pointer;
+
+    &__outline,
+    &__stroke {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__outline {
+        position: absolute;
+    }
+
+    &__stroke {
+        fill: transparent;
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -540;
+        stroke-width: map-get($size-map, xs);
+        stroke: currentColor;
+    }
+
+    &:hover {
+        background: none;
+
+        color: inherit;
+    }
+}
+
+.c-button--trigger:hover {
+    .c-button__stroke {
+        animation: draw 1s cubic-bezier(0.79, 0.67, 0.02, 1) forwards;
+    }
+}
+
+
+@keyframes draw {
+    to {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+    }
+}

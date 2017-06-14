@@ -1,0 +1,6 @@
+mixin button(title, url)
+
+    a.c-button.u-context.u-z-stack(href='#{url}')&attributes(attributes)= name
+        svg.c-button__outline(xmlns='http://www.w3.org/2000/svg')
+            rect.c-button__stroke
+        | #{title} &rarr;
