@@ -10,6 +10,7 @@
         "publish": "npm run compile && bin/publish"
     },
     "devDependencies": {
+        "coffee-script": "^1.9.2",
         "gh-pages": "^0.2.0",
         "harp": "^0.13.0"
     }

@@ -1,16 +1,22 @@
-var dist, ghpages, handle_error, path;
+#!/usr/bin/env coffee
 
-ghpages = require('gh-pages');
+ghpages = require 'gh-pages'
+path = require 'path'
 
-path = require('path');
+handle_error = (error) ->
+  if error
+    console.error error
+    process.exit error.code or 1
 
-handle_error = function(error) {
-  if (error) {
-    console.error(error);
-    return process.exit(error.code || 1);
-  }
-};
+handle_info = (message) -> console.log message
 
-dist = path.join(__dirname, '..', 'dist');
+dist = path.join __dirname, '..', 'dist'
 
-ghpages.publish(dist, handle_error);
+options =
+  logger: handle_info
+  dotfiles: true
+  user:
+    name: 'Ben Groulx',
+    email: 'ben@bengroulx.com'
+
+ghpages.publish dist, options, handle_error
