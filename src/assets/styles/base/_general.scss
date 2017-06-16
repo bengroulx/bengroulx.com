@@ -105,24 +105,25 @@ hgroup,
 menu,
 nav,
 section,
-main {
+main,
+img {
     display: block;
+}
+
+html {
+    font-family: var(--font-emoji);
 }
 
 body {
     overflow: hidden;
     overflow-y: scroll;
 
-    font-family: map-get($typeface-map, primary), map-get($typeface-map, emoji);
-    font-weight: map-get($type-weight-map, regular);
-    line-height: map-get($leading-map, base);
+    font-family: var(--font-main);
+    font-weight: var(--text-regular);
+    line-height: var(--leading-main);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-img {
-    display: block;
 }
 
 svg {
@@ -133,7 +134,7 @@ hr {
     height: 1px;
     border: 0;
 
-    background: rgba(map-get($color-map, pureBlack), 0.1);
+    background: var(--light-grey-100);
 }
 
 table {

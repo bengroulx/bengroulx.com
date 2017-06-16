@@ -6,19 +6,19 @@
 // ---
 
 @mixin --small-only {
-    @media screen and (max-width: #{map-get($content-area-map, wide)}) {
+    @media screen and (max-width: 30rem) {
         @content;
     }
 }
 
 @mixin --medium-only {
-    @media screen and (min-width: #{map-get($content-area-map, narrow)}) and (max-width: #{map-get($content-area-map, medium)}) {
+    @media screen and (min-width: 30rem) and (max-width: 40rem) {
         @content;
     }
 }
 
 @mixin --large-only {
-    @media screen and (min-width: #{map-get($content-area-map, medium)}) and (max-width: #{map-get($content-area-map, wide)}) {
+    @media screen and (min-width: 40rem) and (max-width: 50rem) {
         @content;
     }
 }
@@ -28,19 +28,19 @@
 // ---
 
 @mixin --small-up {
-    @media screen and (min-width: #{map-get($content-area-map, narrow)}) {
+    @media screen and (min-width: 30rem) {
         @content;
     }
 }
 
 @mixin --medium-up {
-    @media screen and (min-width: #{map-get($content-area-map, medium)}) {
+    @media screen and (min-width: 40rem) {
         @content;
     }
 }
 
 @mixin --large-up {
-    @media screen and (min-width: #{map-get($content-area-map, wide)}) {
+    @media screen and (min-width: 50rem) {
         @content;
     }
 }

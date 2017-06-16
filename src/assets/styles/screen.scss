@@ -8,11 +8,10 @@
 // properties, custom media queries, etc. Things like brand colours, modular
 // spacing increments, and breakpoints are defined as variables here.
 
+@import 'settings/type-sources';
 @import 'settings/variables';
-@import 'settings/extends';
 @import 'settings/responsive';
 @import 'settings/type-scale';
-@import 'settings/type-sources';
 
 
 // Base
@@ -37,7 +36,6 @@
 
 @import 'utilities/appearance';
 @import 'utilities/background';
-@import 'utilities/border';
 @import 'utilities/color';
 @import 'utilities/display';
 @import 'utilities/flex';

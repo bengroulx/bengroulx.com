@@ -1,8 +1,14 @@
 // Utilities: Measure
 // ============================================================================
 
+$content-area-map: (
+    narrow: var(--area-narrow),
+    medium: var(--area-medium),
+    wide: var(--area-wide),
+);
+
 @each $content-area-name, $content-area-width in $content-area-map {
     .u-measure-#{$content-area-name} {
-        max-width: calc(#{$content-area-width} - (#{map-get($size-map, md)} * 8));
+        max-width: calc(#{$content-area-width} - (var(--unit)));
     }
 }

@@ -9,7 +9,7 @@
 
 .c-text-content {
     > *:not(:last-child) {
-        margin-bottom: map-get($size-map, md);
+        margin-bottom: var(--size-md);
     }
 
     ol {
@@ -30,19 +30,19 @@
             right: 0;
             bottom: -15%;
             left: 0;
-            z-index: -1;
+            z-index: var(--z-under);
 
             width: 100%;
-            height: map-get($size-map, xs);
+            height: var(--size-xs);
 
-            background-color: map-get($color-map, link);
+            background-color: var(--accent-100);
 
-            transition: all 0.25s map-get($animation-map, whoosh);
+            transition: all 0.25s var(--whoosh);
         }
 
         &:hover,
         &:focus {
-            color: map-get($color-map, link);
+            color: var(--accent-100);
 
             &::after {
                 bottom: 0;

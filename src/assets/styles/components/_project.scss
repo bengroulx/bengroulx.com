@@ -9,7 +9,7 @@
 
         transform: scale(1.0125);
 
-        transition: transform 1s map-get($animation-map, whoosh);
+        transition: transform 1s var(--whoosh);
     }
 
     &:hover {

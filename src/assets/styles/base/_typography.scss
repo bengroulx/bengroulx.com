@@ -20,8 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: map-get($typeface-map, secondary);
-    font-weight: map-get($type-weight-map, light);
+    font-family: var(--font-heading);
+    font-weight: var(--text-light);
     letter-spacing: -0.0125em;
 }
 
@@ -44,7 +44,7 @@ h3 {
 h1,
 h2,
 h3 {
-    line-height: map-get($leading-map, single);
+    line-height: var(--leading-single);
 }
 
 h4,
@@ -52,7 +52,7 @@ h5,
 h6 {
     @extend %type-subtitle;
 
-    line-height: map-get($leading-map, tight);
+    line-height: var(--leading-single);
 }
 
 ol,
@@ -76,7 +76,7 @@ small {
 
 code,
 pre {
-    font-family: map-get($typeface-map, mono);
+    font-family: var(--font-mono);
 }
 
 a {
@@ -87,6 +87,6 @@ a {
     }
 
     &:hover {
-        color: rebeccaPurple;
+        font-family: var(--accent-100);
     }
 }

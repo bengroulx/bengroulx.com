@@ -16,6 +16,21 @@ $attribute-map: (
     padding,
 );
 
+$directions-map: (
+    top,
+    left,
+    right,
+    bottom,
+);
+
+$size-map: (
+    xs: var(--size-xs),
+    sm: var(--size-sm),
+    md: var(--size-md),
+    lg: var(--size-lg),
+    xl: var(--size-xl),
+);
+
 @mixin spacing($direction, $size) {
     @each $attribute in $attribute-map {
         .u-#{$attribute}-#{$direction}-#{$size} {

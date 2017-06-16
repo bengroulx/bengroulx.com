@@ -16,12 +16,12 @@
             left: -2.5rem;
 
             display: block;
-            width: map-get($size-map, lg);
+            width: var(--size-lg);
             height: 1px;
 
             background: currentColor;
 
-            transition: all 0.5s map-get($animation-map, whoosh);
+            transition: all 0.5s var(--whoosh);;
         }
 
         @include --small-up {

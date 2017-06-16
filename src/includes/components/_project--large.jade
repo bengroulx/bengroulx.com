@@ -1,10 +1,10 @@
 mixin project(title, type, image, logo, color, url, styles)
 
-    article.c-project.c-button--trigger.u-context.u-clip.u-color-pureWhite(style='background-color:#{color}; #{styles}')
+    article.c-project.c-button--trigger.u-context.u-clip.u-color-white(style='background-color:#{color}; #{styles}')
 
         div.u-context.u-flexbox--medium-up
         
-            div.u-width-half--medium-up.u-flexbox.u-flex-2.u-align-end.u-justify-middle.u-justify-end--medium-up.u-context.u-clip.u-slightly-transparent.u-padding-left-xl.u-padding-right-xl.u-padding-top-xl.u-padding-bottom-xl.u-bg-halfBlack
+            div.u-width-half--medium-up.u-flexbox.u-flex-2.u-align-end.u-justify-middle.u-justify-end--medium-up.u-context.u-clip.u-slightly-transparent.u-padding-left-xl.u-padding-right-xl.u-padding-top-xl.u-padding-bottom-xl(style='background-color:var(--black-25)')
                 +button('More', '#')
                 div.c-project__bg.u-position.u-z-basic.u-cover.u-bg-cover.js-lazy-load(data-style='background-image:url("assets/images/#{image}");')
 

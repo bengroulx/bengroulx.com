@@ -16,10 +16,10 @@
     min-height: 44px;
     padding: 1em 2em;
 
-    font-family: map-get($typeface-map, primary);
-    font-weight: map-get($type-weight-map, bold);
+    font-family: var(--font-main);
+    font-weight: var(--text-bold);
     font-size: 0.75em;
-    line-height: map-get($leading-map, tight);
+    line-height: var(--leading-tight);
     letter-spacing: 0.25em;
     text-align: center;
     text-transform: uppercase;
@@ -27,6 +27,22 @@
     transition: all 0.5s linear;
 
     cursor: pointer;
+
+    @include --small-up {
+        &:hover {
+            background: none;
+
+            color: inherit;
+        }
+    }
+
+    @include --small-up {
+        &--trigger:hover {
+            .c-button__stroke {
+                animation: draw 1s var(--whoosh) forwards;
+            }
+        }
+    }
 
     &__outline,
     &__stroke {
@@ -45,24 +61,7 @@
         stroke-width: map-get($size-map, xs);
         stroke: currentColor;
     }
-
-    @include --small-up {
-        &:hover {
-            background: none;
-
-            color: inherit;
-        }
-    }
 }
-
-@include --small-up {
-    .c-button--trigger:hover {
-        .c-button__stroke {
-            animation: draw 1s map-get($animation-map, whoosh) forwards;
-        }
-    }
-}
-
 
 @keyframes draw {
     to {
