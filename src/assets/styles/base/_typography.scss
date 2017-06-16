@@ -85,4 +85,8 @@ a {
     &:not(:hover) {
         color: inherit;
     }
+
+    &:hover {
+        color: rebeccaPurple;
+    }
 }

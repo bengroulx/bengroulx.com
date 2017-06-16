@@ -57,13 +57,21 @@ $attribute-map: (
 @include generate-spacing-classes;
 
 
-
-
 .u-margin-bottom-massive {
     margin-bottom: 4rem;
 
-    @media (min-width: 40rem) {
-        & {
+    @include --medium-up {
+        margin-bottom: 6rem;
+
+        &--medium-up {
+            margin-bottom: 6rem;
+        }
+    }
+
+    @include --large-up {
+        margin-bottom: 8rem;
+
+        &--large-up {
             margin-bottom: 8rem;
         }
     }
@@ -72,8 +80,18 @@ $attribute-map: (
 .u-margin-top-massive {
     margin-top: 4rem;
 
-    @media (min-width: 40rem) {
-        & {
+    @include --medium-up {
+        margin-top: 6rem;
+
+        &--medium-up {
+            margin-top: 6rem;
+        }
+    }
+
+    @include --large-up {
+        margin-top: 8rem;
+
+        &--large-up {
             margin-top: 8rem;
         }
     }

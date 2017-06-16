@@ -1,0 +1,41 @@
+.x-header {
+    font-size: 0.85rem;
+
+    @include --small-up {
+        transform: rotate(90deg);
+        transform-origin: top right;
+        backface-visibility: hidden;
+    }
+
+    &__email {
+        &::before {
+            content: '';
+
+            position: absolute;
+            top: 50%;
+            left: -2.5rem;
+
+            display: block;
+            width: map-get($size-map, lg);
+            height: 1px;
+
+            background: currentColor;
+
+            transition: all 0.5s map-get($animation-map, whoosh);
+        }
+
+        @include --small-up {
+            &:hover::before {
+                left: calc(-200% - 0.5rem);
+
+                width: 200%;
+            }
+        }
+    }
+}
+
+.x-article-last {
+    @include --medium-up {
+        transform: translateY(-50%);
+    }
+}

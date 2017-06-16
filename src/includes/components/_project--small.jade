@@ -10,7 +10,7 @@ mixin projectSmall(title, logo, video, color, styles)
                     source(src='assets/videos/#{video}', type='video/mp4')
                     track(kind='captions', default='default')
 
-            div.c-text-content.u-padding-top-lg.u-padding-left-lg.u-padding-bottom-lg.u-padding-right-lg.u-text-size-small
+            div.c-text-content.u-padding-top-lg.u-padding-left-md.u-padding-left-lg--medium-up.u-padding-right-md.u-padding-right-lg--medium-up.u-padding-bottom-md.u-padding-bottom-lg--medium-up.u-text-size-small
                 h3(hidden) #{title}
                 if block
                     block
