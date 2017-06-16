@@ -7,10 +7,9 @@
     "author": "Ben Groulx <ben@bengroulx.com> (https://bengroulx.com)",
     "scripts": {
         "compile": "harp compile src dist",
-        "publish": "npm run compile && bin/publish"
+        "publish": "npm run compile && git subtree push --prefix dist origin gh-pages"
     },
     "devDependencies": {
-        "coffee-script": "^1.9.2",
         "gh-pages": "^0.2.0",
         "harp": "^0.13.0"
     }

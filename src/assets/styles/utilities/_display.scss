@@ -7,10 +7,38 @@
 
 .u-block {
     display: block;
+
+    @include --small-up {
+        &--small-up {
+            display: block;
+        }
+    }
 }
 
 .u-inline-block {
     display: inline-block;
+
+    @include --small-up {
+        &--small-up {
+            display: inline-block;
+        }
+    }
+}
+
+.u-hide {
+    display: none;
+
+    @include --small-up {
+        &--small-up {
+            display: none;
+        }
+    }
+
+    @include --small-only {
+        &--small-only {
+            display: none;
+        }
+    }
 }
 
 .u-clip {
@@ -24,7 +52,29 @@
 @each $dimensions-name, $dimensions-value in $dimensions-map {
     .u-width-#{$dimensions-name} {
         width: $dimensions-value;
+
+        @include --small-up {
+            &--small-up {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --large-up {
+            &--large-up {
+                width: $dimensions-value;
+            }
+        }
     }
+}
+
+.u-height-full {
+    height: 100%;
 }
 
 // @each $dimensions-name, $dimensions-value in $dimensions-map {

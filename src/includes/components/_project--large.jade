@@ -2,9 +2,13 @@ mixin project(title, type, image, logo, color, url, styles)
 
     article.c-project.c-button--trigger.u-context.u-clip.u-color-pureWhite(style='background-color:#{color}; #{styles}')
 
-        div.u-context.u-flexbox
+        div.u-context.u-flexbox--medium-up
         
-            div.c-text-content.u-width-half.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-xl.u-padding-right-xl
+            div.u-width-half--medium-up.u-flexbox.u-flex-2.u-align-end.u-justify-middle.u-justify-end--medium-up.u-context.u-clip.u-slightly-transparent.u-padding-left-xl.u-padding-right-xl.u-padding-top-xl.u-padding-bottom-xl.u-bg-halfBlack
+                +button('More', '#')
+                div.c-project__bg.u-position.u-z-basic.u-cover.u-bg-cover.js-lazy-load(data-style='background-image:url("assets/images/#{image}");')
+
+            div.c-text-content.u-flex-1.u-width-half--medium-up.u-padding-top-lg.u-padding-top-xl--medium-up.u-padding-bottom-lg.u-padding-bottom-xl--medium-up.u-padding-left-md.u-padding-left-xl--medium-up.u-padding-right-md.u-padding-right-xl--medium-up
                 h2 #{title}
                 div.u-flexbox.u-align-middle
                     h3.u-text-primary.u-text-size-small.u-text-tracked-out.u-text-bold.u-uppercase #{type}
@@ -14,9 +18,5 @@ mixin project(title, type, image, logo, color, url, styles)
                     block
                 else
                     p No content provided
-
-            div.u-width-half.u-padding-left-xl.u-padding-right-xl.u-padding-top-xl.u-padding-bottom-xl.u-flexbox.u-align-end.u-justify-end.u-context.u-bg-pureBlack.u-clip.u-slightly-transparent
-                +button('More', '#')
-                div.c-project__bg.u-position.u-z-basic.u-cover.u-bg-cover.js-lazy-load(data-style='background-image:url("assets/images/#{image}");')
         
         +fauxLink('#{title}', '#')

@@ -1,1 +1,31 @@
-header(hidden)
+header.u-context.u-z-modal
+    
+    div.u-fixed.u-bottom-0.u-right-0.u-padding-top-md(style='transform:rotate(90deg); transform-origin:top right; backface-visibility:hidden; font-size:0.85rem;')
+        a.x-header__email.u-context.u-block(href='mailto:ben@bengroulx.com') ben&hairsp;@&hairsp;bengroulx&hairsp;.&hairsp;com
+
+    style.
+        .x-header__email,
+        .x-header__email::before {        
+            transition: all 0.5s cubic-bezier(0.8, 0.65, 0.025, 1);
+        }
+        .x-header__email::before {
+            content: '';
+            
+            position: absolute;
+            top: 50%;
+            left: -2.5rem;
+
+            display: block;
+            width: 2rem;
+            height: 1px;
+            
+            background: currentColor;
+        }
+        .x-header__email:hover {
+            color: rebeccaPurple;
+        }
+        .x-header__email:hover::before {
+            left: calc(-200% - 0.5rem);
+            
+            width: 200%;    
+        }

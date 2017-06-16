@@ -66,8 +66,9 @@ $color-map: (
     secondary: $configure--secondary-color,
     link:      $configure--accent-color,
     grey:      rgba(mix(#0d0e10, $configure--primary-color), 0.25),
-    pureWhite:     #fff,
-    pureBlack:     #0d0e10,
+    pureWhite: #fff,
+    pureBlack: #0d0e10,
+    halfBlack: rgba(#0d0e10, 0.3),
 );
 
 // Z-axis options
@@ -82,19 +83,19 @@ $z-map: (
 // Content area options
 $content-area-map: (
     narrow: $configure--base-unit * 30,
-    medium: $configure--base-unit * 45,
-    wide:   $configure--base-unit * 60,
+    medium: $configure--base-unit * 40,
+    wide:   $configure--base-unit * 55,
 );
 
 // Dimensions options
 $dimensions-map: (
-    0: 0,
-    1of4: (100%/4),
-    1of3: (100%/3),
-    half: (100%/2),
-    2of3: (100%/1.5151),
-    3of4: (100%/1.3333),
     full: (100%/1),
+    3of4: (100%/1.3333),
+    2of3: (100%/1.5151),
+    half: (100%/2),
+    1of3: (100%/3),
+    1of4: (100%/4),
+    0: 0,
 );
 
 // Style options
@@ -115,4 +116,9 @@ $directions-map: (
     left,
     right,
     bottom,
+);
+
+// Animation Speeds
+$animation-map: (
+    whoosh: cubic-bezier(0.8, 0.65, 0.025, 1),
 );

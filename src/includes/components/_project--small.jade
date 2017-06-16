@@ -1,4 +1,4 @@
-mixin projectSmall(title, logo, video, image, color, styles)
+mixin projectSmall(title, logo, video, color, styles)
 
     article.c-project.c-button--trigger.u-context.u-clip.u-color-pureWhite(style='background-color:#{color}; #{styles}')
         
@@ -6,7 +6,7 @@ mixin projectSmall(title, logo, video, image, color, styles)
             
             div.u-context
                 img.u-position.u-bottom-0.u-left-halfway.u-z-stack.u-width-half(style='transform:translate(-50%, 40%);', src='assets/images/#{logo}')
-                video.c-project__bg.u-width-full.u-bg-pureBlack(playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop', poster='#{image}')
+                video.c-project__bg.u-width-full.u-bg-halfBlack(playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop', poster='')
                     source(src='assets/videos/#{video}', type='video/mp4')
                     track(kind='captions', default='default')
 

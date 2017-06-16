@@ -46,16 +46,20 @@
         stroke: currentColor;
     }
 
-    &:hover {
-        background: none;
+    @include --small-up {
+        &:hover {
+            background: none;
 
-        color: inherit;
+            color: inherit;
+        }
     }
 }
 
-.c-button--trigger:hover {
-    .c-button__stroke {
-        animation: draw 1s cubic-bezier(0.79, 0.67, 0.02, 1) forwards;
+@include --small-up {
+    .c-button--trigger:hover {
+        .c-button__stroke {
+            animation: draw 1s map-get($animation-map, whoosh) forwards;
+        }
     }
 }
 
