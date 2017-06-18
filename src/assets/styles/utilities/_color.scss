@@ -2,8 +2,8 @@
 // ============================================================================
 
 $color-map: (
-    black: var(--black-100),
-    white: var(--white-100),
+    #{black}: var(--black-100),
+    #{white}: var(--white-100),
     dark-grey: var(--dark-grey-100),
     light-grey: var(--light-grey-100),
     accent: var(--accent-100),
