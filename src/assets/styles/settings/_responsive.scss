@@ -12,13 +12,13 @@
 }
 
 @mixin --medium-only {
-    @media screen and (min-width: 30rem) and (max-width: 40rem) {
+    @media screen and (min-width: 30rem) and (max-width: 45rem) {
         @content;
     }
 }
 
 @mixin --large-only {
-    @media screen and (min-width: 40rem) and (max-width: 50rem) {
+    @media screen and (min-width: 45rem) and (max-width: 60rem) {
         @content;
     }
 }
@@ -34,13 +34,13 @@
 }
 
 @mixin --medium-up {
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 45rem) {
         @content;
     }
 }
 
 @mixin --large-up {
-    @media screen and (min-width: 50rem) {
+    @media screen and (min-width: 60rem) {
         @content;
     }
 }

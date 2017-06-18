@@ -21,12 +21,12 @@
 
             background: currentColor;
 
-            transition: all 0.5s var(--whoosh);;
+            transition: all 0.5s var(--whoosh);
         }
 
         @include --small-up {
             &:hover::before {
-                left: calc(-200% - 0.5rem);
+                left: calc(-200% - var(--size-sm));
 
                 width: 200%;
             }
@@ -34,8 +34,26 @@
     }
 }
 
+.x-job-last {
+    @include --large-up {
+        transform: translateX(50%);
+    }
+}
+
+.x-article-second {
+    @include --medium-up {
+        transform: translateY(50%);
+    }
+}
+
 .x-article-last {
     @include --medium-up {
         transform: translateY(-50%);
+    }
+}
+
+.x-project-small-image {
+    @include --medium-up {
+        transform:translate(-50%, 40%);
     }
 }

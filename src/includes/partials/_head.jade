@@ -10,18 +10,20 @@ meta(name='author', content='Ben Groulx')
 
 //- Critical Styles
 style.
+    html,body { margin:0; padding:0; }
     body { background-color:#e0e3e8; color:#000; font-family:sans-serif; font-size:1rem; line-height:1.5; }
-    main { opacity:0; animation:fade-in 1s 1s forwards; }
+    body:not(.no-js) { opacity:0; animation:fade-in 1s 1s forwards; }
     h1 { font-size:3em; }
     a { color:inherit; }
-    section { padding-top:5%; padding-bottom:5%;}
+    img, svg { max-width:100%; }
+    header, section > *, footer { padding:5%;}
     .js-image-visible { animation: fade-in 2s forwards; }
     @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 //- Deferred Styles
-noscript#deferred-styles
-    link(rel='stylesheet', href='/assets/styles/screen.css')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Karla:400,400i,700|Roboto+Slab:300')
+    noscript#deferred-styles
+link(rel='stylesheet', href='/assets/styles/screen.css')
+link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Karla:400,400i,700|Scope+One')
 
 //- Load Deferred Styles
 script(async='').

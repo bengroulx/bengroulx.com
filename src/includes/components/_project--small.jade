@@ -5,7 +5,7 @@ mixin projectSmall(title, logo, video, color, styles)
         div.u-context
             
             div.u-context
-                img.u-position.u-bottom-0.u-left-halfway.u-z-stack.u-width-half(style='transform:translate(-50%, 40%);', src='assets/images/#{logo}')
+                img.u-position.u-bottom-0.u-left-halfway.u-z-stack.u-width-half.x-project-small-image(src='assets/images/#{logo}')
                 video.c-project__bg.u-width-full(playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop', poster='', style='background-color:var(--black-25);')
                     source(src='assets/videos/#{video}', type='video/mp4')
                     track(kind='captions', default='default')
