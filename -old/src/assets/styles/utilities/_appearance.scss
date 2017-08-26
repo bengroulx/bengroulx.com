@@ -1,0 +1,26 @@
+// Utilities: Appearance
+// ---
+
+.u-circle {
+    border-radius: 100%;
+}
+
+.u-semi-transparent {
+    opacity: var(--semi-transparent);
+}
+
+.u-half-transparent {
+    opacity: var(--half-transparent);
+}
+
+.u-slightly-transparent {
+    opacity: var(--slightly-transparent);
+}
+
+.u-fully-transparent {
+    opacity: var(--fully-transparent);
+}
+
+.u-not-transparent {
+    opacity: var(--not-transparent);
+}

@@ -1,0 +1,26 @@
+mixin project(title, type, image, logo, color, textColor, url)
+
+    article.c-project.c-button--trigger.u-context.u-clip(style='background-color:#{color}; color:#{textColor};')
+
+        div.u-context.u-flexbox--medium-up
+        
+            div.u-width-half--medium-up.u-flexbox.u-flex-2.u-align-end.u-justify-middle.u-justify-end--medium-up.u-context.u-clip.u-slightly-transparent.u-padding-left-xl.u-padding-right-xl.u-padding-top-xl.u-padding-bottom-xl(style='background-color:var(--black-25)')
+                +button('More', '#')
+                
+                div.c-project__bg.u-position.u-z-basic.u-cover.u-bg-cover.js-lazy-load(data-style='background-image:url("assets/images/#{image}");')
+
+            div.c-text-content.u-flex-1.u-width-half--medium-up.u-padding-top-lg.u-padding-top-xl--medium-up.u-padding-bottom-lg.u-padding-bottom-xl--medium-up.u-padding-left-md.u-padding-left-xl--medium-up.u-padding-right-md.u-padding-right-xl--medium-up
+                h2 #{title}
+                
+                div.u-flexbox.u-align-middle.u-color-white
+                    h3.u-text-main.u-text-size-small.u-text-tracked-out.u-text-bold.u-uppercase #{type}
+                    span.u-margin-left-sm.u-semi-transparent.u-text-bold /
+                    img.u-margin-left-sm(src='assets/images/#{logo}', style='height:1rem; width:auto;')
+                
+                if block
+                    block
+                else
+                    p No content provided
+        
+        a.c-faux-link.u-position.u-z-stack.u-cover.u-clip.u-fully-transparent(href='#{url}')
+            | Find out more about #{title}

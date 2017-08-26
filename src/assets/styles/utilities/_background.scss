@@ -1,15 +1,7 @@
 // Utilities: Background
 // ============================================================================
 
-$bg-color-map: (
-    #{black}: var(--black-100),
-    #{white}: var(--white-100),
-    dark-grey: var(--dark-grey-100),
-    light-grey: var(--light-grey-100),
-    accent: var(--accent-100),
-);
-
-@each $color-name, $color-value in $bg-color-map {
+@each $color-name, $color-value in $color-map {
     .u-bg-#{$color-name} {
         background-color: $color-value;
     }
@@ -17,4 +9,8 @@ $bg-color-map: (
 
 .u-bg-cover {
     background-size: cover;
+}
+
+.u-bg-center {
+    background-position: center;
 }

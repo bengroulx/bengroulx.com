@@ -1,0 +1,21 @@
+mixin article(title, date, url)
+
+    article.c-text-content.c-button--trigger.u-context
+        
+        h4.u-color-white.u-underline #{title}
+        
+        div.u-flexbox.u-align-middle
+            span.u-inline-block.u-margin-right-md
+                +icon('medium')
+            h5.u-text-main.u-text-size-small.u-text-tracked-out.u-text-bold.u-uppercase.u-leading-single #{date}
+        
+        if block
+            block
+        else
+            p No content provided
+        
+        div.u-align-right
+            +button('Read', '#')
+        
+        a.c-faux-link.u-position.u-z-stack.u-cover.u-clip.u-fully-transparent(href='#{url}')
+            | Find out more about #{title}

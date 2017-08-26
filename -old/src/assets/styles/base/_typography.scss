@@ -1,0 +1,95 @@
+// Global Typographic Styles
+// ============================================================================
+
+h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    opacity: 0.9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.0125em;
+}
+
+body {
+    @extend %type-copy;
+}
+
+h1 {
+    @extend %type-headline;
+    font-weight: 100;
+}
+
+h2 {
+    @extend %type-subheadline;
+    font-weight: var(--text-light);
+}
+
+h3 {
+    @extend %type-title;
+    font-weight: var(--text-light);
+}
+
+h1,
+h2,
+h3 {
+    line-height: var(--leading-single);
+}
+
+h4,
+h5,
+h6 {
+    @extend %type-subtitle;
+
+    font-weight: var(--text-light);
+    line-height: var(--leading-single);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+q,
+blockquote {
+    quotes: none;
+
+    &::before,
+    &::after {
+        content: '';
+    }
+}
+
+small {
+    @extend %type-small;
+}
+
+code,
+pre {
+    font-family: var(--font-mono);
+}
+
+a {
+    text-decoration: none;
+
+    &:not(:hover) {
+        color: inherit;
+    }
+
+    &:hover {
+        font-family: var(--accent-100);
+    }
+}

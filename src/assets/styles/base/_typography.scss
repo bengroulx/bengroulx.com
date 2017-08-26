@@ -1,28 +1,34 @@
 // Global Typographic Styles
 // ============================================================================
 
-h1,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-    opacity: 0.9;
+@font-face {
+    font-family: 'Akkurat';
+    font-style: normal;
+    font-weight: $regular-font;
+    font-display: swap;
+
+    unicode-range: U+000-5FF;
+    src: url('./assets/fonts/Akkurat_Regular.woff2') format('woff2');
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-heading);
-    font-weight: var(--text-light);
-    letter-spacing: -0.0125em;
+@font-face {
+    font-family: 'Tiempos Headline';
+    font-style: normal;
+    font-weight: $regular-font;
+    font-display: swap;
+
+    unicode-range: U+000-5FF;
+    src: url('./assets/fonts/TiemposHeadline_Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    font-style: normal;
+    font-weight: $bold-font;
+    font-display: swap;
+
+    unicode-range: U+000-5FF;
+    src: url('./assets/fonts/TiemposHeadline_Semibold.woff2') format('woff2');
 }
 
 body {
@@ -31,28 +37,36 @@ body {
 
 h1 {
     @extend %type-headline;
+    font-family: $secondary-font;
 }
 
 h2 {
     @extend %type-subheadline;
+    font-family: $secondary-font;
 }
 
 h3 {
     @extend %type-title;
 }
 
-h1,
-h2,
-h3 {
-    line-height: var(--leading-single);
-}
-
 h4,
 h5,
 h6 {
     @extend %type-subtitle;
+}
 
-    line-height: var(--leading-single);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $regular-font;
+    line-height: $tight-leading;
+}
+
+small {
+    @extend %type-small;
 }
 
 ol,
@@ -70,23 +84,36 @@ blockquote {
     }
 }
 
-small {
-    @extend %type-small;
-}
-
 code,
 pre {
-    font-family: var(--font-mono);
+    font-family: $code-font;
 }
 
 a {
+    color: $primary-color;
     text-decoration: none;
 
-    &:not(:hover) {
-        color: inherit;
-    }
-
     &:hover {
-        font-family: var(--accent-100);
+        @extend %a-back-forth;
+
+        color: $accent-color;
     }
+}
+
+::-webkit-input-placeholder {
+    color: $grey;
+    font-size: 0.8rem;
+    line-height: $base-leading;
+}
+
+::-moz-placeholder {
+    color: $grey;
+    font-size: 0.8rem;
+    line-height: $base-leading;
+}
+
+:-ms-input-placeholder {
+    color: $grey;
+    font-size: 0.8rem;
+    line-height: $base-leading;
 }

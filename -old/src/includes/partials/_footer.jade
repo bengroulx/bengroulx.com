@@ -1,0 +1,39 @@
+include /includes/components/_icon
+
+footer.u-context
+    
+    div.u-flexbox.u-align-middle.u-justify-between.u-padding-left-md.u-padding-left-xl--medium-up.u-padding-right-md.u-padding-right-xl--medium-up.u-padding-bottom-lg
+    
+        div.c-text-content.u-text-size-small
+            p Copyright © 2010-2017 Ben Groulx ✌️
+        
+        div.u-flexbox.u-align-middle
+            a.u-inline-block.u-margin-right-md(href='')
+                +icon('twitter')
+            a.u-inline-block(href='')
+                +icon('medium')
+
+script.
+    document.querySelector('body').classList.remove('no-js');
+
+    const lazyTrigger = document.getElementsByClassName('js-lazy-load');
+    const lazyVisible = document.getElementsByClassName('js-image-visible');
+
+    window.onscroll = function() {
+        if (document.querySelectorAll('.js-lazy-load:not(.js-image-visible)').length === 0) return;
+
+        for (const section of lazyTrigger) {
+            if (section.getBoundingClientRect().top <= window.innerHeight * 0.75 && section.getBoundingClientRect().top > 0) {
+              section.classList.add('js-image-visible');
+            }
+        }
+        for (var i=0; i<lazyVisible.length; i++) {
+            if(lazyVisible[i].getAttribute('data-style')) {
+                lazyVisible[i].setAttribute('style', lazyVisible[i].getAttribute('data-style'));
+                lazyVisible[i].removeAttribute('data-style');
+            }
+        }
+    };
+
+script.
+    !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-41575530-1","auto"),ga("send","pageview");

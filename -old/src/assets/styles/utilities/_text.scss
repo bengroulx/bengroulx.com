@@ -1,0 +1,131 @@
+// Utilities: Text
+// ============================================================================
+
+
+// Text Sizing
+// ---
+
+.u-text-size-very-large {
+    @extend %type-headline;
+}
+
+.u-text-size-large {
+    @extend %type-title;
+}
+
+.u-text-size-base {
+    @extend %type-copy;
+}
+
+.u-text-size-small {
+    @extend %type-small;
+}
+
+
+// Text Styles
+// ---
+//
+// 1. The same style could be applied by using an element. Think about what may
+//    be more semantically correct for your specific situation.
+
+.u-text-regular {
+    font-weight: var(--text-regular);
+}
+
+.u-text-light {
+    font-weight: var(--text-light);
+}
+
+.u-text-bold {
+    font-weight: var(--text-bold); // 1
+}
+
+.u-text-italic {
+    font-style: italic; // 1
+}
+
+.u-underline {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    text-decoration-color: blue;
+}
+
+
+// Text Family
+// ---
+
+.u-text-main {
+    font-family: var(--font-main);
+}
+
+.u-text-headline {
+    font-family: var(--font-headline);
+}
+
+
+// Text Alignment
+// ---
+
+.u-align-left {
+    text-align: left;
+}
+
+.u-align-center {
+    text-align: center;
+}
+
+.u-align-right {
+    text-align: right;
+}
+
+
+// Text Leading
+// ---
+
+.u-leading-tight {
+    line-height: var(--leading-tight);
+}
+
+.u-leading-main {
+    line-height: var(--leading-main);
+}
+
+
+// Text Casing
+// ---
+
+.u-uppercase {
+    text-transform: uppercase;
+}
+
+.u-lowercase {
+    text-transform: lowercase;
+}
+
+.u-capitalize {
+    text-transform: capitalize;
+}
+
+
+// Text Tracking
+// ---
+
+.u-text-tracked-out {
+    letter-spacing: 0.15em;
+}
+
+
+// Text Clipping
+// ---
+
+.u-text-clip {
+    overflow: hidden;
+
+    color: transparent;
+    white-space: nowrap;
+    text-indent: 100%;
+}
+
+.u-text-nowrap {
+    white-space: nowrap;
+}

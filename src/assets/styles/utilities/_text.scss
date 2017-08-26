@@ -1,20 +1,16 @@
 // Utilities: Text
 // ============================================================================
 
-
-// Text Sizing
-// ---
-
-.u-text-size-base {
-    @extend %type-copy;
-}
-
 .u-text-size-very-large {
     @extend %type-headline;
 }
 
 .u-text-size-large {
     @extend %type-title;
+}
+
+.u-text-size-base {
+    @extend %type-copy;
 }
 
 .u-text-size-small {
@@ -28,32 +24,22 @@
 // 1. The same style could be applied by using an element. Think about what may
 //    be more semantically correct for your specific situation.
 
-.u-text-regular {
-    font-weight: var(--text-regular);
-}
-
-.u-text-light {
-    font-weight: var(--text-light);
-}
-
-.u-text-bold {
-    font-weight: var(--text-bold); // 1
-}
-
-.u-text-italic {
+/* Unused CSS :: Chrome DevTools Audit
+.u-italic {
     font-style: italic; // 1
 }
 
+.u-regular {
+    font-weight: $regular-font;
+}
+*/
 
-// Text Family
-// ---
-
-.u-text-main {
-    font-family: var(--font-main);
+.u-bold {
+    font-weight: $bold-font; // 1
 }
 
-.u-text-headline {
-    font-family: var(--font-headline);
+.u-secondary-font {
+    font-family: $secondary-font;
 }
 
 
@@ -66,18 +52,16 @@
 
 .u-align-center {
     text-align: center;
+
+    @include --small-up {
+        &--small-up {
+            text-align: center;
+        }
+    }
 }
 
 .u-align-right {
     text-align: right;
-}
-
-
-// Text Leading
-// ---
-
-.u-leading-tight {
-    line-height: var(--leading-tight);
 }
 
 
@@ -97,25 +81,9 @@
 }
 
 
-// Text Tracking
+// Tracking
 // ---
 
-.u-text-tracked-out {
-    letter-spacing: 0.15em;
-}
-
-
-// Text Clipping
-// ---
-
-.u-text-clip {
-    overflow: hidden;
-
-    color: transparent;
-    white-space: nowrap;
-    text-indent: 100%;
-}
-
-.u-text-nowrap {
-    white-space: nowrap;
+.u-tracked-loose {
+    letter-spacing: 0.125rem;
 }

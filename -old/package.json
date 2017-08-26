@@ -1,0 +1,16 @@
+{
+    "name": "bengroulx-dot-com",
+    "version": "",
+    "description": "",
+    "main": "lib/index.html",
+    "license": "MIT",
+    "author": "Ben Groulx <ben@bengroulx.com> (https://bengroulx.com)",
+    "scripts": {
+        "compile": "harp compile src dist",
+        "publish": "npm run compile && git subtree push --prefix dist origin gh-pages"
+    },
+    "devDependencies": {
+        "gh-pages": "^0.2.0",
+        "harp": "^0.13.0"
+    }
+}

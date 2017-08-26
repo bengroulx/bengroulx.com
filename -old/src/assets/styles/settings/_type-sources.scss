@@ -1,0 +1,49 @@
+// Karla
+// ---
+
+
+@font-face {
+    font-family: 'Pitch';
+    font-weight: 300;
+    src: local('../fonts/PitchWeb-Regular.woff');
+}
+
+
+// San Francisco
+// ---
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 300;
+    src: local('-apple-system');
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 400;
+    src: local('.SFNSText-Regular');
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 500;
+    src: local('-apple-system');
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 600;
+    src: local('-apple-system');
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 700;
+    src: local('.SFNSText-Semibold');
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 800;
+    src: local('-apple-system');
+}

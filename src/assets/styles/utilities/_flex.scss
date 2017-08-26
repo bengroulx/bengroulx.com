@@ -4,8 +4,20 @@
 .u-flexbox {
     display: flex;
 
-    &:not(.u-flex-column) {
+    &:not([class*='flex-column']) {
         flex-direction: row;
+    }
+
+    @include --small-only {
+        &--small-only {
+            display: flex;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: flex;
+        }
     }
 
     @include --medium-up {
@@ -17,48 +29,119 @@
 
 .u-flex-column {
     flex-direction: column;
+
+    @include --small-only {
+        &--small-only {
+            flex-direction: column;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            flex-direction: column;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            flex-direction: column;
+        }
+    }
+}
+
+.u-flex-wrap {
+    flex-wrap: wrap;
 }
 
 
 // Flex Layout
 // ---
 
-.u-align {
-    &-start {
-        align-items: flex-start;
-    }
+.u-align-middle {
+    align-items: center;
 
-    &-middle {
-        align-items: center;
-    }
-
-    &-end {
-        align-items: flex-end;
-    }
-}
-
-.u-justify {
-
-    &-start {
-        justify-content: flex-start;
-    }
-
-    &-middle {
-        justify-content: center;
-    }
-
-    &-end {
-        justify-content: flex-end;
-
-        @include --medium-up {
-            &--medium-up {
-                justify-content: flex-end;
-            }
+    @include --small-only {
+        &--small-only {
+            align-items: center;
         }
     }
 
-    &-between {
-        justify-content: space-between;
+    @include --small-up {
+        &--small-up {
+            align-items: center;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            align-items: center;
+        }
+    }
+}
+
+.u-justify-start {
+    justify-content: flex-start;
+
+    @include --small-only {
+        &--small-only {
+            justify-content: flex-start;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            justify-content: flex-start;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.u-justify-end {
+    justify-content: flex-end;
+
+    @include --small-only {
+        &--small-only {
+            justify-content: flex-end;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            justify-content: flex-end;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.u-justify-middle {
+    justify-content: center;
+
+    @include --small-only {
+        &--small-only {
+            justify-content: center;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            justify-content: center;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: center;
+        }
     }
 }
 
@@ -67,33 +150,16 @@
 // ---
 
 .u-flex {
-    &,
-    &-expand,
-    &-shrink {
-        display: block;
-    }
+    display: block;
+    flex: 1 1 auto;
+}
 
-    & {
-        flex: 1 1 auto;
-    }
+.u-flex-expand {
+    display: block;
+    flex: 1;
+}
 
-    &-shrink {
-        flex: 0 1 auto;
-    }
-
-    &-expand {
-        flex: 1;
-    }
-
-    &-1 {
-        order: 1;
-    }
-
-    &-2 {
-        order: 2;
-    }
-
-    &-3 {
-        order: 3;
-    }
+.u-flex-shrink {
+    display: block;
+    flex: 0 1 auto;
 }

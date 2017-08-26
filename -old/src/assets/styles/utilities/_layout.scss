@@ -1,0 +1,103 @@
+// Utilities: Layout
+// ============================================================================
+
+.u-context {
+    position: relative;
+}
+
+.u-position {
+    position: absolute;
+}
+
+.u-fixed {
+    position: fixed;
+}
+
+
+// Center In Parent
+// ---
+
+.u-center {
+    transform: translate(-50%, -50%);
+}
+
+
+// Cover Parent
+// ---
+
+.u-cover {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+// X & Y Index Positioning
+// ---
+
+.u-top-0 {
+    top: var(--size-0);
+}
+
+.u-top-halfway {
+    top: var(--size-half);
+}
+
+.u-left-0 {
+    left: var(--size-0);
+}
+
+.u-left-halfway {
+    left: var(--size-half);
+}
+
+.u-bottom-0 {
+    bottom: var(--size-0);
+}
+
+.u-bottom-halfway {
+    left: var(--size-half);
+}
+
+.u-right-0 {
+    right: var(--size-0);
+}
+
+.u-right-halfway {
+    right: var(--size-half);
+}
+
+
+// Z Index Positioning
+// ---
+
+$z-map: (
+    under: var(--z-under),
+    basic: var(--z-basic),
+    stack: var(--z-stack),
+    shade: var(--z-shade),
+    modal: var(--z-modal),
+);
+
+@each $layer-name, $layer-value in $z-map {
+    .u-z-#{$layer-name} {
+        z-index: $layer-value;
+    }
+}
+
+
+// Floating
+// ---
+
+.u-float-left {
+    float: left;
+}
+
+.u-float-right {
+    float: right;
+}
+
+.u-float-none {
+    float: none;
+}

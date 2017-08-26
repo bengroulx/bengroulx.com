@@ -1,0 +1,15 @@
+// Component: Icon
+// ============================================================================
+
+.c-icon {
+    vertical-align: middle;
+
+    &:not(.c--) {
+        width: (var(--unit));
+        height: (var(--unit));
+    }
+
+    &.c--full-width {
+        
+    }
+}

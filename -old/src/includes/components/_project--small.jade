@@ -1,0 +1,21 @@
+mixin projectSmall(title, logo, video, color, styles)
+
+    article.c-project.c-button--trigger.u-context.u-clip.u-color-white(style='background-color:#{color}; #{styles}')
+        
+        div.u-context
+            
+            div.u-context
+                img.u-position.u-bottom-0.u-left-halfway.u-z-stack.u-width-half.x-project-small-image(src='assets/images/#{logo}')
+                
+                video.c-project__bg.u-width-full(playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop', style='background-color:var(--black-25);')
+                    source(src='assets/videos/#{video}', type='video/mp4')
+                    track(kind='captions', default='default')
+
+            div.c-text-content.u-padding-top-lg.u-padding-left-md.u-padding-left-lg--medium-up.u-padding-right-md.u-padding-right-lg--medium-up.u-padding-bottom-md.u-padding-bottom-lg--medium-up.u-text-size-small
+                h3(hidden) #{title}
+                if block
+                    block
+                else
+                    p No content provided
+
+            +fauxLink('#{title}', '#')

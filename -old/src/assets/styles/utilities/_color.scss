@@ -1,0 +1,17 @@
+// Utilities: Text Color
+// ============================================================================
+
+$color-map: (
+    'black': var(--black-100),
+    'white': var(--white-100),
+    white-50: var(--white-50),
+    dark-grey: var(--dark-grey-100),
+    light-grey: var(--light-grey-100),
+    accent: var(--accent-100),
+);
+
+@each $color-name, $color-value in $color-map {
+    .u-color-#{$color-name} {
+        color: $color-value;
+    }
+}

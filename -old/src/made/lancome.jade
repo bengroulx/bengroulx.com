@@ -1,0 +1,73 @@
+//- Components
+include ../includes/components/_article
+include ../includes/components/_button
+include ../includes/components/_faux-link
+include ../includes/components/_icon
+include ../includes/components/_project--large
+include ../includes/components/_project--small
+
+//- Hero Image
+section.u-context.u-bg-white
+
+    img.u-width-full(src='../assets/images/header--lancome.png')
+    
+
+//- Intro Text
+section.u-clip.u-bg-white.u-color-black
+    
+    div.u-padding-left-md.u-padding-left-lg--medium-up.u-padding-right-md.u-padding-right-lg--medium-up.u-text-size-small.u-align-center.u-margin-bottom-massive.u-measure-narrow(style='margin-left:auto; margin-right:auto;')
+    
+        p.u-leading-tight.u-inline-block.u-padding-top-xs.u-padding-left-md.u-padding-right-md.u-padding-bottom-xs.u-uppercase.u-margin-bottom-xl.u-semi-transparent.u-text-bold.u-text-tracked-out(style='border: 1px solid currentColor; font-size: 0.75em;') A Case Study
+
+        h1.u-margin-bottom-lg
+            span.u-block.u-margin-bottom-lg Lancôme#[span.u-text-clip(style='margin-right:-1rem;') :]
+            span.u-block.u-text-size-base.u-text-main.u-leading-main
+                | How I helped design one of the first largescale ecommerce progressive web apps. #[span.c-highlight Like, ever].
+
+        hr.u-margin-bottom-lg
+            
+        p.u-margin-bottom-sm.u-lowercase.u-text-italic.u-half-transparent(style='font-size:0.75em;') Made with the folks at
+
+        div.u-width-1of4(style='margin-left:auto; margin-right:auto;')
+            include ../assets/images/logo--mobify.svg
+
+//- Intro Text
+section.u-clip.u-bg-white.u-color-black.u-margin-bottom-lg
+    
+    article.u-padding-left-md.u-padding-left-lg--medium-up.u-padding-right-md.u-padding-right-lg--medium-up
+        
+        div.u-measure-medium.u-margin-bottom-xl(style='margin-left:auto; margin-right:auto; border:1px dashed var(--dark-grey-50); padding:var(--unit);')
+            p.u-text-bold TL;DR
+            p.u-text-size-small We worked with Lancôme to design and build their new progressive web app. It was one of our first PWAs at Mobify, and one of the first largescale ecommerce PWAs on the market — ever. After launching, Lancôme saw a 57% increase in iOS sessions, a 17% increase in transactions. It was also featured at Google I/O’s main event, and won the Mobile Commerce Award at the 2017 Internet Retailer Excellence Awards.
+
+        div.c-text-content.u-measure-medium.u-margin-bottom-xl(style='margin-left:auto; margin-right:auto;')
+            
+            h3 Creating Efficiency
+
+            p With the release of Recurly.js, an API documentation site for Recurly, new sample forms were needed for the Recurly’s merchants. The goal was to supply our users with a set of developed templates that were modular, systematic, and flexible. We wanted to encourage the usage of branded checkout flows but reduce the amount of time spent on developing them. This would allow Recurly’s merchants the opportunity to focus their attention on growth.
+
+            p You can test out the live samples and review the documentation.
+
+            p Prior to starting this project. I read through Luke W’s book Web Form Design. It gave me insight on effective form design for all industries. One of the things I needed to consider was the purpose of designing sample forms. If a merchant were to use Recurly’s API, that was already a clear indication that they had some knowledge of development. We knew we could be a bit more clever with how we would provide the forms as well as how advanced we could get with the forms.
+                
+        figure.u-margin-bottom-xl.u-context(style='height:75vh;')
+            div.u-position.u-cover.u-bg-cover.u-bg-center.js-lazy-load(data-style='background-image:url("../assets/images/lancome-device.png")')
+        
+        div.c-text-content.u-measure-medium.u-margin-bottom-xl(style='margin-left:auto; margin-right:auto;')
+
+            p With the release of Recurly.js, an API documentation site for Recurly, new sample forms were needed for the Recurly’s merchants. The goal was to supply our users with a set of developed templates that were modular, systematic, and flexible. We wanted to encourage the usage of branded checkout flows but reduce the amount of time spent on developing them. This would allow Recurly’s merchants the opportunity to focus their attention on growth.
+        
+        figure.u-margin-bottom-xl.u-context(style='height:0; padding-bottom:30%; background-color:#eee;')
+            div.u-position.u-cover.u-bg-cover.u-bg-center.js-lazy-load(data-style='background-image:url("../assets/images/lancome-nav-iteration.png")')
+
+        figure.u-margin-bottom-xl.u-context.u-align-center.u-padding-top-xl.u-padding-bottom-xl(style='background-color:#555;')
+            div.u-measure-medium.u-margin-bottom-xl(style='margin-left:auto; margin-right:auto;')
+
+                div.u-context.u-margin-bottom-lg(style='height:0; padding-bottom:53.5%;')
+                    div.u-position.u-cover.u-bg-cover.u-bg-center.js-lazy-load(data-style='background-image:url("../assets/images/lancome-checkout-iteration-1.png")')
+                p.u-margin-bottom-lg 👇
+                div.u-context.u-margin-bottom-lg(style='height:0; padding-bottom:53.5%;')
+                    div.u-position.u-cover.u-bg-cover.u-bg-center.js-lazy-load(data-style='background-image:url("../assets/images/lancome-checkout-iteration-2.png")')
+                p.u-margin-bottom-lg 👇
+                div.u-context(style='height:0; padding-bottom:53.5%;')
+                    div.u-position.u-cover.u-bg-cover.u-bg-center.js-lazy-load(data-style='background-image:url("../assets/images/lancome-checkout-iteration-3.png")')

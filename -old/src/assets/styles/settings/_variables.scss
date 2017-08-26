@@ -1,0 +1,80 @@
+// Project-Wide Configurable Variables
+// ============================================================================
+
+:root {
+    --unit: 1rem;
+    --ratio: 1.25;
+
+    --black-100: rgba(#0d0e10, 1);
+    --black-50: rgba(#0d0e10, 0.5);
+    --black-25: rgba(#0d0e10, 0.1);
+
+    --dark-grey-100: rgba(#77797c, 1);
+    --dark-grey-50: rgba(#77797c, 0.5);
+    --dark-grey-25: rgba(#77797c, 0.25);
+
+    --light-grey-100: rgba(#e0e3e8, 1);
+    --light-grey-50: rgba(#e0e3e8, 0.5);
+    --light-grey-25: rgba(#e0e3e8, 0.25);
+
+    --white-100: rgba(#fff, 1);
+    --white-50: rgba(#fff, 0.5);
+    --white-25: rgba(#fff, 0.25);
+
+    --accent-100: rgba(#8bcab4, 1);
+    --accent-50: rgba(#8bcab4, 0.5);
+    --accent-25: rgba(#8bcab4, 0.25);
+
+    --theme-purple: #3f56a1;
+    --theme-orange: #d35244;
+    --theme-violet: #a66790;
+    --theme-green: #39a8a6;
+    --theme-blue: #204e6e;
+    --theme-red: #b03b44;
+
+
+    --font-fallback: 'San Francisco', 'Roboto', 'Helvetica Neue', sans-serif;
+    --font-heading: 'Roboto Slab', var(--font-fallback);
+    --font-main: 'Karla', var(--font-fallback);
+    --font-mono: 'Menlo', monospace;
+    --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    --text-light: 300;
+    --text-regular: 400;
+    --text-bold: 700;
+
+    --leading-main: 1.5;
+    --leading-tight: --ratio;
+    --leading-single: 1.0;
+
+    --z-under: -1;
+    --z-basic: 1;
+    --z-stack: 10;
+    --z-shade: 100;
+    --z-modal: 1000;
+
+    --area-narrow: calc(var(--unit)*30);
+    --area-medium: calc(var(--unit)*45);
+    --area-wide:   calc(var(--unit)*60);
+
+    --size-xs: calc(var(--unit)/4);
+    --size-sm: calc(var(--unit)/2);
+    --size-md: calc(var(--unit)*1);
+    --size-lg: calc(var(--unit)*2);
+    --size-xl: calc(var(--unit)*4);
+    --size-full: calc(100%/1);
+    --size-3of4: calc(100%/1.3333);
+    --size-2of3: calc(100%/1.5151);
+    --size-half: calc(100%/2);
+    --size-1of3: calc(100%/3);
+    --size-1of4: calc(100%/4);
+    --size-0: 0;
+
+    --fully-transparent: 0;
+    --semi-transparent: 0.35;
+    --half-transparent: 0.65;
+    --slightly-transparent: 0.85;
+    --not-transparent: 1;
+
+    --whoosh: cubic-bezier(0.8, 0.65, 0.025, 1);
+}

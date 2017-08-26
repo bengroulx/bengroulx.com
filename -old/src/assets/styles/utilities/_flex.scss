@@ -1,0 +1,99 @@
+// Utilities: Flex
+// ============================================================================
+
+.u-flexbox {
+    display: flex;
+
+    &:not(.u-flex-column) {
+        flex-direction: row;
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: flex;
+        }
+    }
+}
+
+.u-flex-column {
+    flex-direction: column;
+}
+
+
+// Flex Layout
+// ---
+
+.u-align {
+    &-start {
+        align-items: flex-start;
+    }
+
+    &-middle {
+        align-items: center;
+    }
+
+    &-end {
+        align-items: flex-end;
+    }
+}
+
+.u-justify {
+
+    &-start {
+        justify-content: flex-start;
+    }
+
+    &-middle {
+        justify-content: center;
+    }
+
+    &-end {
+        justify-content: flex-end;
+
+        @include --medium-up {
+            &--medium-up {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    &-between {
+        justify-content: space-between;
+    }
+}
+
+
+// Flexbox Children
+// ---
+
+.u-flex {
+    &,
+    &-expand,
+    &-shrink {
+        display: block;
+    }
+
+    & {
+        flex: 1 1 auto;
+    }
+
+    &-shrink {
+        flex: 0 1 auto;
+    }
+
+    &-expand {
+        flex: 1;
+    }
+
+    &-1 {
+        order: 1;
+    }
+
+    &-2 {
+        order: 2;
+    }
+
+    &-3 {
+        order: 3;
+    }
+}
