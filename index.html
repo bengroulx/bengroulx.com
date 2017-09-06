@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html lang="en-ca" class="no-js">
 
 <head>
     <title>Ben Groulx, Designer</title>
@@ -11,6 +11,7 @@
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <meta content="Ben Groulx" name="author">
 
+    <!--
     <meta content="summary" name="twitter:card">
     <meta content="Ben Groulx, Designer" name="twitter:title">
     <meta content="@bengroulx" name="twitter:site">
@@ -24,7 +25,8 @@
     <meta content="undefined" name="og:image">
     <meta content="undefined" name="og:site_name">
     <meta content="undefined" name="og:description">
-
+    -->
+    <!--
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="undefined" name="apple-mobile-web-app-title">
     <meta content="#fff" name="theme-color">
@@ -41,96 +43,22 @@
     <link href="./assets/startup/favicon-96.png" rel="icon" sizes="96x96" type="image/png">
     <link href="./assets/startup/favicon-32.png" rel="icon" sizes="32x32" type="image/png">
     <link href="./assets/startup/favicon-16.png" rel="icon" sizes="16x16" type="image/png">
+    -->
 
-    <style>
-        @font-face {
-            src: url("./fakt-pro-300.woff2") format("woff2");
-            unicode-range: U+000-5FF;
-            font-family: "Fakt Pro";
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-        }
-
-        *,
-        *:before,
-        *:after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 100vw;
-            min-height: 100vh;
-            padding: 5%;
-
-            color: #222;
-            font-family: "Fakt Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-            line-height: 1.75;
-        }
-
-        main {
-            max-width: 35rem;
-        }
-
-        footer {
-            font-size: 0.5rem;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-        }
-
-        h1 {
-            line-height: 1;
-        }
-
-        h1,
-        p {
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-
-        em {
-            position: absolute;
-
-            overflow: hidden;
-            clip: rect(1px, 1px, 1px, 1px);
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            border: 0;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: underline;
-            text-decoration-skip: ink;
-            white-space: nowrap;
-        }
-
-        a:hover {
-            background-color: #ffc;
-        }
-
-        a:active {
-            text-decoration: none;
-            background-color: #ffe;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
 
 </head>
-
 <body>
+
     <main>
 
         <article>
-            <h1>Ben Groulx <em>is a user interface designer.</em></h1>
 
-            <p> … is a designer, art director, developer, editor, and beer enthusiast in Vancouver, Canada.
+            <h1>Ben Groulx <span hidden>is a user interface designer.</span></h1>
+
+            <p>
+                … is a designer, art director, developer, editor, and beer enthusiast in Vancouver, Canada.
 
                 He’s currently working with
                 <a href="https://mobify.com">Mobify</a>,
@@ -159,7 +87,7 @@
                 <a href="https://linkedin.com/in/bengroulx">LinkedIn</a>.
             </p>
 
-            <p>👋 ✌️ 🤙 </p>
+            <p>👋 ✌️ 🤙</p>
 
         </article>
 
@@ -168,10 +96,6 @@
         </footer>
 
     </main>
-
-    <script>
-        !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-41575530-1","auto"),ga("send","pageview");
-    </script>
 
 </body>
 </html>
