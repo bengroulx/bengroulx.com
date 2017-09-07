@@ -1,28 +1,58 @@
 @font-face {
-    font-family: "Fakt Pro";
+    font-family: "Walfork";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
 
-    src: url("../fonts/fakt-pro-300.woff2") format("woff2");
+    src: url("../fonts/Walfork-Regular.woff2") format("woff2");
     unicode-range: U+000-5FF;
     font-display: swap;
 }
 
+@keyframes swirl {
+    0% {
+        background-color: var(--shade-1);
+    }
+    25% {
+        background-color: var(--shade-2);
+    }
+    50% {
+        background-color: var(--shade-3);
+    }
+    75% {
+        background-color: var(--shade-4);
+    }
+    100% {
+        background-color: var(--shade-1);
+    }
+}
+
 :root {
+    --black: #222;
     --white: #fff;
-    --black: #111;
-    --highlight: #ffc;
+    --shade-1: #50586f;
+    --shade-2: #484a49;
+    --shade-3: #68341f;
+    --shade-4: #566927;
+    --highlight: rgba(255, 255, 150, 0.4);
+    --spacing: 4vw;
+    --space-single: calc(var(--spacing) * 1);
+    --space-double: calc(var(--spacing) * 2);
 }
 
 *,
-*:before,
-*:after {
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
-html {
+html,
+body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -32,68 +62,62 @@ body {
     min-height: 100vh;
     margin: 0;
 
-    background-color: var(--white);
+    background-color: var(--shade-1);
 
-    color: var(--black);
-    font-family: "Fakt Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", sans-serif;
-    line-height: 1.75;
+    color: var(--white);
+    font-family: "Walfork", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    animation: swirl 30s infinite;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-    position: relative;
+body::before {
+    content: "";
 
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-article {
-    max-width: 35rem;
-    padding: 5vw;
-}
-
-footer {
-    position: absolute;
+    position: fixed;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
+
+    background: linear-gradient(45deg, rgba(100, 50, 150, 0), rgba(100, 50, 150, 0.25));
+}
+
+main {
+    position: relative;
     z-index: 10;
 
-    opacity: 0.95;
-
-    font-size: 0.5rem;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    text-transform: uppercase;
+    padding-top: var(--space-single);
+    padding-bottom: var(--space-single);
 }
 
-h1 {
-    line-height: 1;
+article,
+aside {
+    max-width: 40rem;
+    padding: var(--space-single);
 }
+
 
 h1,
-p {
-    margin-bottom: 2rem;
-
-    font-weight: 300;
+li,
+p:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 a,
-a:link,
 a:visited {
+    background-color: transparent;
+
     color: inherit;
-    white-space: nowrap;
     text-decoration: underline;
 
-    transition: all linear 0.25s;
+    transition: all 0.1s linear;
 
     text-decoration-skip: ink;
 }
@@ -104,7 +128,72 @@ a:active {
     background-color: var(--highlight);
 }
 
-[hidden] {
+a:active {
+    outline: 2px dashed currentColor;
+}
+
+article ul {
+    margin-bottom: 1rem;
+
+    list-style: none;
+}
+
+article li {
+    margin-left: 1rem;
+}
+
+aside li {
+    margin-bottom: 1rem;
+
+    list-style: none;
+}
+
+aside a {
+    margin-right: 0.125rem;
+}
+
+aside a:hover ~ span {
+    opacity: 1;
+}
+
+aside p,
+aside span {
+    opacity: 0.7;
+
+    font-size: 0.75em;
+}
+
+aside ul {
+    margin: 2rem 0;
+}
+
+aside span {
+    display: block;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 0.1s linear;
+}
+
+h1 span {
+    display: block;
+    margin-bottom: 2rem;
+
+    font-size: 2em;
+    line-height: 1;
+}
+
+h1 small {
+    font-size: 1em;
+}
+
+h1 small::before {
+    content: "… ";
+}
+
+.shh {
     position: absolute;
 
     overflow: hidden;
@@ -113,4 +202,52 @@ a:active {
     height: 1px;
     padding: 0;
     border: 0;
+}
+
+.page {
+    padding-top: 1rem;
+    border-top: 0.125rem solid rgba(255, 255, 255, 0.125);
+}
+
+@media screen and (min-width: 50rem) {
+    main {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: var(--space-single);
+    }
+
+    article,
+    aside {
+        flex: 0 1 auto;
+    }
+
+    aside h2 {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 65rem) {
+    .page {
+        padding: var(--space-single);
+        border: 0;
+
+        background: var(--white);
+        box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
+
+        color: var(--black);
+
+        transform: rotate(-2deg);
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .page {
+        padding: 3rem;
+    }
+
+    aside ul {
+        columns: 2;
+        column-gap: var(--space-single);
+    }
 }
