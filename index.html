@@ -52,17 +52,20 @@
 <body>
     <main>
 
-        <article>
+        <div class="introduction">
 
-            <h1>
-                <span>Ben Groulx</span>
-                <small>is an interface designer, art director, film editor, front-end developer, board game player, and craft beer enthusiast in <em style="white-space:nowrap;font-style:normal;">Vancouver, Canada.</em></small>
+            <h1 class="header">
+                <span class="header__full-name">Ben Groulx</span>
+                <span class="header__description">is an interface designer, art director, film editor, front-end developer, board game player, and craft beer enthusiast in <em style="white-space:nowrap;font-style:normal;">Vancouver, Canada.</em></span>
             </h1>
 
-            <div class="page">
+            <article class="letter">
 
-                <header>
-                    <h2>From the desk of…</h2>
+                <header role="presentation">
+                    <h2>
+                        <span>From the desk of:</span>
+                        <span class="shh">Ben Groulx</span>
+                    </h2>
                     <time>
                         <script>
                             var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
@@ -108,92 +111,95 @@
                     <a href="https://linkedin.com/in/bengroulx">LinkedIn</a>.
                 </p>
 
-                <p>👋 ✌️ 🤙</p>
+                <footer>
+                    <p>👋 ✌️ 🤙</p>
+                    <img src="./assets/img/signature.png" alt="Signature">
+                </footer>
 
-                <img src="./assets/img/signature.png" alt="">
+            </article>
+        </div>
 
-            </div>
-        </article>
+        <div class="projects">
+            <aside>
+                <h2 class="projects__h-recent">Recently:</h2>
+                <ul class="projects__recent">
+                    <li>
+                        <a href="https://developers.google.com/web/showcase/2017/lancome">Lancôme USA</a>
+                        <p>Design lead on the brand’s recently relaunched progressive web app</p>
+                    </li>
+                    <li>
+                        <a href="https://npmjs.com/package/housecss">housecss</a>
+                        <p>Functional CSS framework for rapid iteration, built with Sass</p>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/mobify-design-team/designing-for-performance-pwa-f9228e467b72">Why Designing for Accessibility Is a Must</a>
+                        <p>Article on web accessibility</p>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/house-house/house-house-blanc-ink-3050b75adc4f">Blanc Ink</a>
+                        <p>Front-end development, UX and brand design for the tattoo-removal startup</p>
+                    </li>
+                    <li>
+                        <a href="https://babista.de">Babista</a>
+                        <p>Design lead on the brand’s progressive web app checkout</p>
+                    </li>
+                    <li>
+                        <div>Kost</div>
+                        <p>Product design for a web app for calculating restaurant profit margins</p>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/mobify-design-team/designing-for-performance-pwa-f9228e467b72">Designing for Performance In Progressive <span style="white-space:nowrap;">Web Apps</span></a>
+                        <p>Article on web performance</p>
+                    </li>
+                    <li>
+                        <a href="https://bitchpopproductions.com/">Bitchpop</a>
+                        <p>Design lead on the brand’s identity, website, and umbrella projects</p>
+                    </li>
+                    <li>
+                        <a href="http://lawnpartyfilms.com/">Lawn Party Films</a>
+                        <p>UI design and front-end development for studio’s responsive website</p>
+                    </li>
+                    <li>
+                        <a href="https://mobify.com/insights/mobify-ui-kit-progressive-web-apps/">How We Built the Mobify
+                            <em style="white-space:nowrap;font-style:normal;">UI Kit</em> for PWAs</a>
+                        <p>Article on building out a scalable mobile ecommerce design system</p>
+                    </li>
+                    <li>
+                        <a href="https://indiegogo.com/projects/house-on-the-street-horror/">House On the Street</a>
+                        <p>Short film pitch</p>
+                    </li>
+                    <li>
+                        <a href="./assets/movies-explained--ben-groulx.pdf">Movies, Explained</a>
+                        <p>Keynote presentation on definining excellent moments in film • 13Mb</p>
+                    </li>
+                </ul>
 
-        <aside>
-            <h2>Recently:</h2>
-            <ul>
-                <li>
-                    <a href="https://lancome-usa.com/">Lancôme USA</a>
-                    <p>Design lead on the brand’s recently relaunched progressive web app</p>
-                </li>
-                <li>
-                    <a href="https://npmjs.com/package/housecss">housecss</a>
-                    <p>Functional CSS framework for rapid iteration, built with Sass</p>
-                </li>
-                <li>
-                    <a href="https://medium.com/mobify-design-team/designing-for-performance-pwa-f9228e467b72">Why Designing for Accessibility Is a Must</a>
-                    <p>Article on web accessibility</p>
-                </li>
-                <li>
-                    <a href="https://medium.com/house-house/house-house-blanc-ink-3050b75adc4f">Blanc Ink</a>
-                    <p>Front-end development, UX and brand design for the tattoo-removal startup</p>
-                </li>
-                <li>
-                    <a href="https://babista.de">Babista</a>
-                    <p>Design lead on the brand’s progressive web app checkout</p>
-                </li>
-                <li>
-                    <a href="https://github.com/durfee/kost_frontend">Kost</a>
-                    <p>Product design for a web app for calculating restaurant profit margins</p>
-                </li>
-                <li>
-                    <a href="https://medium.com/mobify-design-team/designing-for-performance-pwa-f9228e467b72">Designing for Performance In Progressive <span style="white-space:nowrap;">Web Apps</span></a>
-                    <p>Article on web performance</p>
-                </li>
-                <li>
-                    <a href="https://bitchpopproductions.com/">Bitchpop</a>
-                    <p>Design lead on the brand’s identity, website, and umbrella projects</p>
-                </li>
-                <li>
-                    <a href="http://lawnpartyfilms.com/">Lawn Party Films</a>
-                    <p>UI design and front-end development for studio’s responsive website</p>
-                </li>
-                <li>
-                    <a href="https://mobify.com/insights/mobify-ui-kit-progressive-web-apps/">How We Built the Mobify
-                        <em style="white-space:nowrap;font-style:normal;">UI Kit</em> for PWAs</a>
-                    <p>Article on building out a scalable mobile ecommerce design system</p>
-                </li>
-                <li>
-                    <a href="https://indiegogo.com/projects/house-on-the-street-horror/">House On the Street</a>
-                    <p>Short film pitch</p>
-                </li>
-                <li>
-                    <a href="./assets/movies-explained--ben-groulx.pdf">Movies, Explained</a>
-                    <p>Keynote presentation on definining excellent moments in film • 13Mb</p>
-                </li>
-            </ul>
+                <h2 class="projects__h-previous">Previously:</h2>
+                <ul class="projects__previous">
+                    <li>Tommy Bahama</li>
+                    <li>Road Runner Sports</li>
+                    <li>Say Yes To Education</li>
+                    <li>Carnival Cruise Line</li>
+                    <li>Ask Will <em>(Telus TV pilot)</em></li>
+                    <li>Blue Dot (David Suzuki Foundation)</li>
+                    <li>ShopDeluxe</li>
+                    <li>Prodigals <em>(feature film)</em></li>
+                    <li>Whistler/Blackcomb</li>
+                    <li>Snow Valley Barrie</li>
+                    <li>Fort St. John Public Library</li>
+                    <li>Tourism Pemberton</li>
+                    <li>Community Whistler Foundation</li>
+                    <li>Leap 4 Your Life <em style="white-space:nowrap;">(feature film)</em></li>
+                </p>
 
-            <p>
-                Previously:
-            </p>
-            <p>
-                Tommy Bahama,
-                Road Runner Sports,
-                Say Yes To Education,
-                Blue Dot (David Suzuki Foundation),
-                Ask Will <em>(Telus series)</em>,
-                ShopDeluxe,
-                Prodigals <em>(feature film)</em>,
-                Whistler/Blackcomb,
-                Tourism Pemberton,
-                Fort St. John Public Library,
-                Snow Valley Barrie,
-                Pemberton Chamber of Commerce,
-                Leap 4 Your Life <em style="white-space:nowrap;">(feature film)</em>.
-            </p>
+            </aside>
 
             <footer>
-                <p>—</p>
-                <p><small style="font-size:0.25rem;">Copyright © 2010-2017 Ben Groulx.</small></p>
+                <div role="presentation" style="opacity:var(--brighter)">—</div>
+                <p><small>Copyright © 2010-2017 Ben Groulx</small></p>
             </footer>
 
-        </aside>
+        </div>
 
     </main>
 </body>

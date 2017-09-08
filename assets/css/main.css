@@ -33,7 +33,8 @@
     --shade-2: #484a49;
     --shade-3: #68341f;
     --shade-4: #566927;
-    --highlight: rgba(255, 255, 150, 0.3);
+    --highlight-1: rgba(255, 255, 150, 0.15);
+    --highlight-2: rgba(255, 255, 150, 0.2);
     --spacing: 4vw;
     --space-single: calc(var(--spacing) * 1);
     --space-double: calc(var(--spacing) * 2);
@@ -50,6 +51,8 @@
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
+
+    transition: all 0.05s linear;
 }
 
 html,
@@ -98,81 +101,15 @@ main {
     padding-bottom: var(--space-single);
 }
 
-article,
-aside {
-    max-width: 40rem;
-    margin: 0 auto;
-    padding: var(--space-single);
-}
-
 h1,
+h2,
+h3,
 li,
 p:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-strong {
-    font-weight: bold;
-}
-
-a {
-    color: inherit;
-    text-decoration: underline;
-
-    text-decoration-skip: ink;
-}
-
-a:visited {
-    text-decoration: line-through;
-}
-
-a:hover,
-a:focus,
-a:active {
-    outline: 1px dashed currentColor;
-
-    text-decoration: none;
-}
-
-article ul {
-    margin-bottom: 1rem;
-
-    list-style: none;
-}
-
-article li {
-    margin-left: 1rem;
-}
-
-aside li {
-    margin-bottom: 1rem;
-
-    list-style: none;
-}
-
-aside a {
-    margin-right: 0.125rem;
-
-    background-color: rgba(255, 255, 150, 0.1);
-}
-
-aside a:hover ~ p {
-    opacity: 1;
-}
-
-aside p {
-    margin-top: 0.25rem;
-
-    opacity: var(--brighter);
-
-    font-size: 0.8em;
-}
-
-aside ul {
-    margin: 2rem 0;
-}
-
-h1 span {
+.header__full-name {
     display: block;
     margin-bottom: 2rem;
 
@@ -181,26 +118,73 @@ h1 span {
     line-height: 1;
 }
 
-h1 small {
+.header__description {
     font-size: 1em;
 }
 
-h1 small::before {
+.header__description::before {
     content: "… ";
 }
 
-.shh {
-    position: absolute;
-
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
+footer {
+    font-size: 0.75em;
 }
 
-.page {
+a,
+a:visited {
+    background: var(--highlight-1);
+    outline: 1px dashed transparent;
+
+    color: inherit;
+    text-decoration: underline;
+
+    text-decoration-skip: ink;
+}
+
+a:hover,
+a:focus,
+a:active {
+    background: var(--highlight-2);
+    outline: 1px dashed currentColor;
+}
+
+.introduction,
+.projects {
+    padding: var(--space-single);
+}
+
+.introduction li {
+    margin-left: 1rem;
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects a:hover ~ p {
+    opacity: 1;
+}
+
+.projects p,
+.projects__h-previous,
+.projects__previous li {
+    opacity: var(--brighter);
+    font-size: 0.8em;
+}
+
+.projects ul {
+    margin: 2rem 0;
+}
+
+.projects__previous li {
+    display: inline;
+}
+
+.projects__previous li:not(:last-of-type)::after {
+    content: " •";
+}
+
+.letter {
     position: relative;
     z-index: 1;
 
@@ -214,46 +198,47 @@ h1 small::before {
 
     color: var(--black);
     font-family: "Financier", "Courier New", monospace;
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
-.page a {
-    background-color: var(--highlight);
-}
-
-.page header {
+.letter header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 
-    opacity: var(--brighter);
-
-    font-weight: bold;
-    font-size: 0.6rem;
+    font-size: 0.6em;
     letter-spacing: 0.125em;
     text-transform: uppercase;
 }
 
-.page ol {
-    margin-left: 1rem;
-}
-
-.page img {
-    max-width: 5rem;
+.letter img {
+    margin-top: 1rem;
+    max-width: 6em;
 
     opacity: var(--brighter);
 }
 
+.shh {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+}
+
 @media screen and (min-width: 35rem) {
-    .page {
+    .letter {
         margin: var(--spacing) 0 0;
         padding-right: 2rem;
         padding-left: 2rem;
 
-        transform: rotate(-4deg);
+        transform: rotate(-2deg);
     }
 
-    .page::after {
+    .letter::after {
         content: "";
 
         position: absolute;
@@ -277,12 +262,21 @@ h1 small::before {
         width: 100%;
     }
 
-    article,
-    aside {
-        flex: 0 1 auto;
+    .introduction,
+    .projects {
+        max-width: 35rem;
+        margin: 0;
     }
 
-    aside h2 {
+    .introduction {
+        flex: 1 1 auto;
+    }
+
+    .projects {
+        flex: 1 1 0;
+    }
+
+    .projects h2 {
         margin-top: 4rem;
     }
 }
@@ -293,12 +287,41 @@ h1 small::before {
         padding-left: var(--space-single);
     }
 
-    aside ul {
+    .introduction,
+    .projects {
+        max-width: 40rem;
+    }
+
+    .projects__recent {
         columns: 2;
         column-gap: var(--space-single);
     }
 
-    .page {
+    .letter {
         padding: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 95rem) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 105rem) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .introduction,
+    .projects {
+        max-width: 50rem;
+    }
+}
+
+@media screen and (min-width: 125rem) {
+    body {
+        font-size: 1.4rem;
     }
 }
