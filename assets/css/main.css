@@ -129,8 +129,9 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-    text-decoration: none;
     outline: 1px dashed currentColor;
+
+    text-decoration: none;
 }
 
 article ul {
@@ -214,24 +215,6 @@ h1 small::before {
     color: var(--black);
     font-family: "Financier", "Courier New", monospace;
     font-size: 0.9rem;
-
-    transform: rotate(-4deg);
-}
-
-.page::after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-
-    opacity: calc(var(--brighter) / 2);
-    background: var(--white);
-
-    transform: rotate(4deg);
 }
 
 .page a {
@@ -267,6 +250,23 @@ h1 small::before {
         padding-right: 2rem;
         padding-left: 2rem;
 
+        transform: rotate(-4deg);
+    }
+
+    .page::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+        opacity: calc(var(--brighter) / 2);
+        background: var(--white);
+
+        transform: rotate(4deg);
     }
 }
 
