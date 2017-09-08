@@ -169,6 +169,7 @@ a:active {
 .projects__h-previous,
 .projects__previous li {
     opacity: var(--brighter);
+
     font-size: 0.8em;
 }
 
@@ -212,8 +213,8 @@ a:active {
 }
 
 .letter img {
-    margin-top: 1rem;
     max-width: 6em;
+    margin-top: 1rem;
 
     opacity: var(--brighter);
 }
@@ -234,8 +235,6 @@ a:active {
         margin: var(--spacing) 0 0;
         padding-right: 2rem;
         padding-left: 2rem;
-
-        transform: rotate(-2deg);
     }
 
     .letter::after {
@@ -276,7 +275,7 @@ a:active {
         flex: 1 1 0;
     }
 
-    .projects h2 {
+    .projects__h-recent {
         margin-top: 4rem;
     }
 }
@@ -299,6 +298,24 @@ a:active {
 
     .letter {
         padding: 3rem;
+
+        opacity: 0;
+
+        animation: fadeIn forwards 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+        0%,
+        50% {
+            opacity: 0;
+
+            transform: translate(-5%, 10%) rotate(-10deg);
+        }
+
+        100% {
+            opacity: 1;
+
+            transform: translate(0, 0) rotate(-5deg);
+        }
     }
 }
 
