@@ -153,10 +153,6 @@ a:active {
     padding: var(--space-single);
 }
 
-.introduction li {
-    margin-left: 1rem;
-}
-
 .projects li {
     list-style: none;
 }
@@ -210,6 +206,10 @@ a:active {
     font-size: 0.6em;
     letter-spacing: 0.125em;
     text-transform: uppercase;
+}
+
+.letter li {
+    margin-left: 2rem;
 }
 
 .letter img {
