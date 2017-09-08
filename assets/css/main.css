@@ -100,9 +100,9 @@ main {
 article,
 aside {
     max-width: 40rem;
+    margin: 0 auto;
     padding: var(--space-single);
 }
-
 
 h1,
 li,
@@ -149,32 +149,25 @@ aside li {
 }
 
 aside a {
+    display: block;
     margin-right: 0.125rem;
+    margin-bottom: 0.25rem;
 }
 
-aside a:hover ~ span {
+aside a:hover ~ p {
     opacity: 1;
 }
 
-aside p,
-aside span {
+aside p {
     opacity: 0.7;
 
-    font-size: 0.75em;
+    font-size: 0.8em;
+
+    transition: all 0.1s linear;
 }
 
 aside ul {
     margin: 2rem 0;
-}
-
-aside span {
-    display: block;
-
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    transition: all 0.1s linear;
 }
 
 h1 span {
@@ -206,9 +199,10 @@ h1 small::before {
 }
 
 .page {
-    padding: 2rem;
-    border: 0;
-    transform: rotate(-1deg);
+    margin-top: 2rem;
+    margin-right: -4vw;
+    margin-left: -4vw;
+    padding: 2rem 5vw;
 
     background: var(--white);
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
@@ -240,28 +234,16 @@ h1 small::before {
 }
 
 
-@media screen and (min-width: 45rem) {
-    main {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    article,
-    aside {
-        flex: 0 1 auto;
-    }
-
-    aside h2 {
-        margin-top: 4rem;
-    }
-
+@media screen and (min-width: 35rem) {
     .page {
         position: relative;
         z-index: 1;
 
-        margin-top: var(--spacing);
-        padding: 2rem;
+        margin: var(--spacing) 0 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        transform: rotate(-1deg);
     }
 
     .page::after {
@@ -281,15 +263,42 @@ h1 small::before {
     }
 }
 
-@media screen and (min-width: 65rem) {
+
+@media screen and (min-width: 50rem) {
     main {
-        padding: var(--space-single);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    article,
+    aside {
+        flex: 0 1 auto;
+    }
+
+    aside h2 {
+        margin-top: 4rem;
+    }
+
+    .page {
+        position: relative;
+        z-index: 1;
+
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        transform: rotate(-1deg);
     }
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 75rem) {
+    main {
+        padding-right: var(--space-single);
+        padding-left: var(--space-single);
+    }
+
     .page {
-        padding: 3rem
+        padding: 3rem;
     }
 
     aside ul {
