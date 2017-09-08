@@ -170,7 +170,13 @@ a:active {
 }
 
 .projects ul {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.projects__recent p {
+    word-break: break-all;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .projects__previous li {
