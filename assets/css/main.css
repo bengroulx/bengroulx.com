@@ -26,6 +26,20 @@
     }
 }
 
+@keyframes fadeIn {
+    0%,
+    50% {
+        opacity: 0;
+
+        transform: translate(-5%, 10%) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+
+        transform: translate(0, 0) rotate(-5deg);
+    }
+}
+
 :root {
     --black: #222;
     --white: #fff;
@@ -101,33 +115,16 @@ main {
     padding-bottom: var(--space-single);
 }
 
+footer {
+    font-size: 0.75em;
+}
+
 h1,
 h2,
 h3,
 li,
 p:not(:last-child) {
     margin-bottom: 1rem;
-}
-
-.header__full-name {
-    display: block;
-    margin-bottom: 2rem;
-
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 1;
-}
-
-.header__description {
-    font-size: 1em;
-}
-
-.header__description::before {
-    content: "… ";
-}
-
-footer {
-    font-size: 0.75em;
 }
 
 a,
@@ -148,17 +145,32 @@ a:active {
     outline: 1px dashed currentColor;
 }
 
+.header__full-name {
+    display: block;
+    margin-bottom: 2rem;
+
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.header__description {
+    font-size: 1em;
+}
+
+.header__description::before {
+    content: "… ";
+}
+
 .introduction,
 .projects {
     padding: var(--space-single);
 }
 
-.projects li {
-    list-style: none;
-}
+.projects ul {
+    margin-bottom: 2rem;
 
-.projects a:hover ~ p {
-    opacity: 1;
+    list-style: none;
 }
 
 .projects p,
@@ -169,8 +181,8 @@ a:active {
     font-size: 0.8em;
 }
 
-.projects ul {
-    margin-bottom: 2rem;
+.projects a:hover ~ p {
+    opacity: 1;
 }
 
 .projects__recent p {
@@ -308,20 +320,6 @@ a:active {
         opacity: 0;
 
         animation: fadeIn forwards 1.5s ease-in-out;
-    }
-    @keyframes fadeIn {
-        0%,
-        50% {
-            opacity: 0;
-
-            transform: translate(-5%, 10%) rotate(-10deg);
-        }
-
-        100% {
-            opacity: 1;
-
-            transform: translate(0, 0) rotate(-5deg);
-        }
     }
 }
 
