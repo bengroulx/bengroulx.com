@@ -47,12 +47,23 @@
     --shade-2: #484a49;
     --shade-3: #68341f;
     --shade-4: #566927;
-    --highlight-1: rgba(255, 255, 150, 0.15);
-    --highlight-2: rgba(255, 255, 150, 0.2);
-    --spacing: 4vw;
-    --space-single: calc(var(--spacing) * 1);
-    --space-double: calc(var(--spacing) * 2);
-    --brighter: 0.6;
+    --highlight-yellow-light: rgba(255, 255, 150, 0.15);
+    --highlight-yellow-strong: rgba(255, 255, 50, 0.25);
+    --base-unit: 1rem;
+    --base-scale: 1em;
+    --base-space: 1vw;
+    --unit•1: calc(var(--base-unit) * 1);
+    --unit•2: calc(var(--base-unit) * 2);
+    --unit•4: calc(var(--base-unit) * 4);
+    --unit•8: calc(var(--base-unit) * 8);
+    --content-width-sm: calc(var(--base-unit) * 35);
+    --content-width-md: calc(var(--base-unit) * 42);
+    --content-width-lg: calc(var(--base-unit) * 50);
+    --content-width-full: 100%;
+    --scale-sm: calc( (var(--base-scale) / 4) * 3);
+    --scale-md: calc(var(--base-scale) * 1);
+    --space•1: calc(var(--base-space) * 4);
+    --brighter: 0.5;
 }
 
 *,
@@ -69,29 +80,26 @@
     transition: all 0.05s linear;
 }
 
-html,
-body {
+html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
     min-width: 100vw;
     min-height: 100vh;
-    margin: 0;
 
     background-color: var(--shade-1);
 
     color: var(--white);
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--scale-md);
     line-height: 1.6;
 
-    animation: swirl 30s infinite;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    animation: swirl 25s infinite;
 }
 
 body::before {
@@ -111,12 +119,21 @@ main {
     position: relative;
     z-index: 10;
 
-    padding-top: var(--space-single);
-    padding-bottom: var(--space-single);
+    width: var(--content-width-full);
+    padding-top: var(--space•1);
+    padding-bottom: var(--space•1);
+}
+
+img,
+svg {
+    max-width: var(--content-width-full);
+    height: auto;
+
+    fill: currentColor;
 }
 
 footer {
-    font-size: 0.75em;
+    font-size: var(--scale-sm);
 }
 
 h1,
@@ -124,12 +141,12 @@ h2,
 h3,
 li,
 p:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: var(--unit•1);
 }
 
 a,
 a:visited {
-    background: var(--highlight-1);
+    background: var(--highlight-yellow-light);
     outline: 1px dashed transparent;
 
     color: inherit;
@@ -141,21 +158,17 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-    background: var(--highlight-2);
+    background: var(--highlight-yellow-strong);
     outline: 1px dashed currentColor;
 }
 
 .header__full-name {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: var(--unit•2);
 
     font-weight: 700;
     font-size: 2em;
     line-height: 1;
-}
-
-.header__description {
-    font-size: 1em;
 }
 
 .header__description::before {
@@ -164,11 +177,12 @@ a:active {
 
 .introduction,
 .projects {
-    padding: var(--space-single);
+    padding: var(--space•1);
 }
 
-.projects ul {
-    margin-bottom: 2rem;
+.projects__recent,
+.projects__previous {
+    margin-bottom: var(--unit•2);
 
     list-style: none;
 }
@@ -178,7 +192,7 @@ a:active {
 .projects__previous li {
     opacity: var(--brighter);
 
-    font-size: 0.8em;
+    font-size: var(--scale-sm);
 }
 
 .projects a:hover ~ p {
@@ -203,41 +217,42 @@ a:active {
     position: relative;
     z-index: 1;
 
-    margin-top: 2rem;
+    margin-top: var(--unit•2);
     margin-right: -4vw;
     margin-left: -4vw;
-    padding: 2rem 5vw;
+    padding: var(--unit•2) var(--space•1);
 
     background: var(--white);
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 var(--space•1) rgba(0, 0, 0, 0.3);
 
     color: var(--black);
     font-family: "Financier", "Courier New", monospace;
     font-size: 0.9em;
 }
 
-.letter header {
+.letter__masthead {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: var(--unit•1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 
-    font-size: 0.6em;
+    font-size: var(--scale-sm);
     letter-spacing: 0.125em;
     text-transform: uppercase;
 }
 
-.letter li {
-    margin-left: 2rem;
+.letter__things li {
+    margin-left: var(--unit•2);
 }
 
-.letter img {
-    max-width: 6em;
-    margin-top: 1rem;
+.letter__signature {
+    width: var(--unit•8);
+    margin-top: var(--unit•1);
 
     opacity: var(--brighter);
 }
 
-.shh {
+.u-shh {
     position: absolute;
 
     overflow: hidden;
@@ -248,11 +263,16 @@ a:active {
     border: 0;
 }
 
+.u-nobreak {
+    white-space: nowrap;
+}
+
 @media screen and (min-width: 35rem) {
     .letter {
-        margin: var(--spacing) 0 0;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        margin-top: var(--unit•2);
+        margin-right: 0;
+        margin-left: 0;
+        padding: var(--unit•4);
     }
 
     .letter::after {
@@ -272,16 +292,15 @@ a:active {
     }
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 45rem) {
     main {
         display: flex;
         justify-content: center;
-        width: 100%;
     }
 
     .introduction,
     .projects {
-        max-width: 35rem;
+        max-width: var(--content-width-sm);
         margin: 0;
     }
 
@@ -294,28 +313,34 @@ a:active {
     }
 
     .projects__h-recent {
-        margin-top: 4rem;
+        margin-top: var(--unit•4);
+    }
+
+    .letter {
+        margin-top: var(--space•1);
+        padding-right: var(--unit•2);
+        padding-left: var(--unit•2);
     }
 }
 
 @media screen and (min-width: 75rem) {
     main {
-        padding-right: var(--space-single);
-        padding-left: var(--space-single);
+        padding-right: var(--space•1);
+        padding-left: var(--space•1);
     }
 
     .introduction,
     .projects {
-        max-width: 40rem;
+        max-width: var(--content-width-md);
     }
 
     .projects__recent {
         columns: 2;
-        column-gap: var(--space-single);
+        column-gap: var(--space•1);
     }
 
     .letter {
-        padding: 3rem;
+        padding: var(--unit•4);
 
         opacity: 0;
 
@@ -323,26 +348,25 @@ a:active {
     }
 }
 
-
 @media screen and (min-width: 95rem) {
     body {
-        font-size: 1.1rem;
+        font-size: calc(var(--base-unit) * 1.125);
     }
 }
 
 @media screen and (min-width: 105rem) {
     body {
-        font-size: 1.2rem;
+        font-size: calc(var(--base-unit) * 1.25);
     }
 
     .introduction,
     .projects {
-        max-width: 50rem;
+        max-width: var(--content-width-lg);
     }
 }
 
 @media screen and (min-width: 125rem) {
     body {
-        font-size: 1.4rem;
+        font-size: calc(var(--base-unit) * 1.5);
     }
 }
