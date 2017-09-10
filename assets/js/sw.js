@@ -9,7 +9,8 @@ const PRECACHE_URLS = [
     '../../index.html',
     '../../', // Alias for index.html
     '../css/main.css',
-    '../fonts/PitchWeb-Regular.woff'
+    '../fonts/PitchWeb-Regular.woff',
+    'https://bengroulx.com'
 ];
 
 // The install handler takes care of precaching the resources we always need.
