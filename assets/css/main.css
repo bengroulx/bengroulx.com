@@ -54,10 +54,10 @@
     --base-scale: 1em;
     --base-space: 1vw;
 
-    --space-md: calc(var(--base-unit) * 1);
-    --space-lg: calc(var(--base-unit) * 2);
-    --space-xl: calc(var(--base-unit) * 4);
-    --space-xxl:calc(var(--base-unit) * 8);
+    --unit-md: calc(var(--base-unit) * 1);
+    --unit-lg: calc(var(--base-unit) * 2);
+    --unit-xl: calc(var(--base-unit) * 4);
+    --unit-xxl:calc(var(--base-unit) * 8);
 
     --scale-xxs:calc( (var(--base-scale) / 4) * 1);
     --scale-xs: calc( (var(--base-scale) / 4) * 2);
@@ -130,6 +130,7 @@ main {
     z-index: 10;
 
     width: var(--content-width-full);
+    overflow-x: hidden;
     padding-top: var(--space-md);
     padding-bottom: var(--space-md);
 }
@@ -151,7 +152,7 @@ h2,
 h3,
 li,
 p:not(:last-child) {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--unit-md);
 }
 
 a,
@@ -174,7 +175,7 @@ a:active {
 
 .header__full-name {
     display: block;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--unit-lg);
 
     font-weight: 700;
     font-size: 2em;
@@ -192,7 +193,7 @@ a:active {
 
 .projects__recent,
 .projects__previous {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--unit-lg);
 
     list-style: none;
 }
@@ -230,7 +231,7 @@ a:active {
     margin-top: var(--space-lg);
     margin-right: -4vw;
     margin-left: -4vw;
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--unit-lg) var(--space-md);
 
     background: var(--white);
     box-shadow: 0 0 var(--space-md) rgba(0, 0, 0, 0.3);
@@ -252,12 +253,12 @@ a:active {
 }
 
 .letter__things li {
-    margin-left: var(--space-lg);
+    margin-left: var(--unit-lg);
 }
 
 .letter__signature {
-    width: var(--space-xxl);
-    margin-top: var(--space-md);
+    width: var(--unit-xxl);
+    margin-top: var(--unit-md);
 
     opacity: var(--brighter);
 }
@@ -279,10 +280,10 @@ a:active {
 
 @media screen and (min-width: 35rem) {
     .letter {
-        margin-top: var(--space-lg);
+        margin-top: var(--unit-lg);
         margin-right: 0;
         margin-left: 0;
-        padding: var(--space-xl);
+        padding: var(--unit-xl);
     }
 
     .letter::after {
@@ -323,13 +324,13 @@ a:active {
     }
 
     .projects__h-recent {
-        margin-top: var(--space-xl);
+        margin-top: var(--unit-xl);
     }
 
     .letter {
         margin-top: var(--space-md);
-        padding-right: var(--space-lg);
-        padding-left: var(--space-lg);
+        padding-right: var(--unit-lg);
+        padding-left: var(--unit-lg);
     }
 }
 
@@ -350,7 +351,7 @@ a:active {
     }
 
     .letter {
-        padding: var(--space-xl);
+        padding: var(--unit-xl);
 
         opacity: 0;
 
