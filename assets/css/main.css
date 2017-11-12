@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Financier";
+    font-family: "Pitch";
     font-style: normal;
     font-weight: 400;
 
@@ -30,13 +30,9 @@
     0%,
     50% {
         opacity: 0;
-
-        transform: translate(-5%, 10%) rotate(-10deg);
     }
     100% {
         opacity: 1;
-
-        transform: translate(0, 0) rotate(-3deg);
     }
 }
 
@@ -101,9 +97,9 @@ body {
     min-width: 100vw;
     min-height: 100vh;
 
-    background-color: var(--shade-1);
+    background-color: var(--white);
 
-    color: var(--white);
+    color: var(--black);
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", sans-serif;
     font-weight: 400;
     font-size: var(--scale-md);
@@ -122,7 +118,20 @@ body::before {
     left: 0;
     z-index: 1;
 
-    background: linear-gradient(45deg, rgba(100, 50, 150, 0), rgba(100, 50, 150, 0.25));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5), var(--white));
+}
+
+body::after {
+    content: "";
+
+    position: fixed;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--white));
 }
 
 main {
@@ -228,23 +237,12 @@ a:active {
     position: relative;
     z-index: 1;
 
-    margin-top: var(--space-lg);
-    margin-right: -4vw;
-    margin-left: -4vw;
-    padding: var(--unit-lg) var(--space-md);
-
-    background: var(--white);
-    box-shadow: 0 0 var(--space-md) rgba(0, 0, 0, 0.3);
-
-    color: var(--black);
-    font-family: "Financier", "Courier New", monospace;
+    font-family: "Pitch", "Courier New", monospace;
     font-size: 0.9em;
 }
 
 .letter__masthead {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 
     font-size: var(--scale-sm);
@@ -280,26 +278,6 @@ a:active {
 
 @media screen and (min-width: 35rem) {
     .letter {
-        margin-top: var(--unit-lg);
-        margin-right: 0;
-        margin-left: 0;
-        padding: var(--unit-xl);
-    }
-
-    .letter::after {
-        content: "";
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-
-        opacity: calc(var(--brighter) / 2);
-        background: var(--white);
-
-        transform: rotate(4deg);
     }
 }
 
@@ -329,8 +307,6 @@ a:active {
 
     .letter {
         margin-top: var(--space-md);
-        padding-right: var(--unit-lg);
-        padding-left: var(--unit-lg);
     }
 }
 
@@ -351,8 +327,6 @@ a:active {
     }
 
     .letter {
-        padding: var(--unit-xl);
-
         opacity: 0;
 
         animation: fadeIn forwards 1.5s ease-in-out;
