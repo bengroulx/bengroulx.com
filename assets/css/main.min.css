@@ -1,1 +1,428 @@
-@font-face{font-family:Financier;font-style:normal;font-weight:400;src:url(../fonts/PitchWeb-Regular.woff) format("woff");unicode-range:U+000-5FF;font-display:swap}@keyframes swirl{0%,100%{background-color:var(--shade-1)}25%{background-color:var(--shade-2)}50%{background-color:var(--shade-3)}75%{background-color:var(--shade-4)}}@keyframes fadeIn{0%,50%{opacity:0;transform:translate(-5%,10%) rotate(-10deg)}100%{opacity:1;transform:translate(0,0) rotate(-3deg)}}:root{--black:#222;--white:#fff;--shade-1:#50586f;--shade-2:#484a49;--shade-3:#68341f;--shade-4:#566927;--highlight-yellow-light:rgba(255, 255, 150, 0.15);--highlight-yellow-strong:rgba(255, 255, 50, 0.25);--base-unit:1rem;--base-scale:1em;--base-space:1vw;--space-xxl:calc(var(--base-unit) * 8);--scale-xxs:calc( (var(--base-scale) / 4) * 1);--scale-xs:calc( (var(--base-scale) / 4) * 2);--scale-sm:calc( (var(--base-scale) / 4) * 3);--scale-md:calc( (var(--base-scale) / 4) * 4);--scale-lg:calc( (var(--base-scale) / 4) * 5);--space-sm:calc( (var(--base-space) * 4) / 2);--space-md:calc( (var(--base-space) * 4) * 1);--space-lg:calc( (var(--base-space) * 4) * 2);--space-xl:calc( (var(--base-space) * 4) * 3);--content-width-sm:calc(var(--base-unit) * 35);--content-width-md:calc(var(--base-unit) * 42);--content-width-lg:calc(var(--base-unit) * 50);--content-width-full:100%;--brighter:0.5}*,::after,::before{box-sizing:border-box;margin:0;padding:0;font-weight:inherit;font-size:inherit;line-height:inherit}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{min-width:100vw;min-height:100vh;background-color:var(--shade-1);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Apple Color Emoji",sans-serif;font-weight:400;font-size:var(--scale-md);line-height:1.6;animation:swirl 25s infinite}body::before{content:"";position:fixed;top:0;right:0;bottom:0;left:0;z-index:1;background:linear-gradient(45deg,rgba(100,50,150,0),rgba(100,50,150,.25))}.letter,main{position:relative}main{z-index:10;width:var(--content-width-full);padding-top:var(--space-md);padding-bottom:var(--space-md)}img,svg{max-width:var(--content-width-full);height:auto;fill:currentColor}footer{font-size:var(--scale-sm)}h1,h2,h3,li,p:not(:last-child){margin-bottom:var(--space-md)}a,a:visited{background:var(--highlight-yellow-light);outline:transparent dashed 1px;color:inherit;text-decoration:underline;text-decoration-skip:ink}a:active,a:focus,a:hover{background:var(--highlight-yellow-strong);outline:currentColor dashed 1px}.header__full-name{display:block;margin-bottom:var(--space-lg);font-weight:700;font-size:2em;line-height:1}.header__description::before{content:"… "}.introduction,.projects{padding:var(--space-md)}.projects__previous,.projects__recent{margin-bottom:var(--space-lg);list-style:none}.projects p,.projects__h-previous,.projects__previous li{opacity:var(--brighter);font-size:var(--scale-sm)}.projects a:hover~p{opacity:1}.projects__recent p{word-break:break-all;word-break:break-word;hyphens:auto}.projects__previous li{display:inline}.projects__previous li:not(:last-of-type)::after{content:" •"}.letter{z-index:1;margin-top:var(--space-lg);margin-right:-4vw;margin-left:-4vw;padding:var(--space-lg) var(--space-md);background:var(--white);box-shadow:0 0 var(--space-md) rgba(0,0,0,.3);color:var(--black);font-family:Financier,"Courier New",monospace;font-size:.9em}.letter__masthead{display:flex;justify-content:space-between;margin-bottom:var(--space-md);border-bottom:2px solid rgba(0,0,0,.05);font-size:var(--scale-sm);letter-spacing:.125em;text-transform:uppercase}.letter__things li{margin-left:var(--space-lg)}.letter__signature{width:var(--space-xxl);margin-top:var(--space-md);opacity:var(--brighter)}.u-shh{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);width:1px;height:1px;padding:0;border:0}.u-nobreak{white-space:nowrap}@media screen and (min-width:35rem){.letter{margin-top:var(--space-lg);margin-right:0;margin-left:0;padding:var(--space-xl)}.letter::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;opacity:calc(var(--brighter)/ 2);background:var(--white);transform:rotate(4deg)}}@media screen and (min-width:45rem){main{display:flex;justify-content:center}.introduction,.projects{max-width:var(--content-width-sm);margin:0}.introduction{flex:1 1 auto}.projects{flex:1 1 0}.projects__h-recent{margin-top:var(--space-xl)}.letter{margin-top:var(--space-md);padding-right:var(--space-lg);padding-left:var(--space-lg)}}@media screen and (min-width:75rem){main{padding-right:var(--space-md);padding-left:var(--space-md)}.introduction,.projects{max-width:var(--content-width-md)}.projects__recent{columns:2;column-gap:var(--space-md)}.letter{padding:var(--space-xl);opacity:0;animation:fadeIn forwards 1.5s ease-in-out}}@media screen and (min-width:95rem){body{font-size:calc(var(--base-unit) * 1.125)}}@media screen and (min-width:105rem){body{font-size:calc(var(--base-unit) * 1.25)}.introduction,.projects{max-width:var(--content-width-lg)}}@media screen and (min-width:125rem){body{font-size:calc(var(--base-unit) * 1.5)}}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,500i,800,800i');
+
+@keyframes fadeIn {
+    0%,
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+:root {
+    --black: #222f3e;
+    --white: #fff;
+    --grey: #c8d6e5;
+    --green: #1dd1a1;
+    --blue: #54a0ff;
+    --purple: #ad61ff;
+    --pink: #f368e0;
+    --red: #ff6b6b;
+    --orange: #ff9f43;
+    --transition: 0.5s ease-out all;
+    --brighter: 0.5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+html {
+    font-size: 16px;
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--black);
+
+    color: var(--white);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+main {
+    margin: auto;
+    padding: 5%;
+}
+
+img,
+svg {
+    display: block;
+    max-width: var(--content-width-full);
+    height: auto;
+
+    fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+li,
+li:not(:last-child),
+p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+
+    transition: var(--transition);
+
+    text-decoration-color: var(--grey);
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+
+    text-decoration-color: var(--grey);
+    text-decoration-skip: ink;
+}
+
+article {
+    margin-top: 5rem;
+}
+
+.header {
+    margin-bottom: 4rem;
+}
+
+.header__full-name {
+    display: block;
+    margin-bottom: var(--unit-lg);
+
+    letter-spacing: -0.075em;
+}
+
+.header__description {
+    font-weight: 500;
+}
+
+.header__description::before {
+    content: "…";
+}
+
+.beliefs {
+    margin-left: 2.5rem;
+    list-style-type: none;
+}
+
+.beliefs li {
+    counter-increment: step-counter;
+}
+
+.beliefs li::before {
+    content: counter(step-counter);
+
+    margin-right: 1rem;
+    margin-left: -2.65rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 100%;
+    font-family: courier, monospace;
+    font-weight: 500;
+    font-size: 90%;
+    line-height: 1;
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects a {
+    position: relative;
+}
+
+.projects a > * {
+    flex: 1;
+}
+
+.projects h3 {
+    color: inherit;
+}
+
+.projects p {
+    margin-left: 2rem;
+
+    color: var(--white);
+}
+
+.projects p::before {
+    content: "…";
+}
+
+.projects.--links {
+    margin-bottom: 4rem;
+
+    font-weight: 800;
+}
+
+.projects.--links,
+.projects.--previously {
+    position: relative;
+
+    columns: 2;
+}
+
+.projects.--previously::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom, rgba(34, 47, 62, 0) 20%, rgba(34, 47, 62, 1) 100%);
+
+    pointer-events: none;
+}
+
+.projects .projects__expand {
+    max-width: none;
+}
+
+.projects .projects__expand::before,
+.projects .projects__expand::after {
+    opacity: 0.25;
+}
+
+.projects .projects__expand::before {
+    content: "“";
+
+    margin-left: -0.55em;
+}
+
+.projects.--currently li,
+.projects.--recently li {
+    margin-top: 2rem;
+}
+
+.u-big-text {
+    font-size: 2rem;
+}
+
+.u-nobreak {
+    white-space: nowrap;
+}
+
+.u-grey {
+    color: var(--grey);
+}
+
+.u-green {
+    color: var(--green);
+}
+
+.u-blue {
+    color: var(--blue);
+}
+
+.u-purple {
+    color: var(--purple);
+}
+
+.u-pink {
+    color: var(--pink);
+}
+
+.u-red {
+    color: var(--red);
+}
+
+.u-orange {
+    color: var(--orange);
+}
+
+footer {
+    margin: 4rem 0;
+
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media screen and (min-width: 35rem) {
+    @keyframes shake {
+        10%,
+        90% {
+            transform: translate3d(0, -0.125rem, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(0, 0.125rem, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(0, -0.25rem, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(0, 0.25rem, 0, 0);
+        }
+    }
+
+    @keyframes shift {
+    }
+
+    body {
+        font-family: "Montserrat";
+        letter-spacing: 0.015em;
+    }
+
+    main {
+        max-width: 32rem;
+        padding: 0;
+    }
+
+    .header__full-name {
+        letter-spacing: -0.135em;
+    }
+
+    .header__full-name > * {
+        display: inline-block;
+
+        transition: 0.125s linear all;
+    }
+
+    .header__full-name:hover > * {
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+        backface-visibility: hidden;
+
+        animation: cubic-bezier(0.35, 0.1, 0.2, 0.95) shake 1s infinite;
+    }
+
+    .header__full-name:hover > *:nth-child(1) {
+        color: var(--green);
+
+        animation-delay: 0.10s;
+    }
+    .header__full-name:hover > *:nth-child(2) {
+        color: var(--blue);
+
+        animation-delay: 0.25s;
+    }
+    .header__full-name:hover > *:nth-child(3) {
+        color: var(--purple);
+
+        animation-delay: 0.05s;
+    }
+    .header__full-name:hover > *:nth-child(4) {
+    }
+    .header__full-name:hover > *:nth-child(5) {
+        color: var(--orange);
+
+        animation-delay: 0.10s;
+    }
+    .header__full-name:hover > *:nth-child(6) {
+        color: var(--red);
+
+        animation-delay: 0.00s;
+    }
+    .header__full-name:hover > *:nth-child(7) {
+        color: var(--pink);
+
+        animation-delay: 0.25s;
+    }
+    .header__full-name:hover > *:nth-child(8) {
+        color: var(--purple);
+
+        animation-delay: 0.00s;
+    }
+    .header__full-name:hover > *:nth-child(9) {
+        color: var(--blue);
+
+        animation-delay: 0.10s;
+    }
+    .header__full-name:hover > *:nth-child(10) {
+        color: var(--green);
+
+        animation-delay: 0.25s;
+    }
+
+    .projects h3 {
+        min-width: 20%;
+        max-width: 40%;
+    }
+
+    .projects a {
+        display: flex;
+    }
+
+    .projects a:after {
+        content: "→";
+
+        position: absolute;
+        right: -3rem;
+
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        opacity: 0;
+        background-image: linear-gradient(to right, rgba(10, 10, 10, 0) 0%, var(--black) 50%);
+
+        color: inherit;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 1.25;
+
+        transition: var(--transition);
+    }
+
+    .projects a:hover::after {
+        content: "→";
+
+        opacity: 1;
+
+        transform: translate(-1rem, 0) scale(1.1);
+    }
+
+    .projects.--links {
+        columns: 3;
+    }
+
+    .projects__expand:hover::before {
+        opacity: 0.5;
+    }
+}

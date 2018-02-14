@@ -1,9 +1,0 @@
-mixin linkBlock(title, year, company, url, image)
-
-    a.c-link-block.u-block.u-full-width.u-flexbox.u-justify-between.u-align-middle.u-border-bottom-grey.u-padding-top-lg.u-padding-bottom-lg.u-text-tight.u-rounded-corners(href='#{url}') 
-        div.u-text-size-large.u-margin-right-lg #{title}
-        div.u-align-right.u-half-transparent.u-text-size-small
-            span.u-block.u-text-nowrap.u-text-secondary.u-margin-bottom-sm #{year}
-            span.u-block.u-text-nowrap(style='font-size:0.75em;') #{company}
-
-    aside.c-link-block__overlay.u-fixed.u-top-0.u-bottom-0.u-right-0.u-left-0(style='z-index:-1; background-image: url("#{image}"); background-position:center; background-size:cover; opacity:0;', role='presentation')
