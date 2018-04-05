@@ -114,7 +114,24 @@ a:active {
 }
 
 article {
-    margin-top: 5rem;
+    margin-top: 8rem;
+}
+
+.portrait {
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    z-index: -1;
+
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 3rem;
+    background-image: url('../img/ben-groulx--small.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    transform: translate(-50%, 0);
 }
 
 .header {
@@ -278,6 +295,29 @@ footer {
     text-align: center;
 }
 
+article {
+    position: relative;
+}
+
+@media screen and (min-width: 50rem) {
+    article {
+        margin-top: 5rem;
+    }
+
+    .portrait {
+        top: 0.5rem;
+        left: -10rem;
+
+        width: 8rem;
+        height: 8rem;
+
+        border-radius: 0.5rem;
+        background-image: url('../img/ben-groulx.jpg');
+
+        transform: translate(0, 0);
+    }
+}
+
 @media screen and (min-width: 35rem) {
     @keyframes shake {
         10%,
@@ -300,9 +340,6 @@ footer {
         60% {
             transform: translate3d(0, 0.25rem, 0, 0);
         }
-    }
-
-    @keyframes shift {
     }
 
     body {
