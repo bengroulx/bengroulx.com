@@ -1,26 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,500i,800,800i');
-
-@keyframes fadeIn {
-    0%,
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 :root {
-    --black: #222f3e;
+    --black: #07101a;
     --white: #fff;
-    --grey: #c8d6e5;
-    --green: #1dd1a1;
-    --blue: #54a0ff;
-    --purple: #ad61ff;
-    --pink: #f368e0;
-    --red: #ff6b6b;
-    --orange: #ff9f43;
-    --transition: 0.5s ease-out all;
+    --grey: rgba(245, 245, 255, 0.25);
+    --green: rgba(30, 210, 160, 0.25);
+    --blue: rgba(85, 160, 255, 0.25);
+    --purple: rgba(70, 70, 210, 0.25);
+    --pink: rgba(240, 100, 200, 0.25);
+    --red: rgba(255, 110, 110, 0.25);
+    --orange: rgba(255, 160, 70, 0.25);
+    --font-weight-normal: 400;
+    --font-weight-bold: 800;
+    --transition: 0.125s ease-out all;
     --brighter: 0.5;
 }
 
@@ -37,7 +29,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -46,23 +38,56 @@ html {
 }
 
 body {
-    background-color: var(--black);
+    background-color: var(--white);
 
-    color: var(--white);
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple Color Emoji", sans-serif;
-    font-weight: 500;
-    line-height: 1.8;
+    color: var(--black);
+    font-family: 'Permanent Marker', 'Apple Color Emoji';
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 2;
+    text-transform: uppercase;
 }
 
 main {
-    margin: auto;
-    padding: 5%;
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+header {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+
+    line-height: 1;
+    text-align: center;
+}
+
+header p {
+    font-family: 'Futura', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 0.45em;
+}
+
+header img {
+    max-width: 14em;
+}
+
+article {
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+footer {
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+
+    font-size: 0.7em;
+    text-align: center;
 }
 
 img,
 svg {
-    display: block;
-    max-width: var(--content-width-full);
+    display: inline-block;
+    max-width: 100%;
     height: auto;
 
     fill: currentColor;
@@ -74,392 +99,198 @@ h3,
 li,
 li:not(:last-child),
 p:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 800;
-    font-size: 1em;
-}
+ul {
+    margin-left: 2em;
 
-h2,
-h3 {
-    line-height: 1.25;
-}
-
-h2 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-a,
-a:visited {
-    color: inherit;
-    text-decoration: none;
-
-    transition: var(--transition);
-
-    text-decoration-color: var(--grey);
-}
-
-a:hover,
-a:focus,
-a:active {
-    text-decoration: underline;
-
-    text-decoration-color: var(--grey);
-    text-decoration-skip: ink;
-}
-
-article {
-    margin-top: 8rem;
-}
-
-.portrait {
-    position: absolute;
-    top: -6rem;
-    left: 50%;
-    z-index: -1;
-
-    width: 5rem;
-    height: 5rem;
-
-    border-radius: 3rem;
-    background-image: url('../img/ben-groulx--small.jpg');
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.25);
-
-    transform: translate(-50%, 0);
-}
-
-.header {
-    margin-bottom: 4rem;
-}
-
-.header__full-name {
-    display: block;
-    margin-bottom: var(--unit-lg);
-
-    letter-spacing: -0.075em;
-}
-
-.header__description {
-    font-weight: 500;
-}
-
-.header__description::before {
-    content: "…";
-}
-
-.beliefs {
-    margin-left: 2.5rem;
-    list-style-type: none;
-}
-
-.beliefs li {
-    counter-increment: step-counter;
-}
-
-.beliefs li::before {
-    content: counter(step-counter);
-
-    margin-right: 1rem;
-    margin-left: -2.65rem;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-
-    border-radius: 100%;
-    font-family: courier, monospace;
-    font-weight: 500;
-    font-size: 90%;
-    line-height: 1;
-}
-
-.projects li {
     list-style: none;
 }
 
-.projects a {
+li::before {
+    content: "•";
+
+    margin-left: -1em;
+    padding-right: 0.25em;
+
+    font-size: 1.25em;
+}
+
+.highlight {
     position: relative;
-}
 
-.projects a > * {
-    flex: 1;
-}
+    display: inline-block;
 
-.projects h3 {
     color: inherit;
+    text-decoration: none;
+
+    transform: scale(1.05) rotate(-2deg) skew(-10deg);
+
+    transition: var(--transition);
 }
 
-.projects p {
-    margin-left: 2rem;
-
-    color: var(--white);
+.highlight:hover {
+    z-index: 100;
 }
 
-.projects p::before {
-    content: "…";
+.highlight > span {
+    display: inherit;
+
+    transform: scale(0.9) rotate(2deg) skew(10deg);
 }
 
-.projects.--links {
-    margin-bottom: 4rem;
-
-    font-weight: 800;
+.highlight.--purple {
+    background-color: var(--purple);
 }
 
-.projects.--links,
-.projects.--previously {
-    position: relative;
-
-    columns: 2;
+.highlight.--orange {
+    background-color: var(--orange);
 }
 
-.projects.--previously::after {
-    content: "";
-
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-    height: 100%;
-
-    background-image: linear-gradient(to bottom, rgba(34, 47, 62, 0) 20%, rgba(34, 47, 62, 1) 100%);
-
-    pointer-events: none;
+.highlight.--green {
+    background-color: var(--green);
 }
 
-.projects .projects__expand {
-    max-width: none;
+.highlight.--blue {
+    background-color: var(--blue);
 }
 
-.projects .projects__expand::before,
-.projects .projects__expand::after {
-    opacity: 0.25;
+.highlight.--pink {
+    background-color: var(--pink);
 }
 
-.projects .projects__expand::before {
-    content: "“";
-
-    margin-left: -0.55em;
+.highlight.--red {
+    background-color: var(--red);
 }
 
-.projects.--currently li,
-.projects.--recently li {
-    margin-top: 2rem;
+.visually-hidden {
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
 }
 
-.u-big-text {
-    font-size: 2rem;
-}
-
-.u-nobreak {
-    white-space: nowrap;
-}
-
-.u-grey {
-    color: var(--grey);
-}
-
-.u-green {
-    color: var(--green);
-}
-
-.u-blue {
-    color: var(--blue);
-}
-
-.u-purple {
-    color: var(--purple);
-}
-
-.u-pink {
-    color: var(--pink);
-}
-
-.u-red {
-    color: var(--red);
-}
-
-.u-orange {
-    color: var(--orange);
-}
-
-footer {
-    margin: 4rem 0;
-
-    font-size: 0.8em;
-    text-align: center;
-}
-
-article {
-    position: relative;
-}
-
-@media screen and (min-width: 50rem) {
-    article {
-        margin-top: 5rem;
-    }
-
-    .portrait {
-        top: 0.5rem;
-        left: -10rem;
-
-        width: 8rem;
-        height: 8rem;
-
-        border-radius: 0.5rem;
-        background-image: url('../img/ben-groulx.jpg');
-
-        transform: translate(0, 0);
-    }
-}
-
-@media screen and (min-width: 35rem) {
-    @keyframes shake {
-        10%,
-        90% {
-            transform: translate3d(0, -0.125rem, 0);
-        }
-
-        20%,
-        80% {
-            transform: translate3d(0, 0.125rem, 0);
-        }
-
-        30%,
-        50%,
-        70% {
-            transform: translate3d(0, -0.25rem, 0);
-        }
-
-        40%,
-        60% {
-            transform: translate3d(0, 0.25rem, 0, 0);
-        }
-    }
-
+@media screen and (min-width: 35em) {
     body {
-        font-family: "Montserrat";
-        letter-spacing: 0.015em;
+        font-size: 1.125em;
+        line-height: 2.125;
+        letter-spacing: 0.125em;
     }
 
-    main {
-        max-width: 32rem;
-        padding: 0;
+    article {
+        position: relative;
+
+        margin: auto;
+        padding-right: 10vw;
+        padding-left: 10vw;
     }
 
-    .header__full-name {
-        letter-spacing: -0.135em;
-    }
-
-    .header__full-name > * {
-        display: inline-block;
-
-        transition: 0.125s linear all;
-    }
-
-    .header__full-name:hover > * {
-        transform: translate3d(0, 0, 0);
-        perspective: 1000px;
-        backface-visibility: hidden;
-
-        animation: cubic-bezier(0.35, 0.1, 0.2, 0.95) shake 1s infinite;
-    }
-
-    .header__full-name:hover > *:nth-child(1) {
-        color: var(--green);
-
-        animation-delay: 0.10s;
-    }
-    .header__full-name:hover > *:nth-child(2) {
-        color: var(--blue);
-
-        animation-delay: 0.25s;
-    }
-    .header__full-name:hover > *:nth-child(3) {
-        color: var(--purple);
-
-        animation-delay: 0.05s;
-    }
-    .header__full-name:hover > *:nth-child(4) {
-    }
-    .header__full-name:hover > *:nth-child(5) {
-        color: var(--orange);
-
-        animation-delay: 0.10s;
-    }
-    .header__full-name:hover > *:nth-child(6) {
-        color: var(--red);
-
-        animation-delay: 0.00s;
-    }
-    .header__full-name:hover > *:nth-child(7) {
-        color: var(--pink);
-
-        animation-delay: 0.25s;
-    }
-    .header__full-name:hover > *:nth-child(8) {
-        color: var(--purple);
-
-        animation-delay: 0.00s;
-    }
-    .header__full-name:hover > *:nth-child(9) {
-        color: var(--blue);
-
-        animation-delay: 0.10s;
-    }
-    .header__full-name:hover > *:nth-child(10) {
-        color: var(--green);
-
-        animation-delay: 0.25s;
-    }
-
-    .projects h3 {
-        min-width: 20%;
-        max-width: 40%;
-    }
-
-    .projects a {
-        display: flex;
-    }
-
-    .projects a:after {
-        content: "→";
+    article::after {
+        content: '';
 
         position: absolute;
-        right: -3rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
 
-        padding-right: 2rem;
-        padding-left: 2rem;
+        background-image: url('../img/grunge.png');
+        background-position: center;
 
-        opacity: 0;
-        background-image: linear-gradient(to right, rgba(10, 10, 10, 0) 0%, var(--black) 50%);
-
-        color: inherit;
-        font-weight: 800;
-        font-size: 2rem;
-        line-height: 1.25;
-
-        transition: var(--transition);
+        pointer-events: none;
     }
 
-    .projects a:hover::after {
-        content: "→";
-
-        opacity: 1;
-
-        transform: translate(-1rem, 0) scale(1.1);
+    footer {
+        transform: rotate(2deg);
     }
 
-    .projects.--links {
-        columns: 3;
+    [class*='sharpie-'] {
+        position: relative;
+
+        padding: 0.5em 0;
     }
 
-    .projects__expand:hover::before {
-        opacity: 0.5;
+    [class*='sharpie-']::after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-repeat: no-repeat;
+    }
+
+    .sharpie-star::after {
+        top: -0.25em;
+        right: -0.5em;
+        bottom: -0.25em;
+        left: -1.25em;
+
+        background-image: url('../img/sharpie-star.png');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .sharpie-box::after {
+        right: -0.5em;
+        left: -0.5em;
+
+        background-image: url('../img/sharpie-box.png');
+        background-position: bottom center;
+        background-size: 100% 100%;
+    }
+
+    .sharpie-burst::after {
+        right: -0.5em;
+        left: -0.5em;
+
+        background-image: url('../img/sharpie-burst.png');
+        background-position: bottom center;
+        background-size: 100% 100%;
+    }
+
+    .sharpie-jagged::after {
+        background-image: url('../img/sharpie-jagged.png');
+        background-position: bottom center;
+        background-size: 100% 30%;
+    }
+
+    .sharpie-squiggle::after {
+        background-image: url('../img/sharpie-squiggle.png');
+        background-position: bottom center;
+        background-size: 100% 40%;
+    }
+
+    .sharpie-line::after {
+        background-image: url('../img/sharpie-line.png');
+        background-position: bottom center;
+        background-size: 100% 30%;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    header {
+        margin-bottom: 15vh;
+    }
+
+    article {
+        max-width: 40em;
+        padding-right: 0;
+        padding-left: 0;
+
+        transform: rotate(-1deg);
+    }
+}
+
+@media screen and (min-width: 70em) {
+    body {
+        font-size: 1.25em;
     }
 }
