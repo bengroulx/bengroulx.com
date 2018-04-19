@@ -34,7 +34,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', sans-serif;
     font-weight: var(--font-weight-normal);
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.6;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -67,7 +67,7 @@ body {
 }
 
 .global-footer {
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 .page-content {
@@ -228,11 +228,7 @@ ul {
     }
 
     body {
-        font-family: 'Marker', -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', sans-serif;
         font-size: 1.125em;
-        line-height: 2.125;
-        letter-spacing: 0.125em;
-        text-transform: uppercase;
     }
 
     .page-content {
@@ -264,20 +260,12 @@ ul {
         z-index: 100;
     }
 
-    .u-text-pen {
-        color: var(--blue--foreground);
-        font-family: 'Pen';
-        font-size: 1.5em;
-        line-height: 1.2;
-        text-transform: none;
-    }
-
     [class*='sharpie-'] {
         position: relative;
 
         display: inline-block;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
         border: 0;
     }
 
@@ -360,7 +348,7 @@ ul {
     }
 
     .page-content {
-        max-width: 40em;
+        max-width: 32em;
         padding-right: 0;
         padding-left: 0;
     }
@@ -381,24 +369,6 @@ ul {
 @media screen and (min-width: 80em) {
     body {
         font-size: 1.25em;
-    }
-
-    .pull-text {
-        position: absolute;
-
-        max-width: 15em;
-
-        columns: 1;
-    }
-
-    .pull-text.--left {
-        transform: translate(-125%, -50%);
-    }
-
-    .pull-text.--right {
-        right: 0;
-
-        transform: translate(125%, -50%);
     }
 
     .postit {
