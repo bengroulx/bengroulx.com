@@ -45,18 +45,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-size: inherit;
+@supports (animation-name: fadeIn) {
+
+    body {
+        opacity: 0;
+        animation: fadeIn 1s 0.25s forwards;
+    }
+
+    @keyframes fadeIn {
+        to { opacity: 1; }
+    }
 }
 
-ul {
+
+ul,
+ol {
     list-style: none;
+}
+
+strong {
+    font-weight: var(--font-weight-bold);
 }
 
 a {
@@ -67,8 +75,11 @@ a {
     text-decoration: none;
 }
 
-strong {
-    font-weight: var(--font-weight-bold);
+a:hover,
+a:active {
+    border-bottom-color: currentColor;
+    border-bottom-style: dashed;
+    color: blue;
 }
 
 .global-content {
