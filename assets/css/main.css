@@ -69,7 +69,19 @@ body {
 }
 
 .global-footer {
-    font-size: 0.6em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 0.85em;
+    padding: 5vw;
+    text-align: center;
+}
+
+.global-footer li {
+    display: inline-block;
+    margin-left: 1em;
 }
 
 .page-content {
@@ -114,6 +126,7 @@ strong {
     position: relative;
 
     opacity: 0.5;
+    white-space: nowrap;
 }
 
 .list::before {
@@ -186,6 +199,12 @@ strong {
     height: 1px;
 }
 
+@media screen and (max-width: 30em) {
+    .global-footer li:nth-child(even){
+        display: none;
+    }
+}
+
 @media screen and (min-width: 30em) {
     body {
         font-size: 1em;
@@ -201,11 +220,13 @@ strong {
         justify-content: center;
         align-items: center;
         max-width: 40em;
-        margin: auto;
-        padding-right: 0;
-        padding-left: 0;
+        margin: 0 auto;
+        padding-right: 0 0 15vh;
     }
 }
 
 @media screen and (min-width: 80em) {
+    .global-footer {
+        padding-bottom: 5vh;
+    }
 }
