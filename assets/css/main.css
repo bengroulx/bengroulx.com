@@ -63,17 +63,20 @@ body {
     z-index: 10;
 
     background-image: linear-gradient(to bottom, rgba(255,255,255,0), white);
+
     pointer-events: none;
 }
 
 .global-footer {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
     z-index: 100;
-    font-size: 0.85em;
+
     padding: 5vw;
+
+    font-size: 0.85em;
 }
 
 .global-footer {
@@ -99,10 +102,11 @@ body {
 }
 
 a {
-    font-weight: bold;
-    color: inherit;
-    text-decoration: none;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 h1,
@@ -124,10 +128,12 @@ strong {
 }
 
 .list {
-    display: none;
     position: relative;
 
+    display: none;
+
     opacity: 0.5;
+
     white-space: nowrap;
 }
 
@@ -201,6 +207,13 @@ strong {
     height: 1px;
 }
 
+
+@media screen and (max-width: 30em) {
+    .global-footer li:nth-child(even) {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 30em) {
     body {
         font-size: 1em;
@@ -208,6 +221,11 @@ strong {
 }
 
 @media screen and (min-width: 50em) {
+    .list {
+        display: block;
+
+        columns: 2;
+    }
     .global-content {
         display: flex;
         justify-content: center;
@@ -215,12 +233,6 @@ strong {
         max-width: 40em;
         margin: 0 auto;
     }
-
-    .list {
-        display: block;
-        columns: 2;
-    }
-
     .global-footer {
         text-align: center;
     }
