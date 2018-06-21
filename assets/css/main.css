@@ -23,6 +23,7 @@ html,
 body,
 main {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -72,10 +73,12 @@ strong {
 
 .global-content {
     position: relative;
-    overflow: hidden;
+    flex: 1;
+    padding: 10vmin 5vw;
 }
 
 .global-footer {
+    flex: 0;
     padding: 5vw;
 
     font-size: 0.85em;
@@ -87,10 +90,6 @@ strong {
 
 .global-footer li + li {
     margin-left: 1em;
-}
-
-.page-content {
-    padding: 10vh 5vw 0;
 }
 
 .list {
@@ -156,13 +155,19 @@ strong {
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50em) {
     body {
         font-size: 1em;
     }
+
+    .global-content {
+        max-width: 40em;
+        transform: translate(0, 5vh);
+    }
 }
 
-@media screen and (min-width: 50em) {
+
+@media screen and (min-width: 50em) and (min-height: 40em) {
     .list {
         display: block;
 
@@ -173,7 +178,6 @@ strong {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 40em;
         margin: 0 auto;
     }
 
