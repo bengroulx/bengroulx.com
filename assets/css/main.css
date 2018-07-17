@@ -95,6 +95,7 @@ a:active {
     padding: 5vw;
     padding-right: calc(5vw + 2em);
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 .global-footer::before {
