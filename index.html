@@ -38,8 +38,9 @@
         <link href="assets/startup/favicon-32.png" rel="icon" sizes="32x32" type="image/png">
         <link href="assets/startup/favicon-16.png" rel="icon" sizes="16x16" type="image/png">
         <meta name="msapplication-TileImage" content="assets/startup/apple-icon-144.png">
-        <!-- <link rel="stylesheet" href="assets/css/main.css" type="text/css"> -->
-        <style>.global-footer::before,.list::before{content:'';right:0;bottom:0;z-index:10}:root{--color-black:#54657F;--color-white:#fff;--color-blue:#00f;--font-weight-normal:400;--font-weight-bold:700;--space-md:1em;--space-lg:3em}*,::after,::before{box-sizing:border-box;margin:0;padding:0;font-weight:inherit;font-size:inherit}body,html,main{height:100%}body{display:flex;overflow:hidden;flex-direction:column;background-color:var(--color-white);color:var(--color-black);font-family:proxima-nova,-apple-system,BlinkMacSystemFont,'Apple Color Emoji',sans-serif;font-weight:var(--font-weight-normal);font-size:1.125em;line-height:1.7;text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a,strong{font-weight:var(--font-weight-bold)}@supports (animation-name:fadeIn){body{opacity:0;animation:fadeIn 1s .25s forwards}@keyframes fadeIn{to{opacity:1}}}ol,ul{list-style:none}a{border-bottom:1px solid rgba(0,0,0,.2);color:inherit;text-decoration:none}a:active,a:hover{border-bottom-style:dashed;border-bottom-color:currentColor;color:var(--color-blue)}.global-content{position:relative;flex:1;padding:10vmin 5vw 0}.global-footer{position:relative;flex:0;font-size:.85em}.global-footer ul{overflow-x:scroll;overflow-y:hidden;padding:5vw;padding-right:calc(5vw + 2em);white-space:nowrap;-webkit-overflow-scrolling:touch}.global-footer::before{position:absolute;top:0;width:5em;background-image:linear-gradient(to right,rgba(255,255,255,0),var(--color-white));pointer-events:none}.global-footer li{display:inline-block}.global-footer li+li{margin-left:1em}.page-content{max-width:40em}.list{position:relative;display:none;opacity:.5;white-space:nowrap}.list::before{position:absolute;top:25%;left:0;background-image:linear-gradient(to bottom,rgba(255,255,255,0),var(--color-white))}.list strong{opacity:.5;font-size:.8em;letter-spacing:.05em}.m-t-md{margin-top:var(--space-md)}.m-b-md{margin-bottom:var(--space-md)}.m-t-lg{margin-top:var(--space-lg)}.m-b-lg{margin-bottom:var(--space-lg)}.visually-hidden{position:absolute!important;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);width:1px;height:1px}@media screen and (min-width:40em){.page-content{max-width:32em}}@media screen and (max-width:50em) and (min-height:50em){body{line-height:1.9}}@media screen and (min-width:50em) and (min-height:40em){.global-content::before,body::after,body::before{content:'';position:absolute}body{font-size:1em}body::after,body::before{left:50%;opacity:.1;transform:translate(-50%,0)}.global-content{display:flex;justify-content:center;align-items:center;margin:0 auto}.global-content::before{top:50%;right:0;bottom:0;left:0;z-index:10;background-image:linear-gradient(to bottom,rgba(255,255,255,0),var(--white));pointer-events:none}.global-footer{text-align:center}.list{display:block;columns:2}}@media screen and (min-width:80em){.global-footer ul{padding-top:5vh;padding-bottom:5vh}}</style>
+        <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script>
+        </script>
         <script>
           (function(d) {
             var config = {
@@ -54,13 +55,7 @@
     <body>
         <main class="global-content">
             <article class="page-content">
-                <h1 class="m-b-md">
-                    <strong>Ben Groulx</strong> is a designer and art director in Vancouver,&nbsp;Canada.
-                </h1>
-                <p class="">
-                    For the past decade (or so) Ben has been helping the teams within larger organizations conceive, plan, and build digital products. Since 2017 Ben has shifted away from designing and developing projects for enterprises to guiding strategic efforts in service design and digital design for startups. Work with Ben at
-                    <a href="https://house-house.design">House&nbsp;House</a>, a design&nbsp;studio.&nbsp;✌️
-                </p>
+                <!--
                 <div class="m-t-lg list">
                     <ul>
                         <li>Lancôme <strong>USA 2017</strong></li>
@@ -89,16 +84,62 @@
                         <li>Fort St John Public Library <strong>CAN 2014</strong></li>
                     </ul>
                 </div>
-            </article>
+                -->
+                <p class="message" id="message-1">
+                  👋 Hey there. I’m Ben.
+                </p>
+                <p class="message" id="message-2">
+                  I am a designer and strategist. For a decade I’ve helped teams of all sizes plan and build better software and digital products— things like websites, apps, and tech processes.
+                </p>
+                <p class="message" id="message-4">
+                  In 2017 I co-founded <a href="https://house-house.design">🏡&nbsp;House&nbsp;House</a>, a design studio and freelancer community.
+                </p>
+                <p class="message" id="message-5">
+                  I live and work in 🇨🇦 Vancouver.
+                </p>
+                <div class="responding" role="decoration">
+                    <div class="dot-container" id="writer">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+          </article>
         </main>
         <footer class="global-footer">
             <ul>
                 <li><a href="https://linkedin.com/in/bengroulx">LinkedIn</a></li>
                 <li><a href="https://instagram.com/bengroulx">Instagram</a></li>
                 <li><a href="https://medium.com/@bengroulx">Medium</a></li>
-                <li><a href="https://github.com/bengroulx">GitHub</a></li>
                 <li><a href="https://vsco.co/bengroulx/">VSCO</a></li>
+                <li><a href="https://open.spotify.com/user/bengroulx">Spotify</a></li>
+
             </ul>
         </footer>
+        <script>
+          function showMessage(id) {
+            var message = $('#message-' + id);
+            message.css('display', 'inline-block');
+          }
+
+          function start() {
+
+            var messages = $('.message');
+            var timeOut = 1500;
+
+            messages.each(function(index) {
+              index += 1;
+
+              if (index === messages.length) window.setTimeout( function() { writer.remove(); }, timeOut );
+
+              window.setTimeout( function() { showMessage(index); }, timeOut );
+
+              timeOut += 2500;
+            });
+          }
+
+          $(document).ready(function(){start();});
+        </script>
     </body>
 </html>
