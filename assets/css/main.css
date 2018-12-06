@@ -30,9 +30,9 @@ body {
 body {
     background-color: var(--color-white);
     color: var(--color-black);
-    font-family: 'Founders Grotesk', serif, -apple-system, BlinkMacSystemFont, 'Roboto', 'Apple Color Emoji', sans-serif;
+    font-family: 'Founders Grotesk', -apple-system, BlinkMacSystemFont, 'Roboto', 'Apple Color Emoji', sans-serif;
     font-weight: var(--font-weight-normal);
-    font-size: calc(var(--unit-md) * 1.25);
+    font-size: calc(var(--unit-md) * 1.15);
     line-height: 1.4;
     text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -50,9 +50,8 @@ strong {
 
 a {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
-    margin-bottom: -0.25em;
     transition: 100ms ease-out;
     transform: scale(0.95);
     border-bottom: 1px solid transparent;
