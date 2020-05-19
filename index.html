@@ -38,16 +38,18 @@
         <link href="assets/startup/favicon-32.png" rel="icon" sizes="32x32" type="image/png">
         <link href="assets/startup/favicon-16.png" rel="icon" sizes="16x16" type="image/png">
         <link rel="manifest" href="manifest.json">
-        <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-        <link rel="stylesheet" href="https://use.typekit.net/nxg7whm.css">
+        <!-- <link rel="stylesheet" href="assets/css/main.css" type="text/css" rel="preload"> -->
+        <!-- <link rel="stylesheet" href="https://use.typekit.net/nxg7whm.css" rel="preload"> -->
+        <style media="screen">:root{--color-black:#17181a;--color-white:#c0cbce;--color-grey:#2b2d31;--color-blue:#679bf0;--font-weight-normal:400;--space-xs:0.2em;--space-sm:0.5em;--space-md:1em}@font-face{font-family:"Arno Pro";font-display:swap;font-style:normal;font-weight:var(--font-weight-normal);src:url(https://use.typekit.net/af/b9acbc/000000000000000000017424/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/b9acbc/000000000000000000017424/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/b9acbc/000000000000000000017424/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype")}@font-face{font-family:"Arno Pro";font-display:swap;font-style:italic;font-weight:var(--font-weight-normal);src:url(https://use.typekit.net/af/598d94/000000000000000000017425/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/598d94/000000000000000000017425/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/598d94/000000000000000000017425/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype")}*,::after,::before{box-sizing:border-box;margin:0;padding:0}body,html{height:100%}body{font-family:"Arno Pro","Hoefler Text",serif,"Apple Color Emoji";font-weight:var(--font-weight-normal);font-style:normal;font-size:1.4em;line-height:1.4;font-variant-ligatures:common-ligatures;font-variant-numeric:oldstyle-nums;-webkit-font-feature-settings:"onum";-moz-font-feature-settings:"onum";font-feature-settings:"onum";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}ol,ul{list-style:none}li{display:inline-block}a{border-radius:.25em;color:inherit;text-decoration:underline;text-decoration-color:transparent}.smcp,a{letter-spacing:.025em;font-variant-caps:all-small-caps;-webkit-font-feature-settings:"c2sc","smcp";-moz-font-feature-settings:"c2sc","smcp";font-feature-settings:"c2sc","smcp"}.global-content,.global-footer{padding-left:var(--space-md);padding-right:var(--space-md);padding-bottom:10vh}.global-content{padding-top:10vh}.global-footer a{margin:0 var(--space-xs)}.page-content>*{margin-bottom:var(--space-md)}@media screen and (min-width:35em){.global-content,.global-footer{padding-left:10vw;padding-right:10vw}.page-content{max-width:25em}}@media screen and (prefers-color-scheme:dark){body{background-color:var(--color-black);color:var(--color-white)}a:active,a:hover{background-color:var(--color-grey);color:var(--color-blue)}}@media screen and (prefers-color-scheme:light){body{background-color:var(--color-white);color:var(--color-grey)}a:active,a:hover{background-color:var(--color-blue);color:var(--color-black)}}
+        </style>
     </head>
     <body>
         <main class="global-content">
             <article class="page-content">
-                <p>Hello there. I’m Ben.</p>
-                <p>I am a freelance digital designer and strategist. For more than a decade I’ve worked with small and large teams to plan user-focused software and improve their tech-building processes by producing design systems, interface prototypes, brand identities, and <span class="smcp">UX</span>&nbsp;recommendations.</p>
-                <p>Since 2017 I’ve been taking on client projects through our shared design practice,<a href="https://house-house.design">🏡&nbsp;<span>House House</span></a>. Most recently I’ve been working with a dedicated team from <a href="https://briteweb.com">💻&nbsp;<span>Briteweb</span></a> to build a series of digital products for <a href="https://advisingcorps.org/">🎓&nbsp;<span>College Advising&nbsp;Corps</span></a>.</p>
-                <p>When not at my desk in Vancouver, Canada, you’ll find me tending to an extensive indoor garden or reading nonfiction with a coffee in&nbsp;hand.</p>
+                <p>Hello there! Hope your <span id="today"></span> is going well.</p>
+                <p>I’m Ben, a freelance digital designer and strategist. For 12 years I’ve helped teams plan out software releases and improve tech-building processes, often by producing design systems and pattern libraries, <span class="smcp">UX</span> reports, interface prototypes, and brand identity&nbsp;guides.</p>
+                <p>Since 2017 I’ve taken on client projects through <a href="https://house-house.design">House House</a>, a shared design practice with fellow freelancers. Most recently I’ve been working with a dedicated team from <a href="https://briteweb.com">Briteweb</a> to build a family of web-based products for <a href="https://advisingcorps.org/">College Advising&nbsp;Corps</a>.</p>
+                <p>When not at my office in Vancouver, <span class="smcp">BC</span>, you’ll find me tending to an extensive indoor garden or reading nonfiction with a pour-over in&nbsp;hand.</p>
             </article>
         </main>
         <footer class="global-footer">
@@ -59,5 +61,9 @@
                 <li><a href="https://open.spotify.com/user/bengroulx">Spotify</a></li>
             </ul>
         </footer>
+        <script type="text/javascript">
+        var dt = new Date();
+        document.getElementById("today").innerHTML = dt.toLocaleString(window.navigator.language, {weekday: 'long'});
+        </script>
     </body>
 </html>
