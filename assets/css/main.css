@@ -9,7 +9,6 @@
     --space-md: 1em;
 }
 
-
 @font-face {
     font-family: "Arno Pro";
     font-display: swap;
@@ -70,13 +69,18 @@ a {
     text-decoration-color: transparent;
 }
 
-a,
 .smcp {
     letter-spacing: 0.025em;
     font-variant-caps: all-small-caps;
     -webkit-font-feature-settings: "c2sc", "smcp";
        -moz-font-feature-settings: "c2sc", "smcp";
             font-feature-settings: "c2sc", "smcp";
+}
+
+.fn {
+    letter-spacing: 0.025em;
+    font-style: italic;
+    cursor: help;
 }
 
 .global-content,
@@ -106,7 +110,8 @@ a,
     }
 
     .page-content {
-        max-width: 25em;
+        max-width: 30em;
+        padding-right: 5vw;
     }
 }
 
