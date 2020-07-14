@@ -17,14 +17,6 @@
     src:url("https://use.typekit.net/af/b9acbc/000000000000000000017424/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b9acbc/000000000000000000017424/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b9acbc/000000000000000000017424/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 }
 
-@font-face {
-    font-family:"Arno Pro";
-    font-display: swap;
-    font-style: italic;
-    font-weight: var(--font-weight-normal);
-    src:url("https://use.typekit.net/af/598d94/000000000000000000017425/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/598d94/000000000000000000017425/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/598d94/000000000000000000017425/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
-}
-
 *,
 *::after,
 *::before {
@@ -54,7 +46,7 @@ body {
 }
 
 a {
-    border-radius: 0.25em;
+    border-radius: var(--space-xs);
     color: inherit;
     text-decoration: underline;
     text-decoration-color: transparent;
@@ -62,9 +54,6 @@ a {
 
 .smcp {
   letter-spacing: 0.025em;
-}
-
-.smcp {
     font-variant-caps: all-small-caps;
     -webkit-font-feature-settings: "c2sc", "smcp";
        -moz-font-feature-settings: "c2sc", "smcp";
