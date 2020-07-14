@@ -36,8 +36,7 @@ body {
     font-style: normal;
     font-size: 1.4em;
     line-height: 1.4;
-    font-variant-ligatures: common-ligatures;
-    font-variant-numeric: oldstyle-nums;
+    font-variant: common-ligatures proportional-nums;
     -webkit-font-feature-settings: "onum";
        -moz-font-feature-settings: "onum";
             font-feature-settings: "onum";
@@ -48,23 +47,26 @@ body {
 a {
     border-radius: var(--space-xs);
     color: inherit;
-    text-decoration: underline;
-    text-decoration-color: transparent;
+    text-decoration: none;
 }
 
-.smcp {
-  letter-spacing: 0.025em;
-    font-variant-caps: all-small-caps;
-    -webkit-font-feature-settings: "c2sc", "smcp";
-       -moz-font-feature-settings: "c2sc", "smcp";
-            font-feature-settings: "c2sc", "smcp";
-}
-
+em,
 .fn {
     font-family: "Times New Roman";
     font-style: italic;
     font-size: 0.95em;
+}
+
+.fn {
     cursor: help;
+}
+
+.smcp {
+    letter-spacing: 0.025em;
+    font-variant: all-small-caps;
+    -webkit-font-feature-settings: "c2sc", "smcp";
+       -moz-font-feature-settings: "c2sc", "smcp";
+            font-feature-settings: "c2sc", "smcp";
 }
 
 .global-content,
