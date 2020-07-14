@@ -39,7 +39,7 @@ body {
 }
 
 body {
-    font-family: "Arno Pro", "Hoefler Text", serif, "Apple Color Emoji";
+    font-family: "Arno Pro", "Times New Roman", serif, "Apple Color Emoji";
     font-weight: var(--font-weight-normal);
     font-style: normal;
     font-size: 1.4em;
@@ -53,15 +53,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-ul,
-ol {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-}
-
 a {
     border-radius: 0.25em;
     color: inherit;
@@ -70,7 +61,10 @@ a {
 }
 
 .smcp {
-    letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+}
+
+.smcp {
     font-variant-caps: all-small-caps;
     -webkit-font-feature-settings: "c2sc", "smcp";
        -moz-font-feature-settings: "c2sc", "smcp";
@@ -78,8 +72,9 @@ a {
 }
 
 .fn {
-    letter-spacing: 0.025em;
+    font-family: "Times New Roman";
     font-style: italic;
+    font-size: 0.95em;
     cursor: help;
 }
 
@@ -95,7 +90,16 @@ a {
 }
 
 .global-footer a {
-    margin: 0 var(--space-xs);
+    margin-right: var(--space-sm);
+}
+
+.global-footer ul,
+.global-footer ol {
+    list-style: none;
+}
+
+.global-footer li {
+    display: inline-block;
 }
 
 .page-content > * {
