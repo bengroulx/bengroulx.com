@@ -1,12 +1,15 @@
 :root {
-    --color-black: #17181a;
-    --color-white: #c0cbce;
-    --color-grey: #2b2d31;
-    --color-blue: #679bf0;
-    --font-weight-normal: 400;
+    --color-neutral-90: #14171A;
+    --color-neutral-70: #41484D;
+    --color-neutral-10: #DAE1E5;
+    --color-matisse: #174D73;
+    --color-monet: #2E6C99;
+    --color-picasso: #4C8FBF;
     --space-xs: 0.2em;
     --space-sm: 0.5em;
     --space-md: 1em;
+    --font-weight-normal: 400;
+    --font-ratio-normal: 1.4;
 }
 
 @font-face {
@@ -34,8 +37,8 @@ body {
     font-family: "Arno Pro", "Times New Roman", serif, "Apple Color Emoji";
     font-weight: var(--font-weight-normal);
     font-style: normal;
-    font-size: 1.4em;
-    line-height: 1.4;
+    font-size: 1.3em;
+    line-height: var(--font-ratio-normal);
     font-variant: common-ligatures proportional-nums;
     -webkit-font-feature-settings: "onum";
        -moz-font-feature-settings: "onum";
@@ -112,24 +115,24 @@ em,
 
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: var(--color-black);
-        color: var(--color-white);
+        background-color: var(--color-neutral-90);
+        color: var(--color-neutral-10);
     }
     a:hover,
     a:active {
-        background-color: var(--color-grey);
+        background-color: var(--color-neutral-70);
         color: var(--color-blue);
     }
 }
 
 @media screen and (prefers-color-scheme: light) {
     body {
-        background-color: var(--color-white);
-        color: var(--color-grey);
+        background-color: var(--color-neutral-10);
+        color: var(--color-neutral-70);
     }
     a:hover,
     a:active {
         background-color: var(--color-blue);
-        color: var(--color-black);
+        color: var(--color-neutral-90);
     }
 }
